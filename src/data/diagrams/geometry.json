@@ -1,0 +1,1041 @@
+[
+  {
+    "id": "adjacent", "shape": "angles",
+    "points": { "A": [30, 170], "B": [290, 170], "O": [160, 170], "C": { "on": ["O", 125, 62] } },
+    "elements": [
+      { "t": "seg", "p": ["A", "B"] }, { "t": "seg", "p": ["O", "C"] },
+      { "t": "angle", "p": ["B", "O", "C"], "label": "α", "r": 26 },
+      { "t": "angle", "p": ["C", "O", "A"], "label": "β", "n": 2, "c": "accent2", "r": 22 },
+      { "t": "pts", "p": ["A", "O", "B", "C"] },
+      { "t": "text", "at": [160, 214], "s": "α + β = 180°", "bold": true }
+    ]
+  },
+  {
+    "id": "vertical", "shape": "angles",
+    "points": { "O": [160, 112], "A": { "on": ["O", 125, 155] }, "B": { "on": ["O", 125, -25] }, "C": { "on": ["O", 125, 25] }, "D": { "on": ["O", 125, 205] } },
+    "elements": [
+      { "t": "seg", "p": ["A", "B"] }, { "t": "seg", "p": ["C", "D"] },
+      { "t": "angle", "p": ["C", "O", "A"], "label": "α", "r": 22 },
+      { "t": "angle", "p": ["D", "O", "B"], "label": "α", "r": 22 },
+      { "t": "angle", "p": ["A", "O", "D"], "label": "β", "n": 2, "c": "accent2", "r": 24 },
+      { "t": "angle", "p": ["B", "O", "C"], "label": "β", "n": 2, "c": "accent2", "r": 24 },
+      { "t": "pts", "p": ["O"] }
+    ]
+  },
+  {
+    "id": "corresponding", "shape": "parallel",
+    "points": { "P1": [20, 80], "P2": [300, 80], "Q1": [20, 170], "Q2": [300, 170], "T1": [100, 228], "T2": [240, 18],
+      "A": { "inter": ["P1", "P2", "T1", "T2"] }, "B": { "inter": ["Q1", "Q2", "T1", "T2"] } },
+    "lpos": { "A": "nw", "B": "nw" },
+    "elements": [
+      { "t": "seg", "p": ["P1", "P2"] }, { "t": "seg", "p": ["Q1", "Q2"] }, { "t": "seg", "p": ["T1", "T2"], "c": "muted" },
+      { "t": "par", "p": ["P1", "P2"] }, { "t": "par", "p": ["Q1", "Q2"] },
+      { "t": "angle", "p": ["P2", "A", "T2"], "label": "α", "fill": true, "r": 20 },
+      { "t": "angle", "p": ["Q2", "B", "A"], "label": "α", "fill": true, "r": 20 },
+      { "t": "pts", "p": ["A", "B"] },
+      { "t": "text", "at": [24, 68], "s": "a", "anchor": "start" }, { "t": "text", "at": [24, 158], "s": "b", "anchor": "start" }
+    ]
+  },
+  {
+    "id": "alternate", "shape": "parallel",
+    "points": { "P1": [20, 80], "P2": [300, 80], "Q1": [20, 170], "Q2": [300, 170], "T1": [100, 228], "T2": [240, 18],
+      "A": { "inter": ["P1", "P2", "T1", "T2"] }, "B": { "inter": ["Q1", "Q2", "T1", "T2"] } },
+    "lpos": { "A": "ne", "B": "sw" },
+    "elements": [
+      { "t": "seg", "p": ["P1", "P2"] }, { "t": "seg", "p": ["Q1", "Q2"] }, { "t": "seg", "p": ["T1", "T2"], "c": "muted" },
+      { "t": "par", "p": ["P1", "P2"] }, { "t": "par", "p": ["Q1", "Q2"] },
+      { "t": "angle", "p": ["P1", "A", "B"], "label": "α", "fill": true, "r": 20 },
+      { "t": "angle", "p": ["Q2", "B", "A"], "label": "α", "fill": true, "r": 20 },
+      { "t": "pts", "p": ["A", "B"] },
+      { "t": "text", "at": [24, 68], "s": "a", "anchor": "start" }, { "t": "text", "at": [24, 158], "s": "b", "anchor": "start" }
+    ]
+  },
+  {
+    "id": "co-interior", "shape": "parallel",
+    "points": { "P1": [20, 80], "P2": [300, 80], "Q1": [20, 170], "Q2": [300, 170], "T1": [100, 228], "T2": [240, 18],
+      "A": { "inter": ["P1", "P2", "T1", "T2"] }, "B": { "inter": ["Q1", "Q2", "T1", "T2"] } },
+    "lpos": { "A": "nw", "B": "sw" },
+    "elements": [
+      { "t": "seg", "p": ["P1", "P2"] }, { "t": "seg", "p": ["Q1", "Q2"] }, { "t": "seg", "p": ["T1", "T2"], "c": "muted" },
+      { "t": "par", "p": ["P1", "P2"] }, { "t": "par", "p": ["Q1", "Q2"] },
+      { "t": "angle", "p": ["P2", "A", "B"], "label": "α", "fill": true, "r": 20 },
+      { "t": "angle", "p": ["Q2", "B", "A"], "label": "β", "fill": true, "c": "accent2", "r": 20 },
+      { "t": "pts", "p": ["A", "B"] },
+      { "t": "text", "at": [24, 68], "s": "a", "anchor": "start" }, { "t": "text", "at": [24, 158], "s": "b", "anchor": "start" },
+      { "t": "text", "at": [262, 125], "s": "α + β = 180°", "bold": true }
+    ]
+  },
+  {
+    "id": "triangle-sum", "shape": "triangle",
+    "points": { "A": [150, 48], "B": [40, 196], "C": [280, 196], "L": [30, 48], "R": [290, 48] },
+    "elements": [
+      { "t": "seg", "p": ["L", "R"], "dash": true, "c": "muted" },
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "angle", "p": ["B", "A", "C"], "label": "α" },
+      { "t": "angle", "p": ["C", "B", "A"], "label": "β", "n": 2, "c": "accent2" },
+      { "t": "angle", "p": ["A", "C", "B"], "label": "γ", "n": 3, "c": "good" },
+      { "t": "pts", "p": ["A", "B", "C"] },
+      { "t": "text", "at": [160, 226], "s": "α + β + γ = 180°", "bold": true }
+    ]
+  },
+  {
+    "id": "exterior-angle", "shape": "triangle",
+    "points": { "A": [120, 45], "B": [35, 190], "C": [210, 190], "D": [300, 190] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] }, { "t": "seg", "p": ["C", "D"], "dash": true },
+      { "t": "angle", "p": ["B", "A", "C"], "label": "α" },
+      { "t": "angle", "p": ["C", "B", "A"], "label": "β", "n": 2, "c": "accent2" },
+      { "t": "angle", "p": ["D", "C", "A"], "label": "δ", "fill": true, "c": "good", "r": 24 },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 224], "s": "δ = α + β", "bold": true }
+    ]
+  },
+  {
+    "id": "polygon-sum", "shape": "polygon",
+    "points": { "A": { "polar": [160, 118, 92, 90] }, "B": { "polar": [160, 118, 92, 162] }, "C": { "polar": [160, 118, 92, 234] }, "D": { "polar": [160, 118, 92, 306] }, "E": { "polar": [160, 118, 92, 18] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D", "E"], "fill": "accent" },
+      { "t": "seg", "p": ["A", "C"], "dash": true, "c": "accent2" }, { "t": "seg", "p": ["A", "D"], "dash": true, "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E"] },
+      { "t": "text", "at": [160, 228], "s": "n=5:  (5−2)·180° = 540°", "bold": true }
+    ]
+  },
+  {
+    "id": "polygon-exterior", "shape": "polygon",
+    "points": { "A": { "polar": [160, 112, 66, 90] }, "B": { "polar": [160, 112, 66, 162] }, "C": { "polar": [160, 112, 66, 234] }, "D": { "polar": [160, 112, 66, 306] }, "E": { "polar": [160, 112, 66, 18] },
+      "a2": { "along": ["E", "A", 1.55] }, "b2": { "along": ["A", "B", 1.55] }, "c2": { "along": ["B", "C", 1.55] }, "d2": { "along": ["C", "D", 1.55] }, "e2": { "along": ["D", "E", 1.55] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D", "E"] },
+      { "t": "seg", "p": ["A", "a2"], "dash": true }, { "t": "seg", "p": ["B", "b2"], "dash": true }, { "t": "seg", "p": ["C", "c2"], "dash": true }, { "t": "seg", "p": ["D", "d2"], "dash": true }, { "t": "seg", "p": ["E", "e2"], "dash": true },
+      { "t": "angle", "p": ["a2", "A", "B"], "fill": true, "r": 14 }, { "t": "angle", "p": ["b2", "B", "C"], "fill": true, "r": 14 }, { "t": "angle", "p": ["c2", "C", "D"], "fill": true, "r": 14 }, { "t": "angle", "p": ["d2", "D", "E"], "fill": true, "r": 14 }, { "t": "angle", "p": ["e2", "E", "A"], "fill": true, "r": 14 },
+      { "t": "text", "at": [160, 228], "s": "סכום הזוויות החיצוניות = 360°", "bold": true }
+    ]
+  },
+  {
+    "id": "congruence-sas", "shape": "triangle",
+    "points": { "A": [25, 190], "B": [140, 190], "C": [65, 75], "D": [178, 190], "E": [293, 190], "F": [218, 75] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" }, { "t": "poly", "p": ["D", "E", "F"], "fill": "accent2" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["D", "E"] },
+      { "t": "tick", "p": ["A", "C"], "n": 2 }, { "t": "tick", "p": ["D", "F"], "n": 2 },
+      { "t": "angle", "p": ["B", "A", "C"], "fill": true }, { "t": "angle", "p": ["E", "D", "F"], "fill": true },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F"] },
+      { "t": "text", "at": [160, 228], "s": "צ.ז.צ", "bold": true, "size": 15 }
+    ]
+  },
+  {
+    "id": "congruence-asa", "shape": "triangle",
+    "points": { "A": [25, 190], "B": [140, 190], "C": [65, 75], "D": [178, 190], "E": [293, 190], "F": [218, 75] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" }, { "t": "poly", "p": ["D", "E", "F"], "fill": "accent2" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["D", "E"] },
+      { "t": "angle", "p": ["B", "A", "C"], "fill": true }, { "t": "angle", "p": ["E", "D", "F"], "fill": true },
+      { "t": "angle", "p": ["C", "B", "A"], "n": 2, "c": "good" }, { "t": "angle", "p": ["F", "E", "D"], "n": 2, "c": "good" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F"] },
+      { "t": "text", "at": [160, 228], "s": "ז.צ.ז", "bold": true, "size": 15 }
+    ]
+  },
+  {
+    "id": "congruence-sss", "shape": "triangle",
+    "points": { "A": [25, 190], "B": [140, 190], "C": [65, 75], "D": [178, 190], "E": [293, 190], "F": [218, 75] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" }, { "t": "poly", "p": ["D", "E", "F"], "fill": "accent2" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["D", "E"] },
+      { "t": "tick", "p": ["A", "C"], "n": 2 }, { "t": "tick", "p": ["D", "F"], "n": 2 },
+      { "t": "tick", "p": ["B", "C"], "n": 3 }, { "t": "tick", "p": ["E", "F"], "n": 3 },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F"] },
+      { "t": "text", "at": [160, 228], "s": "צ.צ.צ", "bold": true, "size": 15 }
+    ]
+  },
+  {
+    "id": "congruence-ssa", "shape": "triangle",
+    "points": { "A": [25, 190], "B": [145, 190], "C": [55, 80], "D": [178, 190], "E": [298, 190], "F": [208, 80] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" }, { "t": "poly", "p": ["D", "E", "F"], "fill": "accent2" },
+      { "t": "tick", "p": ["A", "C"] }, { "t": "tick", "p": ["D", "F"] },
+      { "t": "tick", "p": ["B", "C"], "n": 2 }, { "t": "tick", "p": ["E", "F"], "n": 2 },
+      { "t": "angle", "p": ["B", "A", "C"], "fill": true }, { "t": "angle", "p": ["E", "D", "F"], "fill": true },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F"] },
+      { "t": "text", "at": [160, 228], "s": "צ.צ.ז – הזווית מול הצלע הגדולה", "bold": true }
+    ]
+  },
+  {
+    "id": "isosceles", "shape": "triangle",
+    "points": { "A": [160, 38], "B": [75, 200], "C": [245, 200] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["A", "C"] },
+      { "t": "angle", "p": ["C", "B", "A"], "label": "β", "fill": true },
+      { "t": "angle", "p": ["A", "C", "B"], "label": "β", "fill": true },
+      { "t": "pts", "p": ["A", "B", "C"] },
+      { "t": "text", "at": [160, 228], "s": "AB = AC  ⇔  ∠B = ∠C", "bold": true }
+    ]
+  },
+  {
+    "id": "isosceles-coincide", "shape": "triangle",
+    "points": { "A": [160, 38], "B": [75, 200], "C": [245, 200], "D": { "mid": ["B", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["A", "D"], "c": "accent2", "w": 2.4 },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["A", "C"] },
+      { "t": "tick", "p": ["B", "D"], "n": 2, "c": "accent2" }, { "t": "tick", "p": ["D", "C"], "n": 2, "c": "accent2" },
+      { "t": "angle", "p": ["B", "A", "D"], "r": 30 }, { "t": "angle", "p": ["D", "A", "C"], "r": 30 },
+      { "t": "right", "p": ["A", "D", "C"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] }
+    ]
+  },
+  {
+    "id": "iso-test-bis-med", "shape": "triangle",
+    "points": { "A": [160, 38], "B": [75, 200], "C": [245, 200], "D": { "mid": ["B", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["A", "D"], "c": "accent2", "w": 2.4 },
+      { "t": "tick", "p": ["B", "D"], "n": 2, "c": "accent2" }, { "t": "tick", "p": ["D", "C"], "n": 2, "c": "accent2" },
+      { "t": "angle", "p": ["B", "A", "D"], "r": 30, "fill": true }, { "t": "angle", "p": ["D", "A", "C"], "r": 30, "fill": true },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 228], "s": "חוצה זווית + תיכון ⇐ AB = AC", "bold": true }
+    ]
+  },
+  {
+    "id": "iso-test-bis-alt", "shape": "triangle",
+    "points": { "A": [160, 38], "B": [75, 200], "C": [245, 200], "D": { "mid": ["B", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["A", "D"], "c": "accent2", "w": 2.4 },
+      { "t": "angle", "p": ["B", "A", "D"], "r": 30, "fill": true }, { "t": "angle", "p": ["D", "A", "C"], "r": 30, "fill": true },
+      { "t": "right", "p": ["A", "D", "C"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 228], "s": "חוצה זווית + גובה ⇐ AB = AC", "bold": true }
+    ]
+  },
+  {
+    "id": "iso-test-med-alt", "shape": "triangle",
+    "points": { "A": [160, 38], "B": [75, 200], "C": [245, 200], "D": { "mid": ["B", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["A", "D"], "c": "accent2", "w": 2.4 },
+      { "t": "tick", "p": ["B", "D"], "n": 2, "c": "accent2" }, { "t": "tick", "p": ["D", "C"], "n": 2, "c": "accent2" },
+      { "t": "right", "p": ["A", "D", "C"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 228], "s": "תיכון + גובה ⇐ AB = AC", "bold": true }
+    ]
+  },
+  {
+    "id": "equilateral", "shape": "triangle",
+    "points": { "A": [160, 36], "B": [65, 200.5], "C": [255, 200.5] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["A", "C"] }, { "t": "tick", "p": ["B", "C"] },
+      { "t": "angle", "p": ["B", "A", "C"], "label": "60°", "r": 24 },
+      { "t": "angle", "p": ["C", "B", "A"], "label": "60°", "r": 24 },
+      { "t": "angle", "p": ["A", "C", "B"], "label": "60°", "r": 24 },
+      { "t": "pts", "p": ["A", "B", "C"] }
+    ]
+  },
+  {
+    "id": "larger-side", "shape": "triangle",
+    "points": { "A": [95, 50], "B": [35, 195], "C": [290, 195] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["B", "C"], "c": "accent", "w": 3 },
+      { "t": "angle", "p": ["B", "A", "C"], "fill": true, "label": "α" },
+      { "t": "seg", "p": ["A", "B"], "c": "accent2", "w": 3 },
+      { "t": "angle", "p": ["A", "C", "B"], "fill": true, "c": "accent2", "label": "γ", "r": 30 },
+      { "t": "pts", "p": ["A", "B", "C"] },
+      { "t": "text", "at": [160, 226], "s": "BC > AB  ⇔  α > γ", "bold": true }
+    ]
+  },
+  {
+    "id": "triangle-inequality", "shape": "triangle",
+    "points": { "A": [120, 55], "B": [40, 190], "C": [285, 190] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "seglabel", "p": ["B", "C"], "s": "a" }, { "t": "seglabel", "p": ["A", "C"], "s": "b" }, { "t": "seglabel", "p": ["A", "B"], "s": "c" },
+      { "t": "pts", "p": ["A", "B", "C"] },
+      { "t": "text", "at": [160, 228], "s": "a < b + c ,  b < a + c ,  c < a + b", "bold": true }
+    ]
+  },
+  {
+    "id": "midsegment", "shape": "triangle",
+    "points": { "A": [150, 35], "B": [45, 200], "C": [275, 200], "D": { "mid": ["A", "B"] }, "E": { "mid": ["A", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["D", "E"], "c": "accent", "w": 2.6 },
+      { "t": "tick", "p": ["A", "D"] }, { "t": "tick", "p": ["D", "B"] },
+      { "t": "tick", "p": ["A", "E"], "n": 2 }, { "t": "tick", "p": ["E", "C"], "n": 2 },
+      { "t": "par", "p": ["D", "E"], "c": "accent2" }, { "t": "par", "p": ["B", "C"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E"] },
+      { "t": "text", "at": [160, 228], "s": "DE ∥ BC ,  DE = ½BC", "bold": true }
+    ]
+  },
+  {
+    "id": "midline-converse", "shape": "triangle",
+    "points": { "A": [150, 35], "B": [45, 200], "C": [275, 200], "D": { "mid": ["A", "B"] }, "E": { "mid": ["A", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["D", "E"], "c": "accent", "w": 2.6, "ext": 18 },
+      { "t": "tick", "p": ["A", "D"] }, { "t": "tick", "p": ["D", "B"] },
+      { "t": "par", "p": ["D", "E"], "c": "accent2" }, { "t": "par", "p": ["B", "C"], "c": "accent2" },
+      { "t": "seglabel", "p": ["A", "E"], "s": "?", "c": "warn" }, { "t": "seglabel", "p": ["E", "C"], "s": "?", "c": "warn" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E"] },
+      { "t": "text", "at": [160, 228], "s": "AD = DB ,  DE ∥ BC  ⇐  AE = EC", "bold": true }
+    ]
+  },
+  {
+    "id": "perp-bisector", "shape": "triangle",
+    "points": { "A": [55, 170], "B": [265, 170], "M": { "mid": ["A", "B"] }, "P": [160, 55], "Q": [160, 215] },
+    "lpos": { "M": "se", "P": "n" },
+    "elements": [
+      { "t": "seg", "p": ["A", "B"] },
+      { "t": "line", "p": ["P", "Q"], "c": "accent", "dash": true, "ext": 12 },
+      { "t": "seg", "p": ["P", "A"], "c": "accent2" }, { "t": "seg", "p": ["P", "B"], "c": "accent2" },
+      { "t": "right", "p": ["P", "M", "B"] },
+      { "t": "tick", "p": ["A", "M"] }, { "t": "tick", "p": ["M", "B"] },
+      { "t": "tick", "p": ["P", "A"], "n": 2, "c": "accent2" }, { "t": "tick", "p": ["P", "B"], "n": 2, "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "M", "P"] }
+    ]
+  },
+  {
+    "id": "angle-bisector-locus", "shape": "angles",
+    "points": { "V": [35, 195], "A": { "on": ["V", 265, 0] }, "B": { "on": ["V", 255, 48] }, "P": { "on": ["V", 175, 24] }, "E": { "foot": ["P", "V", "A"] }, "F": { "foot": ["P", "V", "B"] } },
+    "lpos": { "V": "w", "P": "e", "E": "s", "F": "nw" },
+    "elements": [
+      { "t": "seg", "p": ["V", "A"] }, { "t": "seg", "p": ["V", "B"] },
+      { "t": "ray", "p": ["V", "P"], "c": "accent", "dash": true, "ext": 40 },
+      { "t": "seg", "p": ["P", "E"], "c": "accent2" }, { "t": "seg", "p": ["P", "F"], "c": "accent2" },
+      { "t": "right", "p": ["P", "E", "V"], "c": "accent2" }, { "t": "right", "p": ["P", "F", "V"], "c": "accent2" },
+      { "t": "tick", "p": ["P", "E"], "c": "accent2" }, { "t": "tick", "p": ["P", "F"], "c": "accent2" },
+      { "t": "angle", "p": ["A", "V", "P"], "r": 40 }, { "t": "angle", "p": ["P", "V", "B"], "r": 40 },
+      { "t": "pts", "p": ["V", "P", "E", "F"] }
+    ]
+  },
+  {
+    "id": "medians", "shape": "triangle",
+    "points": { "A": [150, 32], "B": [35, 205], "C": [288, 205], "D": { "mid": ["B", "C"] }, "E": { "mid": ["A", "C"] }, "F": { "mid": ["A", "B"] }, "G": { "centroid": ["A", "B", "C"] } },
+    "lpos": { "G": "e" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["A", "D"], "c": "accent" }, { "t": "seg", "p": ["B", "E"], "c": "accent" }, { "t": "seg", "p": ["C", "F"], "c": "accent" },
+      { "t": "tick", "p": ["B", "D"] }, { "t": "tick", "p": ["D", "C"] },
+      { "t": "tick", "p": ["C", "E"], "n": 2 }, { "t": "tick", "p": ["E", "A"], "n": 2 },
+      { "t": "tick", "p": ["A", "F"], "n": 3 }, { "t": "tick", "p": ["F", "B"], "n": 3 },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F", "G"] },
+      { "t": "text", "at": [160, 228], "s": "AG : GD = 2 : 1", "bold": true }
+    ]
+  },
+  {
+    "id": "circumcenter", "shape": "triangle",
+    "points": { "A": [120, 50], "B": [70, 170], "C": [245, 165], "O": { "circumcenter": ["A", "B", "C"] }, "M1": { "mid": ["A", "B"] }, "M2": { "mid": ["B", "C"] }, "M3": { "mid": ["A", "C"] } },
+    "lpos": { "O": "e" },
+    "elements": [
+      { "t": "circle", "o": "O", "through": "A", "c": "accent2", "dash": true },
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["M1", "O"], "c": "accent", "ext": 10 }, { "t": "seg", "p": ["M2", "O"], "c": "accent", "ext": 10 }, { "t": "seg", "p": ["M3", "O"], "c": "accent", "ext": 10 },
+      { "t": "right", "p": ["O", "M1", "B"] }, { "t": "right", "p": ["O", "M2", "C"] }, { "t": "right", "p": ["O", "M3", "C"] },
+      { "t": "pts", "p": ["A", "B", "C", "O"] }
+    ]
+  },
+  {
+    "id": "incenter", "shape": "triangle",
+    "points": { "A": [125, 35], "B": [35, 205], "C": [290, 205], "I": { "incenter": ["A", "B", "C"] }, "T": { "foot": ["I", "B", "C"] } },
+    "lpos": { "I": "ne" },
+    "elements": [
+      { "t": "circle", "o": "I", "through": "T", "c": "accent2" },
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["A", "I"], "c": "accent", "dash": true }, { "t": "seg", "p": ["B", "I"], "c": "accent", "dash": true }, { "t": "seg", "p": ["C", "I"], "c": "accent", "dash": true },
+      { "t": "seg", "p": ["I", "T"], "c": "accent2" }, { "t": "right", "p": ["I", "T", "C"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "I"] }
+    ]
+  },
+  {
+    "id": "orthocenter", "shape": "triangle",
+    "points": { "A": [130, 35], "B": [40, 205], "C": [285, 205], "D": { "foot": ["A", "B", "C"] }, "E": { "foot": ["B", "A", "C"] }, "F": { "foot": ["C", "A", "B"] }, "H": { "orthocenter": ["A", "B", "C"] } },
+    "lpos": { "H": "e", "D": "s" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["A", "D"], "c": "accent", "dash": true }, { "t": "seg", "p": ["B", "E"], "c": "accent", "dash": true }, { "t": "seg", "p": ["C", "F"], "c": "accent", "dash": true },
+      { "t": "right", "p": ["A", "D", "C"] }, { "t": "right", "p": ["B", "E", "C"] }, { "t": "right", "p": ["C", "F", "B"] },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F", "H"] }
+    ]
+  },
+  {
+    "id": "pythagoras", "shape": "right-triangle",
+    "points": { "C": [70, 190], "B": [270, 190], "A": [70, 55] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "right", "p": ["A", "C", "B"] },
+      { "t": "seglabel", "p": ["C", "B"], "s": "a" }, { "t": "seglabel", "p": ["C", "A"], "s": "b" }, { "t": "seglabel", "p": ["A", "B"], "s": "c" },
+      { "t": "pts", "p": ["A", "B", "C"] },
+      { "t": "text", "at": [160, 226], "s": "a² + b² = c²", "bold": true, "size": 15 }
+    ]
+  },
+  {
+    "id": "median-hypotenuse", "shape": "right-triangle",
+    "points": { "C": [90, 190], "A": [90, 70], "B": [250, 190], "M": { "mid": ["A", "B"] } },
+    "lpos": { "M": "ne" },
+    "elements": [
+      { "t": "circle", "o": "M", "through": "C", "c": "muted", "dash": true },
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "right", "p": ["A", "C", "B"] },
+      { "t": "seg", "p": ["C", "M"], "c": "accent", "w": 2.4 },
+      { "t": "tick", "p": ["A", "M"] }, { "t": "tick", "p": ["M", "B"] }, { "t": "tick", "p": ["C", "M"] },
+      { "t": "pts", "p": ["A", "B", "C", "M"] }
+    ]
+  },
+  {
+    "id": "thirty-sixty", "shape": "right-triangle",
+    "points": { "C": [70, 185], "B": [270, 185], "A": [70, 69.53], "M": { "mid": ["A", "B"] } },
+    "lpos": { "M": "ne" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "right", "p": ["A", "C", "B"] },
+      { "t": "angle", "p": ["A", "B", "C"], "label": "30°", "r": 34 },
+      { "t": "angle", "p": ["C", "A", "B"], "label": "60°", "c": "accent2", "r": 20 },
+      { "t": "tick", "p": ["A", "C"], "c": "accent2" }, { "t": "tick", "p": ["A", "M"], "c": "accent2" }, { "t": "tick", "p": ["M", "B"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "M"] },
+      { "t": "text", "at": [160, 222], "s": "AC = ½AB", "bold": true }
+    ]
+  },
+  {
+    "id": "altitude-hypotenuse", "shape": "right-triangle",
+    "points": { "A": [30, 185], "B": [290, 185], "Z": [160, 185], "C": { "on": ["Z", 130, 118] }, "D": { "foot": ["C", "A", "B"] } },
+    "lpos": { "D": "s" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["C", "D"], "c": "accent", "dash": true },
+      { "t": "right", "p": ["A", "C", "B"] }, { "t": "right", "p": ["C", "D", "B"], "c": "accent" },
+      { "t": "seglabel", "p": ["C", "D"], "s": "h", "side": -1 },
+      { "t": "seglabel", "p": ["A", "D"], "s": "q", "side": 1 }, { "t": "seglabel", "p": ["D", "B"], "s": "p", "side": 1 },
+      { "t": "seglabel", "p": ["A", "C"], "s": "b" }, { "t": "seglabel", "p": ["C", "B"], "s": "a" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 228], "s": "h² = p·q ,  a² = c·p ,  b² = c·q", "bold": true }
+    ]
+  },
+  {
+    "id": "parallelogram", "shape": "quadrilateral",
+    "points": { "A": [40, 185], "B": [215, 185], "C": [285, 65], "D": { "add": ["A", "B", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["D", "C"] },
+      { "t": "tick", "p": ["A", "D"], "n": 2 }, { "t": "tick", "p": ["B", "C"], "n": 2 },
+      { "t": "par", "p": ["D", "C"], "c": "accent2" }, { "t": "par", "p": ["A", "B"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] }
+    ]
+  },
+  {
+    "id": "parallelogram-angles", "shape": "quadrilateral",
+    "points": { "A": [40, 185], "B": [215, 185], "C": [285, 65], "D": { "add": ["A", "B", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"] },
+      { "t": "angle", "p": ["B", "A", "D"], "fill": true, "label": "α" }, { "t": "angle", "p": ["D", "C", "B"], "fill": true, "label": "α" },
+      { "t": "angle", "p": ["C", "B", "A"], "n": 2, "c": "accent2", "label": "β" }, { "t": "angle", "p": ["A", "D", "C"], "n": 2, "c": "accent2", "label": "β" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] }
+    ]
+  },
+  {
+    "id": "parallelogram-diagonals", "shape": "quadrilateral",
+    "points": { "A": [40, 185], "B": [215, 185], "C": [285, 65], "D": { "add": ["A", "B", "C"] }, "O": { "inter": ["A", "C", "B", "D"] } },
+    "lpos": { "O": "s" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"] },
+      { "t": "seg", "p": ["A", "C"], "c": "accent" }, { "t": "seg", "p": ["B", "D"], "c": "accent2" },
+      { "t": "tick", "p": ["A", "O"] }, { "t": "tick", "p": ["O", "C"] },
+      { "t": "tick", "p": ["B", "O"], "n": 2, "c": "accent2" }, { "t": "tick", "p": ["O", "D"], "n": 2, "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O"] }
+    ]
+  },
+  {
+    "id": "parallelogram-one-pair", "shape": "quadrilateral",
+    "points": { "A": [40, 185], "B": [215, 185], "C": [285, 65], "D": { "add": ["A", "B", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"] },
+      { "t": "seg", "p": ["A", "B"], "c": "accent", "w": 3 }, { "t": "seg", "p": ["D", "C"], "c": "accent", "w": 3 },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["D", "C"] },
+      { "t": "par", "p": ["D", "C"], "c": "accent2" }, { "t": "par", "p": ["A", "B"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] }
+    ]
+  },
+  {
+    "id": "rectangle", "shape": "quadrilateral",
+    "points": { "A": [45, 190], "B": [275, 190], "C": [275, 55], "D": [45, 55], "O": { "inter": ["A", "C", "B", "D"] } },
+    "lpos": { "O": "s" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "seg", "p": ["A", "C"], "c": "accent2" }, { "t": "seg", "p": ["B", "D"], "c": "accent2" },
+      { "t": "right", "p": ["B", "A", "D"] }, { "t": "right", "p": ["C", "B", "A"] }, { "t": "right", "p": ["D", "C", "B"] }, { "t": "right", "p": ["A", "D", "C"] },
+      { "t": "tick", "p": ["A", "O"], "c": "accent2" }, { "t": "tick", "p": ["O", "C"], "c": "accent2" }, { "t": "tick", "p": ["B", "O"], "c": "accent2" }, { "t": "tick", "p": ["O", "D"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O"] },
+      { "t": "text", "at": [160, 224], "s": "AC = BD", "bold": true }
+    ]
+  },
+  {
+    "id": "rhombus", "shape": "quadrilateral",
+    "points": { "A": [160, 22], "B": [272, 118], "C": [160, 214], "D": [48, 118], "O": { "inter": ["A", "C", "B", "D"] } },
+    "lpos": { "O": "se" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "seg", "p": ["A", "C"], "c": "accent2" }, { "t": "seg", "p": ["B", "D"], "c": "accent2" },
+      { "t": "right", "p": ["A", "O", "B"], "c": "accent2" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["B", "C"] }, { "t": "tick", "p": ["C", "D"] }, { "t": "tick", "p": ["D", "A"] },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O"] }
+    ]
+  },
+  {
+    "id": "rhombus-angles", "shape": "quadrilateral",
+    "points": { "A": [160, 22], "B": [272, 118], "C": [160, 214], "D": [48, 118], "O": { "inter": ["A", "C", "B", "D"] } },
+    "lpos": { "O": "se" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"] },
+      { "t": "seg", "p": ["A", "C"], "c": "accent2" }, { "t": "seg", "p": ["B", "D"], "c": "accent2" },
+      { "t": "angle", "p": ["D", "A", "O"], "r": 26 }, { "t": "angle", "p": ["O", "A", "B"], "r": 26 },
+      { "t": "angle", "p": ["A", "B", "O"], "r": 22, "n": 2, "c": "good" }, { "t": "angle", "p": ["O", "B", "C"], "r": 22, "n": 2, "c": "good" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["B", "C"] }, { "t": "tick", "p": ["C", "D"] }, { "t": "tick", "p": ["D", "A"] },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O"] }
+    ]
+  },
+  {
+    "id": "square", "shape": "quadrilateral",
+    "points": { "A": [78, 205], "B": [242, 205], "C": [242, 41], "D": [78, 41], "O": { "inter": ["A", "C", "B", "D"] } },
+    "lpos": { "O": "e" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "seg", "p": ["A", "C"], "c": "accent2" }, { "t": "seg", "p": ["B", "D"], "c": "accent2" },
+      { "t": "right", "p": ["B", "A", "D"] }, { "t": "right", "p": ["C", "B", "A"] }, { "t": "right", "p": ["D", "C", "B"] }, { "t": "right", "p": ["A", "D", "C"] },
+      { "t": "right", "p": ["A", "O", "B"], "c": "accent2" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["B", "C"] }, { "t": "tick", "p": ["C", "D"] }, { "t": "tick", "p": ["D", "A"] },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O"] }
+    ]
+  },
+  {
+    "id": "trapezoid-midsegment", "shape": "quadrilateral",
+    "points": { "A": [25, 190], "B": [295, 190], "C": [215, 60], "D": [95, 60], "E": { "mid": ["A", "D"] }, "F": { "mid": ["B", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"] },
+      { "t": "seg", "p": ["E", "F"], "c": "accent", "w": 2.6 },
+      { "t": "tick", "p": ["A", "E"] }, { "t": "tick", "p": ["E", "D"] },
+      { "t": "tick", "p": ["B", "F"], "n": 2 }, { "t": "tick", "p": ["F", "C"], "n": 2 },
+      { "t": "par", "p": ["D", "C"], "c": "accent2" }, { "t": "par", "p": ["E", "F"], "c": "accent2" }, { "t": "par", "p": ["A", "B"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F"] },
+      { "t": "text", "at": [160, 224], "s": "EF = (AB + DC) / 2", "bold": true }
+    ]
+  },
+  {
+    "id": "isosceles-trapezoid", "shape": "quadrilateral",
+    "points": { "A": [35, 185], "B": [285, 185], "C": [220, 60], "D": [100, 60] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "tick", "p": ["A", "D"] }, { "t": "tick", "p": ["B", "C"] },
+      { "t": "par", "p": ["D", "C"], "c": "accent2" }, { "t": "par", "p": ["A", "B"], "c": "accent2" },
+      { "t": "angle", "p": ["B", "A", "D"], "fill": true }, { "t": "angle", "p": ["C", "B", "A"], "fill": true },
+      { "t": "angle", "p": ["A", "D", "C"], "n": 2, "c": "accent2" }, { "t": "angle", "p": ["D", "C", "B"], "n": 2, "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] }
+    ]
+  },
+  {
+    "id": "isosceles-trapezoid-diag", "shape": "quadrilateral",
+    "points": { "A": [35, 185], "B": [285, 185], "C": [220, 60], "D": [100, 60] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"] },
+      { "t": "seg", "p": ["A", "C"], "c": "accent" }, { "t": "seg", "p": ["B", "D"], "c": "accent" },
+      { "t": "tick", "p": ["A", "C"], "n": 2 }, { "t": "tick", "p": ["B", "D"], "n": 2 },
+      { "t": "tick", "p": ["A", "D"] }, { "t": "tick", "p": ["B", "C"] },
+      { "t": "par", "p": ["D", "C"], "c": "accent2" }, { "t": "par", "p": ["A", "B"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 220], "s": "AC = BD", "bold": true }
+    ]
+  },
+  {
+    "id": "kite", "shape": "quadrilateral",
+    "points": { "A": [160, 25], "B": [262, 95], "C": [160, 215], "D": [58, 95], "O": { "inter": ["A", "C", "B", "D"] } },
+    "lpos": { "O": "se" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "seg", "p": ["A", "C"], "c": "accent2", "w": 2.2 }, { "t": "seg", "p": ["B", "D"], "c": "accent2", "dash": true },
+      { "t": "right", "p": ["A", "O", "B"], "c": "accent2" },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["A", "D"] },
+      { "t": "tick", "p": ["C", "B"], "n": 2 }, { "t": "tick", "p": ["C", "D"], "n": 2 },
+      { "t": "angle", "p": ["D", "A", "O"], "r": 24 }, { "t": "angle", "p": ["O", "A", "B"], "r": 24 },
+      { "t": "angle", "p": ["A", "B", "C"], "r": 18, "n": 2, "c": "good" }, { "t": "angle", "p": ["C", "D", "A"], "r": 18, "n": 2, "c": "good" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O"] }
+    ]
+  },
+  {
+    "id": "thales", "shape": "similar",
+    "points": { "O": [25, 120], "R1": [305, 28], "R2": [305, 212], "A": { "along": ["O", "R1", 0.4] }, "B": { "along": ["O", "R1", 0.92] }, "C": { "along": ["O", "R2", 0.4] }, "D": { "along": ["O", "R2", 0.92] } },
+    "lpos": { "O": "w", "A": "n", "B": "n", "C": "s", "D": "s" },
+    "elements": [
+      { "t": "seg", "p": ["O", "R1"] }, { "t": "seg", "p": ["O", "R2"] },
+      { "t": "seg", "p": ["A", "C"], "c": "accent", "w": 2.4, "ext": 10 }, { "t": "seg", "p": ["B", "D"], "c": "accent", "w": 2.4, "ext": 10 },
+      { "t": "par", "p": ["A", "C"], "c": "accent2" }, { "t": "par", "p": ["B", "D"], "c": "accent2" },
+      { "t": "pts", "p": ["O", "A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 228], "s": "OA / AB = OC / CD", "bold": true }
+    ]
+  },
+  {
+    "id": "thales-triangle", "shape": "similar",
+    "points": { "A": [150, 30], "B": [35, 200], "C": [290, 200], "D": { "along": ["A", "B", 0.42] }, "E": { "along": ["A", "C", 0.42] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "poly", "p": ["A", "D", "E"], "fill": "accent", "c": "accent" },
+      { "t": "par", "p": ["D", "E"], "c": "accent2" }, { "t": "par", "p": ["B", "C"], "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E"] },
+      { "t": "text", "at": [160, 228], "s": "AD/AB = AE/AC = DE/BC", "bold": true }
+    ]
+  },
+  {
+    "id": "similar-aa", "shape": "similar",
+    "points": { "A": [25, 200], "B": [115, 200], "C": [52, 135], "D": [140, 210], "E": [302, 210], "F": [188.6, 93] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" }, { "t": "poly", "p": ["D", "E", "F"], "fill": "accent2" },
+      { "t": "angle", "p": ["B", "A", "C"], "fill": true }, { "t": "angle", "p": ["E", "D", "F"], "fill": true },
+      { "t": "angle", "p": ["C", "B", "A"], "n": 2, "c": "good" }, { "t": "angle", "p": ["F", "E", "D"], "n": 2, "c": "good" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F"] },
+      { "t": "text", "at": [90, 40], "s": "△ABC ∼ △DEF", "bold": true, "size": 14 }
+    ]
+  },
+  {
+    "id": "similar-sas", "shape": "similar",
+    "points": { "A": [25, 200], "B": [115, 200], "C": [52, 135], "D": [140, 210], "E": [302, 210], "F": [188.6, 93] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" }, { "t": "poly", "p": ["D", "E", "F"], "fill": "accent2" },
+      { "t": "angle", "p": ["B", "A", "C"], "fill": true }, { "t": "angle", "p": ["E", "D", "F"], "fill": true },
+      { "t": "seglabel", "p": ["A", "B"], "s": "a" }, { "t": "seglabel", "p": ["A", "C"], "s": "b" },
+      { "t": "seglabel", "p": ["D", "E"], "s": "ka" }, { "t": "seglabel", "p": ["D", "F"], "s": "kb" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F"] },
+      { "t": "text", "at": [90, 40], "s": "צ.ז.צ בדמיון", "bold": true, "size": 14 }
+    ]
+  },
+  {
+    "id": "similar-sss", "shape": "similar",
+    "points": { "A": [25, 200], "B": [115, 200], "C": [52, 135], "D": [140, 210], "E": [302, 210], "F": [188.6, 93] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" }, { "t": "poly", "p": ["D", "E", "F"], "fill": "accent2" },
+      { "t": "seglabel", "p": ["A", "B"], "s": "a" }, { "t": "seglabel", "p": ["A", "C"], "s": "b" }, { "t": "seglabel", "p": ["B", "C"], "s": "c" },
+      { "t": "seglabel", "p": ["D", "E"], "s": "ka" }, { "t": "seglabel", "p": ["D", "F"], "s": "kb" }, { "t": "seglabel", "p": ["E", "F"], "s": "kc" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F"] },
+      { "t": "text", "at": [90, 40], "s": "צ.צ.צ בדמיון", "bold": true, "size": 14 }
+    ]
+  },
+  {
+    "id": "similar-elements", "shape": "similar",
+    "points": { "A": [25, 200], "B": [115, 200], "C": [52, 135], "D": [140, 210], "E": [302, 210], "F": [188.6, 93], "H1": { "foot": ["C", "A", "B"] }, "H2": { "foot": ["F", "D", "E"] } },
+    "lpos": { "H1": "s", "H2": "s" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" }, { "t": "poly", "p": ["D", "E", "F"], "fill": "accent2" },
+      { "t": "seg", "p": ["C", "H1"], "dash": true, "c": "accent" }, { "t": "seg", "p": ["F", "H2"], "dash": true, "c": "accent" },
+      { "t": "right", "p": ["C", "H1", "B"] }, { "t": "right", "p": ["F", "H2", "E"] },
+      { "t": "seglabel", "p": ["C", "H1"], "s": "h₁", "side": -1 }, { "t": "seglabel", "p": ["F", "H2"], "s": "h₂", "side": -1 },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E", "F"] },
+      { "t": "text", "at": [90, 40], "s": "h₂ / h₁ = k", "bold": true, "size": 14 },
+      { "t": "text", "at": [90, 64], "s": "S₂ / S₁ = k²", "bold": true, "size": 14, "c": "accent" }
+    ]
+  },
+  {
+    "id": "angle-bisector-theorem", "shape": "triangle",
+    "points": { "A": [115, 40], "B": [35, 200], "C": [290, 200], "I": { "incenter": ["A", "B", "C"] }, "D": { "inter": ["A", "I", "B", "C"] } },
+    "lpos": { "D": "s" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["A", "D"], "c": "accent", "w": 2.4 },
+      { "t": "angle", "p": ["B", "A", "D"], "r": 28 }, { "t": "angle", "p": ["D", "A", "C"], "r": 28 },
+      { "t": "seglabel", "p": ["A", "B"], "s": "c" }, { "t": "seglabel", "p": ["A", "C"], "s": "b" },
+      { "t": "seglabel", "p": ["B", "D"], "s": "m", "side": 1 }, { "t": "seglabel", "p": ["D", "C"], "s": "n", "side": 1 },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 232], "s": "BD / DC = AB / AC", "bold": true }
+    ]
+  },
+  {
+    "id": "circle-central-inscribed", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 205] }, "B": { "on": ["O", 95, 335] }, "C": { "on": ["O", 95, 100] } },
+    "lpos": { "O": "n" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95 },
+      { "t": "arc", "o": "O", "from": "A", "to": "B" },
+      { "t": "seg", "p": ["C", "A"] }, { "t": "seg", "p": ["C", "B"] },
+      { "t": "seg", "p": ["O", "A"], "c": "accent2" }, { "t": "seg", "p": ["O", "B"], "c": "accent2" },
+      { "t": "angle", "p": ["A", "C", "B"], "label": "α", "r": 24 },
+      { "t": "angle", "p": ["A", "O", "B"], "label": "2α", "c": "accent2", "r": 20 },
+      { "t": "pts", "p": ["O", "A", "B", "C"] }
+    ]
+  },
+  {
+    "id": "inscribed-same-arc", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 205] }, "B": { "on": ["O", 95, 335] }, "C": { "on": ["O", 95, 65] }, "D": { "on": ["O", 95, 125] } },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95 },
+      { "t": "arc", "o": "O", "from": "A", "to": "B" },
+      { "t": "seg", "p": ["C", "A"] }, { "t": "seg", "p": ["C", "B"] }, { "t": "seg", "p": ["D", "A"], "c": "accent2" }, { "t": "seg", "p": ["D", "B"], "c": "accent2" },
+      { "t": "angle", "p": ["A", "C", "B"], "label": "α", "r": 22, "fill": true },
+      { "t": "angle", "p": ["A", "D", "B"], "label": "α", "r": 22, "fill": true, "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O"] }
+    ]
+  },
+  {
+    "id": "inscribed-diameter", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 180] }, "B": { "on": ["O", 95, 0] }, "C": { "on": ["O", 95, 62] } },
+    "lpos": { "O": "s" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95 },
+      { "t": "seg", "p": ["A", "B"], "c": "accent2", "w": 2.4 },
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "right", "p": ["A", "C", "B"] },
+      { "t": "pts", "p": ["A", "B", "C", "O"] }
+    ]
+  },
+  {
+    "id": "equal-chords", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 150] }, "B": { "on": ["O", 95, 80] }, "C": { "on": ["O", 95, 10] }, "D": { "on": ["O", 95, -60] } },
+    "lpos": { "O": "w" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95 },
+      { "t": "arc", "o": "O", "from": "B", "to": "A" }, { "t": "arc", "o": "O", "from": "D", "to": "C" },
+      { "t": "seg", "p": ["A", "B"], "c": "accent", "w": 2.4 }, { "t": "seg", "p": ["C", "D"], "c": "accent", "w": 2.4 },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["C", "D"] },
+      { "t": "seg", "p": ["O", "A"], "dash": true, "c": "muted" }, { "t": "seg", "p": ["O", "B"], "dash": true, "c": "muted" }, { "t": "seg", "p": ["O", "C"], "dash": true, "c": "muted" }, { "t": "seg", "p": ["O", "D"], "dash": true, "c": "muted" },
+      { "t": "angle", "p": ["B", "O", "A"], "c": "accent2", "r": 18 }, { "t": "angle", "p": ["D", "O", "C"], "c": "accent2", "r": 18 },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O"] }
+    ]
+  },
+  {
+    "id": "chord-distance", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 150] }, "B": { "on": ["O", 95, 80] }, "C": { "on": ["O", 95, 10] }, "D": { "on": ["O", 95, -60] }, "E": { "foot": ["O", "A", "B"] }, "F": { "foot": ["O", "C", "D"] } },
+    "lpos": { "O": "w" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95 },
+      { "t": "seg", "p": ["A", "B"], "c": "accent", "w": 2.4 }, { "t": "seg", "p": ["C", "D"], "c": "accent", "w": 2.4 },
+      { "t": "tick", "p": ["A", "B"] }, { "t": "tick", "p": ["C", "D"] },
+      { "t": "seg", "p": ["O", "E"], "c": "accent2" }, { "t": "seg", "p": ["O", "F"], "c": "accent2" },
+      { "t": "right", "p": ["O", "E", "B"], "c": "accent2" }, { "t": "right", "p": ["O", "F", "D"], "c": "accent2" },
+      { "t": "tick", "p": ["O", "E"], "n": 2, "c": "accent2" }, { "t": "tick", "p": ["O", "F"], "n": 2, "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O", "E", "F"] }
+    ]
+  },
+  {
+    "id": "longer-chord", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 205] }, "B": { "on": ["O", 95, 335] }, "C": { "on": ["O", 95, 60] }, "D": { "on": ["O", 95, 120] }, "E": { "foot": ["O", "A", "B"] }, "F": { "foot": ["O", "C", "D"] } },
+    "lpos": { "O": "w", "E": "s", "F": "n" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95 },
+      { "t": "seg", "p": ["A", "B"], "c": "accent", "w": 2.4 }, { "t": "seg", "p": ["C", "D"], "c": "accent2", "w": 2.4 },
+      { "t": "seg", "p": ["O", "E"], "dash": true }, { "t": "seg", "p": ["O", "F"], "dash": true },
+      { "t": "right", "p": ["O", "E", "B"] }, { "t": "right", "p": ["O", "F", "C"] },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O", "E", "F"] },
+      { "t": "text", "at": [160, 228], "s": "AB > CD  ⇔  OE < OF", "bold": true }
+    ]
+  },
+  {
+    "id": "perpendicular-chord", "shape": "circle",
+    "points": { "O": [160, 112], "A": { "on": ["O", 95, 215] }, "B": { "on": ["O", 95, 325] }, "M": { "foot": ["O", "A", "B"] }, "P": { "on": ["O", 95, 270] }, "Q": { "on": ["O", 95, 90] } },
+    "lpos": { "M": "ne", "O": "e" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95 },
+      { "t": "seg", "p": ["A", "B"], "c": "accent", "w": 2.4 },
+      { "t": "seg", "p": ["Q", "P"], "c": "accent2", "dash": true },
+      { "t": "right", "p": ["O", "M", "B"], "c": "accent2" },
+      { "t": "tick", "p": ["A", "M"] }, { "t": "tick", "p": ["M", "B"] },
+      { "t": "pts", "p": ["A", "B", "O", "M"] }
+    ]
+  },
+  {
+    "id": "angle-inside", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 160] }, "C": { "on": ["O", 95, -30] }, "B": { "on": ["O", 95, 60] }, "D": { "on": ["O", 95, 235] }, "E": { "inter": ["A", "C", "B", "D"] } },
+    "lpos": { "E": "s" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95 },
+      { "t": "arc", "o": "O", "from": "B", "to": "A" }, { "t": "arc", "o": "O", "from": "D", "to": "C", "c": "accent2" },
+      { "t": "seg", "p": ["A", "C"] }, { "t": "seg", "p": ["B", "D"] },
+      { "t": "angle", "p": ["A", "E", "B"], "label": "α", "fill": true, "r": 18 },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E"] },
+      { "t": "text", "at": [160, 232], "s": "α = ½(⌒AB + ⌒CD)", "bold": true }
+    ]
+  },
+  {
+    "id": "angle-outside", "shape": "circle",
+    "points": { "O": [205, 118], "P": [30, 118], "A": { "on": ["O", 85, 100] }, "C": { "on": ["O", 85, 260] }, "B": { "chordx": ["P", "A", "O"] }, "D": { "chordx": ["P", "C", "O"] } },
+    "lpos": { "P": "w" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 85 },
+      { "t": "arc", "o": "O", "from": "C", "to": "A" }, { "t": "arc", "o": "O", "from": "B", "to": "D", "c": "accent2" },
+      { "t": "seg", "p": ["P", "A"] }, { "t": "seg", "p": ["P", "C"] },
+      { "t": "angle", "p": ["A", "P", "C"], "label": "α", "fill": true, "r": 24 },
+      { "t": "pts", "p": ["P", "A", "B", "C", "D"] },
+      { "t": "text", "at": [110, 226], "s": "α = ½(⌒AC − ⌒BD)", "bold": true }
+    ]
+  },
+  {
+    "id": "cyclic-quad", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 105] }, "B": { "on": ["O", 95, 195] }, "C": { "on": ["O", 95, 280] }, "D": { "on": ["O", 95, 10] } },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95, "c": "muted" },
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "angle", "p": ["D", "A", "B"], "label": "α", "r": 22 }, { "t": "angle", "p": ["B", "C", "D"], "label": "γ", "r": 22, "c": "accent2" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 232], "s": "α + γ = 180°", "bold": true }
+    ]
+  },
+  {
+    "id": "cyclic-rectangle", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 210] }, "B": { "on": ["O", 95, 330] }, "C": { "on": ["O", 95, 30] }, "D": { "on": ["O", 95, 150] } },
+    "lpos": { "O": "s" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95, "c": "muted" },
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "seg", "p": ["A", "C"], "dash": true, "c": "accent2" }, { "t": "seg", "p": ["B", "D"], "dash": true, "c": "accent2" },
+      { "t": "right", "p": ["B", "A", "D"] }, { "t": "right", "p": ["C", "B", "A"] }, { "t": "right", "p": ["D", "C", "B"] }, { "t": "right", "p": ["A", "D", "C"] },
+      { "t": "pts", "p": ["A", "B", "C", "D", "O"] }
+    ]
+  },
+  {
+    "id": "cyclic-trapezoid", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 215] }, "B": { "on": ["O", 95, 325] }, "C": { "on": ["O", 95, 45] }, "D": { "on": ["O", 95, 135] } },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95, "c": "muted" },
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "par", "p": ["D", "C"], "c": "accent2" }, { "t": "par", "p": ["A", "B"], "c": "accent2" },
+      { "t": "tick", "p": ["A", "D"] }, { "t": "tick", "p": ["B", "C"] },
+      { "t": "pts", "p": ["A", "B", "C", "D"] }
+    ]
+  },
+  {
+    "id": "intersecting-chords", "shape": "circle",
+    "points": { "O": [160, 118], "A": { "on": ["O", 95, 150] }, "B": { "on": ["O", 95, -20] }, "C": { "on": ["O", 95, 65] }, "D": { "on": ["O", 95, 250] }, "E": { "inter": ["A", "B", "C", "D"] } },
+    "lpos": { "E": "se" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95 },
+      { "t": "seg", "p": ["A", "B"], "c": "accent" }, { "t": "seg", "p": ["C", "D"], "c": "accent2" },
+      { "t": "seglabel", "p": ["A", "E"], "s": "a", "c": "accent" }, { "t": "seglabel", "p": ["E", "B"], "s": "b", "c": "accent" },
+      { "t": "seglabel", "p": ["C", "E"], "s": "c" }, { "t": "seglabel", "p": ["E", "D"], "s": "d" },
+      { "t": "pts", "p": ["A", "B", "C", "D", "E"] },
+      { "t": "text", "at": [160, 232], "s": "AE·EB = CE·ED", "bold": true }
+    ]
+  },
+  {
+    "id": "two-secants", "shape": "tangent",
+    "points": { "O": [205, 118], "P": [30, 118], "A": { "on": ["O", 85, 100] }, "C": { "on": ["O", 85, 260] }, "B": { "chordx": ["P", "A", "O"] }, "D": { "chordx": ["P", "C", "O"] } },
+    "lpos": { "P": "w", "B": "n", "D": "s" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 85 },
+      { "t": "seg", "p": ["P", "A"], "c": "accent" }, { "t": "seg", "p": ["P", "C"], "c": "accent2" },
+      { "t": "pts", "p": ["P", "A", "B", "C", "D"] },
+      { "t": "text", "at": [118, 228], "s": "PA·PB = PC·PD", "bold": true }
+    ]
+  },
+  {
+    "id": "tangent-secant", "shape": "tangent",
+    "points": { "O": [210, 125], "P": [30, 50], "T": { "tan": ["P", "O", 75, -1] }, "A": { "on": ["O", 75, 30] }, "B": { "chordx": ["P", "A", "O"] } },
+    "lpos": { "P": "w", "T": "sw", "B": "n", "A": "ne" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 75 },
+      { "t": "seg", "p": ["P", "T"], "c": "accent2", "w": 2.4 },
+      { "t": "seg", "p": ["P", "A"], "c": "accent" },
+      { "t": "seg", "p": ["O", "T"], "dash": true, "c": "muted" }, { "t": "right", "p": ["O", "T", "P"], "c": "muted" },
+      { "t": "pts", "p": ["P", "T", "A", "B", "O"] },
+      { "t": "text", "at": [110, 228], "s": "PT² = PA·PB", "bold": true }
+    ]
+  },
+  {
+    "id": "tangent-radius", "shape": "tangent",
+    "points": { "O": [160, 100], "T": { "on": ["O", 85, 270] }, "L": [35, 185], "R": [285, 185] },
+    "lpos": { "T": "s", "O": "n" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 85 },
+      { "t": "seg", "p": ["L", "R"], "c": "accent", "w": 2.4 },
+      { "t": "seg", "p": ["O", "T"], "c": "accent2" },
+      { "t": "right", "p": ["O", "T", "R"], "c": "accent2" },
+      { "t": "pts", "p": ["O", "T"] },
+      { "t": "text", "at": [255, 175], "s": "משיק", "c": "accent" }
+    ]
+  },
+  {
+    "id": "two-tangents", "shape": "tangent",
+    "points": { "O": [215, 118], "P": [30, 118], "A": { "tan": ["P", "O", 72, 1] }, "B": { "tan": ["P", "O", 72, -1] } },
+    "lpos": { "P": "w", "O": "e" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 72 },
+      { "t": "seg", "p": ["P", "A"], "c": "accent", "w": 2.4 }, { "t": "seg", "p": ["P", "B"], "c": "accent", "w": 2.4 },
+      { "t": "seg", "p": ["O", "A"], "c": "muted" }, { "t": "seg", "p": ["O", "B"], "c": "muted" },
+      { "t": "seg", "p": ["P", "O"], "dash": true, "c": "accent2" },
+      { "t": "right", "p": ["O", "A", "P"], "c": "muted" }, { "t": "right", "p": ["O", "B", "P"], "c": "muted" },
+      { "t": "tick", "p": ["P", "A"] }, { "t": "tick", "p": ["P", "B"] },
+      { "t": "angle", "p": ["A", "P", "O"], "r": 34, "c": "accent2" }, { "t": "angle", "p": ["O", "P", "B"], "r": 34, "c": "accent2" },
+      { "t": "pts", "p": ["P", "A", "B", "O"] }
+    ]
+  },
+  {
+    "id": "tangent-chord", "shape": "tangent",
+    "points": { "O": [160, 108], "T": { "on": ["O", 88, 270] }, "L": [30, 196], "R": [290, 196], "A": { "on": ["O", 88, 30] }, "C": { "on": ["O", 88, 150] } },
+    "lpos": { "T": "s" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 88, "c": "muted" },
+      { "t": "seg", "p": ["L", "R"], "c": "accent2", "w": 2.4 },
+      { "t": "seg", "p": ["T", "A"], "c": "accent", "w": 2.4 },
+      { "t": "seg", "p": ["C", "T"] }, { "t": "seg", "p": ["C", "A"] },
+      { "t": "angle", "p": ["R", "T", "A"], "label": "α", "fill": true, "r": 26 },
+      { "t": "angle", "p": ["T", "C", "A"], "label": "α", "fill": true, "r": 24 },
+      { "t": "pts", "p": ["T", "A", "C"] }
+    ]
+  },
+  {
+    "id": "tangential-quad", "shape": "tangent",
+    "points": { "O": [160, 118], "T1": { "on": ["O", 62, 90] }, "T2": { "on": ["O", 62, 180] }, "T3": { "on": ["O", 62, 265] }, "T4": { "on": ["O", 62, 335] },
+      "U1": { "rot": ["O", "T1", 90] }, "U2": { "rot": ["O", "T2", 90] }, "U3": { "rot": ["O", "T3", 90] }, "U4": { "rot": ["O", "T4", 90] },
+      "A": { "inter": ["T1", "U1", "T2", "U2"] }, "B": { "inter": ["T2", "U2", "T3", "U3"] }, "C": { "inter": ["T3", "U3", "T4", "U4"] }, "D": { "inter": ["T4", "U4", "T1", "U1"] } },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 62, "c": "accent2" },
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "accent" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "pts", "p": ["T1", "T2", "T3", "T4"], "nolabel": true, "c": "accent2" },
+      { "t": "text", "at": [160, 232], "s": "AB + CD = AD + BC", "bold": true }
+    ]
+  },
+  {
+    "id": "tangent-circles", "shape": "tangent",
+    "points": { "O1": [95, 118], "O2": [225, 118], "T": [155, 118], "U": [155, 38], "W": [155, 200] },
+    "lpos": { "T": "ne", "O1": "s", "O2": "s" },
+    "elements": [
+      { "t": "circle", "o": "O1", "r": 60 }, { "t": "circle", "o": "O2", "r": 70 },
+      { "t": "seg", "p": ["O1", "O2"], "c": "accent", "w": 2.4 },
+      { "t": "seg", "p": ["U", "W"], "c": "accent2", "dash": true },
+      { "t": "pts", "p": ["O1", "O2", "T"] },
+      { "t": "text", "at": [160, 228], "s": "קו המרכזים עובר דרך נקודת ההשקה", "bold": true }
+    ]
+  },
+  {
+    "id": "intersecting-circles", "shape": "circle",
+    "points": { "O1": [115, 118], "O2": [212, 118], "A": { "on": ["O1", 78, 46.6] }, "B": { "on": ["O1", 78, -46.6] }, "M": { "inter": ["A", "B", "O1", "O2"] } },
+    "lpos": { "M": "se", "O1": "s", "O2": "s" },
+    "elements": [
+      { "t": "circle", "o": "O1", "r": 78 }, { "t": "circle", "o": "O2", "through": "A" },
+      { "t": "seg", "p": ["O1", "O2"], "c": "accent2" },
+      { "t": "seg", "p": ["A", "B"], "c": "accent", "w": 2.4 },
+      { "t": "right", "p": ["A", "M", "O2"], "c": "accent2" },
+      { "t": "tick", "p": ["A", "M"] }, { "t": "tick", "p": ["M", "B"] },
+      { "t": "pts", "p": ["O1", "O2", "A", "B", "M"] }
+    ]
+  },
+  {
+    "id": "sine-law", "shape": "triangle",
+    "points": { "O": [160, 116], "A": { "on": ["O", 95, 112] }, "B": { "on": ["O", 95, 208] }, "C": { "on": ["O", 95, 330] } },
+    "lpos": { "O": "e" },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95, "c": "muted", "dash": true },
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "seg", "p": ["O", "C"], "c": "accent2" }, { "t": "seglabel", "p": ["O", "C"], "s": "R", "c": "accent2", "side": 1 },
+      { "t": "seglabel", "p": ["B", "C"], "s": "a" }, { "t": "seglabel", "p": ["A", "C"], "s": "b" }, { "t": "seglabel", "p": ["A", "B"], "s": "c" },
+      { "t": "angle", "p": ["B", "A", "C"], "label": "α", "r": 20 },
+      { "t": "pts", "p": ["A", "B", "C", "O"] },
+      { "t": "text", "at": [160, 232], "s": "a/sinα = b/sinβ = c/sinγ = 2R", "bold": true }
+    ]
+  },
+  {
+    "id": "cosine-law", "shape": "triangle",
+    "points": { "A": [110, 45], "B": [35, 195], "C": [290, 195] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "seglabel", "p": ["B", "C"], "s": "a" }, { "t": "seglabel", "p": ["A", "C"], "s": "b" }, { "t": "seglabel", "p": ["A", "B"], "s": "c" },
+      { "t": "angle", "p": ["A", "C", "B"], "label": "γ", "r": 34, "fill": true },
+      { "t": "pts", "p": ["A", "B", "C"] },
+      { "t": "text", "at": [160, 228], "s": "c² = a² + b² − 2ab·cosγ", "bold": true }
+    ]
+  },
+  {
+    "id": "area-sine", "shape": "triangle",
+    "points": { "A": [110, 45], "B": [35, 190], "C": [290, 190], "H": { "foot": ["A", "B", "C"] } },
+    "lpos": { "H": "s" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "seg", "p": ["A", "H"], "dash": true, "c": "accent2" }, { "t": "right", "p": ["A", "H", "C"], "c": "accent2" },
+      { "t": "seglabel", "p": ["A", "H"], "s": "h", "c": "accent2", "side": -1 },
+      { "t": "seglabel", "p": ["B", "C"], "s": "a" }, { "t": "seglabel", "p": ["A", "C"], "s": "b" },
+      { "t": "angle", "p": ["A", "C", "B"], "label": "γ", "r": 34 },
+      { "t": "pts", "p": ["A", "B", "C", "H"] },
+      { "t": "text", "at": [160, 228], "s": "S = ½·a·b·sinγ", "bold": true }
+    ]
+  },
+  {
+    "id": "heron", "shape": "triangle",
+    "points": { "A": [120, 50], "B": [40, 190], "C": [285, 190] },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "warn" },
+      { "t": "seglabel", "p": ["B", "C"], "s": "a" }, { "t": "seglabel", "p": ["A", "C"], "s": "b" }, { "t": "seglabel", "p": ["A", "B"], "s": "c" },
+      { "t": "pts", "p": ["A", "B", "C"] },
+      { "t": "text", "at": [160, 224], "s": "S = √(p(p−a)(p−b)(p−c)) ,  p = (a+b+c)/2", "bold": true, "size": 12 }
+    ]
+  },
+  {
+    "id": "ptolemy", "shape": "circle",
+    "points": { "O": [160, 116], "A": { "on": ["O", 95, 120] }, "B": { "on": ["O", 95, 200] }, "C": { "on": ["O", 95, 300] }, "D": { "on": ["O", 95, 30] } },
+    "elements": [
+      { "t": "circle", "o": "O", "r": 95, "c": "muted" },
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "warn" },
+      { "t": "seg", "p": ["A", "C"], "c": "accent2", "dash": true }, { "t": "seg", "p": ["B", "D"], "c": "accent2", "dash": true },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 232], "s": "AC·BD = AB·CD + AD·BC", "bold": true }
+    ]
+  },
+  {
+    "id": "median-length", "shape": "triangle",
+    "points": { "A": [120, 45], "B": [35, 195], "C": [290, 195], "M": { "mid": ["B", "C"] } },
+    "lpos": { "M": "s" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"] },
+      { "t": "seg", "p": ["A", "M"], "c": "warn", "w": 2.4 },
+      { "t": "tick", "p": ["B", "M"] }, { "t": "tick", "p": ["M", "C"] },
+      { "t": "seglabel", "p": ["A", "M"], "s": "m", "c": "warn", "side": 1 },
+      { "t": "seglabel", "p": ["A", "C"], "s": "b" }, { "t": "seglabel", "p": ["A", "B"], "s": "c" },
+      { "t": "pts", "p": ["A", "B", "C", "M"] },
+      { "t": "text", "at": [160, 228], "s": "4m² = 2b² + 2c² − a²", "bold": true }
+    ]
+  },
+  {
+    "id": "parallelogram-law", "shape": "quadrilateral",
+    "points": { "A": [40, 185], "B": [215, 185], "C": [285, 65], "D": { "add": ["A", "B", "C"] } },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C", "D"], "fill": "warn" },
+      { "t": "seg", "p": ["A", "C"], "c": "accent" }, { "t": "seg", "p": ["B", "D"], "c": "accent2" },
+      { "t": "seglabel", "p": ["A", "B"], "s": "a" }, { "t": "seglabel", "p": ["B", "C"], "s": "b" },
+      { "t": "pts", "p": ["A", "B", "C", "D"] },
+      { "t": "text", "at": [160, 222], "s": "AC² + BD² = 2(a² + b²)", "bold": true }
+    ]
+  },
+  {
+    "id": "median-area", "shape": "triangle",
+    "points": { "A": [120, 45], "B": [35, 195], "C": [290, 195], "M": { "mid": ["B", "C"] }, "H": { "foot": ["A", "B", "C"] } },
+    "lpos": { "M": "s", "H": "s" },
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "M"], "fill": "accent" }, { "t": "poly", "p": ["A", "M", "C"], "fill": "accent2" },
+      { "t": "seg", "p": ["A", "H"], "dash": true, "c": "muted" }, { "t": "right", "p": ["A", "H", "C"], "c": "muted" },
+      { "t": "tick", "p": ["B", "M"] }, { "t": "tick", "p": ["M", "C"] },
+      { "t": "pts", "p": ["A", "B", "C", "M", "H"] },
+      { "t": "text", "at": [160, 228], "s": "S(ABM) = S(AMC)", "bold": true }
+    ]
+  },
+  {
+    "id": "inradius-area", "shape": "triangle",
+    "points": { "A": [125, 35], "B": [35, 205], "C": [290, 205], "I": { "incenter": ["A", "B", "C"] }, "T": { "foot": ["I", "B", "C"] }, "U": { "foot": ["I", "A", "C"] }, "W": { "foot": ["I", "A", "B"] } },
+    "lpos": { "I": "ne" },
+    "elements": [
+      { "t": "circle", "o": "I", "through": "T", "c": "accent2" },
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "warn" },
+      { "t": "seg", "p": ["I", "T"], "c": "accent2" }, { "t": "seg", "p": ["I", "U"], "c": "accent2" }, { "t": "seg", "p": ["I", "W"], "c": "accent2" },
+      { "t": "seglabel", "p": ["I", "T"], "s": "r", "c": "accent2", "side": 1 },
+      { "t": "pts", "p": ["A", "B", "C", "I"] },
+      { "t": "text", "at": [160, 230], "s": "S = p·r", "bold": true }
+    ]
+  },
+  {
+    "id": "right-trig", "shape": "right-triangle",
+    "points": { "C": [60, 190], "B": [275, 190], "A": [60, 60] },
+    "lpos": {},
+    "elements": [
+      { "t": "poly", "p": ["A", "B", "C"], "fill": "accent" },
+      { "t": "right", "p": ["A", "C", "B"] },
+      { "t": "angle", "p": ["A", "B", "C"], "label": "α", "r": 34 },
+      { "t": "seglabel", "p": ["C", "A"], "s": "ניצב מול α", "size": 11 },
+      { "t": "seglabel", "p": ["C", "B"], "s": "ניצב ליד α", "size": 11 },
+      { "t": "seglabel", "p": ["A", "B"], "s": "יתר", "size": 12 },
+      { "t": "pts", "p": ["A", "B", "C"] },
+      { "t": "text", "at": [160, 228], "s": "sinα = מול/יתר   cosα = ליד/יתר   tanα = מול/ליד", "bold": true, "size": 11.5 }
+    ]
+  }
+]

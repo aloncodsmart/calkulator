@@ -1,0 +1,2461 @@
+[
+ {
+  "id": "perp-bisector-locus",
+  "name": "נקודה על האנך האמצעי",
+  "statement": "כל נקודה הנמצאת על האנך האמצעי של קטע נמצאת במרחקים שווים מקצות הקטע.",
+  "formal": "P \\in \\text{אנך אמצעי של } AB \\Rightarrow PA = PB",
+  "citation": "כל נקודה על האנך האמצעי של קטע נמצאת במרחקים שווים מקצות הקטע",
+  "conditions": [
+   "הישר מאונך לקטע ועובר באמצעו. שני התנאים צריכים להיות נתונים או מוכחים."
+  ],
+  "useWhen": "יש ישר שמאונך לקטע ועובר באמצעו, ורוצים קטעים שווים (ומשם משולש שווה שוקיים).",
+  "diagram": "perp-bisector",
+  "example": {
+   "problem": "$PM$ הוא האנך האמצעי של $AB$, ו-$PA = 8$. מצאו את $PB$.",
+   "steps": [
+    {
+     "claim": "$P$ על האנך האמצעי של $AB$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$PB = PA = 8$",
+     "reason": "כל נקודה על האנך האמצעי של קטע נמצאת במרחקים שווים מקצות הקטע",
+     "ref": "perp-bisector-locus"
+    }
+   ],
+   "answer": "$PB = 8$"
+  },
+  "mistakes": [
+   "להשתמש במשפט עבור ישר שרק מאונך לקטע, או רק עובר באמצעו."
+  ],
+  "converse": {
+   "id": "perp-bisector-converse"
+  },
+  "status": "official",
+  "topic": "loci",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "אנך אמצעי",
+   "מרחקים שווים",
+   "מקום גאומטרי"
+  ],
+  "givens": [
+   "perpendicular-bisector"
+  ],
+  "goals": [
+   "prove-equal-segments"
+  ],
+  "related": [
+   "perpendicular-bisector",
+   "locus",
+   "midpoint"
+  ]
+ },
+ {
+  "id": "perp-bisector-converse",
+  "name": "נקודה במרחקים שווים מקצות קטע",
+  "statement": "כל נקודה הנמצאת במרחקים שווים מקצות קטע נמצאת על האנך האמצעי של הקטע.",
+  "formal": "PA = PB \\Rightarrow P \\in \\text{אנך אמצעי של } AB",
+  "citation": "נקודה הנמצאת במרחקים שווים מקצות קטע נמצאת על האנך האמצעי שלו",
+  "conditions": [
+   "הוכח שהנקודה נמצאת במרחקים שווים משני קצות הקטע."
+  ],
+  "useWhen": "יש שתי נקודות שכל אחת מהן במרחקים שווים מקצות קטע (למשל בדלתון או במעוין). הישר שעובר דרכן הוא האנך האמצעי.",
+  "diagram": "perp-bisector",
+  "example": {
+   "problem": "במרובע $ABCD$ נתון $AB = AD$ ו-$CB = CD$. הוכיחו ש-$AC$ הוא האנך האמצעי של $BD$.",
+   "steps": [
+    {
+     "claim": "$A$ על האנך האמצעי של $BD$",
+     "reason": "נקודה הנמצאת במרחקים שווים מקצות קטע נמצאת על האנך האמצעי שלו",
+     "ref": "perp-bisector-converse"
+    },
+    {
+     "claim": "$C$ על האנך האמצעי של $BD$",
+     "reason": "נקודה הנמצאת במרחקים שווים מקצות קטע נמצאת על האנך האמצעי שלו",
+     "ref": "perp-bisector-converse"
+    },
+    {
+     "claim": "$AC$ הוא האנך האמצעי של $BD$",
+     "reason": "דרך שתי נקודות עובר ישר אחד בלבד"
+    }
+   ],
+   "answer": "$AC$ אנך אמצעי ל-$BD$."
+  },
+  "mistakes": [
+   "להסתפק בנקודה אחת. כדי לקבוע ישר צריך שתי נקודות על האנך האמצעי."
+  ],
+  "converse": {
+   "id": "perp-bisector-locus"
+  },
+  "status": "official",
+  "topic": "loci",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "אנך אמצעי",
+   "מרחקים שווים",
+   "מקום גאומטרי",
+   "דלתון"
+  ],
+  "givens": [
+   "equal-sides",
+   "kite"
+  ],
+  "goals": [
+   "prove-perpendicular",
+   "prove-midpoint"
+  ],
+  "related": [
+   "perpendicular-bisector",
+   "locus"
+  ]
+ },
+ {
+  "id": "angle-bisector-locus",
+  "name": "נקודה על חוצה זווית",
+  "statement": "כל נקודה הנמצאת על חוצה זווית נמצאת במרחקים שווים משוקי הזווית.",
+  "formal": "P \\in \\text{חוצה } \\angle V \\Rightarrow PE = PF",
+  "citation": "כל נקודה על חוצה זווית נמצאת במרחקים שווים משוקי הזווית",
+  "conditions": [
+   "הנקודה על חוצה הזווית.",
+   "המרחק מנקודה לישר נמדד לאורך האנך לישר."
+  ],
+  "useWhen": "יש חוצה זווית, ומדברים על מרחקים (אנכים) מנקודה שעליו לשוקי הזווית, למשל ברדיוס של מעגל חסום.",
+  "diagram": "angle-bisector-locus",
+  "example": {
+   "problem": "$P$ נמצאת על חוצה $\\angle V$. מרחקה משוק אחת הוא 6. מה מרחקה מהשוק השנייה?",
+   "steps": [
+    {
+     "claim": "$PF = PE = 6$",
+     "reason": "כל נקודה על חוצה זווית נמצאת במרחקים שווים משוקי הזווית",
+     "ref": "angle-bisector-locus"
+    }
+   ],
+   "answer": "6"
+  },
+  "mistakes": [
+   "למדוד \"מרחק\" בקטע שאינו מאונך לשוק."
+  ],
+  "converse": {
+   "id": "angle-bisector-converse"
+  },
+  "status": "official",
+  "topic": "loci",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חוצה זווית",
+   "מרחק משוקי זווית",
+   "מקום גאומטרי",
+   "אנכים"
+  ],
+  "givens": [
+   "angle-bisector",
+   "distance"
+  ],
+  "goals": [
+   "prove-equal-segments"
+  ],
+  "related": [
+   "angle-bisector",
+   "locus",
+   "distance-point-line"
+  ]
+ },
+ {
+  "id": "angle-bisector-converse",
+  "name": "נקודה במרחקים שווים משוקי זווית",
+  "statement": "כל נקודה הנמצאת בתוך זווית ובמרחקים שווים משוקי הזווית נמצאת על חוצה הזווית.",
+  "formal": "PE = PF \\Rightarrow P \\in \\text{חוצה } \\angle V",
+  "citation": "נקודה בתוך זווית הנמצאת במרחקים שווים משוקיה נמצאת על חוצה הזווית",
+  "conditions": [
+   "הנקודה בתוך הזווית.",
+   "הוכח שהמרחקים (האנכים) לשוקיים שווים."
+  ],
+  "useWhen": "מעגל משיק לשתי שוקי זווית. מרכזו במרחקים שווים מהשוקיים, ולכן הוא על חוצה הזווית.",
+  "diagram": "angle-bisector-locus",
+  "example": {
+   "problem": "מעגל שמרכזו $O$ משיק לשתי השוקיים של $\\angle V$. הוכיחו ש-$VO$ חוצה את $\\angle V$.",
+   "steps": [
+    {
+     "claim": "המרחקים של $O$ מהשוקיים שווים לרדיוס",
+     "reason": "משיק למעגל מאונך לרדיוס בנקודת ההשקה",
+     "ref": "tangent-radius"
+    },
+    {
+     "claim": "$VO$ חוצה את $\\angle V$",
+     "reason": "נקודה בתוך זווית הנמצאת במרחקים שווים משוקיה נמצאת על חוצה הזווית",
+     "ref": "angle-bisector-converse"
+    }
+   ],
+   "answer": "$VO$ חוצה זווית."
+  },
+  "mistakes": [
+   "לשכוח שהנקודה צריכה להיות בתוך הזווית."
+  ],
+  "converse": {
+   "id": "angle-bisector-locus"
+  },
+  "status": "official",
+  "topic": "loci",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חוצה זווית",
+   "מרחקים שווים",
+   "מקום גאומטרי"
+  ],
+  "givens": [
+   "distance",
+   "tangent"
+  ],
+  "goals": [
+   "prove-equal-angles"
+  ],
+  "related": [
+   "angle-bisector",
+   "locus"
+  ]
+ },
+ {
+  "id": "medians-concurrent",
+  "name": "מפגש התיכונים",
+  "statement": "שלושת התיכונים במשולש נפגשים בנקודה אחת. נקודת המפגש מחלקת כל תיכון ביחס $2:1$, והחלק הגדול הוא הסמוך לקודקוד.",
+  "formal": "AG : GD = BG : GE = CG : GF = 2 : 1",
+  "citation": "שלושת התיכונים במשולש נפגשים בנקודה אחת המחלקת כל תיכון ביחס 2:1 מהקודקוד",
+  "conditions": [
+   "הקטעים הם תיכונים, כלומר כל אחד מחבר קודקוד עם אמצע הצלע שמולו."
+  ],
+  "useWhen": "יש שני תיכונים שנחתכים, ורוצים יחס או אורך של חלקי התיכון, או להוכיח שקטע שלישי הוא תיכון.",
+  "diagram": "medians",
+  "example": {
+   "problem": "ב-$\\triangle ABC$ התיכונים $AD$ ו-$BE$ נחתכים ב-$G$, ו-$AD = 12$. מצאו את $AG$ ואת $GD$.",
+   "steps": [
+    {
+     "claim": "$AG : GD = 2 : 1$",
+     "reason": "שלושת התיכונים במשולש נפגשים בנקודה אחת המחלקת כל תיכון ביחס 2:1 מהקודקוד",
+     "ref": "medians-concurrent"
+    },
+    {
+     "claim": "$AG = 8,\\ GD = 4$",
+     "reason": "חלוקת 12 ביחס 2:1"
+    }
+   ],
+   "answer": "$AG = 8,\\ GD = 4$"
+  },
+  "mistakes": [
+   "להפוך את היחס. החלק הארוך הוא מהקודקוד אל נקודת המפגש."
+  ],
+  "status": "official",
+  "topic": "loci",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "תיכונים",
+   "מפגש תיכונים",
+   "2:1",
+   "מרכז כובד"
+  ],
+  "givens": [
+   "median",
+   "two-midpoints"
+  ],
+  "goals": [
+   "find-length",
+   "find-ratio"
+  ],
+  "related": [
+   "median",
+   "centroid"
+  ]
+ },
+ {
+  "id": "perp-bisectors-concurrent",
+  "name": "מפגש האנכים האמצעיים",
+  "statement": "שלושת האנכים האמצעיים לצלעות המשולש נפגשים בנקודה אחת, שהיא מרכז המעגל החוסם את המשולש.",
+  "formal": "OA = OB = OC = R",
+  "citation": "שלושת האנכים האמצעיים לצלעות המשולש נפגשים בנקודה אחת – מרכז המעגל החוסם",
+  "conditions": [
+   "הישרים הם אנכים אמצעיים של הצלעות."
+  ],
+  "useWhen": "צריך את מרכז המעגל החוסם משולש, או להוכיח שנקודה במרחקים שווים משלושת הקודקודים.",
+  "diagram": "circumcenter",
+  "example": {
+   "problem": "האנכים האמצעיים של $AB$ ושל $BC$ ב-$\\triangle ABC$ נפגשים ב-$O$. הוכיחו ש-$OA = OC$.",
+   "steps": [
+    {
+     "claim": "$OA = OB$",
+     "reason": "כל נקודה על האנך האמצעי של קטע נמצאת במרחקים שווים מקצות הקטע",
+     "ref": "perp-bisector-locus"
+    },
+    {
+     "claim": "$OB = OC$",
+     "reason": "כל נקודה על האנך האמצעי של קטע נמצאת במרחקים שווים מקצות הקטע",
+     "ref": "perp-bisector-locus"
+    },
+    {
+     "claim": "$OA = OC$",
+     "reason": "כלל המעבר"
+    }
+   ],
+   "answer": "$OA = OC$, ולכן $O$ מרכז המעגל החוסם."
+  },
+  "mistakes": [
+   "לחשוב שהמרכז תמיד בתוך המשולש. במשולש קהה זווית הוא מחוצה לו, ובמשולש ישר זווית הוא באמצע היתר."
+  ],
+  "status": "official",
+  "topic": "loci",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "אנכים אמצעיים",
+   "מעגל חוסם",
+   "מרכז המעגל החוסם"
+  ],
+  "givens": [
+   "perpendicular-bisector",
+   "circumscribed-circle"
+  ],
+  "goals": [
+   "prove-equal-segments"
+  ],
+  "related": [
+   "circumcenter",
+   "circumscribed-circle",
+   "perpendicular-bisector"
+  ]
+ },
+ {
+  "id": "angle-bisectors-concurrent",
+  "name": "מפגש חוצי הזוויות",
+  "statement": "שלושת חוצי הזוויות של משולש נפגשים בנקודה אחת, שהיא מרכז המעגל החסום במשולש.",
+  "formal": "d(I, AB) = d(I, BC) = d(I, CA) = r",
+  "citation": "שלושת חוצי הזוויות במשולש נפגשים בנקודה אחת – מרכז המעגל החסום",
+  "conditions": [
+   "הקטעים הם חוצי זוויות פנימיות של המשולש."
+  ],
+  "useWhen": "יש מעגל חסום במשולש, וצריך לחבר את המרכז לקודקודים (הקטע מהקודקוד למרכז חוצה את הזווית).",
+  "diagram": "incenter",
+  "example": {
+   "problem": "$I$ מרכז המעגל החסום ב-$\\triangle ABC$, ו-$\\angle B = 70^\\circ$. מצאו את $\\angle IBC$.",
+   "steps": [
+    {
+     "claim": "$BI$ חוצה את $\\angle B$",
+     "reason": "שלושת חוצי הזוויות במשולש נפגשים בנקודה אחת – מרכז המעגל החסום",
+     "ref": "angle-bisectors-concurrent"
+    },
+    {
+     "claim": "$\\angle IBC = 35^\\circ$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$35^\\circ$"
+  },
+  "mistakes": [
+   "לבלבל בין מרכז המעגל החסום (חוצי זוויות) לבין מרכז המעגל החוסם (אנכים אמצעיים)."
+  ],
+  "status": "official",
+  "topic": "loci",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חוצי זוויות",
+   "מעגל חסום",
+   "מרכז המעגל החסום"
+  ],
+  "givens": [
+   "angle-bisector",
+   "inscribed-circle"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "incenter",
+   "inscribed-circle",
+   "angle-bisector"
+  ]
+ },
+ {
+  "id": "altitudes-concurrent",
+  "name": "מפגש הגבהים",
+  "statement": "שלושת הגבהים במשולש, או המשכיהם, נפגשים בנקודה אחת.",
+  "formal": "AD \\cap BE \\cap CF = \\{H\\}",
+  "citation": "שלושת הגבהים במשולש (או המשכיהם) נפגשים בנקודה אחת",
+  "conditions": [
+   "הקטעים הם גבהים, כלומר אנכים מהקודקודים לצלעות שמולם או להמשכיהן."
+  ],
+  "useWhen": "יש שני גבהים שנחתכים, וצריך להוכיח שהקטע מהקודקוד השלישי דרך נקודת החיתוך מאונך לצלע שמולו.",
+  "diagram": "orthocenter",
+  "example": {
+   "problem": "ב-$\\triangle ABC$ הגבהים $AD$ ו-$BE$ נחתכים ב-$H$. הישר $CH$ חותך את $AB$ ב-$F$. מצאו את $\\angle CFB$.",
+   "steps": [
+    {
+     "claim": "$CF$ הוא גובה ב-$\\triangle ABC$",
+     "reason": "שלושת הגבהים במשולש (או המשכיהם) נפגשים בנקודה אחת",
+     "ref": "altitudes-concurrent"
+    },
+    {
+     "claim": "$\\angle CFB = 90^\\circ$",
+     "reason": "הגדרת גובה"
+    }
+   ],
+   "answer": "$90^\\circ$"
+  },
+  "mistakes": [
+   "במשולש קהה זווית, לחפש את נקודת המפגש בתוך המשולש. היא נמצאת על המשכי הגבהים."
+  ],
+  "status": "official",
+  "topic": "loci",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "גבהים",
+   "מפגש גבהים",
+   "אורתוצנטר"
+  ],
+  "givens": [
+   "altitude"
+  ],
+  "goals": [
+   "prove-perpendicular"
+  ],
+  "related": [
+   "altitude",
+   "orthocenter"
+  ]
+ },
+ {
+  "id": "pythagoras",
+  "name": "משפט פיתגורס",
+  "statement": "במשולש ישר זווית, סכום ריבועי הניצבים שווה לריבוע היתר.",
+  "formal": "\\angle C = 90^\\circ \\Rightarrow a^2 + b^2 = c^2",
+  "citation": "משפט פיתגורס",
+  "conditions": [
+   "המשולש ישר זווית (נתון או מוכח).",
+   "$c$ הוא היתר, הצלע שמול הזווית הישרה."
+  ],
+  "useWhen": "יש משולש ישר זווית, יודעים שתי צלעות ורוצים את השלישית. כדאי לחפש משולש ישר זווית גם בתוך צורות אחרות (גובה, רדיוס למשיק, אלכסון של מלבן).",
+  "diagram": "pythagoras",
+  "example": {
+   "problem": "במשולש ישר זווית הניצבים הם 6 ו-8. מצאו את היתר.",
+   "steps": [
+    {
+     "claim": "$c^2 = 6^2 + 8^2 = 100$",
+     "reason": "משפט פיתגורס",
+     "ref": "pythagoras"
+    },
+    {
+     "claim": "$c = 10$",
+     "reason": "אורך הוא חיובי"
+    }
+   ],
+   "answer": "$c = 10$"
+  },
+  "mistakes": [
+   "להציב את היתר במקום ניצב, למשל $c^2 = a^2 - b^2$.",
+   "להשתמש במשפט במשולש שאינו ישר זווית. שם משתמשים במשפט הקוסינוסים."
+  ],
+  "converse": {
+   "id": "pythagoras-converse"
+  },
+  "status": "official",
+  "topic": "right-triangle",
+  "grades": [
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ],
+  "keywords": [
+   "פיתגורס",
+   "ניצבים",
+   "יתר",
+   "ריבועים",
+   "משולש ישר זווית"
+  ],
+  "givens": [
+   "right-triangle",
+   "right-angle",
+   "side-lengths"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "right-triangle",
+   "hypotenuse",
+   "leg"
+  ]
+ },
+ {
+  "id": "pythagoras-converse",
+  "name": "המשפט ההפוך למשפט פיתגורס",
+  "statement": "אם במשולש סכום הריבועים של שתי צלעות שווה לריבוע הצלע השלישית, אז המשולש ישר זווית, והזווית הישרה נמצאת מול הצלע השלישית.",
+  "formal": "a^2 + b^2 = c^2 \\Rightarrow \\angle C = 90^\\circ",
+  "citation": "המשפט ההפוך למשפט פיתגורס",
+  "conditions": [
+   "ידועים אורכי שלוש הצלעות, וחושב שהשוויון מתקיים."
+  ],
+  "useWhen": "צריך להוכיח שזווית ישרה (או שקטעים מאונכים) כשיודעים רק אורכים.",
+  "diagram": "pythagoras",
+  "example": {
+   "problem": "צלעות משולש הן 5, 12 ו-13. האם הוא ישר זווית?",
+   "steps": [
+    {
+     "claim": "$5^2 + 12^2 = 25 + 144 = 169 = 13^2$",
+     "reason": "חישוב"
+    },
+    {
+     "claim": "המשולש ישר זווית, והזווית הישרה מול הצלע 13",
+     "reason": "המשפט ההפוך למשפט פיתגורס",
+     "ref": "pythagoras-converse"
+    }
+   ],
+   "answer": "כן, המשולש ישר זווית."
+  },
+  "mistakes": [
+   "לבדוק את השוויון עם הצלע הגדולה בצד הלא נכון. צריך לבדוק את סכום ריבועי שתי הקטנות מול ריבוע הגדולה."
+  ],
+  "converse": {
+   "id": "pythagoras"
+  },
+  "status": "official",
+  "topic": "right-triangle",
+  "grades": [
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ],
+  "keywords": [
+   "פיתגורס הפוך",
+   "להוכיח זווית ישרה",
+   "שלשה פיתגורית"
+  ],
+  "givens": [
+   "side-lengths",
+   "triangle"
+  ],
+  "goals": [
+   "prove-right-angle",
+   "prove-perpendicular"
+  ],
+  "related": [
+   "right-triangle",
+   "hypotenuse"
+  ]
+ },
+ {
+  "id": "median-hypotenuse",
+  "name": "התיכון ליתר",
+  "statement": "במשולש ישר זווית, התיכון ליתר שווה למחצית היתר.",
+  "formal": "\\angle C = 90^\\circ,\\ AM = MB \\Rightarrow CM = \\tfrac{1}{2}AB",
+  "citation": "במשולש ישר זווית התיכון ליתר שווה למחצית היתר",
+  "conditions": [
+   "המשולש ישר זווית.",
+   "הקטע מחבר את קודקוד הזווית הישרה עם אמצע היתר."
+  ],
+  "useWhen": "יש משולש ישר זווית ונקודה באמצע היתר. מקבלים שלושה קטעים שווים ושני משולשים שווי שוקיים.",
+  "diagram": "median-hypotenuse",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $\\angle C = 90^\\circ$, $M$ אמצע $AB$, ו-$AB = 18$. מצאו את $CM$.",
+   "steps": [
+    {
+     "claim": "$CM$ תיכון ליתר",
+     "reason": "נתון: $M$ אמצע היתר"
+    },
+    {
+     "claim": "$CM = \\tfrac12 \\cdot 18 = 9$",
+     "reason": "במשולש ישר זווית התיכון ליתר שווה למחצית היתר",
+     "ref": "median-hypotenuse"
+    }
+   ],
+   "answer": "$CM = 9$"
+  },
+  "mistakes": [
+   "להשתמש במשפט לתיכון לניצב. המשפט נכון רק לתיכון ליתר."
+  ],
+  "converse": {
+   "id": "median-hypotenuse-converse"
+  },
+  "status": "official",
+  "topic": "right-triangle",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "תיכון ליתר",
+   "מחצית היתר",
+   "משולש ישר זווית",
+   "אמצע היתר"
+  ],
+  "givens": [
+   "right-triangle",
+   "median",
+   "midpoint"
+  ],
+  "goals": [
+   "find-length",
+   "prove-equal-segments",
+   "prove-isosceles"
+  ],
+  "related": [
+   "median",
+   "hypotenuse",
+   "right-triangle"
+  ]
+ },
+ {
+  "id": "median-hypotenuse-converse",
+  "name": "תיכון השווה למחצית הצלע",
+  "statement": "אם במשולש התיכון לצלע שווה למחצית הצלע שאליה הוא יורד, אז המשולש ישר זווית, והזווית שמול הצלע הזו היא ישרה.",
+  "formal": "AM = MB = CM \\Rightarrow \\angle ACB = 90^\\circ",
+  "citation": "משולש שבו התיכון לצלע שווה למחצית הצלע הוא ישר זווית",
+  "conditions": [
+   "הקטע הוא תיכון.",
+   "הוכח שאורכו שווה למחצית הצלע שאליה הוא יורד."
+  ],
+  "useWhen": "יש נקודה שמרחקיה משלושה קודקודים שווים, ושניים מהם הם קצות של צלע שהנקודה אמצעה.",
+  "diagram": "median-hypotenuse",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $M$ אמצע $AB$, ו-$MC = MA$. מצאו את $\\angle ACB$.",
+   "steps": [
+    {
+     "claim": "$CM = \\tfrac12 AB$",
+     "reason": "נתון: $MA = MB = MC$"
+    },
+    {
+     "claim": "$\\angle ACB = 90^\\circ$",
+     "reason": "משולש שבו התיכון לצלע שווה למחצית הצלע הוא ישר זווית",
+     "ref": "median-hypotenuse-converse"
+    }
+   ],
+   "answer": "$90^\\circ$"
+  },
+  "mistakes": [
+   "לסמן את הזווית הישרה בקודקוד הלא נכון. היא תמיד מול הצלע שהתיכון יורד אליה."
+  ],
+  "converse": {
+   "id": "median-hypotenuse"
+  },
+  "status": "official",
+  "topic": "right-triangle",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "תיכון",
+   "מחצית הצלע",
+   "להוכיח זווית ישרה"
+  ],
+  "givens": [
+   "median",
+   "midpoint",
+   "equal-sides"
+  ],
+  "goals": [
+   "prove-right-angle"
+  ],
+  "related": [
+   "median",
+   "right-triangle"
+  ]
+ },
+ {
+  "id": "thirty-sixty-ninety",
+  "name": "ניצב מול זווית של 30°",
+  "statement": "במשולש ישר זווית שבו זווית חדה בת $30^\\circ$, הניצב שמול זווית זו שווה למחצית היתר.",
+  "formal": "\\angle C = 90^\\circ,\\ \\angle B = 30^\\circ \\Rightarrow AC = \\tfrac{1}{2}AB",
+  "citation": "במשולש ישר זווית, הניצב שמול זווית של 30° שווה למחצית היתר",
+  "conditions": [
+   "המשולש ישר זווית.",
+   "יש בו זווית של $30^\\circ$, והניצב שמדובר בו נמצא מולה."
+  ],
+  "useWhen": "יש משולש ישר זווית עם זווית של 30° או 60°, ורוצים צלע בלי טריגונומטריה.",
+  "diagram": "thirty-sixty",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $\\angle C = 90^\\circ$, $\\angle B = 30^\\circ$, $AB = 14$. מצאו את $AC$.",
+   "steps": [
+    {
+     "claim": "$AC = \\tfrac12 \\cdot 14 = 7$",
+     "reason": "במשולש ישר זווית, הניצב שמול זווית של 30° שווה למחצית היתר",
+     "ref": "thirty-sixty-ninety"
+    }
+   ],
+   "answer": "$AC = 7$"
+  },
+  "mistakes": [
+   "לקחת את הניצב הסמוך לזווית ה-30° במקום הניצב שמולה."
+  ],
+  "converse": {
+   "id": "thirty-converse"
+  },
+  "status": "official",
+  "topic": "right-triangle",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "30",
+   "60",
+   "מחצית היתר",
+   "ניצב מול 30"
+  ],
+  "givens": [
+   "right-triangle",
+   "angle-30"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "right-triangle",
+   "hypotenuse",
+   "leg"
+  ]
+ },
+ {
+  "id": "thirty-converse",
+  "name": "ניצב השווה למחצית היתר",
+  "statement": "אם במשולש ישר זווית ניצב שווה למחצית היתר, אז הזווית שמול ניצב זה היא $30^\\circ$.",
+  "formal": "\\angle C = 90^\\circ,\\ AC = \\tfrac{1}{2}AB \\Rightarrow \\angle B = 30^\\circ",
+  "citation": "במשולש ישר זווית, אם ניצב שווה למחצית היתר – הזווית שמולו היא 30°",
+  "conditions": [
+   "המשולש ישר זווית.",
+   "הוכח שאורך הניצב הוא בדיוק מחצית היתר."
+  ],
+  "useWhen": "יודעים אורכים ביחס 1:2 בין ניצב ליתר, ורוצים זווית.",
+  "diagram": "thirty-sixty",
+  "example": {
+   "problem": "במשולש ישר זווית היתר 10 וניצב אחד 5. מצאו את הזווית שמול הניצב.",
+   "steps": [
+    {
+     "claim": "הניצב שווה למחצית היתר",
+     "reason": "$5 = \\tfrac12 \\cdot 10$"
+    },
+    {
+     "claim": "הזווית שמולו היא $30^\\circ$",
+     "reason": "במשולש ישר זווית, אם ניצב שווה למחצית היתר – הזווית שמולו היא 30°",
+     "ref": "thirty-converse"
+    }
+   ],
+   "answer": "$30^\\circ$"
+  },
+  "mistakes": [
+   "להשתמש במשפט במשולש שאינו ישר זווית."
+  ],
+  "converse": {
+   "id": "thirty-sixty-ninety"
+  },
+  "status": "official",
+  "topic": "right-triangle",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "30",
+   "מחצית היתר",
+   "להוכיח זווית"
+  ],
+  "givens": [
+   "right-triangle",
+   "side-lengths"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "right-triangle",
+   "hypotenuse"
+  ]
+ },
+ {
+  "id": "altitude-hypotenuse",
+  "name": "הגובה ליתר – ממוצע הנדסי",
+  "statement": "במשולש ישר זווית, הגובה ליתר הוא ממוצע הנדסי של היטלי הניצבים על היתר ($h^2 = p\\cdot q$). כל ניצב הוא ממוצע הנדסי של היתר ושל היטל אותו ניצב על היתר ($a^2 = c\\cdot p$, $b^2 = c \\cdot q$).",
+  "formal": "h^2 = p\\,q,\\quad a^2 = c\\,p,\\quad b^2 = c\\,q",
+  "citation": "במשולש ישר זווית הגובה ליתר הוא ממוצע הנדסי של היטלי הניצבים על היתר",
+  "conditions": [
+   "המשולש ישר זווית.",
+   "הקטע הוא הגובה מהקודקוד של הזווית הישרה אל היתר.",
+   "$p$ הוא ההיטל של $a$, ו-$q$ הוא ההיטל של $b$."
+  ],
+  "useWhen": "במשולש ישר זווית יש גובה ליתר, ונתונים קטעים על היתר או ניצבים.",
+  "diagram": "altitude-hypotenuse",
+  "example": {
+   "problem": "במשולש ישר זווית הגובה ליתר מחלק אותו לקטעים 4 ו-9. מצאו את הגובה.",
+   "steps": [
+    {
+     "claim": "$h^2 = 4 \\cdot 9 = 36$",
+     "reason": "במשולש ישר זווית הגובה ליתר הוא ממוצע הנדסי של היטלי הניצבים על היתר",
+     "ref": "altitude-hypotenuse"
+    },
+    {
+     "claim": "$h = 6$",
+     "reason": "אורך חיובי"
+    }
+   ],
+   "answer": "$h = 6$"
+  },
+  "mistakes": [
+   "להתאים ניצב להיטל של הניצב השני. ההיטל של $a$ הוא הקטע הסמוך לקודקוד שבקצה $a$."
+  ],
+  "status": "official",
+  "topic": "right-triangle",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "גובה ליתר",
+   "ממוצע הנדסי",
+   "היטל",
+   "היטלים"
+  ],
+  "givens": [
+   "right-triangle",
+   "altitude"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "altitude",
+   "projection",
+   "right-triangle",
+   "geometric-mean"
+  ],
+  "note": "התוצאות האלה נובעות מכך שהגובה ליתר מחלק את המשולש לשני משולשים הדומים זה לזה ולמשולש המקורי (ז.ז). אם אינכם בטוחים שהמשפט ברשימה של השאלון שלכם, אפשר להוכיח בעזרת הדמיון."
+ },
+ {
+  "id": "parallelogram-opposite-sides",
+  "name": "צלעות נגדיות במקבילית",
+  "statement": "במקבילית כל שתי צלעות נגדיות שוות זו לזו.",
+  "formal": "ABCD \\text{ מקבילית} \\Rightarrow AB = DC,\\ AD = BC",
+  "citation": "במקבילית כל שתי צלעות נגדיות שוות",
+  "conditions": [
+   "המרובע הוא מקבילית (נתון או מוכח)."
+  ],
+  "useWhen": "יש מקבילית, וצריך אורכים או קטעים שווים.",
+  "diagram": "parallelogram",
+  "example": {
+   "problem": "במקבילית $ABCD$, $AB = 3x + 1$ ו-$DC = 13$. מצאו את $x$.",
+   "steps": [
+    {
+     "claim": "$AB = DC$",
+     "reason": "במקבילית כל שתי צלעות נגדיות שוות",
+     "ref": "parallelogram-opposite-sides"
+    },
+    {
+     "claim": "$3x + 1 = 13 \\Rightarrow x = 4$",
+     "reason": "פתרון משוואה"
+    }
+   ],
+   "answer": "$x = 4$"
+  },
+  "mistakes": [
+   "להשוות צלעות סמוכות. במקבילית רק צלעות נגדיות שוות (אלא אם זה מעוין)."
+  ],
+  "converse": {
+   "id": "parallelogram-test-sides"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מקבילית",
+   "צלעות נגדיות",
+   "תכונות מקבילית"
+  ],
+  "givens": [
+   "parallelogram"
+  ],
+  "goals": [
+   "prove-equal-segments",
+   "find-length"
+  ],
+  "related": [
+   "parallelogram"
+  ]
+ },
+ {
+  "id": "parallelogram-opposite-angles",
+  "name": "זוויות נגדיות במקבילית",
+  "statement": "במקבילית כל שתי זוויות נגדיות שוות זו לזו.",
+  "formal": "\\angle A = \\angle C,\\ \\angle B = \\angle D",
+  "citation": "במקבילית כל שתי זוויות נגדיות שוות",
+  "conditions": [
+   "המרובע הוא מקבילית."
+  ],
+  "useWhen": "יש מקבילית, וצריך זוויות. בנוסף, כל שתי זוויות סמוכות משלימות ל-180° (חד-צדדיות).",
+  "diagram": "parallelogram-angles",
+  "example": {
+   "problem": "במקבילית $ABCD$, $\\angle A = 65^\\circ$. מצאו את שאר הזוויות.",
+   "steps": [
+    {
+     "claim": "$\\angle C = 65^\\circ$",
+     "reason": "במקבילית כל שתי זוויות נגדיות שוות",
+     "ref": "parallelogram-opposite-angles"
+    },
+    {
+     "claim": "$\\angle B = 180^\\circ - 65^\\circ = 115^\\circ$",
+     "reason": "סכום זוויות חד-צדדיות בין ישרים מקבילים הוא 180°",
+     "ref": "co-interior-angles"
+    },
+    {
+     "claim": "$\\angle D = 115^\\circ$",
+     "reason": "במקבילית כל שתי זוויות נגדיות שוות",
+     "ref": "parallelogram-opposite-angles"
+    }
+   ],
+   "answer": "$65^\\circ, 115^\\circ, 65^\\circ, 115^\\circ$"
+  },
+  "mistakes": [
+   "לכתוב שכל הזוויות במקבילית שוות. זה נכון רק במלבן."
+  ],
+  "converse": {
+   "id": "parallelogram-test-angles"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מקבילית",
+   "זוויות נגדיות"
+  ],
+  "givens": [
+   "parallelogram"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "parallelogram"
+  ]
+ },
+ {
+  "id": "parallelogram-diagonals",
+  "name": "האלכסונים במקבילית",
+  "statement": "במקבילית האלכסונים חוצים זה את זה.",
+  "formal": "AO = OC,\\ BO = OD",
+  "citation": "במקבילית האלכסונים חוצים זה את זה",
+  "conditions": [
+   "המרובע הוא מקבילית.",
+   "$O$ היא נקודת החיתוך של האלכסונים."
+  ],
+  "useWhen": "יש מקבילית עם אלכסונים, וצריך אמצע, תיכון או קטעים שווים.",
+  "diagram": "parallelogram-diagonals",
+  "example": {
+   "problem": "במקבילית $ABCD$ האלכסונים נחתכים ב-$O$, ו-$AC = 20$. מצאו את $AO$.",
+   "steps": [
+    {
+     "claim": "$AO = OC$",
+     "reason": "במקבילית האלכסונים חוצים זה את זה",
+     "ref": "parallelogram-diagonals"
+    },
+    {
+     "claim": "$AO = 10$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$AO = 10$"
+  },
+  "mistakes": [
+   "לחשוב שהאלכסונים במקבילית שווים. זה נכון רק במלבן.",
+   "לחשוב שהם מאונכים. זה נכון רק במעוין."
+  ],
+  "converse": {
+   "id": "parallelogram-test-diagonals"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מקבילית",
+   "אלכסונים",
+   "חוצים זה את זה"
+  ],
+  "givens": [
+   "parallelogram",
+   "diagonals"
+  ],
+  "goals": [
+   "prove-midpoint",
+   "find-length",
+   "prove-equal-segments"
+  ],
+  "related": [
+   "parallelogram",
+   "diagonal"
+  ]
+ },
+ {
+  "id": "parallelogram-test-sides",
+  "name": "זיהוי מקבילית: צלעות נגדיות שוות",
+  "statement": "מרובע שבו כל שתי צלעות נגדיות שוות זו לזו הוא מקבילית.",
+  "formal": "AB = DC,\\ AD = BC \\Rightarrow ABCD \\text{ מקבילית}",
+  "citation": "מרובע שבו כל שתי צלעות נגדיות שוות הוא מקבילית",
+  "conditions": [
+   "הוכח ששני הזוגות של צלעות נגדיות שווים."
+  ],
+  "useWhen": "צריך להוכיח שמרובע הוא מקבילית, ויש נתונים על אורכים.",
+  "diagram": "parallelogram",
+  "example": {
+   "problem": "במרובע $ABCD$: $AB = DC = 7$, $AD = BC = 4$. הוכיחו ש-$AB \\parallel DC$.",
+   "steps": [
+    {
+     "claim": "$ABCD$ מקבילית",
+     "reason": "מרובע שבו כל שתי צלעות נגדיות שוות הוא מקבילית",
+     "ref": "parallelogram-test-sides"
+    },
+    {
+     "claim": "$AB \\parallel DC$",
+     "reason": "הגדרת מקבילית"
+    }
+   ],
+   "answer": "$AB \\parallel DC$"
+  },
+  "mistakes": [
+   "להסתפק בזוג אחד של צלעות נגדיות שוות. זה לא מספיק (למשל בטרפז שווה שוקיים)."
+  ],
+  "converse": {
+   "id": "parallelogram-opposite-sides"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מקבילית",
+   "צלעות נגדיות שוות",
+   "זיהוי מקבילית"
+  ],
+  "givens": [
+   "quadrilateral",
+   "equal-sides"
+  ],
+  "goals": [
+   "prove-quad-type",
+   "prove-parallel"
+  ],
+  "related": [
+   "parallelogram"
+  ]
+ },
+ {
+  "id": "parallelogram-test-pair",
+  "name": "זיהוי מקבילית: זוג צלעות שוות ומקבילות",
+  "statement": "מרובע שבו זוג של צלעות נגדיות שוות ומקבילות הוא מקבילית.",
+  "formal": "AB = DC,\\ AB \\parallel DC \\Rightarrow ABCD \\text{ מקבילית}",
+  "citation": "מרובע שבו זוג צלעות נגדיות שוות ומקבילות הוא מקבילית",
+  "conditions": [
+   "אותו זוג צלעות נגדיות הוא גם שווה וגם מקביל."
+  ],
+  "useWhen": "יש זוג צלעות מקבילות, וגם הוכחתם שהן שוות (למשל בעזרת קטע אמצעים).",
+  "diagram": "parallelogram-one-pair",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $D, E$ אמצעי $AB, AC$. מאריכים את $DE$ עד $F$ כך ש-$DE = EF$. הוכיחו ש-$DFCB$ מקבילית.",
+   "steps": [
+    {
+     "claim": "$DE \\parallel BC,\\ DE = \\tfrac12 BC$",
+     "reason": "קטע אמצעים במשולש מקביל לצלע השלישית ושווה למחציתה",
+     "ref": "midsegment-triangle"
+    },
+    {
+     "claim": "$DF = 2DE = BC$ וגם $DF \\parallel BC$",
+     "reason": "$DE = EF$, ו-$F$ על המשך $DE$"
+    },
+    {
+     "claim": "$DFCB$ מקבילית",
+     "reason": "מרובע שבו זוג צלעות נגדיות שוות ומקבילות הוא מקבילית",
+     "ref": "parallelogram-test-pair"
+    }
+   ],
+   "answer": "$DFCB$ מקבילית."
+  },
+  "mistakes": [
+   "להשתמש בזוג צלעות אחד שהוא שווה, ובזוג אחר שהוא מקביל. זה לא מספיק."
+  ],
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מקבילית",
+   "שוות ומקבילות",
+   "זיהוי מקבילית"
+  ],
+  "givens": [
+   "quadrilateral",
+   "parallel-lines",
+   "equal-sides"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "parallelogram"
+  ]
+ },
+ {
+  "id": "parallelogram-test-diagonals",
+  "name": "זיהוי מקבילית: אלכסונים חוצים זה את זה",
+  "statement": "מרובע שבו האלכסונים חוצים זה את זה הוא מקבילית.",
+  "formal": "AO = OC,\\ BO = OD \\Rightarrow ABCD \\text{ מקבילית}",
+  "citation": "מרובע שבו האלכסונים חוצים זה את זה הוא מקבילית",
+  "conditions": [
+   "הוכח שנקודת החיתוך של האלכסונים היא אמצע של כל אחד מהם."
+  ],
+  "useWhen": "יש נקודה שהיא אמצע של שני קטעים (למשל הארכת תיכון פי 2).",
+  "diagram": "parallelogram-diagonals",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $AM$ תיכון. מאריכים אותו עד $D$ כך ש-$AM = MD$. הוכיחו ש-$ABDC$ מקבילית.",
+   "steps": [
+    {
+     "claim": "$BM = MC$",
+     "reason": "נתון: $AM$ תיכון"
+    },
+    {
+     "claim": "$AM = MD$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$ABDC$ מקבילית",
+     "reason": "מרובע שבו האלכסונים חוצים זה את זה הוא מקבילית",
+     "ref": "parallelogram-test-diagonals"
+    }
+   ],
+   "answer": "$ABDC$ מקבילית."
+  },
+  "mistakes": [
+   "להראות שרק אלכסון אחד נחצה."
+  ],
+  "converse": {
+   "id": "parallelogram-diagonals"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מקבילית",
+   "אלכסונים",
+   "חוצים זה את זה",
+   "הארכת תיכון"
+  ],
+  "givens": [
+   "diagonals",
+   "midpoint",
+   "median"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "parallelogram",
+   "diagonal"
+  ]
+ },
+ {
+  "id": "parallelogram-test-angles",
+  "name": "זיהוי מקבילית: זוויות נגדיות שוות",
+  "statement": "מרובע שבו כל שתי זוויות נגדיות שוות זו לזו הוא מקבילית.",
+  "formal": "\\angle A = \\angle C,\\ \\angle B = \\angle D \\Rightarrow ABCD \\text{ מקבילית}",
+  "citation": "מרובע שבו כל שתי זוויות נגדיות שוות הוא מקבילית",
+  "conditions": [
+   "הוכח ששני זוגות הזוויות הנגדיות שווים."
+  ],
+  "useWhen": "יש נתונים על זוויות במרובע, וצריך להוכיח מקבילית.",
+  "diagram": "parallelogram-angles",
+  "example": {
+   "problem": "במרובע $ABCD$: $\\angle A = \\angle C = 70^\\circ$ ו-$\\angle B = \\angle D$. הוכיחו שזו מקבילית.",
+   "steps": [
+    {
+     "claim": "$\\angle A = \\angle C,\\ \\angle B = \\angle D$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$ABCD$ מקבילית",
+     "reason": "מרובע שבו כל שתי זוויות נגדיות שוות הוא מקבילית",
+     "ref": "parallelogram-test-angles"
+    }
+   ],
+   "answer": "$ABCD$ מקבילית."
+  },
+  "mistakes": [
+   "להסתפק בזוג אחד של זוויות נגדיות שוות. זה לא מספיק (למשל בדלתון)."
+  ],
+  "converse": {
+   "id": "parallelogram-opposite-angles"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מקבילית",
+   "זוויות נגדיות שוות"
+  ],
+  "givens": [
+   "quadrilateral",
+   "equal-angles"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "parallelogram"
+  ]
+ },
+ {
+  "id": "rectangle-diagonals",
+  "name": "האלכסונים במלבן",
+  "statement": "במלבן האלכסונים שווים זה לזה. (המלבן הוא מקבילית, ולכן יש לו גם כל תכונות המקבילית.)",
+  "formal": "AC = BD",
+  "citation": "במלבן האלכסונים שווים",
+  "conditions": [
+   "המרובע הוא מלבן."
+  ],
+  "useWhen": "יש מלבן עם אלכסונים. מקבלים ארבעה קטעים שווים מנקודת החיתוך, וארבעה משולשים שווי שוקיים.",
+  "diagram": "rectangle",
+  "example": {
+   "problem": "במלבן $ABCD$ האלכסונים נחתכים ב-$O$, ו-$\\angle AOB = 120^\\circ$. מצאו את $\\angle OAB$.",
+   "steps": [
+    {
+     "claim": "$AC = BD$",
+     "reason": "במלבן האלכסונים שווים",
+     "ref": "rectangle-diagonals"
+    },
+    {
+     "claim": "$OA = OB$",
+     "reason": "במקבילית האלכסונים חוצים זה את זה (מלבן הוא מקבילית)",
+     "ref": "parallelogram-diagonals"
+    },
+    {
+     "claim": "$\\angle OAB = \\angle OBA = \\tfrac{180^\\circ - 120^\\circ}{2} = 30^\\circ$",
+     "reason": "במשולש שווה שוקיים זוויות הבסיס שוות",
+     "ref": "isosceles-base-angles"
+    }
+   ],
+   "answer": "$30^\\circ$"
+  },
+  "mistakes": [
+   "לחשוב שהאלכסונים במלבן מאונכים. זה נכון רק בריבוע.",
+   "לחשוב שהם חוצים את הזוויות."
+  ],
+  "converse": {
+   "id": "rectangle-test-diagonals"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מלבן",
+   "אלכסונים שווים"
+  ],
+  "givens": [
+   "rectangle",
+   "diagonals"
+  ],
+  "goals": [
+   "prove-equal-segments",
+   "find-angle"
+  ],
+  "related": [
+   "rectangle",
+   "diagonal"
+  ]
+ },
+ {
+  "id": "rectangle-test-right",
+  "name": "זיהוי מלבן: מקבילית עם זווית ישרה",
+  "statement": "מקבילית שיש בה זווית ישרה היא מלבן.",
+  "formal": "ABCD \\text{ מקבילית},\\ \\angle A = 90^\\circ \\Rightarrow ABCD \\text{ מלבן}",
+  "citation": "מקבילית שיש בה זווית ישרה היא מלבן",
+  "conditions": [
+   "הוכח קודם שהמרובע הוא מקבילית.",
+   "הוכח שאחת הזוויות ישרה."
+  ],
+  "useWhen": "הוכחתם מקבילית, ויש זווית ישרה (למשל זווית היקפית הנשענת על קוטר).",
+  "diagram": "rectangle",
+  "example": {
+   "problem": "$ABCD$ מקבילית חסומה במעגל, ו-$BD$ קוטר. הוכיחו ש-$ABCD$ מלבן.",
+   "steps": [
+    {
+     "claim": "$\\angle BAD = 90^\\circ$",
+     "reason": "זווית היקפית הנשענת על קוטר היא ישרה",
+     "ref": "inscribed-diameter"
+    },
+    {
+     "claim": "$ABCD$ מלבן",
+     "reason": "מקבילית שיש בה זווית ישרה היא מלבן",
+     "ref": "rectangle-test-right"
+    }
+   ],
+   "answer": "$ABCD$ מלבן."
+  },
+  "mistakes": [
+   "להפעיל על מרובע כללי. מרובע עם זווית ישרה אחת אינו בהכרח מלבן."
+  ],
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מלבן",
+   "זווית ישרה",
+   "מקבילית"
+  ],
+  "givens": [
+   "parallelogram",
+   "right-angle"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "rectangle",
+   "parallelogram"
+  ]
+ },
+ {
+  "id": "rectangle-test-diagonals",
+  "name": "זיהוי מלבן: מקבילית עם אלכסונים שווים",
+  "statement": "מקבילית שבה האלכסונים שווים זה לזה היא מלבן.",
+  "formal": "ABCD \\text{ מקבילית},\\ AC = BD \\Rightarrow ABCD \\text{ מלבן}",
+  "citation": "מקבילית שבה האלכסונים שווים היא מלבן",
+  "conditions": [
+   "הוכח שהמרובע מקבילית.",
+   "הוכח שהאלכסונים שווים."
+  ],
+  "useWhen": "יש נקודה שהיא אמצע של שני קטעים שווים. אלה אלכסונים שחוצים זה את זה ושווים.",
+  "diagram": "rectangle",
+  "example": {
+   "problem": "הקטעים $AC$ ו-$BD$ שווים וחוצים זה את זה ב-$O$. הוכיחו ש-$ABCD$ מלבן.",
+   "steps": [
+    {
+     "claim": "$ABCD$ מקבילית",
+     "reason": "מרובע שבו האלכסונים חוצים זה את זה הוא מקבילית",
+     "ref": "parallelogram-test-diagonals"
+    },
+    {
+     "claim": "$ABCD$ מלבן",
+     "reason": "מקבילית שבה האלכסונים שווים היא מלבן",
+     "ref": "rectangle-test-diagonals"
+    }
+   ],
+   "answer": "$ABCD$ מלבן."
+  },
+  "mistakes": [
+   "לדלג על השלב \"מקבילית\". אלכסונים שווים לבד לא מספיקים (טרפז שווה שוקיים!)."
+  ],
+  "converse": {
+   "id": "rectangle-diagonals"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מלבן",
+   "אלכסונים שווים"
+  ],
+  "givens": [
+   "parallelogram",
+   "diagonals",
+   "equal-sides"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "rectangle",
+   "diagonal"
+  ]
+ },
+ {
+  "id": "rectangle-test-three-right",
+  "name": "זיהוי מלבן: שלוש זוויות ישרות",
+  "statement": "מרובע שיש בו שלוש זוויות ישרות הוא מלבן.",
+  "formal": "\\angle A = \\angle B = \\angle C = 90^\\circ \\Rightarrow ABCD \\text{ מלבן}",
+  "citation": "מרובע שיש בו שלוש זוויות ישרות הוא מלבן",
+  "conditions": [
+   "הוכח ששלוש מזוויות המרובע ישרות."
+  ],
+  "useWhen": "יש מרובע שנוצר מאנכים, למשל אנכים מנקודה לשני ישרים מאונכים.",
+  "diagram": "rectangle",
+  "example": {
+   "problem": "מנקודה $P$ בתוך זווית ישרה $\\angle O$ מורידים אנכים $PE$ ו-$PF$ לשוקיים. הוכיחו ש-$OEPF$ מלבן.",
+   "steps": [
+    {
+     "claim": "$\\angle O = \\angle OEP = \\angle OFP = 90^\\circ$",
+     "reason": "נתון (זווית ישרה ואנכים)"
+    },
+    {
+     "claim": "$OEPF$ מלבן",
+     "reason": "מרובע שיש בו שלוש זוויות ישרות הוא מלבן",
+     "ref": "rectangle-test-three-right"
+    }
+   ],
+   "answer": "$OEPF$ מלבן."
+  },
+  "mistakes": [
+   "להסיק מלבן משתי זוויות ישרות בלבד."
+  ],
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מלבן",
+   "שלוש זוויות ישרות",
+   "אנכים"
+  ],
+  "givens": [
+   "quadrilateral",
+   "right-angle",
+   "altitude"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "rectangle"
+  ]
+ },
+ {
+  "id": "rhombus-diagonals-perpendicular",
+  "name": "האלכסונים במעוין מאונכים",
+  "statement": "במעוין האלכסונים מאונכים זה לזה. (המעוין הוא מקבילית, ולכן האלכסונים גם חוצים זה את זה.)",
+  "formal": "AC \\perp BD",
+  "citation": "במעוין האלכסונים מאונכים זה לזה",
+  "conditions": [
+   "המרובע הוא מעוין."
+  ],
+  "useWhen": "יש מעוין, ורוצים משולשים ישרי זווית (פיתגורס עם חצאי אלכסונים) או שטח.",
+  "diagram": "rhombus",
+  "example": {
+   "problem": "האלכסונים במעוין הם 12 ו-16. מצאו את אורך הצלע.",
+   "steps": [
+    {
+     "claim": "$AO = 6,\\ BO = 8$",
+     "reason": "במקבילית האלכסונים חוצים זה את זה (מעוין הוא מקבילית)",
+     "ref": "parallelogram-diagonals"
+    },
+    {
+     "claim": "$\\angle AOB = 90^\\circ$",
+     "reason": "במעוין האלכסונים מאונכים זה לזה",
+     "ref": "rhombus-diagonals-perpendicular"
+    },
+    {
+     "claim": "$AB^2 = 6^2 + 8^2 = 100 \\Rightarrow AB = 10$",
+     "reason": "משפט פיתגורס",
+     "ref": "pythagoras"
+    }
+   ],
+   "answer": "$10$"
+  },
+  "mistakes": [
+   "לחשוב שהאלכסונים במעוין שווים. זה נכון רק בריבוע."
+  ],
+  "converse": {
+   "id": "rhombus-test-perpendicular"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מעוין",
+   "אלכסונים מאונכים"
+  ],
+  "givens": [
+   "rhombus",
+   "diagonals"
+  ],
+  "goals": [
+   "prove-perpendicular",
+   "find-length"
+  ],
+  "related": [
+   "rhombus",
+   "diagonal"
+  ]
+ },
+ {
+  "id": "rhombus-diagonals-bisect",
+  "name": "האלכסונים במעוין חוצים את הזוויות",
+  "statement": "במעוין האלכסונים חוצים את זוויות המעוין.",
+  "formal": "\\angle DAC = \\angle CAB,\\ \\angle ABD = \\angle DBC",
+  "citation": "במעוין האלכסונים חוצים את הזוויות",
+  "conditions": [
+   "המרובע הוא מעוין."
+  ],
+  "useWhen": "יש מעוין, וצריך זוויות בין צלע לאלכסון.",
+  "diagram": "rhombus-angles",
+  "example": {
+   "problem": "במעוין $ABCD$, $\\angle DAB = 70^\\circ$. מצאו את $\\angle CAB$.",
+   "steps": [
+    {
+     "claim": "$\\angle CAB = \\tfrac12 \\cdot 70^\\circ = 35^\\circ$",
+     "reason": "במעוין האלכסונים חוצים את הזוויות",
+     "ref": "rhombus-diagonals-bisect"
+    }
+   ],
+   "answer": "$35^\\circ$"
+  },
+  "mistakes": [
+   "להשתמש בתכונה במקבילית רגילה."
+  ],
+  "converse": {
+   "id": "rhombus-test-bisector"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מעוין",
+   "אלכסון חוצה זווית"
+  ],
+  "givens": [
+   "rhombus",
+   "diagonals"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "rhombus",
+   "angle-bisector"
+  ]
+ },
+ {
+  "id": "rhombus-test-sides",
+  "name": "זיהוי מעוין: ארבע צלעות שוות",
+  "statement": "מרובע שבו כל הצלעות שוות זו לזו הוא מעוין.",
+  "formal": "AB = BC = CD = DA \\Rightarrow ABCD \\text{ מעוין}",
+  "citation": "מרובע שבו כל הצלעות שוות הוא מעוין",
+  "conditions": [
+   "הוכח שארבע הצלעות שוות."
+  ],
+  "useWhen": "יש ארבעה קטעים שווים, למשל רדיוסים של שני מעגלים שווים.",
+  "diagram": "rhombus",
+  "example": {
+   "problem": "שני מעגלים בעלי רדיוסים שווים, שמרכזיהם $O_1$ ו-$O_2$, נחתכים בנקודות $A$ ו-$B$. הוכיחו ש-$O_1AO_2B$ מעוין.",
+   "steps": [
+    {
+     "claim": "$O_1A = O_1B = O_2A = O_2B = r$",
+     "reason": "רדיוסים של מעגלים שווים"
+    },
+    {
+     "claim": "$O_1AO_2B$ מעוין",
+     "reason": "מרובע שבו כל הצלעות שוות הוא מעוין",
+     "ref": "rhombus-test-sides"
+    }
+   ],
+   "answer": "המרובע מעוין."
+  },
+  "mistakes": [
+   "להסתפק בשלוש צלעות שוות."
+  ],
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מעוין",
+   "ארבע צלעות שוות"
+  ],
+  "givens": [
+   "quadrilateral",
+   "equal-sides",
+   "radius"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "rhombus"
+  ]
+ },
+ {
+  "id": "rhombus-test-adjacent",
+  "name": "זיהוי מעוין: מקבילית עם צלעות סמוכות שוות",
+  "statement": "מקבילית שבה שתי צלעות סמוכות שוות זו לזו היא מעוין.",
+  "formal": "ABCD \\text{ מקבילית},\\ AB = BC \\Rightarrow ABCD \\text{ מעוין}",
+  "citation": "מקבילית שבה שתי צלעות סמוכות שוות היא מעוין",
+  "conditions": [
+   "הוכח שהמרובע מקבילית.",
+   "הוכח ששתי צלעות סמוכות שוות."
+  ],
+  "useWhen": "הוכחתם מקבילית, ומצאתם שתי צלעות סמוכות שוות.",
+  "diagram": "rhombus",
+  "example": {
+   "problem": "$ABCD$ מקבילית, ו-$AB = BC$. מצאו את $CD$ אם $AB = 5$.",
+   "steps": [
+    {
+     "claim": "$ABCD$ מעוין",
+     "reason": "מקבילית שבה שתי צלעות סמוכות שוות היא מעוין",
+     "ref": "rhombus-test-adjacent"
+    },
+    {
+     "claim": "$CD = 5$",
+     "reason": "במעוין כל הצלעות שוות (הגדרה)"
+    }
+   ],
+   "answer": "$CD = 5$"
+  },
+  "mistakes": [
+   "להפעיל על מרובע שלא הוכח שהוא מקבילית (זה יכול להיות דלתון)."
+  ],
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מעוין",
+   "צלעות סמוכות שוות",
+   "מקבילית"
+  ],
+  "givens": [
+   "parallelogram",
+   "equal-sides"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "rhombus",
+   "parallelogram"
+  ]
+ },
+ {
+  "id": "rhombus-test-perpendicular",
+  "name": "זיהוי מעוין: מקבילית עם אלכסונים מאונכים",
+  "statement": "מקבילית שבה האלכסונים מאונכים זה לזה היא מעוין.",
+  "formal": "ABCD \\text{ מקבילית},\\ AC \\perp BD \\Rightarrow ABCD \\text{ מעוין}",
+  "citation": "מקבילית שבה האלכסונים מאונכים היא מעוין",
+  "conditions": [
+   "הוכח שהמרובע מקבילית.",
+   "הוכח שהאלכסונים מאונכים."
+  ],
+  "useWhen": "יש מקבילית ואלכסונים מאונכים.",
+  "diagram": "rhombus",
+  "example": {
+   "problem": "האלכסונים של המרובע $ABCD$ חוצים זה את זה ומאונכים זה לזה. הוכיחו שהוא מעוין.",
+   "steps": [
+    {
+     "claim": "$ABCD$ מקבילית",
+     "reason": "מרובע שבו האלכסונים חוצים זה את זה הוא מקבילית",
+     "ref": "parallelogram-test-diagonals"
+    },
+    {
+     "claim": "$ABCD$ מעוין",
+     "reason": "מקבילית שבה האלכסונים מאונכים היא מעוין",
+     "ref": "rhombus-test-perpendicular"
+    }
+   ],
+   "answer": "$ABCD$ מעוין."
+  },
+  "mistakes": [
+   "אלכסונים מאונכים לבד לא מספיקים (גם בדלתון הם מאונכים)."
+  ],
+  "converse": {
+   "id": "rhombus-diagonals-perpendicular"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מעוין",
+   "אלכסונים מאונכים"
+  ],
+  "givens": [
+   "parallelogram",
+   "diagonals",
+   "right-angle"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "rhombus",
+   "diagonal"
+  ]
+ },
+ {
+  "id": "rhombus-test-bisector",
+  "name": "זיהוי מעוין: אלכסון חוצה זווית במקבילית",
+  "statement": "מקבילית שבה אלכסון חוצה זווית היא מעוין.",
+  "formal": "ABCD \\text{ מקבילית},\\ \\angle DAC = \\angle CAB \\Rightarrow ABCD \\text{ מעוין}",
+  "citation": "מקבילית שבה אלכסון חוצה זווית היא מעוין",
+  "conditions": [
+   "הוכח שהמרובע מקבילית.",
+   "הוכח שאחד האלכסונים חוצה זווית של המרובע."
+  ],
+  "useWhen": "יש מקבילית וחוצה זווית שעובר בקודקוד הנגדי.",
+  "diagram": "rhombus-angles",
+  "example": {
+   "problem": "במקבילית $ABCD$ האלכסון $AC$ חוצה את $\\angle A$. הוכיחו ש-$AB = BC$.",
+   "steps": [
+    {
+     "claim": "$ABCD$ מעוין",
+     "reason": "מקבילית שבה אלכסון חוצה זווית היא מעוין",
+     "ref": "rhombus-test-bisector"
+    },
+    {
+     "claim": "$AB = BC$",
+     "reason": "במעוין כל הצלעות שוות (הגדרה)"
+    }
+   ],
+   "answer": "$AB = BC$"
+  },
+  "mistakes": [
+   "לשכוח להראות שזו מקבילית."
+  ],
+  "converse": {
+   "id": "rhombus-diagonals-bisect"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח מעוין",
+   "אלכסון חוצה זווית"
+  ],
+  "givens": [
+   "parallelogram",
+   "angle-bisector",
+   "diagonals"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "rhombus",
+   "angle-bisector"
+  ]
+ },
+ {
+  "id": "square-test-rectangle",
+  "name": "זיהוי ריבוע: מלבן עם צלעות סמוכות שוות",
+  "statement": "מלבן שבו שתי צלעות סמוכות שוות זו לזו הוא ריבוע.",
+  "formal": "ABCD \\text{ מלבן},\\ AB = BC \\Rightarrow ABCD \\text{ ריבוע}",
+  "citation": "מלבן שבו שתי צלעות סמוכות שוות הוא ריבוע",
+  "conditions": [
+   "הוכח קודם שהמרובע מלבן.",
+   "הוכח ששתי צלעות סמוכות שוות."
+  ],
+  "useWhen": "צריך להוכיח ריבוע. בדרך כלל מוכיחים קודם מקבילית, אחר כך מלבן או מעוין, ובסוף ריבוע.",
+  "diagram": "square",
+  "example": {
+   "problem": "$ABCD$ מלבן, ו-$AB = BC = 4$. מצאו את אורך האלכסון.",
+   "steps": [
+    {
+     "claim": "$ABCD$ ריבוע",
+     "reason": "מלבן שבו שתי צלעות סמוכות שוות הוא ריבוע",
+     "ref": "square-test-rectangle"
+    },
+    {
+     "claim": "$AC^2 = 4^2 + 4^2 = 32 \\Rightarrow AC = 4\\sqrt2$",
+     "reason": "משפט פיתגורס",
+     "ref": "pythagoras"
+    }
+   ],
+   "answer": "$4\\sqrt2$"
+  },
+  "mistakes": [
+   "לדלג על השלבים. ארבע צלעות שוות לבד נותנות מעוין, לא ריבוע."
+  ],
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח ריבוע",
+   "ריבוע",
+   "מלבן",
+   "מעוין"
+  ],
+  "givens": [
+   "rectangle",
+   "equal-sides"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "square",
+   "rectangle",
+   "rhombus"
+  ],
+  "note": "ריבוע הוא גם מלבן וגם מעוין, ולכן יש לו את כל התכונות של שניהם: האלכסונים שווים, מאונכים, חוצים זה את זה וחוצים את הזוויות."
+ },
+ {
+  "id": "square-test-rhombus",
+  "name": "זיהוי ריבוע: מעוין עם זווית ישרה",
+  "statement": "מעוין שיש בו זווית ישרה הוא ריבוע.",
+  "formal": "ABCD \\text{ מעוין},\\ \\angle A = 90^\\circ \\Rightarrow ABCD \\text{ ריבוע}",
+  "citation": "מעוין שיש בו זווית ישרה הוא ריבוע",
+  "conditions": [
+   "הוכח קודם שהמרובע מעוין.",
+   "הוכח שאחת הזוויות ישרה."
+  ],
+  "useWhen": "צריך להוכיח ריבוע. בדרך כלל מוכיחים קודם מקבילית, אחר כך מלבן או מעוין, ובסוף ריבוע.",
+  "diagram": "square",
+  "example": {
+   "problem": "$ABCD$ מעוין, ו-$\\angle A = 90^\\circ$. מצאו את $\\angle B$.",
+   "steps": [
+    {
+     "claim": "$ABCD$ ריבוע",
+     "reason": "מעוין שיש בו זווית ישרה הוא ריבוע",
+     "ref": "square-test-rhombus"
+    },
+    {
+     "claim": "$\\angle B = 90^\\circ$",
+     "reason": "בריבוע כל הזוויות ישרות (הגדרה)"
+    }
+   ],
+   "answer": "$90^\\circ$"
+  },
+  "mistakes": [
+   "לדלג על השלבים. ארבע צלעות שוות לבד נותנות מעוין, לא ריבוע."
+  ],
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח ריבוע",
+   "ריבוע",
+   "מלבן",
+   "מעוין"
+  ],
+  "givens": [
+   "rhombus",
+   "right-angle"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "square",
+   "rectangle",
+   "rhombus"
+  ],
+  "note": "ריבוע הוא גם מלבן וגם מעוין, ולכן יש לו את כל התכונות של שניהם: האלכסונים שווים, מאונכים, חוצים זה את זה וחוצים את הזוויות."
+ },
+ {
+  "id": "trapezoid-midsegment",
+  "name": "קטע אמצעים בטרפז",
+  "statement": "קטע האמצעים בטרפז מקביל לבסיסים ושווה למחצית סכומם.",
+  "formal": "EF \\parallel AB \\parallel DC,\\quad EF = \\frac{AB + DC}{2}",
+  "citation": "קטע האמצעים בטרפז מקביל לבסיסים ושווה למחצית סכומם",
+  "conditions": [
+   "המרובע טרפז.",
+   "הקטע מחבר את האמצעים של שתי השוקיים, לא של הבסיסים."
+  ],
+  "useWhen": "יש טרפז ואמצעי השוקיים, ורוצים את אורך הקטע או אורך בסיס.",
+  "diagram": "trapezoid-midsegment",
+  "example": {
+   "problem": "בסיסי טרפז הם 6 ו-14. מצאו את קטע האמצעים.",
+   "steps": [
+    {
+     "claim": "$EF = \\frac{6 + 14}{2} = 10$",
+     "reason": "קטע האמצעים בטרפז מקביל לבסיסים ושווה למחצית סכומם",
+     "ref": "trapezoid-midsegment"
+    }
+   ],
+   "answer": "$10$"
+  },
+  "mistakes": [
+   "לחבר אמצעים של בסיסים במקום של שוקיים.",
+   "לקחת מחצית של בסיס אחד במקום ממוצע הבסיסים."
+  ],
+  "converse": {
+   "id": "trapezoid-midline-converse"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "טרפז",
+   "קטע אמצעים",
+   "מחצית סכום הבסיסים"
+  ],
+  "givens": [
+   "trapezoid",
+   "two-midpoints",
+   "midpoint"
+  ],
+  "goals": [
+   "find-length",
+   "prove-parallel"
+  ],
+  "related": [
+   "trapezoid",
+   "trapezoid-midsegment",
+   "midsegment"
+  ]
+ },
+ {
+  "id": "trapezoid-midline-converse",
+  "name": "ישר מאמצע שוק בטרפז ומקביל לבסיסים",
+  "statement": "ישר החוצה שוק אחת בטרפז ומקביל לבסיסים, חוצה גם את השוק השנייה.",
+  "formal": "AE = ED,\\ EF \\parallel AB \\Rightarrow BF = FC",
+  "citation": "ישר החוצה שוק בטרפז ומקביל לבסיסים חוצה גם את השוק השנייה",
+  "conditions": [
+   "הישר עובר באמצע שוק אחת.",
+   "הישר מקביל לבסיסים."
+  ],
+  "useWhen": "יש אמצע של שוק וישר מקביל לבסיסים. מקבלים קטע אמצעים.",
+  "diagram": "trapezoid-midsegment",
+  "example": {
+   "problem": "בטרפז $ABCD$, $E$ אמצע $AD$, וישר דרך $E$ המקביל לבסיסים חותך את $BC$ ב-$F$. נתון $BC = 9$. מצאו את $BF$.",
+   "steps": [
+    {
+     "claim": "$BF = FC$",
+     "reason": "ישר החוצה שוק בטרפז ומקביל לבסיסים חוצה גם את השוק השנייה",
+     "ref": "trapezoid-midline-converse"
+    },
+    {
+     "claim": "$BF = 4.5$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$4.5$"
+  },
+  "mistakes": [
+   "להניח מקבילות בלי שהיא נתונה."
+  ],
+  "converse": {
+   "id": "trapezoid-midsegment"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "טרפז",
+   "קטע אמצעים",
+   "ישר מקביל לבסיסים"
+  ],
+  "givens": [
+   "trapezoid",
+   "midpoint",
+   "parallel-lines"
+  ],
+  "goals": [
+   "prove-midpoint"
+  ],
+  "related": [
+   "trapezoid",
+   "trapezoid-midsegment"
+  ]
+ },
+ {
+  "id": "isosceles-trapezoid-angles",
+  "name": "זוויות הבסיס בטרפז שווה שוקיים",
+  "statement": "בטרפז שווה שוקיים זוויות הבסיס שוות זו לזו.",
+  "formal": "AD = BC \\Rightarrow \\angle A = \\angle B,\\ \\angle D = \\angle C",
+  "citation": "בטרפז שווה שוקיים זוויות הבסיס שוות",
+  "conditions": [
+   "המרובע טרפז, והשוקיים שוות.",
+   "זוויות הבסיס הן הזוויות שליד אותו בסיס."
+  ],
+  "useWhen": "יש טרפז שווה שוקיים, וצריך זוויות.",
+  "diagram": "isosceles-trapezoid",
+  "example": {
+   "problem": "בטרפז שווה שוקיים $ABCD$ ($AB \\parallel DC$), $\\angle A = 64^\\circ$. מצאו את $\\angle B$ ואת $\\angle C$.",
+   "steps": [
+    {
+     "claim": "$\\angle B = \\angle A = 64^\\circ$",
+     "reason": "בטרפז שווה שוקיים זוויות הבסיס שוות",
+     "ref": "isosceles-trapezoid-angles"
+    },
+    {
+     "claim": "$\\angle C = 180^\\circ - 64^\\circ = 116^\\circ$",
+     "reason": "סכום זוויות חד-צדדיות בין ישרים מקבילים הוא 180°",
+     "ref": "co-interior-angles"
+    }
+   ],
+   "answer": "$\\angle B = 64^\\circ,\\ \\angle C = 116^\\circ$"
+  },
+  "mistakes": [
+   "להשוות זוויות ליד בסיסים שונים, כמו $\\angle A$ ו-$\\angle C$."
+  ],
+  "converse": {
+   "id": "isosceles-trapezoid-test-angles"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "טרפז שווה שוקיים",
+   "זוויות בסיס"
+  ],
+  "givens": [
+   "trapezoid",
+   "equal-sides"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "isosceles-trapezoid",
+   "trapezoid"
+  ]
+ },
+ {
+  "id": "isosceles-trapezoid-diagonals",
+  "name": "האלכסונים בטרפז שווה שוקיים",
+  "statement": "בטרפז שווה שוקיים האלכסונים שווים זה לזה.",
+  "formal": "AD = BC \\Rightarrow AC = BD",
+  "citation": "בטרפז שווה שוקיים האלכסונים שווים",
+  "conditions": [
+   "המרובע טרפז שווה שוקיים."
+  ],
+  "useWhen": "יש טרפז שווה שוקיים ואלכסונים.",
+  "diagram": "isosceles-trapezoid-diag",
+  "example": {
+   "problem": "בטרפז שווה שוקיים $ABCD$, $AC = 3x - 2$ ו-$BD = x + 10$. מצאו את $x$.",
+   "steps": [
+    {
+     "claim": "$AC = BD$",
+     "reason": "בטרפז שווה שוקיים האלכסונים שווים",
+     "ref": "isosceles-trapezoid-diagonals"
+    },
+    {
+     "claim": "$3x - 2 = x + 10 \\Rightarrow x = 6$",
+     "reason": "פתרון משוואה"
+    }
+   ],
+   "answer": "$x = 6$"
+  },
+  "mistakes": [
+   "לחשוב שהאלכסונים חוצים זה את זה. בטרפז הם לא חוצים זה את זה."
+  ],
+  "converse": {
+   "id": "isosceles-trapezoid-test-diagonals"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "טרפז שווה שוקיים",
+   "אלכסונים שווים"
+  ],
+  "givens": [
+   "trapezoid",
+   "diagonals",
+   "equal-sides"
+  ],
+  "goals": [
+   "prove-equal-segments",
+   "find-length"
+  ],
+  "related": [
+   "isosceles-trapezoid",
+   "diagonal"
+  ]
+ },
+ {
+  "id": "isosceles-trapezoid-test-angles",
+  "name": "זיהוי טרפז שווה שוקיים לפי זוויות",
+  "statement": "טרפז שבו זוויות הבסיס שוות הוא טרפז שווה שוקיים.",
+  "formal": "AB \\parallel DC,\\ \\angle A = \\angle B \\Rightarrow AD = BC",
+  "citation": "טרפז שבו זוויות הבסיס שוות הוא טרפז שווה שוקיים",
+  "conditions": [
+   "הוכח שהמרובע טרפז.",
+   "הוכח ששתי הזוויות שליד אותו בסיס שוות."
+  ],
+  "useWhen": "צריך להוכיח שוויון שוקיים בטרפז, ויש מידע על זוויות.",
+  "diagram": "isosceles-trapezoid",
+  "example": {
+   "problem": "בטרפז $ABCD$ ($AB \\parallel DC$), $\\angle A = \\angle B = 70^\\circ$. הוכיחו ש-$AD = BC$.",
+   "steps": [
+    {
+     "claim": "$AD = BC$",
+     "reason": "טרפז שבו זוויות הבסיס שוות הוא טרפז שווה שוקיים",
+     "ref": "isosceles-trapezoid-test-angles"
+    }
+   ],
+   "answer": "$AD = BC$"
+  },
+  "mistakes": [
+   "להפעיל על מרובע שלא הוכח שהוא טרפז."
+  ],
+  "converse": {
+   "id": "isosceles-trapezoid-angles"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח טרפז שווה שוקיים",
+   "זוויות בסיס שוות"
+  ],
+  "givens": [
+   "trapezoid",
+   "equal-angles"
+  ],
+  "goals": [
+   "prove-quad-type",
+   "prove-equal-segments"
+  ],
+  "related": [
+   "isosceles-trapezoid"
+  ]
+ },
+ {
+  "id": "isosceles-trapezoid-test-diagonals",
+  "name": "זיהוי טרפז שווה שוקיים לפי אלכסונים",
+  "statement": "טרפז שבו האלכסונים שווים הוא טרפז שווה שוקיים.",
+  "formal": "AB \\parallel DC,\\ AC = BD \\Rightarrow AD = BC",
+  "citation": "טרפז שבו האלכסונים שווים הוא טרפז שווה שוקיים",
+  "conditions": [
+   "הוכח שהמרובע טרפז.",
+   "הוכח שהאלכסונים שווים."
+  ],
+  "useWhen": "יש טרפז עם אלכסונים שווים.",
+  "diagram": "isosceles-trapezoid-diag",
+  "example": {
+   "problem": "בטרפז $ABCD$ האלכסונים שווים. הוכיחו ש-$\\angle A = \\angle B$.",
+   "steps": [
+    {
+     "claim": "$ABCD$ טרפז שווה שוקיים",
+     "reason": "טרפז שבו האלכסונים שווים הוא טרפז שווה שוקיים",
+     "ref": "isosceles-trapezoid-test-diagonals"
+    },
+    {
+     "claim": "$\\angle A = \\angle B$",
+     "reason": "בטרפז שווה שוקיים זוויות הבסיס שוות",
+     "ref": "isosceles-trapezoid-angles"
+    }
+   ],
+   "answer": "$\\angle A = \\angle B$"
+  },
+  "mistakes": [
+   "להסיק \"מלבן\". אלכסונים שווים במרובע כללי יכולים להופיע גם בטרפז."
+  ],
+  "converse": {
+   "id": "isosceles-trapezoid-diagonals"
+  },
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח טרפז שווה שוקיים",
+   "אלכסונים שווים"
+  ],
+  "givens": [
+   "trapezoid",
+   "diagonals"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "isosceles-trapezoid",
+   "diagonal"
+  ]
+ },
+ {
+  "id": "kite-properties",
+  "name": "תכונות הדלתון",
+  "statement": "בדלתון, האלכסון הראשי (המחבר את שני קודקודי הראש) חוצה את זוויות הראש, והוא האנך האמצעי של האלכסון המשני. לכן האלכסונים מאונכים זה לזה. בנוסף, זוויות הצד שוות.",
+  "formal": "AB = AD,\\ CB = CD \\Rightarrow AC \\perp BD,\\ BO = OD,\\ \\angle B = \\angle D",
+  "citation": "בדלתון האלכסון הראשי חוצה את זוויות הראש ומאונך לאלכסון המשני וחוצה אותו",
+  "conditions": [
+   "המרובע דלתון: שני זוגות של צלעות סמוכות שוות.",
+   "האלכסון הראשי עובר בין הקודקודים שבהם נפגשות צלעות שוות."
+  ],
+  "useWhen": "יש מרובע עם שני זוגות של צלעות סמוכות שוות, או שני משולשים שווי שוקיים על בסיס משותף.",
+  "diagram": "kite",
+  "example": {
+   "problem": "בדלתון $ABCD$ ($AB = AD$, $CB = CD$) האלכסונים נחתכים ב-$O$, ו-$BD = 10$. מצאו את $BO$ ואת $\\angle AOB$.",
+   "steps": [
+    {
+     "claim": "$AC$ אנך אמצעי ל-$BD$",
+     "reason": "בדלתון האלכסון הראשי חוצה את זוויות הראש ומאונך לאלכסון המשני וחוצה אותו",
+     "ref": "kite-properties"
+    },
+    {
+     "claim": "$BO = 5,\\ \\angle AOB = 90^\\circ$",
+     "reason": "מסקנה"
+    }
+   ],
+   "answer": "$BO = 5,\\ \\angle AOB = 90^\\circ$"
+  },
+  "mistakes": [
+   "לחשוב שהאלכסון המשני חוצה את הראשי. בדרך כלל זה לא נכון.",
+   "לחשוב שזוויות הראש שוות. רק זוויות הצד שוות."
+  ],
+  "status": "official",
+  "topic": "quadrilaterals",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "דלתון",
+   "אלכסון ראשי",
+   "אלכסון משני",
+   "מאונכים"
+  ],
+  "givens": [
+   "kite",
+   "equal-sides",
+   "diagonals"
+  ],
+  "goals": [
+   "prove-perpendicular",
+   "prove-equal-angles",
+   "prove-midpoint"
+  ],
+  "related": [
+   "kite",
+   "diagonal",
+   "perpendicular-bisector"
+  ],
+  "note": "אם אינכם בטוחים שהמשפט מופיע ברשימה של השאלון שלכם, אפשר להוכיח אותו מהר: חפיפה צ.צ.צ של $\\triangle ABC$ ו-$\\triangle ADC$, ואחר כך משולש שווה שוקיים $ABD$."
+ }
+]

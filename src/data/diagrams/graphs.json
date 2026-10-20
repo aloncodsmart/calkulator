@@ -1,0 +1,5386 @@
+[
+  {
+    "id": "c-coord",
+    "shape": "coordinate",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "points": {
+      "P": [
+        2,
+        1.5
+      ],
+      "Px": [
+        2,
+        0
+      ],
+      "Py": [
+        0,
+        1.5
+      ],
+      "O": [
+        0,
+        0
+      ]
+    },
+    "lpos": {
+      "O": "sw",
+      "P": "ne"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "seg",
+        "p": [
+          "P",
+          "Px"
+        ],
+        "dash": true,
+        "c": "accent2"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "P",
+          "Py"
+        ],
+        "dash": true,
+        "c": "accent2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "P",
+          "O"
+        ],
+        "c": "accent"
+      },
+      {
+        "t": "text",
+        "at": [
+          2.9,
+          2.2
+        ],
+        "s": "P(2, 1.5)",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          -0.6,
+          -0.45
+        ],
+        "s": "ראשית",
+        "size": 11,
+        "c": "muted"
+      }
+    ]
+  },
+  {
+    "id": "c-quadrants",
+    "shape": "coordinate",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "labels": false
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          1.5
+        ],
+        "s": "רביע I  (+,+)",
+        "bold": true,
+        "c": "accent"
+      },
+      {
+        "t": "text",
+        "at": [
+          -2,
+          1.5
+        ],
+        "s": "רביע II  (−,+)",
+        "bold": true,
+        "c": "accent2"
+      },
+      {
+        "t": "text",
+        "at": [
+          -2,
+          -1.5
+        ],
+        "s": "רביע III  (−,−)",
+        "bold": true,
+        "c": "good"
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          -1.5
+        ],
+        "s": "רביע IV  (+,−)",
+        "bold": true,
+        "c": "warn"
+      }
+    ]
+  },
+  {
+    "id": "c-distance",
+    "shape": "coordinate",
+    "window": [
+      -1,
+      7,
+      -0.5,
+      5.5
+    ],
+    "points": {
+      "A": [
+        1,
+        1
+      ],
+      "B": [
+        5,
+        4
+      ],
+      "C": [
+        5,
+        1
+      ]
+    },
+    "lpos": {
+      "A": "w",
+      "B": "n",
+      "C": "se"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "seg",
+        "p": [
+          "A",
+          "B"
+        ],
+        "c": "accent",
+        "w": 2.6
+      },
+      {
+        "t": "seg",
+        "p": [
+          "A",
+          "C"
+        ],
+        "dash": true,
+        "c": "accent2"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "C",
+          "B"
+        ],
+        "dash": true,
+        "c": "accent2"
+      },
+      {
+        "t": "right",
+        "p": [
+          "A",
+          "C",
+          "B"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "A",
+          "C"
+        ],
+        "s": "x₂ − x₁",
+        "side": 1,
+        "size": 11
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "C",
+          "B"
+        ],
+        "s": "y₂ − y₁",
+        "side": 1,
+        "size": 11
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "A",
+          "B"
+        ],
+        "s": "d",
+        "side": -1,
+        "c": "accent"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "A",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c-midpoint-coord",
+    "shape": "coordinate",
+    "window": [
+      -1,
+      7,
+      -0.5,
+      5.5
+    ],
+    "points": {
+      "A": [
+        1,
+        1
+      ],
+      "B": [
+        5,
+        4
+      ],
+      "M": {
+        "mid": [
+          "A",
+          "B"
+        ]
+      }
+    },
+    "lpos": {
+      "A": "w",
+      "B": "n",
+      "M": "nw"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "seg",
+        "p": [
+          "A",
+          "B"
+        ],
+        "c": "accent",
+        "w": 2.4
+      },
+      {
+        "t": "tick",
+        "p": [
+          "A",
+          "M"
+        ]
+      },
+      {
+        "t": "tick",
+        "p": [
+          "M",
+          "B"
+        ]
+      },
+      {
+        "t": "pts",
+        "p": [
+          "A",
+          "B",
+          "M"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          4.3,
+          1.3
+        ],
+        "s": "M = ((x₁+x₂)/2 , (y₁+y₂)/2)",
+        "size": 11.5,
+        "c": "accent"
+      }
+    ]
+  },
+  {
+    "id": "c-slope",
+    "shape": "coordinate",
+    "window": [
+      -1,
+      7,
+      -0.5,
+      5.5
+    ],
+    "points": {
+      "A": [
+        1,
+        1
+      ],
+      "B": [
+        5,
+        4
+      ],
+      "C": [
+        5,
+        1
+      ]
+    },
+    "lpos": {
+      "A": "nw",
+      "B": "nw"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "line",
+        "p": [
+          "A",
+          "B"
+        ],
+        "c": "accent",
+        "w": 2.4,
+        "ext": 40
+      },
+      {
+        "t": "seg",
+        "p": [
+          "A",
+          "C"
+        ],
+        "c": "accent2",
+        "w": 2
+      },
+      {
+        "t": "seg",
+        "p": [
+          "C",
+          "B"
+        ],
+        "c": "good",
+        "w": 2
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "A",
+          "C"
+        ],
+        "s": "Δx",
+        "side": 1,
+        "c": "accent2"
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "C",
+          "B"
+        ],
+        "s": "Δy",
+        "side": 1,
+        "c": "good"
+      },
+      {
+        "t": "angle",
+        "p": [
+          "C",
+          "A",
+          "B"
+        ],
+        "label": "α",
+        "r": 26
+      },
+      {
+        "t": "pts",
+        "p": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          2.2,
+          4.6
+        ],
+        "s": "m = Δy / Δx = tanα",
+        "bold": true,
+        "c": "accent"
+      }
+    ]
+  },
+  {
+    "id": "c-linear-fn",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "points": {
+      "B": [
+        0,
+        1
+      ],
+      "Z": [
+        -2,
+        0
+      ]
+    },
+    "lpos": {
+      "B": "nw",
+      "Z": "s"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "0.5x+1",
+        "label": "y = 0.5x + 1"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "B",
+          "Z"
+        ],
+        "nolabel": true,
+        "c": "accent2"
+      },
+      {
+        "t": "text",
+        "at": [
+          -0.9,
+          1.45
+        ],
+        "s": "b = 1",
+        "c": "accent2",
+        "size": 12
+      },
+      {
+        "t": "text",
+        "at": [
+          -2,
+          -0.5
+        ],
+        "s": "x = −2",
+        "c": "accent2",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-parameter",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "-1x+1",
+        "c": "muted"
+      },
+      {
+        "t": "fn",
+        "f": "0.5x+1",
+        "c": "accent2"
+      },
+      {
+        "t": "fn",
+        "f": "2x+1",
+        "c": "accent"
+      },
+      {
+        "t": "fn",
+        "f": "1",
+        "c": "good"
+      },
+      {
+        "t": "text",
+        "at": [
+          2.2,
+          2.6
+        ],
+        "s": "y = mx + 1",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          2.2,
+          2.1
+        ],
+        "s": "לכל m – ישר אחר",
+        "size": 11,
+        "c": "muted"
+      }
+    ]
+  },
+  {
+    "id": "c-parallel-lines-coord",
+    "shape": "coordinate",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "0.75x+1.5",
+        "c": "accent"
+      },
+      {
+        "t": "fn",
+        "f": "0.75x-1",
+        "c": "accent2"
+      },
+      {
+        "t": "text",
+        "at": [
+          -2.2,
+          2.4
+        ],
+        "s": "m₁ = m₂",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-perp-lines-coord",
+    "shape": "coordinate",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "points": {
+      "P": [
+        0.48,
+        1.36
+      ],
+      "Q": [
+        2,
+        2.5
+      ],
+      "R": [
+        -0.52,
+        2.693
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "0.75x+1",
+        "c": "accent"
+      },
+      {
+        "t": "fn",
+        "f": "-4/3x+2",
+        "c": "accent2"
+      },
+      {
+        "t": "right",
+        "p": [
+          "Q",
+          "P",
+          "R"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          2.4,
+          -1.8
+        ],
+        "s": "m₁ · m₂ = −1",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-system-graph",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "points": {
+      "S": [
+        1,
+        2
+      ]
+    },
+    "lpos": {
+      "S": "e"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "x+1",
+        "c": "accent",
+        "label": "y = x + 1"
+      },
+      {
+        "t": "fn",
+        "f": "-2x+4",
+        "c": "accent2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "S"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          2.0,
+          2.0
+        ],
+        "s": "(1, 2)",
+        "c": "warn",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          -1.8,
+          -2.4
+        ],
+        "s": "פתרון המערכת = נקודת החיתוך",
+        "size": 11
+      }
+    ]
+  },
+  {
+    "id": "c-parabola",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "x^2-2",
+        "label": "y = x² − 2"
+      },
+      {
+        "t": "fn",
+        "f": "-0.5x^2+2",
+        "c": "accent2",
+        "dash": true
+      },
+      {
+        "t": "text",
+        "at": [
+          -2.6,
+          2.6
+        ],
+        "s": "a > 0 ∪",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          2.6,
+          2.6
+        ],
+        "s": "a < 0 ∩",
+        "c": "accent2",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-parabola-vertex",
+    "shape": "graph",
+    "window": [
+      -3,
+      5,
+      -3,
+      3
+    ],
+    "points": {
+      "V": [
+        1,
+        -2
+      ]
+    },
+    "lpos": {
+      "V": "se"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "vline",
+        "x": 1,
+        "c": "accent2",
+        "label": "x = 1"
+      },
+      {
+        "t": "fn",
+        "f": "(x-1)^2-2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "V"
+        ],
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          3.1,
+          -2.2
+        ],
+        "s": "קודקוד (1, −2)",
+        "c": "warn",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          -1.7,
+          2.5
+        ],
+        "s": "ציר סימטריה",
+        "c": "accent2",
+        "size": 11.5
+      }
+    ]
+  },
+  {
+    "id": "c-roots-graph",
+    "shape": "graph",
+    "window": [
+      -3,
+      5,
+      -3,
+      3
+    ],
+    "points": {
+      "X1": [
+        0,
+        0
+      ],
+      "X2": [
+        3,
+        0
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "x^2-3x",
+        "label": "y = x² − 3x"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "X1",
+          "X2"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          -0.45,
+          -0.45
+        ],
+        "s": "x₁",
+        "c": "warn",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          3.4,
+          -0.45
+        ],
+        "s": "x₂",
+        "c": "warn",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          1.5,
+          2.6
+        ],
+        "s": "שורשים = חיתוך עם ציר x",
+        "size": 11.5
+      }
+    ]
+  },
+  {
+    "id": "c-discriminant",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "x^2+2x-1",
+        "dom": [
+          -3.6,
+          1.6
+        ],
+        "c": "accent"
+      },
+      {
+        "t": "fn",
+        "f": "(x-1)^2",
+        "dom": [
+          -0.7,
+          2.7
+        ],
+        "c": "good"
+      },
+      {
+        "t": "fn",
+        "f": "(x-2.4)^2+1",
+        "dom": [
+          1.2,
+          3.6
+        ],
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          -2.6,
+          2.6
+        ],
+        "s": "Δ > 0",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          0.4,
+          2.6
+        ],
+        "s": "Δ = 0",
+        "c": "good",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          2.5,
+          2.8
+        ],
+        "s": "Δ < 0",
+        "c": "warn",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-biquadratic-graph",
+    "shape": "graph",
+    "window": [
+      -3,
+      3,
+      -2.5,
+      2
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "(x^4-5x^2+4)/2",
+        "label": "x⁴ − 5x² + 4"
+      },
+      {
+        "t": "text",
+        "at": [
+          0,
+          -2.2
+        ],
+        "s": "ארבעה שורשים: ±1, ±2",
+        "size": 11.5
+      }
+    ]
+  },
+  {
+    "id": "c-sqrt-graph",
+    "shape": "graph",
+    "window": [
+      -2,
+      6,
+      -1.5,
+      4.5
+    ],
+    "points": {
+      "S": [
+        0,
+        0
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "sqrt(x)",
+        "label": "y = √x"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "S"
+        ],
+        "nolabel": true,
+        "c": "accent"
+      },
+      {
+        "t": "text",
+        "at": [
+          3,
+          -1
+        ],
+        "s": "תחום הגדרה: x ≥ 0",
+        "c": "accent2",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-domain-graph",
+    "shape": "graph",
+    "window": [
+      -3,
+      5,
+      -1.5,
+      4.5
+    ],
+    "points": {
+      "S": [
+        -1,
+        0
+      ],
+      "E": [
+        5,
+        0
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "seg",
+        "p": [
+          "S",
+          "E"
+        ],
+        "c": "good",
+        "w": 5
+      },
+      {
+        "t": "fn",
+        "f": "sqrt(x+1)",
+        "label": "y = √(x+1)"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "S"
+        ],
+        "nolabel": true,
+        "c": "good"
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          -0.9
+        ],
+        "s": "תחום ההגדרה: x ≥ −1",
+        "c": "good",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-range-graph",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -2.5,
+      3.5
+    ],
+    "points": {
+      "S": [
+        0,
+        -1
+      ],
+      "E": [
+        0,
+        3.5
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "seg",
+        "p": [
+          "S",
+          "E"
+        ],
+        "c": "accent2",
+        "w": 5
+      },
+      {
+        "t": "fn",
+        "f": "x^2-1",
+        "label": "y = x² − 1"
+      },
+      {
+        "t": "text",
+        "at": [
+          -2.4,
+          -1.7
+        ],
+        "s": "טווח (תמונה): y ≥ −1",
+        "c": "accent2",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-intercepts",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "points": {
+      "X1": [
+        -1,
+        0
+      ],
+      "X2": [
+        2,
+        0
+      ],
+      "Y": [
+        0,
+        -2
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "x^2-x-2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "X1",
+          "X2",
+          "Y"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          -1.6,
+          0.45
+        ],
+        "s": "(−1,0)",
+        "c": "warn",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          2.6,
+          0.45
+        ],
+        "s": "(2,0)",
+        "c": "warn",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          0.85,
+          -2.35
+        ],
+        "s": "(0,−2)",
+        "c": "warn",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          -2.2,
+          2.6
+        ],
+        "s": "y = x² − x − 2",
+        "c": "accent",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-sign-intervals",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "area",
+        "f": "x^2-x-2",
+        "dom": [
+          -1,
+          2
+        ],
+        "c": "warn"
+      },
+      {
+        "t": "area",
+        "f": "x^2-x-2",
+        "dom": [
+          -2.7,
+          -1
+        ],
+        "c": "good"
+      },
+      {
+        "t": "area",
+        "f": "x^2-x-2",
+        "dom": [
+          2,
+          3.3
+        ],
+        "c": "good"
+      },
+      {
+        "t": "fn",
+        "f": "x^2-x-2"
+      },
+      {
+        "t": "text",
+        "at": [
+          -2.4,
+          1.2
+        ],
+        "s": "+",
+        "c": "good",
+        "size": 20,
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          0.5,
+          -0.9
+        ],
+        "s": "−",
+        "c": "warn",
+        "size": 22,
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          3.1,
+          1.2
+        ],
+        "s": "+",
+        "c": "good",
+        "size": 20,
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-increasing",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "0.15x^3+0.3x"
+      },
+      {
+        "t": "text",
+        "at": [
+          -1.8,
+          2.3
+        ],
+        "s": "x₁ < x₂ ⇒ f(x₁) < f(x₂)",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-decreasing",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "2^(-x)-1.2",
+        "c": "accent2"
+      },
+      {
+        "t": "text",
+        "at": [
+          1.7,
+          2.3
+        ],
+        "s": "x₁ < x₂ ⇒ f(x₁) > f(x₂)",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-extremum",
+    "shape": "graph",
+    "window": [
+      -3,
+      3,
+      -2.5,
+      2
+    ],
+    "points": {
+      "M": [
+        -1,
+        1
+      ],
+      "N": [
+        1,
+        -1
+      ]
+    },
+    "lpos": {
+      "M": "n",
+      "N": "s"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "0.5x^3-1.5x"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "M",
+          "N"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          -1,
+          1.45
+        ],
+        "s": "מקסימום",
+        "c": "warn",
+        "bold": true,
+        "size": 12
+      },
+      {
+        "t": "text",
+        "at": [
+          1,
+          -1.45
+        ],
+        "s": "מינימום",
+        "c": "warn",
+        "bold": true,
+        "size": 12
+      },
+      {
+        "t": "text",
+        "at": [
+          -2.3,
+          -1.6
+        ],
+        "s": "עולה",
+        "c": "good",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          0,
+          0.55
+        ],
+        "s": "יורדת",
+        "c": "accent2",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          2.25,
+          -0.2
+        ],
+        "s": "עולה",
+        "c": "good",
+        "size": 11
+      }
+    ]
+  },
+  {
+    "id": "c-global-extremum",
+    "shape": "graph",
+    "window": [
+      -1,
+      5,
+      -1.5,
+      3
+    ],
+    "points": {
+      "A": [
+        0,
+        2
+      ],
+      "B": [
+        4,
+        2.8
+      ],
+      "M": [
+        2,
+        -0.8
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "0.05x^3+0.5x^2-2.6x+2",
+        "dom": [
+          0,
+          4
+        ],
+        "c": "accent"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "A",
+          "B",
+          "M"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          4,
+          2.4
+        ],
+        "s": "מקסימום מוחלט",
+        "c": "warn",
+        "size": 10.5
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          -1.2
+        ],
+        "s": "מינימום מוחלט",
+        "c": "warn",
+        "size": 10.5
+      },
+      {
+        "t": "text",
+        "at": [
+          1.2,
+          2.6
+        ],
+        "s": "בקטע סגור [0,4]",
+        "size": 11
+      }
+    ]
+  },
+  {
+    "id": "c-hyperbola",
+    "shape": "graph",
+    "window": [
+      -3,
+      5,
+      -2,
+      4
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "vline",
+        "x": 1,
+        "label": "x = 1"
+      },
+      {
+        "t": "hline",
+        "y": 1,
+        "label": "y = 1"
+      },
+      {
+        "t": "fn",
+        "f": "1/(x-1)+1",
+        "label": "y = 1/(x−1) + 1"
+      }
+    ]
+  },
+  {
+    "id": "c-abs-graph",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -1.5,
+      4.5
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "abs(x)",
+        "label": "y = |x|"
+      },
+      {
+        "t": "text",
+        "at": [
+          -2.2,
+          3.6
+        ],
+        "s": "\"שפיץ\" ב-x=0",
+        "size": 11.5,
+        "c": "warn"
+      }
+    ]
+  },
+  {
+    "id": "c-even",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -2,
+      4
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "0.4x^2",
+        "label": "f(−x) = f(x)"
+      },
+      {
+        "t": "text",
+        "at": [
+          0,
+          -1.3
+        ],
+        "s": "סימטריה לציר y",
+        "c": "accent2",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-odd",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "0.1x^3+0.3x",
+        "label": "f(−x) = −f(x)"
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          -2.3
+        ],
+        "s": "סימטריה לראשית",
+        "c": "accent2",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-sine",
+    "shape": "graph",
+    "window": [
+      -1,
+      7,
+      -2,
+      2
+    ],
+    "points": {
+      "A": [
+        0,
+        0
+      ],
+      "B": [
+        6.2832,
+        0
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "sin(x)",
+        "label": "y = sin x"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "A",
+          "B"
+        ],
+        "c": "accent2",
+        "w": 4
+      },
+      {
+        "t": "text",
+        "at": [
+          3.14,
+          -1.6
+        ],
+        "s": "מחזור: 2π (360°)",
+        "c": "accent2",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-cosine",
+    "shape": "graph",
+    "window": [
+      -1,
+      7,
+      -2,
+      2
+    ],
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "cos(x)",
+        "c": "accent2",
+        "label": "y = cos x"
+      },
+      {
+        "t": "text",
+        "at": [
+          3.14,
+          1.6
+        ],
+        "s": "−1 ≤ cos x ≤ 1",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-tan-graph",
+    "shape": "graph",
+    "window": [
+      -3.2,
+      3.2,
+      -2.4,
+      2.4
+    ],
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "vline",
+        "x": -1.5708,
+        "label": "−π/2"
+      },
+      {
+        "t": "vline",
+        "x": 1.5708,
+        "label": "π/2"
+      },
+      {
+        "t": "fn",
+        "f": "tan(x)",
+        "label": "y = tan x"
+      }
+    ]
+  },
+  {
+    "id": "c-amplitude",
+    "shape": "graph",
+    "window": [
+      -1,
+      7,
+      -2.5,
+      2.5
+    ],
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "sin(x)",
+        "c": "muted",
+        "dash": true
+      },
+      {
+        "t": "fn",
+        "f": "2sin(x)",
+        "label": "y = 2sin x"
+      },
+      {
+        "t": "text",
+        "at": [
+          4.7,
+          2.2
+        ],
+        "s": "משרעת 2",
+        "c": "accent",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-trig-eq",
+    "shape": "graph",
+    "window": [
+      -1,
+      7,
+      -2,
+      2
+    ],
+    "points": {
+      "P1": [
+        0.5236,
+        0.5
+      ],
+      "P2": [
+        2.618,
+        0.5
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "sin(x)"
+      },
+      {
+        "t": "hline",
+        "y": 0.5,
+        "c": "accent2",
+        "label": "y = ½"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "P1",
+          "P2"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          0.4,
+          1.3
+        ],
+        "s": "30°",
+        "c": "warn",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          2.75,
+          1.3
+        ],
+        "s": "150°",
+        "c": "warn",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          4.6,
+          -1.6
+        ],
+        "s": "+360°k",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-unit-circle",
+    "shape": "circle",
+    "window": [
+      -1.6,
+      1.6,
+      -1.2,
+      1.2
+    ],
+    "points": {
+      "O": [
+        0,
+        0
+      ],
+      "P": {
+        "polar": [
+          0,
+          0,
+          1,
+          40
+        ]
+      },
+      "Px": [
+        0.766,
+        0
+      ],
+      "E": [
+        1,
+        0
+      ]
+    },
+    "lpos": {
+      "O": "sw",
+      "P": "ne"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "labels": false
+      },
+      {
+        "t": "circle",
+        "o": "O",
+        "r": 1,
+        "c": "muted"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "O",
+          "P"
+        ],
+        "c": "accent",
+        "w": 2.4
+      },
+      {
+        "t": "seg",
+        "p": [
+          "P",
+          "Px"
+        ],
+        "c": "good",
+        "w": 2.2
+      },
+      {
+        "t": "seg",
+        "p": [
+          "O",
+          "Px"
+        ],
+        "c": "accent2",
+        "w": 2.2
+      },
+      {
+        "t": "angle",
+        "p": [
+          "E",
+          "O",
+          "P"
+        ],
+        "label": "α",
+        "r": 20
+      },
+      {
+        "t": "pts",
+        "p": [
+          "P"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          0.98,
+          0.3
+        ],
+        "s": "sinα",
+        "c": "good",
+        "size": 11.5,
+        "anchor": "start"
+      },
+      {
+        "t": "text",
+        "at": [
+          0.4,
+          -0.15
+        ],
+        "s": "cosα",
+        "c": "accent2",
+        "size": 11.5
+      },
+      {
+        "t": "text",
+        "at": [
+          -0.95,
+          1.05
+        ],
+        "s": "P = (cosα, sinα)",
+        "size": 11.5,
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-radian",
+    "shape": "circle",
+    "points": {
+      "O": [
+        150,
+        125
+      ],
+      "A": {
+        "on": [
+          "O",
+          90,
+          0
+        ]
+      },
+      "B": {
+        "on": [
+          "O",
+          90,
+          57.3
+        ]
+      }
+    },
+    "lpos": {
+      "O": "sw"
+    },
+    "elements": [
+      {
+        "t": "circle",
+        "o": "O",
+        "r": 90,
+        "c": "muted"
+      },
+      {
+        "t": "arc",
+        "o": "O",
+        "from": "A",
+        "to": "B"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "O",
+          "A"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "O",
+          "B"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "O",
+          "A"
+        ],
+        "s": "r",
+        "side": 1,
+        "c": "accent2"
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "O",
+          "B"
+        ],
+        "s": "r",
+        "side": -1,
+        "c": "accent2"
+      },
+      {
+        "t": "angle",
+        "p": [
+          "A",
+          "O",
+          "B"
+        ],
+        "label": "1 rad",
+        "r": 26
+      },
+      {
+        "t": "text",
+        "at": [
+          262,
+          70
+        ],
+        "s": "אורך הקשת = r",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "pts",
+        "p": [
+          "O"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          160,
+          228
+        ],
+        "s": "π רדיאנים = 180°",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-special-angles",
+    "shape": "right-triangle",
+    "points": {
+      "A": [
+        20,
+        195
+      ],
+      "B": [
+        140,
+        195
+      ],
+      "C": [
+        140,
+        125.7
+      ],
+      "D": [
+        180,
+        195
+      ],
+      "E": [
+        300,
+        195
+      ],
+      "F": [
+        300,
+        75
+      ]
+    },
+    "elements": [
+      {
+        "t": "poly",
+        "p": [
+          "A",
+          "B",
+          "C"
+        ],
+        "fill": "accent"
+      },
+      {
+        "t": "poly",
+        "p": [
+          "D",
+          "E",
+          "F"
+        ],
+        "fill": "accent2"
+      },
+      {
+        "t": "right",
+        "p": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "t": "right",
+        "p": [
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "t": "angle",
+        "p": [
+          "B",
+          "A",
+          "C"
+        ],
+        "label": "30°",
+        "r": 30
+      },
+      {
+        "t": "angle",
+        "p": [
+          "E",
+          "D",
+          "F"
+        ],
+        "label": "45°",
+        "r": 30,
+        "c": "accent2"
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "A",
+          "B"
+        ],
+        "s": "√3",
+        "side": 1
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "B",
+          "C"
+        ],
+        "s": "1",
+        "side": 1
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "A",
+          "C"
+        ],
+        "s": "2",
+        "side": -1
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "D",
+          "E"
+        ],
+        "s": "1",
+        "side": 1
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "E",
+          "F"
+        ],
+        "s": "1",
+        "side": 1
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "D",
+          "F"
+        ],
+        "s": "√2",
+        "side": -1
+      },
+      {
+        "t": "text",
+        "at": [
+          160,
+          40
+        ],
+        "s": "sin30° = ½ ,  cos45° = √2/2",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-tangent-graph",
+    "shape": "graph",
+    "window": [
+      -2,
+      4,
+      -1.5,
+      3
+    ],
+    "points": {
+      "P": [
+        1,
+        0.5
+      ],
+      "Q": [
+        2.4,
+        1.9
+      ],
+      "R": [
+        2.4,
+        0.5
+      ]
+    },
+    "lpos": {
+      "P": "nw"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "0.5x^2",
+        "label": "y = f(x)"
+      },
+      {
+        "t": "fn",
+        "f": "x-0.5",
+        "c": "accent2",
+        "w": 2
+      },
+      {
+        "t": "seg",
+        "p": [
+          "P",
+          "R"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "R",
+          "Q"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "P"
+        ],
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          -0.4,
+          2.6
+        ],
+        "s": "f′(x₀) = שיפוע המשיק",
+        "c": "accent2",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-secant-graph",
+    "shape": "graph",
+    "window": [
+      -1,
+      5,
+      -1,
+      3.5
+    ],
+    "points": {
+      "A": [
+        0.5,
+        0.125
+      ],
+      "B": [
+        2.5,
+        3.125
+      ]
+    },
+    "lpos": {
+      "A": "se",
+      "B": "nw"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "0.5x^2"
+      },
+      {
+        "t": "line",
+        "p": [
+          "A",
+          "B"
+        ],
+        "c": "accent2",
+        "ext": 20
+      },
+      {
+        "t": "pts",
+        "p": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          3.4,
+          1.0
+        ],
+        "s": "קצב ממוצע = Δy/Δx",
+        "c": "accent2",
+        "bold": true,
+        "size": 11.5
+      }
+    ]
+  },
+  {
+    "id": "c-normal-graph",
+    "shape": "graph",
+    "window": [
+      -2,
+      4,
+      -1.5,
+      3
+    ],
+    "points": {
+      "P": [
+        1,
+        0.5
+      ],
+      "Q": [
+        1.6,
+        1.1
+      ],
+      "R": [
+        0.4,
+        1.1
+      ]
+    },
+    "lpos": {
+      "P": "s"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "0.5x^2"
+      },
+      {
+        "t": "fn",
+        "f": "x-0.5",
+        "c": "accent2",
+        "w": 1.8,
+        "label": "משיק"
+      },
+      {
+        "t": "fn",
+        "f": "-x+1.5",
+        "c": "good",
+        "w": 1.8
+      },
+      {
+        "t": "right",
+        "p": [
+          "Q",
+          "P",
+          "R"
+        ],
+        "c": "good"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "P"
+        ],
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          -1.1,
+          2.7
+        ],
+        "s": "נורמל",
+        "c": "good",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-corner",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -1.5,
+      4.5
+    ],
+    "points": {
+      "C": [
+        1,
+        0.5
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "abs(x-1)+0.5"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "C"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          1,
+          -0.6
+        ],
+        "s": "אין משיק יחיד – לא גזירה",
+        "c": "warn",
+        "size": 11.5
+      }
+    ]
+  },
+  {
+    "id": "c-concavity",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "0.4(x+2)^2-2",
+        "dom": [
+          -4,
+          0
+        ],
+        "c": "good"
+      },
+      {
+        "t": "fn",
+        "f": "-0.4(x-2)^2+2",
+        "dom": [
+          0,
+          4
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "text",
+        "at": [
+          -2,
+          1.5
+        ],
+        "s": "f″ > 0  ∪",
+        "c": "good",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          -1.0
+        ],
+        "s": "f″ < 0  ∩",
+        "c": "accent2",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-inflection",
+    "shape": "graph",
+    "window": [
+      -3,
+      3,
+      -2.2,
+      2.2
+    ],
+    "points": {
+      "I": [
+        0,
+        0
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "0.3x^3"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "I"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          1.2,
+          -0.5
+        ],
+        "s": "נקודת פיתול",
+        "c": "warn",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-investigation",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "points": {
+      "M": [
+        0,
+        -1
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "vline",
+        "x": -2
+      },
+      {
+        "t": "vline",
+        "x": 2
+      },
+      {
+        "t": "hline",
+        "y": 1
+      },
+      {
+        "t": "fn",
+        "f": "(x^2+4)/(x^2-4)"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "M"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          0,
+          -1.5
+        ],
+        "s": "max",
+        "c": "warn",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          -3,
+          2.6
+        ],
+        "s": "y = (x²+4)/(x²−4)",
+        "size": 11
+      }
+    ]
+  },
+  {
+    "id": "c-sign-table",
+    "shape": "chart",
+    "size": [
+      320,
+      160
+    ],
+    "elements": [
+      {
+        "t": "seg",
+        "p": [
+          "a",
+          "b"
+        ],
+        "c": "muted"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "c",
+          "d"
+        ],
+        "c": "muted"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "e",
+          "f"
+        ],
+        "c": "muted"
+      },
+      {
+        "t": "text",
+        "at": [
+          292,
+          30
+        ],
+        "s": "x",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          292,
+          70
+        ],
+        "s": "f′(x)",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          292,
+          110
+        ],
+        "s": "f(x)",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          230,
+          30
+        ],
+        "s": "x < −1"
+      },
+      {
+        "t": "text",
+        "at": [
+          175,
+          30
+        ],
+        "s": "−1"
+      },
+      {
+        "t": "text",
+        "at": [
+          120,
+          30
+        ],
+        "s": "−1<x<1"
+      },
+      {
+        "t": "text",
+        "at": [
+          70,
+          30
+        ],
+        "s": "1"
+      },
+      {
+        "t": "text",
+        "at": [
+          25,
+          30
+        ],
+        "s": "x > 1"
+      },
+      {
+        "t": "text",
+        "at": [
+          230,
+          70
+        ],
+        "s": "+",
+        "c": "good",
+        "size": 16
+      },
+      {
+        "t": "text",
+        "at": [
+          175,
+          70
+        ],
+        "s": "0"
+      },
+      {
+        "t": "text",
+        "at": [
+          120,
+          70
+        ],
+        "s": "−",
+        "c": "warn",
+        "size": 16
+      },
+      {
+        "t": "text",
+        "at": [
+          70,
+          70
+        ],
+        "s": "0"
+      },
+      {
+        "t": "text",
+        "at": [
+          25,
+          70
+        ],
+        "s": "+",
+        "c": "good",
+        "size": 16
+      },
+      {
+        "t": "text",
+        "at": [
+          230,
+          110
+        ],
+        "s": "↗",
+        "c": "good",
+        "size": 18
+      },
+      {
+        "t": "text",
+        "at": [
+          175,
+          110
+        ],
+        "s": "max",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          120,
+          110
+        ],
+        "s": "↘",
+        "c": "warn",
+        "size": 18
+      },
+      {
+        "t": "text",
+        "at": [
+          70,
+          110
+        ],
+        "s": "min",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          25,
+          110
+        ],
+        "s": "↗",
+        "c": "good",
+        "size": 18
+      },
+      {
+        "t": "text",
+        "at": [
+          160,
+          145
+        ],
+        "s": "טבלת עלייה וירידה",
+        "c": "muted",
+        "size": 11
+      }
+    ],
+    "points": {
+      "a": [
+        5,
+        50
+      ],
+      "b": [
+        315,
+        50
+      ],
+      "c": [
+        5,
+        90
+      ],
+      "d": [
+        315,
+        90
+      ],
+      "e": [
+        265,
+        10
+      ],
+      "f": [
+        265,
+        130
+      ]
+    }
+  },
+  {
+    "id": "c-optimization",
+    "shape": "graph",
+    "window": [
+      -3.2,
+      3.2,
+      -0.6,
+      4.2
+    ],
+    "points": {
+      "A": [
+        -1.15,
+        0
+      ],
+      "B": [
+        1.15,
+        0
+      ],
+      "C": [
+        1.15,
+        2.67
+      ],
+      "D": [
+        -1.15,
+        2.67
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "labels": false
+      },
+      {
+        "t": "fn",
+        "f": "4-x^2"
+      },
+      {
+        "t": "poly",
+        "p": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "fill": "accent2",
+        "c": "accent2"
+      },
+      {
+        "t": "text",
+        "at": [
+          0,
+          3.7
+        ],
+        "s": "מלבן בעל שטח מקסימלי?",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-antiderivative",
+    "shape": "graph",
+    "window": [
+      -3,
+      3,
+      -2.2,
+      2.3
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "0.5x^2-1.5",
+        "c": "muted"
+      },
+      {
+        "t": "fn",
+        "f": "0.5x^2-0.5",
+        "c": "accent2"
+      },
+      {
+        "t": "fn",
+        "f": "0.5x^2+0.5",
+        "c": "accent"
+      },
+      {
+        "t": "text",
+        "at": [
+          -1.5,
+          2.0
+        ],
+        "s": "F(x) + C",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          1.6,
+          -1.8
+        ],
+        "s": "לכולן אותה נגזרת",
+        "size": 11
+      }
+    ]
+  },
+  {
+    "id": "c-area-under",
+    "shape": "graph",
+    "window": [
+      -1,
+      5,
+      -0.7,
+      3.8
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "area",
+        "f": "0.25x^2+0.5",
+        "dom": [
+          1,
+          3
+        ]
+      },
+      {
+        "t": "fn",
+        "f": "0.25x^2+0.5"
+      },
+      {
+        "t": "vline",
+        "x": 1,
+        "c": "muted",
+        "label": "a"
+      },
+      {
+        "t": "vline",
+        "x": 3,
+        "c": "muted",
+        "label": "b"
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          0.5
+        ],
+        "s": "S = ∫ f(x)dx",
+        "bold": true,
+        "c": "accent2",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-area-between",
+    "shape": "graph",
+    "window": [
+      -1,
+      4,
+      -1,
+      3.2
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "step": 1
+      },
+      {
+        "t": "area",
+        "f": "x",
+        "g": "x^2/2",
+        "dom": [
+          0,
+          2
+        ]
+      },
+      {
+        "t": "fn",
+        "f": "x",
+        "label": "f"
+      },
+      {
+        "t": "fn",
+        "f": "x^2/2",
+        "c": "accent2",
+        "label": "g"
+      },
+      {
+        "t": "text",
+        "at": [
+          2.2,
+          0.4
+        ],
+        "s": "S = ∫[f − g]dx",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-revolution",
+    "shape": "graph",
+    "window": [
+      -0.5,
+      4.5,
+      -2,
+      2
+    ],
+    "points": {
+      "A": [
+        1,
+        0
+      ],
+      "B": [
+        3,
+        0
+      ],
+      "A1": [
+        1,
+        0.7
+      ],
+      "B1": [
+        3,
+        1.5
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "labels": false
+      },
+      {
+        "t": "fn",
+        "f": "sqrt(x)*0.866",
+        "dom": [
+          0,
+          4.2
+        ]
+      },
+      {
+        "t": "fn",
+        "f": "-sqrt(x)*0.866",
+        "dom": [
+          0,
+          4.2
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "area",
+        "f": "sqrt(x)*0.866",
+        "g": "-sqrt(x)*0.866",
+        "dom": [
+          1,
+          3
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          1.75
+        ],
+        "s": "V = π∫f²(x)dx",
+        "bold": true,
+        "size": 12
+      },
+      {
+        "t": "text",
+        "at": [
+          4.1,
+          -0.35
+        ],
+        "s": "↻ x",
+        "size": 12,
+        "c": "accent"
+      }
+    ]
+  },
+  {
+    "id": "c-limit",
+    "shape": "graph",
+    "window": [
+      -1,
+      5,
+      -0.5,
+      4
+    ],
+    "points": {
+      "H": [
+        2,
+        2
+      ],
+      "Hx": [
+        2,
+        0
+      ],
+      "Hy": [
+        0,
+        2
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "(x^2-4)/(x-2)/2+0",
+        "dom": [
+          -1,
+          4.5
+        ]
+      },
+      {
+        "t": "seg",
+        "p": [
+          "H",
+          "Hx"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "H",
+          "Hy"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "H"
+        ],
+        "open": true,
+        "nolabel": true,
+        "c": "accent"
+      },
+      {
+        "t": "text",
+        "at": [
+          3.3,
+          1.3
+        ],
+        "s": "lim f(x) = 2",
+        "bold": true,
+        "size": 12
+      },
+      {
+        "t": "text",
+        "at": [
+          3.3,
+          0.85
+        ],
+        "s": "x→2",
+        "size": 11
+      }
+    ]
+  },
+  {
+    "id": "c-continuous",
+    "shape": "graph",
+    "window": [
+      -4,
+      4,
+      -3,
+      3
+    ],
+    "points": {
+      "J1": [
+        1,
+        1
+      ],
+      "J2": [
+        1,
+        -1
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "fn",
+        "f": "x/2+0.5",
+        "dom": [
+          -4,
+          1
+        ]
+      },
+      {
+        "t": "fn",
+        "f": "x/2-1.5",
+        "dom": [
+          1,
+          4
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "J1"
+        ],
+        "nolabel": true,
+        "c": "accent"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "J2"
+        ],
+        "nolabel": true,
+        "open": true,
+        "c": "accent2"
+      },
+      {
+        "t": "text",
+        "at": [
+          1,
+          2.2
+        ],
+        "s": "קפיצה ⇐ לא רציפה ב-x = 1",
+        "c": "warn",
+        "size": 11.5
+      }
+    ]
+  },
+  {
+    "id": "c-shift",
+    "shape": "graph",
+    "window": [
+      -3,
+      5,
+      -2,
+      4
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "x^2",
+        "c": "muted",
+        "dash": true,
+        "label": "y = x²"
+      },
+      {
+        "t": "fn",
+        "f": "(x-2)^2+1",
+        "label": "y = (x−2)² + 1"
+      },
+      {
+        "t": "text",
+        "at": [
+          1.2,
+          -1.3
+        ],
+        "s": "2 ימינה, 1 למעלה",
+        "bold": true,
+        "c": "accent2",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-inverse",
+    "shape": "graph",
+    "window": [
+      -2.5,
+      4.5,
+      -2.5,
+      4.5
+    ],
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "x",
+        "c": "muted",
+        "dash": true,
+        "label": "y = x"
+      },
+      {
+        "t": "fn",
+        "f": "2^x",
+        "label": "y = 2ˣ"
+      },
+      {
+        "t": "fn",
+        "f": "log_2(x)",
+        "c": "accent2",
+        "label": "y = log₂x"
+      }
+    ]
+  },
+  {
+    "id": "c-exp-graph",
+    "shape": "graph",
+    "window": [
+      -3,
+      3,
+      -0.8,
+      3.7
+    ],
+    "points": {
+      "P": [
+        0,
+        1
+      ]
+    },
+    "lpos": {
+      "P": "nw"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "e^x",
+        "label": "y = eˣ"
+      },
+      {
+        "t": "fn",
+        "f": "0.5^x",
+        "c": "accent2",
+        "dash": true,
+        "label": "y = 0.5ˣ"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "P"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          0.75,
+          0.75
+        ],
+        "s": "(0,1)",
+        "c": "warn",
+        "size": 11
+      }
+    ]
+  },
+  {
+    "id": "c-log-graph",
+    "shape": "graph",
+    "window": [
+      -1,
+      7,
+      -2.5,
+      3.5
+    ],
+    "points": {
+      "P": [
+        1,
+        0
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "log_2(x)",
+        "label": "y = log₂x"
+      },
+      {
+        "t": "fn",
+        "f": "ln(x)",
+        "c": "accent2",
+        "dash": true,
+        "label": "y = ln x"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "P"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          1.4,
+          -0.5
+        ],
+        "s": "(1,0)",
+        "c": "warn",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          4.3,
+          -1.8
+        ],
+        "s": "תחום: x > 0",
+        "size": 11.5
+      }
+    ]
+  },
+  {
+    "id": "c-growth-graph",
+    "shape": "graph",
+    "window": [
+      -0.5,
+      6.5,
+      -0.5,
+      4.75
+    ],
+    "points": {
+      "M0": [
+        0,
+        1
+      ]
+    },
+    "lpos": {
+      "M0": "w"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "x": "t",
+        "y": "M",
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "1.3^x",
+        "dom": [
+          0,
+          6.5
+        ],
+        "label": "M = M₀·qᵗ"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "M0"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          1.2,
+          1.4
+        ],
+        "s": "M₀",
+        "c": "warn",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          4.6,
+          0.6
+        ],
+        "s": "q > 1 – גדילה",
+        "bold": true,
+        "c": "good",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-decay-graph",
+    "shape": "graph",
+    "window": [
+      -0.5,
+      6.5,
+      -0.5,
+      4.75
+    ],
+    "points": {
+      "M0": [
+        0,
+        4
+      ],
+      "H": [
+        2,
+        2
+      ],
+      "Hx": [
+        2,
+        0
+      ]
+    },
+    "lpos": {
+      "M0": "w"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "x": "t",
+        "y": "M",
+        "step": 1
+      },
+      {
+        "t": "fn",
+        "f": "4*0.7071^x",
+        "dom": [
+          0,
+          6.5
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "H",
+          "Hx"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "M0",
+          "H"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          2.9,
+          2.3
+        ],
+        "s": "חצי מהכמות",
+        "c": "warn",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          -0.35
+        ],
+        "s": "T½",
+        "c": "warn",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          4.7,
+          3.4
+        ],
+        "s": "0 < q < 1 – דעיכה",
+        "bold": true,
+        "c": "accent2",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-quad-inequality",
+    "shape": "graph",
+    "window": [
+      -3,
+      5,
+      -3,
+      3
+    ],
+    "points": {
+      "A": [
+        -1,
+        0
+      ],
+      "B": [
+        3,
+        0
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "A",
+          "B"
+        ],
+        "c": "good",
+        "w": 5
+      },
+      {
+        "t": "fn",
+        "f": "(x+1)(x-3)/2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "A",
+          "B"
+        ],
+        "nolabel": true,
+        "open": true,
+        "c": "good"
+      },
+      {
+        "t": "text",
+        "at": [
+          1,
+          1.8
+        ],
+        "s": "(x+1)(x−3) < 0  ⇔  −1 < x < 3",
+        "bold": true,
+        "size": 11.5
+      }
+    ]
+  },
+  {
+    "id": "c-graph-intersection",
+    "shape": "graph",
+    "window": [
+      -3,
+      5,
+      -1.5,
+      4.5
+    ],
+    "points": {
+      "P": [
+        -1,
+        1
+      ],
+      "Q": [
+        2,
+        4
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "fn",
+        "f": "x^2",
+        "label": "y = x²"
+      },
+      {
+        "t": "fn",
+        "f": "x+2",
+        "c": "accent2",
+        "label": "y = x+2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "P",
+          "Q"
+        ],
+        "nolabel": true,
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          -1.8,
+          0.4
+        ],
+        "s": "(−1,1)",
+        "c": "warn",
+        "size": 11
+      },
+      {
+        "t": "text",
+        "at": [
+          2.9,
+          3.8
+        ],
+        "s": "(2,4)",
+        "c": "warn",
+        "size": 11
+      }
+    ]
+  },
+  {
+    "id": "c-circle-eq",
+    "shape": "coordinate",
+    "window": [
+      -2,
+      6,
+      -2,
+      4
+    ],
+    "points": {
+      "C": [
+        2,
+        1
+      ],
+      "P": {
+        "polar": [
+          2,
+          1,
+          2,
+          35
+        ]
+      }
+    },
+    "lpos": {
+      "C": "s"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "circle",
+        "o": "C",
+        "r": 2
+      },
+      {
+        "t": "seg",
+        "p": [
+          "C",
+          "P"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "C",
+          "P"
+        ],
+        "s": "R",
+        "c": "accent2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "C"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          3.6
+        ],
+        "s": "(x−2)² + (y−1)² = 4",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-circle-tangent-coord",
+    "shape": "coordinate",
+    "window": [
+      -2,
+      6,
+      -2,
+      4
+    ],
+    "points": {
+      "C": [
+        2,
+        1
+      ],
+      "T": {
+        "polar": [
+          2,
+          1,
+          2,
+          60
+        ]
+      },
+      "U": {
+        "rot": [
+          "C",
+          "T",
+          90
+        ]
+      },
+      "W": {
+        "rot": [
+          "C",
+          "T",
+          -90
+        ]
+      }
+    },
+    "lpos": {
+      "T": "ne"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "circle",
+        "o": "C",
+        "r": 2
+      },
+      {
+        "t": "line",
+        "p": [
+          "U",
+          "W"
+        ],
+        "c": "accent2",
+        "ext": 30
+      },
+      {
+        "t": "seg",
+        "p": [
+          "C",
+          "T"
+        ],
+        "c": "muted"
+      },
+      {
+        "t": "right",
+        "p": [
+          "C",
+          "T",
+          "U"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "C",
+          "T"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          -0.6,
+          3.5
+        ],
+        "s": "m(משיק) · m(רדיוס) = −1",
+        "size": 11.5,
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-point-line-coord",
+    "shape": "coordinate",
+    "window": [
+      -3,
+      5,
+      -2,
+      4
+    ],
+    "points": {
+      "P": [
+        3,
+        3
+      ],
+      "A": [
+        -2,
+        -1
+      ],
+      "B": [
+        4,
+        1
+      ],
+      "F": {
+        "foot": [
+          "P",
+          "A",
+          "B"
+        ]
+      }
+    },
+    "lpos": {
+      "P": "ne",
+      "F": "se"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true
+      },
+      {
+        "t": "line",
+        "p": [
+          "A",
+          "B"
+        ],
+        "c": "accent",
+        "ext": 10
+      },
+      {
+        "t": "seg",
+        "p": [
+          "P",
+          "F"
+        ],
+        "c": "accent2",
+        "dash": true
+      },
+      {
+        "t": "right",
+        "p": [
+          "P",
+          "F",
+          "B"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "P",
+          "F"
+        ],
+        "s": "d",
+        "c": "accent2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "P",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c-parabola-locus",
+    "shape": "coordinate",
+    "window": [
+      -3,
+      5,
+      -3,
+      3
+    ],
+    "points": {
+      "F": [
+        1,
+        0
+      ],
+      "P": [
+        1.5625,
+        2.5
+      ],
+      "D": [
+        -1,
+        2.5
+      ]
+    },
+    "lpos": {
+      "F": "s",
+      "P": "ne",
+      "D": "w"
+    },
+    "elements": [
+      {
+        "t": "axes"
+      },
+      {
+        "t": "vline",
+        "x": -1,
+        "c": "accent2",
+        "label": "מדריך",
+        "dash": false
+      },
+      {
+        "t": "fn",
+        "f": "sqrt(4x)",
+        "dom": [
+          0,
+          5
+        ]
+      },
+      {
+        "t": "fn",
+        "f": "-sqrt(4x)",
+        "dom": [
+          0,
+          5
+        ]
+      },
+      {
+        "t": "seg",
+        "p": [
+          "P",
+          "F"
+        ],
+        "c": "warn",
+        "dash": true
+      },
+      {
+        "t": "seg",
+        "p": [
+          "P",
+          "D"
+        ],
+        "c": "warn",
+        "dash": true
+      },
+      {
+        "t": "tick",
+        "p": [
+          "P",
+          "F"
+        ],
+        "c": "warn"
+      },
+      {
+        "t": "tick",
+        "p": [
+          "P",
+          "D"
+        ],
+        "c": "warn"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "F",
+          "P",
+          "D"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          2.8,
+          -2.4
+        ],
+        "s": "y² = 4x ,  מוקד F(1,0)",
+        "size": 11.5,
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-complex-plane",
+    "shape": "complex-plane",
+    "window": [
+      -1.5,
+      4.5,
+      -1.5,
+      3
+    ],
+    "points": {
+      "Z": [
+        3,
+        2
+      ],
+      "Zx": [
+        3,
+        0
+      ],
+      "Zy": [
+        0,
+        2
+      ],
+      "O": [
+        0,
+        0
+      ]
+    },
+    "lpos": {
+      "Z": "ne"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "x": "Re",
+        "y": "Im",
+        "step": 1
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "Z"
+        ]
+      },
+      {
+        "t": "seg",
+        "p": [
+          "Z",
+          "Zx"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "Z",
+          "Zy"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "Z"
+        ],
+        "nolabel": true,
+        "c": "accent"
+      },
+      {
+        "t": "text",
+        "at": [
+          3.5,
+          2.5
+        ],
+        "s": "z = 3 + 2i",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          3,
+          -0.45
+        ],
+        "s": "a",
+        "c": "accent2",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          -0.3,
+          2
+        ],
+        "s": "b",
+        "c": "accent2",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-conjugate",
+    "shape": "complex-plane",
+    "window": [
+      -2,
+      4,
+      -3,
+      3
+    ],
+    "points": {
+      "Z": [
+        3,
+        2
+      ],
+      "W": [
+        3,
+        -2
+      ],
+      "O": [
+        0,
+        0
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "x": "Re",
+        "y": "Im",
+        "step": 1
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "Z"
+        ]
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "W"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "Z",
+          "W"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "text",
+        "at": [
+          3.3,
+          2.5
+        ],
+        "s": "z = a + bi",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          3.3,
+          -2.5
+        ],
+        "s": "z̄ = a − bi",
+        "c": "accent2",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-complex-polar",
+    "shape": "complex-plane",
+    "window": [
+      -1.5,
+      3.5,
+      -1,
+      2.75
+    ],
+    "points": {
+      "O": [
+        0,
+        0
+      ],
+      "Z": {
+        "polar": [
+          0,
+          0,
+          2.4,
+          50
+        ]
+      },
+      "E": [
+        1,
+        0
+      ]
+    },
+    "lpos": {
+      "Z": "ne"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "x": "Re",
+        "y": "Im",
+        "step": 1
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "Z"
+        ]
+      },
+      {
+        "t": "seglabel",
+        "p": [
+          "O",
+          "Z"
+        ],
+        "s": "r = |z|",
+        "side": -1
+      },
+      {
+        "t": "angle",
+        "p": [
+          "E",
+          "O",
+          "Z"
+        ],
+        "label": "θ",
+        "r": 24,
+        "c": "accent2"
+      },
+      {
+        "t": "text",
+        "at": [
+          2.4,
+          2.4
+        ],
+        "s": "z = r·cis θ",
+        "bold": true,
+        "c": "accent"
+      }
+    ]
+  },
+  {
+    "id": "c-demoivre",
+    "shape": "complex-plane",
+    "window": [
+      -2.2,
+      2.2,
+      -1.65,
+      1.65
+    ],
+    "points": {
+      "O": [
+        0,
+        0
+      ],
+      "Z1": {
+        "polar": [
+          0,
+          0,
+          1,
+          30
+        ]
+      },
+      "Z2": {
+        "polar": [
+          0,
+          0,
+          1,
+          60
+        ]
+      },
+      "Z3": {
+        "polar": [
+          0,
+          0,
+          1,
+          90
+        ]
+      },
+      "Z4": {
+        "polar": [
+          0,
+          0,
+          1,
+          120
+        ]
+      }
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "labels": false,
+        "x": "Re",
+        "y": "Im"
+      },
+      {
+        "t": "circle",
+        "o": "O",
+        "r": 1,
+        "c": "muted",
+        "dash": true
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "Z1"
+        ]
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "Z2"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "Z3"
+        ],
+        "c": "good"
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "Z4"
+        ],
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          1.25,
+          0.6
+        ],
+        "s": "z",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          0.65,
+          1.15
+        ],
+        "s": "z²",
+        "c": "accent2",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          0.12,
+          1.3
+        ],
+        "s": "z³",
+        "c": "good",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          -0.75,
+          1.15
+        ],
+        "s": "z⁴",
+        "c": "warn",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          1.2,
+          -1.3
+        ],
+        "s": "zⁿ = rⁿ·cis(nθ)",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-roots-unity",
+    "shape": "complex-plane",
+    "window": [
+      -2,
+      2,
+      -1.5,
+      1.5
+    ],
+    "points": {
+      "O": [
+        0,
+        0
+      ],
+      "R0": {
+        "polar": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "R1": {
+        "polar": [
+          0,
+          0,
+          1,
+          60
+        ]
+      },
+      "R2": {
+        "polar": [
+          0,
+          0,
+          1,
+          120
+        ]
+      },
+      "R3": {
+        "polar": [
+          0,
+          0,
+          1,
+          180
+        ]
+      },
+      "R4": {
+        "polar": [
+          0,
+          0,
+          1,
+          240
+        ]
+      },
+      "R5": {
+        "polar": [
+          0,
+          0,
+          1,
+          300
+        ]
+      }
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "labels": false,
+        "x": "Re",
+        "y": "Im"
+      },
+      {
+        "t": "circle",
+        "o": "O",
+        "r": 1,
+        "c": "muted",
+        "dash": true
+      },
+      {
+        "t": "poly",
+        "p": [
+          "R0",
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "fill": "accent",
+        "c": "accent"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "R0",
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "nolabel": true,
+        "c": "accent"
+      },
+      {
+        "t": "text",
+        "at": [
+          1.45,
+          -1.25
+        ],
+        "s": "z⁶ = 1",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-vector",
+    "shape": "vector",
+    "window": [
+      -1,
+      5,
+      -0.5,
+      4
+    ],
+    "points": {
+      "A": [
+        0.5,
+        0.5
+      ],
+      "B": [
+        3.5,
+        2.5
+      ],
+      "C": [
+        1.5,
+        2
+      ],
+      "D": [
+        4.5,
+        4
+      ]
+    },
+    "lpos": {
+      "A": "sw",
+      "B": "se"
+    },
+    "elements": [
+      {
+        "t": "vec",
+        "p": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "t": "vec",
+        "p": [
+          "C",
+          "D"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "pts",
+        "p": [
+          "A",
+          "B"
+        ],
+        "c": "accent"
+      },
+      {
+        "t": "text",
+        "at": [
+          1.5,
+          3.3
+        ],
+        "s": "וקטורים שווים: אותו גודל ואותו כיוון",
+        "size": 11.5
+      }
+    ]
+  },
+  {
+    "id": "c-vector-components",
+    "shape": "vector",
+    "window": [
+      -1,
+      5,
+      -0.75,
+      3.75
+    ],
+    "points": {
+      "O": [
+        0,
+        0
+      ],
+      "P": [
+        4,
+        3
+      ],
+      "Px": [
+        4,
+        0
+      ]
+    },
+    "lpos": {
+      "O": "sw"
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "grid": true,
+        "step": 1
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "P"
+        ],
+        "w": 2.6
+      },
+      {
+        "t": "seg",
+        "p": [
+          "O",
+          "Px"
+        ],
+        "c": "accent2",
+        "w": 2.4
+      },
+      {
+        "t": "seg",
+        "p": [
+          "Px",
+          "P"
+        ],
+        "c": "good",
+        "w": 2.4
+      },
+      {
+        "t": "text",
+        "at": [
+          2,
+          -0.4
+        ],
+        "s": "x = 4",
+        "c": "accent2",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          4.4,
+          1.5
+        ],
+        "s": "y = 3",
+        "c": "good",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          1.3,
+          2.4
+        ],
+        "s": "|u| = √(4²+3²) = 5",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-vector-add",
+    "shape": "vector",
+    "window": [
+      -0.5,
+      6.5,
+      -0.5,
+      4.75
+    ],
+    "points": {
+      "O": [
+        0.5,
+        0.5
+      ],
+      "A": [
+        4.5,
+        1.2
+      ],
+      "B": [
+        1.6,
+        3.4
+      ],
+      "C": {
+        "add": [
+          "A",
+          "O",
+          "B"
+        ]
+      }
+    },
+    "elements": [
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "A"
+        ]
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "B"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "A",
+          "C"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "B",
+          "C"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "C"
+        ],
+        "c": "good",
+        "w": 2.8
+      },
+      {
+        "t": "text",
+        "at": [
+          2.7,
+          0.55
+        ],
+        "s": "u",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          0.7,
+          2.2
+        ],
+        "s": "v",
+        "c": "accent2",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          4.3,
+          3.4
+        ],
+        "s": "u + v",
+        "c": "good",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-scalar-mult",
+    "shape": "vector",
+    "window": [
+      -0.5,
+      6.5,
+      -0.5,
+      4.75
+    ],
+    "points": {
+      "A": [
+        0.5,
+        0.5
+      ],
+      "B": [
+        2.5,
+        1.5
+      ],
+      "C": [
+        0.5,
+        2
+      ],
+      "D": [
+        4.5,
+        4
+      ],
+      "E": [
+        5.5,
+        2.5
+      ],
+      "F": [
+        3.5,
+        1.5
+      ]
+    },
+    "elements": [
+      {
+        "t": "vec",
+        "p": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "t": "vec",
+        "p": [
+          "C",
+          "D"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "vec",
+        "p": [
+          "E",
+          "F"
+        ],
+        "c": "warn"
+      },
+      {
+        "t": "text",
+        "at": [
+          1.4,
+          1.5
+        ],
+        "s": "u",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          2.2,
+          3.4
+        ],
+        "s": "2u",
+        "c": "accent2",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          4.6,
+          2.4
+        ],
+        "s": "−u",
+        "c": "warn",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-dot-product",
+    "shape": "vector",
+    "window": [
+      -0.5,
+      5.5,
+      -0.75,
+      3.75
+    ],
+    "points": {
+      "O": [
+        0.3,
+        0.3
+      ],
+      "A": [
+        5,
+        0.3
+      ],
+      "B": [
+        3,
+        3.2
+      ],
+      "F": {
+        "foot": [
+          "B",
+          "O",
+          "A"
+        ]
+      }
+    },
+    "lpos": {},
+    "elements": [
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "A"
+        ]
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "B"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "seg",
+        "p": [
+          "B",
+          "F"
+        ],
+        "dash": true,
+        "c": "muted"
+      },
+      {
+        "t": "angle",
+        "p": [
+          "A",
+          "O",
+          "B"
+        ],
+        "label": "θ",
+        "r": 26,
+        "c": "good"
+      },
+      {
+        "t": "text",
+        "at": [
+          4.7,
+          0.75
+        ],
+        "s": "u",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          2.7,
+          3.45
+        ],
+        "s": "v",
+        "c": "accent2",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          2.6,
+          -0.4
+        ],
+        "s": "u·v = |u||v|cosθ",
+        "bold": true,
+        "size": 12
+      }
+    ]
+  },
+  {
+    "id": "c-perp-vectors",
+    "shape": "vector",
+    "window": [
+      -0.5,
+      5.5,
+      -0.75,
+      3.75
+    ],
+    "points": {
+      "O": [
+        1.5,
+        0.5
+      ],
+      "A": [
+        4.5,
+        1.5
+      ],
+      "B": [
+        0.5,
+        3.5
+      ]
+    },
+    "elements": [
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "A"
+        ]
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "B"
+        ],
+        "c": "accent2"
+      },
+      {
+        "t": "right",
+        "p": [
+          "A",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          3.4,
+          3.1
+        ],
+        "s": "u·v = 0",
+        "bold": true,
+        "size": 14
+      }
+    ]
+  },
+  {
+    "id": "c-unit-vector",
+    "shape": "vector",
+    "window": [
+      -1,
+      5,
+      -0.75,
+      3.75
+    ],
+    "points": {
+      "O": [
+        0,
+        0
+      ],
+      "P": [
+        4,
+        3
+      ],
+      "U": [
+        0.8,
+        0.6
+      ]
+    },
+    "elements": [
+      {
+        "t": "axes",
+        "step": 1
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "P"
+        ],
+        "c": "muted"
+      },
+      {
+        "t": "vec",
+        "p": [
+          "O",
+          "U"
+        ],
+        "c": "accent",
+        "w": 3
+      },
+      {
+        "t": "text",
+        "at": [
+          1.5,
+          1.6
+        ],
+        "s": "|e| = 1",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          3.2,
+          3.2
+        ],
+        "s": "e = u / |u|",
+        "bold": true
+      }
+    ]
+  },
+  {
+    "id": "c-param-line",
+    "shape": "vector",
+    "window": [
+      -0.5,
+      6.5,
+      -0.5,
+      4.75
+    ],
+    "points": {
+      "A": [
+        1,
+        1
+      ],
+      "B": [
+        2.5,
+        2
+      ],
+      "P": [
+        4,
+        3
+      ],
+      "Z": [
+        0.2,
+        0.2
+      ]
+    },
+    "lpos": {
+      "A": "se",
+      "P": "se"
+    },
+    "elements": [
+      {
+        "t": "line",
+        "p": [
+          "A",
+          "P"
+        ],
+        "c": "muted",
+        "ext": 60
+      },
+      {
+        "t": "vec",
+        "p": [
+          "Z",
+          "A"
+        ],
+        "c": "accent2",
+        "dash": true
+      },
+      {
+        "t": "vec",
+        "p": [
+          "A",
+          "B"
+        ],
+        "w": 2.8
+      },
+      {
+        "t": "pts",
+        "p": [
+          "A",
+          "P"
+        ]
+      },
+      {
+        "t": "text",
+        "at": [
+          1.6,
+          2.1
+        ],
+        "s": "u",
+        "c": "accent",
+        "bold": true
+      },
+      {
+        "t": "text",
+        "at": [
+          3.6,
+          0.6
+        ],
+        "s": "x = A + t·u",
+        "bold": true
+      }
+    ]
+  }
+]

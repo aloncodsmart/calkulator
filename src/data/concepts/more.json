@@ -1,0 +1,2147 @@
+[
+ {
+  "id": "sine",
+  "term": "סינוס",
+  "aliases": [
+   "sin"
+  ],
+  "simple": "במשולש ישר זווית: הניצב שמול הזווית חלקי היתר.",
+  "formal": "$\\sin\\alpha = \\frac{\\text{ניצב מול}}{\\text{יתר}}$. במעגל היחידה, $\\sin\\alpha$ הוא שיעור ה-$y$ של הנקודה המתאימה לזווית.",
+  "diagram": "right-trig",
+  "related": [
+   "cosine",
+   "tangent-ratio",
+   "unit-circle",
+   "sine-function"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "cosine",
+  "term": "קוסינוס",
+  "aliases": [
+   "cos"
+  ],
+  "simple": "במשולש ישר זווית: הניצב שליד הזווית חלקי היתר.",
+  "formal": "$\\cos\\alpha = \\frac{\\text{ניצב ליד}}{\\text{יתר}}$. במעגל היחידה, $\\cos\\alpha$ הוא שיעור ה-$x$.",
+  "diagram": "right-trig",
+  "related": [
+   "sine",
+   "tangent-ratio",
+   "unit-circle"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "tangent-ratio",
+  "term": "טנגנס",
+  "aliases": [
+   "tan",
+   "tg"
+  ],
+  "simple": "במשולש ישר זווית: הניצב שמול הזווית חלקי הניצב שלידה.",
+  "formal": "$\\tan\\alpha = \\frac{\\text{ניצב מול}}{\\text{ניצב ליד}} = \\frac{\\sin\\alpha}{\\cos\\alpha}$. הוא שווה גם לשיפוע של ישר שיוצר זווית $\\alpha$ עם ציר $x$.",
+  "diagram": "right-trig",
+  "related": [
+   "sine",
+   "cosine",
+   "slope"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "unit-circle",
+  "term": "מעגל היחידה",
+  "simple": "מעגל שהרדיוס שלו 1 והמרכז בראשית. בעזרתו מגדירים סינוס וקוסינוס לכל זווית.",
+  "formal": "המעגל $x^2 + y^2 = 1$. לזווית $\\alpha$ מתאימה הנקודה $(\\cos\\alpha, \\sin\\alpha)$, ולכן $\\sin^2\\alpha + \\cos^2\\alpha = 1$.",
+  "diagram": "c-unit-circle",
+  "related": [
+   "sine",
+   "cosine",
+   "radian",
+   "pythagorean-identity"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "degree",
+  "term": "מעלה",
+  "aliases": [
+   "°"
+  ],
+  "simple": "יחידת מידה לזוויות. סיבוב שלם הוא $360^\\circ$.",
+  "formal": "$1^\\circ = \\frac{1}{360}$ מסיבוב שלם. $180^\\circ = \\pi$ רדיאנים.",
+  "diagram": "c-angle",
+  "related": [
+   "radian",
+   "angle"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "radian",
+  "term": "רדיאן",
+  "aliases": [
+   "rad"
+  ],
+  "simple": "יחידת מידה לזוויות. זווית של רדיאן אחד נשענת על קשת שאורכה שווה לרדיוס.",
+  "formal": "גודל הזווית ברדיאנים הוא $\\theta = \\frac{\\ell}{r}$. $\\pi \\text{ rad} = 180^\\circ$, ולכן $1 \\text{ rad} \\approx 57.3^\\circ$.",
+  "diagram": "c-radian",
+  "related": [
+   "degree",
+   "arc-length",
+   "unit-circle"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "special-angles",
+  "term": "זוויות מיוחדות",
+  "simple": "הזוויות $30^\\circ, 45^\\circ, 60^\\circ$, שאת ערכי הסינוס והקוסינוס שלהן כדאי לזכור.",
+  "formal": "$\\sin30^\\circ = \\frac12$, $\\sin45^\\circ = \\frac{\\sqrt2}{2}$, $\\sin60^\\circ = \\frac{\\sqrt3}{2}$, ו-$\\cos\\alpha = \\sin(90^\\circ - \\alpha)$.",
+  "diagram": "c-special-angles",
+  "related": [
+   "sine",
+   "cosine",
+   "right-triangle"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "pythagorean-identity",
+  "term": "הזהות הטריגונומטרית היסודית",
+  "simple": "לכל זווית: $\\sin^2\\alpha + \\cos^2\\alpha = 1$.",
+  "formal": "$\\sin^2\\alpha + \\cos^2\\alpha = 1$, ונובע ממנה $1 + \\tan^2\\alpha = \\frac{1}{\\cos^2\\alpha}$. זה משפט פיתגורס במעגל היחידה.",
+  "diagram": "c-unit-circle",
+  "related": [
+   "unit-circle",
+   "trig-identity",
+   "sine"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "trig-identity",
+  "term": "זהות טריגונומטרית",
+  "simple": "שוויון בין ביטויים טריגונומטריים שנכון לכל זווית שבה הם מוגדרים.",
+  "formal": "שוויון $A(\\alpha) = B(\\alpha)$ המתקיים לכל $\\alpha$ בתחום ההגדרה, כמו $\\sin2\\alpha = 2\\sin\\alpha\\cos\\alpha$.",
+  "diagram": "c-unit-circle",
+  "related": [
+   "pythagorean-identity",
+   "trig-equation"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "trig-equation",
+  "term": "משוואה טריגונומטרית",
+  "simple": "משוואה שהנעלם בה בתוך sin, cos או tan. בדרך כלל יש לה אינסוף פתרונות, ולכן כותבים פתרון כללי עם $k$.",
+  "formal": "לדוגמה $\\sin x = \\sin\\alpha \\Rightarrow x = \\alpha + 360^\\circ k$ או $x = 180^\\circ - \\alpha + 360^\\circ k$, כאשר $k$ שלם.",
+  "diagram": "c-trig-eq",
+  "related": [
+   "general-solution",
+   "periodic-function",
+   "trig-identity"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "general-solution",
+  "term": "פתרון כללי",
+  "simple": "נוסחה שמתארת את כל הפתרונות של משוואה מחזורית, בעזרת מספר שלם $k$.",
+  "formal": "קבוצת פתרונות מהצורה $x = x_0 + T\\cdot k$, $k \\in \\mathbb{Z}$, כאשר $T$ המחזור.",
+  "diagram": "c-trig-eq",
+  "related": [
+   "trig-equation",
+   "periodic-function"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "sine-function",
+  "term": "פונקציית הסינוס",
+  "simple": "הפונקציה $y = \\sin x$: גל שחוזר על עצמו, בין $-1$ ל-$1$.",
+  "formal": "$f(x) = \\sin x$, מחזורית עם מחזור $2\\pi$ וטווח $[-1, 1]$. הנגזרת שלה היא $\\cos x$.",
+  "diagram": "c-sine",
+  "related": [
+   "periodic-function",
+   "amplitude",
+   "sine"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "cosine-function",
+  "term": "פונקציית הקוסינוס",
+  "simple": "הפונקציה $y = \\cos x$: גל כמו הסינוס, אבל מוזז. היא מתחילה ב-1 כש-$x = 0$.",
+  "formal": "$f(x) = \\cos x$, מחזורית עם מחזור $2\\pi$ וטווח $[-1, 1]$. פונקציה זוגית. הנגזרת שלה $-\\sin x$.",
+  "diagram": "c-cosine",
+  "related": [
+   "sine-function",
+   "periodic-function",
+   "even-function",
+   "cosine"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "tangent-function",
+  "term": "פונקציית הטנגנס",
+  "simple": "הפונקציה $y = \\tan x$. יש לה אסימפטוטות אנכיות בכל מקום שבו $\\cos x = 0$.",
+  "formal": "$f(x) = \\tan x = \\frac{\\sin x}{\\cos x}$, מוגדרת עבור $x \\neq \\frac{\\pi}{2} + \\pi k$. מחזורית עם מחזור $\\pi$. הנגזרת שלה $\\frac{1}{\\cos^2 x}$.",
+  "diagram": "c-tan-graph",
+  "related": [
+   "tangent-ratio",
+   "vertical-asymptote",
+   "periodic-function"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "amplitude",
+  "term": "משרעת",
+  "simple": "\"הגובה\" של הגל: המרחק מהקו האמצעי לשיא.",
+  "formal": "בפונקציה $y = A\\sin(x)$, המשרעת היא $|A|$.",
+  "diagram": "c-amplitude",
+  "related": [
+   "sine-function",
+   "periodic-function"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "elevation-angle",
+  "term": "זווית הגבהה וזווית השפלה",
+  "simple": "זווית הגבהה: הזווית בין קו אופקי לקו המבט כלפי מעלה. זווית השפלה: הזווית כלפי מטה.",
+  "formal": "הזווית בין הקו האופקי לבין הקו המחבר את עין המתבונן עם העצם. זוויות הגבהה והשפלה בין שתי נקודות שוות (זוויות מתחלפות).",
+  "diagram": "right-trig",
+  "related": [
+   "tangent-ratio",
+   "alternate-angles"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "coordinate-system",
+  "term": "מערכת צירים",
+  "simple": "שני צירי מספרים מאונכים, $x$ ו-$y$, שנפגשים בראשית. כל נקודה מתוארת על ידי זוג מספרים $(x, y)$.",
+  "formal": "מערכת צירים קרטזית: ציר $x$ (אופקי) וציר $y$ (אנכי) הנחתכים בראשית $O(0,0)$. לכל נקודה זוג סדור $(x, y)$ של שיעורים.",
+  "diagram": "c-coord",
+  "related": [
+   "quadrant",
+   "point-coordinates",
+   "function-graph"
+  ],
+  "topic": "analytic",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "point-coordinates",
+  "term": "שיעורי נקודה",
+  "simple": "שני המספרים שמתארים את מקום הנקודה: קודם $x$, אחר כך $y$.",
+  "formal": "לנקודה $P(x, y)$: $x$ הוא שיעור ה-$x$ (האיקס) ו-$y$ שיעור ה-$y$ (הוואי).",
+  "diagram": "c-coord",
+  "related": [
+   "coordinate-system",
+   "distance-formula"
+  ],
+  "topic": "analytic",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "quadrant",
+  "term": "רביע",
+  "simple": "אחד מארבעת החלקים שהצירים מחלקים אליהם את המישור.",
+  "formal": "רביע I: $x > 0, y > 0$. II: $x < 0, y > 0$. III: $x < 0, y < 0$. IV: $x > 0, y < 0$.",
+  "diagram": "c-quadrants",
+  "related": [
+   "coordinate-system"
+  ],
+  "topic": "analytic",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "distance-formula",
+  "term": "מרחק בין נקודות",
+  "simple": "אורך הקטע בין שתי נקודות במערכת צירים, לפי פיתגורס.",
+  "formal": "$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
+  "diagram": "c-distance",
+  "related": [
+   "midpoint-formula",
+   "circle-equation",
+   "hypotenuse"
+  ],
+  "topic": "analytic",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "midpoint-formula",
+  "term": "אמצע קטע במערכת צירים",
+  "simple": "האמצע הוא הממוצע של ה-$x$-ים והממוצע של ה-$y$-ים.",
+  "formal": "$M\\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$.",
+  "diagram": "c-midpoint-coord",
+  "related": [
+   "midpoint",
+   "distance-formula"
+  ],
+  "topic": "analytic",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "line-equation",
+  "term": "משוואת ישר",
+  "simple": "משוואה שכל הנקודות על הישר מקיימות, ורק הן. הצורה הנפוצה: $y = mx + b$.",
+  "formal": "$y = mx + b$, או $y - y_1 = m(x - x_1)$, או בצורה הכללית $Ax + By + C = 0$. ישר אנכי: $x = a$.",
+  "diagram": "c-linear-fn",
+  "related": [
+   "slope",
+   "linear-function",
+   "parallel-slopes",
+   "perpendicular-slopes"
+  ],
+  "topic": "analytic",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "parallel-slopes",
+  "term": "ישרים מקבילים (בגאומטריה אנליטית)",
+  "simple": "לישרים מקבילים יש אותו שיפוע.",
+  "formal": "$\\ell_1 \\parallel \\ell_2 \\iff m_1 = m_2$ (כשהישרים אינם אנכיים ואינם מתלכדים).",
+  "diagram": "c-parallel-lines-coord",
+  "related": [
+   "slope",
+   "parallel-lines",
+   "perpendicular-slopes"
+  ],
+  "topic": "analytic",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "perpendicular-slopes",
+  "term": "ישרים מאונכים (בגאומטריה אנליטית)",
+  "simple": "מכפלת השיפועים של ישרים מאונכים היא $-1$.",
+  "formal": "$\\ell_1 \\perp \\ell_2 \\iff m_1 \\cdot m_2 = -1$ (כששני הישרים אינם מקבילים לצירים).",
+  "diagram": "c-perp-lines-coord",
+  "related": [
+   "slope",
+   "perpendicular-lines",
+   "parallel-slopes"
+  ],
+  "topic": "analytic",
+  "grades": [
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "circle-equation",
+  "term": "משוואת מעגל",
+  "simple": "המשוואה של כל הנקודות שמרחקן מהמרכז $(a, b)$ שווה ל-$R$.",
+  "formal": "$(x - a)^2 + (y - b)^2 = R^2$. זה ניסוח של נוסחת המרחק.",
+  "diagram": "c-circle-eq",
+  "related": [
+   "circle",
+   "distance-formula",
+   "tangent-circle-analytic"
+  ],
+  "topic": "analytic",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "tangent-circle-analytic",
+  "term": "משיק למעגל (בגאומטריה אנליטית)",
+  "simple": "המשיק מאונך לרדיוס בנקודת ההשקה, ולכן מכפלת השיפועים היא $-1$.",
+  "formal": "משיק למעגל שמרכזו $M$ בנקודה $T$ הוא הישר דרך $T$ ששיפועו $-\\frac{1}{m_{MT}}$. דרך נוספת: ישר משיק אם מרחקו מהמרכז שווה ל-$R$.",
+  "diagram": "c-circle-tangent-coord",
+  "related": [
+   "circle-equation",
+   "tangent-line",
+   "perpendicular-slopes"
+  ],
+  "topic": "analytic",
+  "grades": [
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "distance-point-line-analytic",
+  "term": "מרחק נקודה מישר (נוסחה)",
+  "simple": "נוסחה למרחק של נקודה מישר, בלי לחשב את עקב האנך.",
+  "formal": "$d = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$ עבור הישר $Ax + By + C = 0$ והנקודה $(x_0, y_0)$.",
+  "diagram": "c-point-line-coord",
+  "related": [
+   "distance-point-line",
+   "line-equation"
+  ],
+  "topic": "analytic",
+  "grades": [
+   11
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "parabola-locus",
+  "term": "פרבולה כמקום גאומטרי",
+  "simple": "כל הנקודות שמרחקן מנקודה (המוקד) שווה למרחקן מישר (המדריך).",
+  "formal": "לפרבולה $y^2 = 2px$: המוקד $F\\left(\\frac p2, 0\\right)$ והמדריך $x = -\\frac p2$.",
+  "diagram": "c-parabola-locus",
+  "related": [
+   "parabola",
+   "locus"
+  ],
+  "topic": "analytic",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "sequence",
+  "term": "סדרה",
+  "simple": "רשימה של מספרים בסדר מסוים: איבר ראשון, שני, שלישי...",
+  "formal": "פונקציה שתחומה המספרים הטבעיים: $n \\mapsto a_n$. $a_n$ נקרא האיבר הכללי.",
+  "diagram": "c-sequence-dots",
+  "related": [
+   "general-term",
+   "arithmetic-sequence",
+   "geometric-sequence",
+   "recursive-formula"
+  ],
+  "topic": "sequences",
+  "grades": [
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "general-term",
+  "term": "איבר כללי",
+  "aliases": [
+   "aₙ"
+  ],
+  "simple": "נוסחה שמחשבת כל איבר בסדרה לפי המקום שלו $n$.",
+  "formal": "ביטוי $a_n = f(n)$ הנותן את האיבר במקום ה-$n$.",
+  "diagram": "c-sequence-dots",
+  "example": "$a_n = 2n + 1$: $3, 5, 7, \\dots$",
+  "related": [
+   "sequence",
+   "recursive-formula"
+  ],
+  "topic": "sequences",
+  "grades": [
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "arithmetic-sequence",
+  "term": "סדרה חשבונית",
+  "simple": "סדרה שבה ההפרש בין כל שני איברים עוקבים קבוע.",
+  "formal": "סדרה שבה $a_{n+1} - a_n = d$ קבוע (ההפרש). $a_n = a_1 + (n - 1)d$.",
+  "diagram": "c-arith-seq",
+  "related": [
+   "common-difference",
+   "series-sum",
+   "geometric-sequence",
+   "arithmetic-mean"
+  ],
+  "topic": "sequences",
+  "grades": [
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "common-difference",
+  "term": "הפרש הסדרה",
+  "aliases": [
+   "d"
+  ],
+  "simple": "המספר הקבוע שמוסיפים כדי לקבל את האיבר הבא בסדרה חשבונית.",
+  "formal": "$d = a_{n+1} - a_n$. אם $d > 0$ הסדרה עולה, ואם $d < 0$ היא יורדת.",
+  "diagram": "c-arith-seq",
+  "related": [
+   "arithmetic-sequence"
+  ],
+  "topic": "sequences",
+  "grades": [
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "geometric-sequence",
+  "term": "סדרה הנדסית",
+  "simple": "סדרה שבה כל איבר מתקבל מהקודם בכפל באותו מספר.",
+  "formal": "סדרה שבה $\\frac{a_{n+1}}{a_n} = q$ קבוע (המנה). $a_n = a_1 q^{n-1}$.",
+  "diagram": "c-geo-seq",
+  "related": [
+   "common-ratio",
+   "infinite-geometric-series",
+   "arithmetic-sequence",
+   "geometric-mean"
+  ],
+  "topic": "sequences",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "common-ratio",
+  "term": "מנת הסדרה",
+  "aliases": [
+   "q"
+  ],
+  "simple": "המספר הקבוע שכופלים בו כדי לקבל את האיבר הבא בסדרה הנדסית.",
+  "formal": "$q = \\frac{a_{n+1}}{a_n}$ (עם $a_n \\neq 0$).",
+  "diagram": "c-geo-seq",
+  "related": [
+   "geometric-sequence",
+   "growth-factor"
+  ],
+  "topic": "sequences",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "series-sum",
+  "term": "סכום סדרה",
+  "aliases": [
+   "Sₙ"
+  ],
+  "simple": "הסכום של $n$ האיברים הראשונים בסדרה.",
+  "formal": "$S_n = a_1 + a_2 + \\dots + a_n$. בסדרה חשבונית $S_n = \\frac{n(a_1 + a_n)}{2}$, ובהנדסית $S_n = \\frac{a_1(q^n - 1)}{q - 1}$.",
+  "diagram": "c-arith-sum",
+  "related": [
+   "arithmetic-sequence",
+   "geometric-sequence",
+   "infinite-geometric-series"
+  ],
+  "topic": "sequences",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "recursive-formula",
+  "term": "כלל נסיגה",
+  "simple": "כלל שמחשב כל איבר בעזרת האיבר (או האיברים) שלפניו.",
+  "formal": "הגדרת סדרה על ידי איבר התחלתי ונוסחה $a_{n+1} = f(a_n)$.",
+  "diagram": "c-recursion",
+  "example": "$a_1 = 2$, $a_{n+1} = 2a_n + 1$: $2, 5, 11, 23, \\dots$",
+  "related": [
+   "sequence",
+   "general-term"
+  ],
+  "topic": "sequences",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "infinite-geometric-series",
+  "term": "סדרה הנדסית אינסופית מתכנסת",
+  "simple": "סדרה הנדסית עם $|q| < 1$. האיברים קטנים מאוד, והסכום של כולם הוא מספר סופי.",
+  "formal": "אם $|q| < 1$, הסכום האינסופי הוא $S = \\frac{a_1}{1 - q}$.",
+  "diagram": "c-geo-infinite",
+  "related": [
+   "geometric-sequence",
+   "series-sum",
+   "limit"
+  ],
+  "topic": "sequences",
+  "grades": [
+   11
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "arithmetic-mean",
+  "term": "ממוצע חשבוני",
+  "simple": "סכום המספרים חלקי מספרם.",
+  "formal": "הממוצע החשבוני של $a, b$ הוא $\\frac{a + b}{2}$. בסדרה חשבונית כל איבר הוא הממוצע של שכניו.",
+  "diagram": "c-arith-seq",
+  "related": [
+   "mean",
+   "geometric-mean",
+   "arithmetic-sequence"
+  ],
+  "topic": "sequences",
+  "grades": [
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "random-experiment",
+  "term": "ניסוי מקרי",
+  "simple": "ניסוי שאי אפשר לדעת מראש מה תהיה התוצאה שלו, כמו הטלת קובייה.",
+  "formal": "תהליך שתוצאותיו האפשריות ידועות, אבל התוצאה בפועל אינה ידועה מראש.",
+  "diagram": "c-die",
+  "related": [
+   "sample-space",
+   "event",
+   "probability"
+  ],
+  "topic": "probability",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "sample-space",
+  "term": "מרחב המדגם",
+  "aliases": [
+   "Ω"
+  ],
+  "simple": "כל התוצאות האפשריות של ניסוי.",
+  "formal": "הקבוצה $\\Omega$ של כל התוצאות האפשריות של ניסוי מקרי.",
+  "diagram": "c-sample-space",
+  "related": [
+   "random-experiment",
+   "event"
+  ],
+  "topic": "probability",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "event",
+  "term": "מאורע",
+  "simple": "קבוצה של תוצאות שמעניינות אותנו, למשל \"יצא מספר זוגי\".",
+  "formal": "תת-קבוצה של מרחב המדגם $A \\subseteq \\Omega$.",
+  "diagram": "c-venn-one",
+  "related": [
+   "sample-space",
+   "probability",
+   "complement-event"
+  ],
+  "topic": "probability",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "probability",
+  "term": "הסתברות",
+  "aliases": [
+   "P"
+  ],
+  "simple": "מספר בין 0 ל-1 שמבטא כמה סביר שמאורע יקרה.",
+  "formal": "כשכל התוצאות שוות סיכוי: $P(A) = \\frac{|A|}{|\\Omega|}$. תמיד $0 \\le P(A) \\le 1$.",
+  "diagram": "c-prob-scale",
+  "example": "בהטלת קובייה, $P(\\text{זוגי}) = \\frac36 = \\frac12$.",
+  "related": [
+   "event",
+   "sample-space",
+   "conditional-probability"
+  ],
+  "topic": "probability",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "complement-event",
+  "term": "מאורע משלים",
+  "aliases": [
+   "Ā"
+  ],
+  "simple": "\"המאורע לא קרה\". ההסתברות שלו היא 1 פחות ההסתברות של המאורע.",
+  "formal": "$\\bar{A} = \\Omega \\setminus A$, ו-$P(\\bar{A}) = 1 - P(A)$.",
+  "diagram": "c-venn-complement",
+  "related": [
+   "event",
+   "probability"
+  ],
+  "topic": "probability",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "union-events",
+  "term": "איחוד מאורעות",
+  "aliases": [
+   "∪"
+  ],
+  "simple": "\"A או B\": לפחות אחד מהם קורה.",
+  "formal": "$A \\cup B$. $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+  "diagram": "c-venn-union",
+  "related": [
+   "intersection-events",
+   "disjoint-events"
+  ],
+  "topic": "probability",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "intersection-events",
+  "term": "חיתוך מאורעות",
+  "aliases": [
+   "∩"
+  ],
+  "simple": "\"A וגם B\": שניהם קורים יחד.",
+  "formal": "$A \\cap B$, התוצאות השייכות גם ל-$A$ וגם ל-$B$.",
+  "diagram": "c-venn-intersection",
+  "related": [
+   "union-events",
+   "independent-events",
+   "conditional-probability"
+  ],
+  "topic": "probability",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "disjoint-events",
+  "term": "מאורעות זרים",
+  "simple": "מאורעות שלא יכולים לקרות יחד.",
+  "formal": "$A \\cap B = \\emptyset$, ולכן $P(A \\cup B) = P(A) + P(B)$.",
+  "diagram": "c-venn-disjoint",
+  "related": [
+   "union-events",
+   "independent-events"
+  ],
+  "topic": "probability",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "independent-events",
+  "term": "מאורעות בלתי תלויים",
+  "simple": "מאורעות שקרות אחד לא משנה את ההסתברות של השני.",
+  "formal": "$A, B$ בלתי תלויים אם $P(A \\cap B) = P(A)\\cdot P(B)$, ובאופן שקול $P(A \\mid B) = P(A)$.",
+  "diagram": "c-tree",
+  "related": [
+   "conditional-probability",
+   "disjoint-events",
+   "bernoulli-trial"
+  ],
+  "topic": "probability",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "conditional-probability",
+  "term": "הסתברות מותנית",
+  "aliases": [
+   "P(A|B)"
+  ],
+  "simple": "ההסתברות ש-$A$ יקרה, כשכבר יודעים ש-$B$ קרה.",
+  "formal": "$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$, עבור $P(B) > 0$.",
+  "diagram": "c-two-way-table",
+  "related": [
+   "two-way-table",
+   "independent-events",
+   "tree-diagram"
+  ],
+  "topic": "probability",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "tree-diagram",
+  "term": "דיאגרמת עץ",
+  "simple": "ציור של ניסוי בכמה שלבים. כופלים לאורך ענף, ומחברים בין ענפים.",
+  "formal": "תרשים שבו כל ענף מייצג תוצאה של שלב, ועליו ההסתברות המותנית. הסתברות מסלול היא מכפלת ההסתברויות שעליו.",
+  "diagram": "c-tree",
+  "related": [
+   "conditional-probability",
+   "independent-events",
+   "bernoulli-trial"
+  ],
+  "topic": "probability",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "two-way-table",
+  "term": "טבלה דו-ממדית (טבלת הצלבה)",
+  "simple": "טבלה עם שני מאפיינים, שמראה את ההסתברות (או השכיחות) של כל צירוף.",
+  "formal": "טבלה שבה השורות הן $A, \\bar{A}$ והעמודות $B, \\bar{B}$, ובכל תא $P(A \\cap B)$ וכו'. שולי הטבלה הם ההסתברויות השוליות.",
+  "diagram": "c-two-way-table",
+  "related": [
+   "conditional-probability",
+   "intersection-events"
+  ],
+  "topic": "probability",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "bernoulli-trial",
+  "term": "ניסוי ברנולי",
+  "simple": "ניסוי עם שתי תוצאות בלבד: \"הצלחה\" או \"כישלון\".",
+  "formal": "ניסוי שבו $P(\\text{הצלחה}) = p$ ו-$P(\\text{כישלון}) = 1 - p$. חזרה על ניסוי ברנולי באופן בלתי תלוי מובילה להתפלגות בינומית.",
+  "diagram": "c-tree",
+  "related": [
+   "binomial-distribution",
+   "independent-events"
+  ],
+  "topic": "probability",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "binomial-distribution",
+  "term": "התפלגות בינומית (נוסחת ברנולי)",
+  "simple": "ההסתברות לקבל בדיוק $k$ הצלחות ב-$n$ ניסויים בלתי תלויים.",
+  "formal": "$P_n(k) = \\binom{n}{k}p^k(1 - p)^{n - k}$.",
+  "diagram": "c-binomial-chart",
+  "example": "הטלת מטבע 4 פעמים: $P(\\text{בדיוק 2 עץ}) = \\binom42\\left(\\frac12\\right)^4 = \\frac{6}{16} = \\frac38$.",
+  "related": [
+   "bernoulli-trial",
+   "binomial-coefficient",
+   "factorial"
+  ],
+  "topic": "probability",
+  "grades": [
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "factorial",
+  "term": "עצרת",
+  "aliases": [
+   "!"
+  ],
+  "simple": "מכפלת כל המספרים הטבעיים מ-1 עד $n$.",
+  "formal": "$n! = 1 \\cdot 2 \\cdots n$, ו-$0! = 1$. זה מספר הסידורים של $n$ עצמים שונים בשורה.",
+  "diagram": "c-factorial",
+  "related": [
+   "binomial-coefficient"
+  ],
+  "topic": "probability",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "binomial-coefficient",
+  "term": "מקדם בינומי (צירופים)",
+  "simple": "מספר הדרכים לבחור $k$ פריטים מתוך $n$, כשהסדר לא חשוב.",
+  "formal": "$\\binom{n}{k} = \\frac{n!}{k!(n - k)!}$.",
+  "diagram": "c-combinations",
+  "example": "$\\binom52 = 10$.",
+  "related": [
+   "factorial",
+   "binomial-distribution"
+  ],
+  "topic": "probability",
+  "grades": [
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "mean",
+  "term": "ממוצע",
+  "aliases": [
+   "x̄",
+   "μ"
+  ],
+  "simple": "סכום כל הנתונים חלקי מספר הנתונים.",
+  "formal": "$\\bar{x} = \\frac{\\sum x_i}{n}$. מטבלת שכיחויות: $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$.",
+  "diagram": "c-dot-plot",
+  "related": [
+   "median-stat",
+   "mode",
+   "standard-deviation"
+  ],
+  "topic": "statistics",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "median-stat",
+  "term": "חציון",
+  "simple": "הערך האמצעי כשמסדרים את הנתונים מהקטן לגדול.",
+  "formal": "אם $n$ אי-זוגי, החציון הוא האיבר במקום $\\frac{n + 1}{2}$. אם $n$ זוגי, החציון הוא ממוצע שני האיברים האמצעיים.",
+  "diagram": "c-median-sorted",
+  "related": [
+   "mean",
+   "mode"
+  ],
+  "topic": "statistics",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "mode",
+  "term": "שכיח",
+  "simple": "הערך שמופיע הכי הרבה פעמים.",
+  "formal": "הערך בעל השכיחות הגבוהה ביותר. ייתכנו כמה שכיחים.",
+  "diagram": "c-bar-chart",
+  "related": [
+   "mean",
+   "median-stat",
+   "frequency"
+  ],
+  "topic": "statistics",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "range-stat",
+  "term": "טווח (בסטטיסטיקה)",
+  "simple": "ההפרש בין הנתון הגדול ביותר לקטן ביותר.",
+  "formal": "$\\text{טווח} = x_{\\max} - x_{\\min}$. זה מדד פיזור פשוט.",
+  "diagram": "c-dot-plot",
+  "related": [
+   "standard-deviation",
+   "mean"
+  ],
+  "topic": "statistics",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "standard-deviation",
+  "term": "סטיית תקן",
+  "aliases": [
+   "σ"
+  ],
+  "simple": "מספר שמראה כמה הנתונים \"מפוזרים\" סביב הממוצע. ככל שהיא גדולה יותר, הנתונים רחוקים יותר מהממוצע.",
+  "formal": "$\\sigma = \\sqrt{\\frac{\\sum (x_i - \\bar{x})^2}{n}}$.",
+  "diagram": "c-std",
+  "related": [
+   "variance",
+   "mean",
+   "normal-distribution"
+  ],
+  "topic": "statistics",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "variance",
+  "term": "שונות",
+  "aliases": [
+   "σ²"
+  ],
+  "simple": "הממוצע של ריבועי המרחקים מהממוצע. זו סטיית התקן בריבוע.",
+  "formal": "$\\sigma^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n}$.",
+  "diagram": "c-std",
+  "related": [
+   "standard-deviation"
+  ],
+  "topic": "statistics",
+  "grades": [
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "frequency",
+  "term": "שכיחות ושכיחות יחסית",
+  "simple": "שכיחות: כמה פעמים מופיע ערך. שכיחות יחסית: החלק היחסי שלו מכל הנתונים.",
+  "formal": "שכיחות $f_i$, ושכיחות יחסית $\\frac{f_i}{n}$ (לפעמים באחוזים). סכום השכיחויות היחסיות הוא 1.",
+  "diagram": "c-freq-table",
+  "related": [
+   "frequency-table",
+   "mode",
+   "bar-chart"
+  ],
+  "topic": "statistics",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "frequency-table",
+  "term": "טבלת שכיחויות",
+  "simple": "טבלה שבה כתוב כל ערך וכמה פעמים הוא מופיע.",
+  "formal": "טבלה של זוגות $(x_i, f_i)$. ממנה מחשבים ממוצע, חציון וסטיית תקן.",
+  "diagram": "c-freq-table",
+  "related": [
+   "frequency",
+   "mean"
+  ],
+  "topic": "statistics",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "bar-chart",
+  "term": "דיאגרמת עמודות",
+  "simple": "גרף שבו לכל ערך יש עמודה, והגובה שלה הוא השכיחות.",
+  "formal": "הצגה גרפית של התפלגות שכיחויות של משתנה בדיד (או איכותי) בעזרת עמודות נפרדות.",
+  "diagram": "c-bar-chart",
+  "related": [
+   "histogram",
+   "frequency"
+  ],
+  "topic": "statistics",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "histogram",
+  "term": "היסטוגרמה",
+  "simple": "גרף עמודות צמודות לנתונים שמחולקים למחלקות (טווחים).",
+  "formal": "הצגה גרפית של התפלגות משתנה רציף המקובץ למחלקות. העמודות צמודות זו לזו.",
+  "diagram": "c-histogram",
+  "related": [
+   "bar-chart",
+   "normal-distribution"
+  ],
+  "topic": "statistics",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "normal-distribution",
+  "term": "התפלגות נורמלית",
+  "simple": "התפלגות בצורת פעמון, סימטרית סביב הממוצע. רוב הנתונים קרובים לממוצע.",
+  "formal": "התפלגות עם ממוצע $\\mu$ וסטיית תקן $\\sigma$. בין $\\mu$ ל-$\\mu + \\sigma$ נמצאים 34.13% מהנתונים, בין $\\mu + \\sigma$ ל-$\\mu + 2\\sigma$ נמצאים 13.59%, ובין $\\mu + 2\\sigma$ ל-$\\mu + 3\\sigma$ נמצאים 2.14%.",
+  "diagram": "c-normal",
+  "related": [
+   "z-score",
+   "standard-deviation",
+   "mean"
+  ],
+  "topic": "statistics",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "z-score",
+  "term": "ציון תקן",
+  "aliases": [
+   "z"
+  ],
+  "simple": "כמה סטיות תקן ציון נמצא מעל (או מתחת) לממוצע.",
+  "formal": "$z = \\frac{x - \\mu}{\\sigma}$.",
+  "diagram": "c-normal",
+  "example": "$\\mu = 70$, $\\sigma = 10$, $x = 85 \\Rightarrow z = 1.5$.",
+  "related": [
+   "normal-distribution",
+   "standard-deviation"
+  ],
+  "topic": "statistics",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "sample-population",
+  "term": "אוכלוסייה ומדגם",
+  "simple": "אוכלוסייה היא כל הקבוצה שחוקרים. מדגם הוא חלק ממנה שבודקים בפועל.",
+  "formal": "מדגם הוא תת-קבוצה של האוכלוסייה. מסיקים ממנו על האוכלוסייה, ולכן רצוי שיהיה מייצג.",
+  "diagram": "c-sample-population",
+  "related": [
+   "mean",
+   "probability"
+  ],
+  "topic": "statistics",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "exponential-growth",
+  "term": "גדילה מעריכית",
+  "simple": "גדילה שבה בכל יחידת זמן הכמות מוכפלת באותו מספר, גדול מ-1.",
+  "formal": "$M_t = M_0 q^t$ עם $q > 1$. למשל, עלייה של $p\\%$ בשנה: $q = 1 + \\frac{p}{100}$.",
+  "diagram": "c-growth-graph",
+  "related": [
+   "growth-factor",
+   "exponential-decay",
+   "compound-interest",
+   "doubling-time"
+  ],
+  "topic": "growth",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "exponential-decay",
+  "term": "דעיכה מעריכית",
+  "simple": "ירידה שבה בכל יחידת זמן הכמות מוכפלת באותו מספר, בין 0 ל-1.",
+  "formal": "$M_t = M_0 q^t$ עם $0 < q < 1$. ירידה של $p\\%$: $q = 1 - \\frac{p}{100}$.",
+  "diagram": "c-decay-graph",
+  "related": [
+   "half-life",
+   "growth-factor",
+   "exponential-growth"
+  ],
+  "topic": "growth",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "growth-factor",
+  "term": "מקדם גדילה (דעיכה)",
+  "aliases": [
+   "q"
+  ],
+  "simple": "המספר שבו כופלים את הכמות בכל יחידת זמן.",
+  "formal": "$q = \\frac{M_{t+1}}{M_t}$. אם $q > 1$ זו גדילה, ואם $0 < q < 1$ זו דעיכה.",
+  "diagram": "c-growth-graph",
+  "related": [
+   "exponential-growth",
+   "exponential-decay",
+   "common-ratio",
+   "percent-change"
+  ],
+  "topic": "growth",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "percent-change",
+  "term": "שינוי באחוזים",
+  "simple": "בכמה אחוזים גדלה או קטנה כמות ביחס לערך ההתחלתי.",
+  "formal": "$\\frac{\\text{חדש} - \\text{ישן}}{\\text{ישן}}\\cdot 100\\%$. עלייה של $p\\%$ פירושה כפל ב-$1 + \\frac{p}{100}$.",
+  "diagram": "c-percent",
+  "related": [
+   "percent",
+   "growth-factor"
+  ],
+  "topic": "growth",
+  "grades": [
+   8,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "half-life",
+  "term": "זמן מחצית חיים",
+  "aliases": [
+   "T½"
+  ],
+  "simple": "הזמן שבו כמות שדועכת קטנה לחצי.",
+  "formal": "$T$ שמקיים $q^T = \\frac12$, כלומר $T = \\frac{\\log 0.5}{\\log q}$.",
+  "diagram": "c-decay-graph",
+  "related": [
+   "exponential-decay",
+   "logarithm"
+  ],
+  "topic": "growth",
+  "grades": [
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "doubling-time",
+  "term": "זמן הכפלה",
+  "simple": "הזמן שבו כמות שגדלה מוכפלת פי 2.",
+  "formal": "$T$ שמקיים $q^T = 2$, כלומר $T = \\frac{\\log 2}{\\log q}$.",
+  "diagram": "c-growth-graph",
+  "related": [
+   "exponential-growth",
+   "logarithm"
+  ],
+  "topic": "growth",
+  "grades": [
+   11
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "compound-interest",
+  "term": "ריבית דריבית",
+  "simple": "ריבית שמחושבת כל פעם על הסכום החדש, כולל הריבית שכבר נצברה.",
+  "formal": "$M_t = M_0\\left(1 + \\frac{p}{100}\\right)^t$, כאשר $p$ אחוז הריבית לתקופה ו-$t$ מספר התקופות.",
+  "diagram": "c-growth-graph",
+  "related": [
+   "exponential-growth",
+   "percent-change"
+  ],
+  "topic": "growth",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "initial-value",
+  "term": "כמות התחלתית",
+  "aliases": [
+   "M₀"
+  ],
+  "simple": "הכמות ברגע ההתחלה ($t = 0$).",
+  "formal": "$M_0 = M(0)$ בנוסחה $M_t = M_0 q^t$. זו נקודת החיתוך של הגרף עם הציר האנכי.",
+  "diagram": "c-growth-graph",
+  "related": [
+   "exponential-growth",
+   "intercepts"
+  ],
+  "topic": "growth",
+  "grades": [
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "vector",
+  "term": "וקטור",
+  "simple": "גודל שיש לו גם אורך וגם כיוון, ומציירים אותו כחץ.",
+  "formal": "קטע מכוון. שני וקטורים שווים אם יש להם אותו גודל ואותו כיוון. מסמנים $\\vec{u}$ או $\\overrightarrow{AB}$.",
+  "diagram": "c-vector",
+  "related": [
+   "vector-magnitude",
+   "vector-components",
+   "vector-addition",
+   "scalar-multiplication"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "vector-components",
+  "term": "הצגה אלגברית של וקטור (רכיבים)",
+  "simple": "כתיבת וקטור בעזרת המספרים שלו: כמה הוא זז בכל ציר.",
+  "formal": "$\\vec{u} = (x, y, z)$. עבור $\\overrightarrow{AB}$: $B - A = (x_B - x_A, y_B - y_A, z_B - z_A)$.",
+  "diagram": "c-vector-components",
+  "related": [
+   "vector",
+   "vector-magnitude",
+   "position-vector"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "vector-magnitude",
+  "term": "גודל (אורך) של וקטור",
+  "aliases": [
+   "|u|"
+  ],
+  "simple": "האורך של החץ.",
+  "formal": "$|\\vec{u}| = \\sqrt{x^2 + y^2 + z^2}$ עבור $\\vec{u} = (x, y, z)$.",
+  "diagram": "c-vector-components",
+  "related": [
+   "vector",
+   "unit-vector",
+   "distance-formula"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "zero-vector",
+  "term": "וקטור האפס",
+  "aliases": [
+   "0⃗"
+  ],
+  "simple": "וקטור שאורכו אפס. אין לו כיוון.",
+  "formal": "$\\vec{0} = (0, 0, 0)$. לכל וקטור $\\vec{u} + \\vec{0} = \\vec{u}$.",
+  "diagram": "c-vector",
+  "related": [
+   "vector",
+   "vector-addition"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "vector-addition",
+  "term": "חיבור וחיסור וקטורים",
+  "simple": "מחברים וקטורים לפי \"כלל המקבילית\" או שמים אותם \"ראש לזנב\". באלגברה: מחברים רכיב לרכיב.",
+  "formal": "$(x_1, y_1, z_1) + (x_2, y_2, z_2) = (x_1 + x_2, y_1 + y_2, z_1 + z_2)$. $\\vec{u} - \\vec{v} = \\vec{u} + (-\\vec{v})$.",
+  "diagram": "c-vector-add",
+  "related": [
+   "vector",
+   "scalar-multiplication",
+   "linear-combination"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "scalar-multiplication",
+  "term": "כפל וקטור בסקלר",
+  "simple": "כפל במספר: משנה את האורך, ואם המספר שלילי – גם הופך את הכיוון.",
+  "formal": "$t\\vec{u} = (tx, ty, tz)$. $|t\\vec{u}| = |t|\\,|\\vec{u}|$.",
+  "diagram": "c-scalar-mult",
+  "related": [
+   "parallel-vectors",
+   "vector-addition"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "parallel-vectors",
+  "term": "וקטורים מקבילים (תלויים)",
+  "simple": "וקטורים שאחד מהם הוא כפולה של השני.",
+  "formal": "$\\vec{u} \\parallel \\vec{v}$ אם קיים $t$ כך ש-$\\vec{u} = t\\vec{v}$.",
+  "diagram": "c-scalar-mult",
+  "related": [
+   "scalar-multiplication",
+   "linear-combination"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "linear-combination",
+  "term": "צירוף לינארי",
+  "simple": "סכום של וקטורים שכל אחד מוכפל במספר.",
+  "formal": "$a\\vec{u} + b\\vec{v}$ (ובאופן כללי $\\sum t_i \\vec{u}_i$). כל וקטור במישור הוא צירוף לינארי יחיד של שני וקטורים שאינם מקבילים (בסיס).",
+  "diagram": "c-vector-add",
+  "related": [
+   "vector-addition",
+   "parallel-vectors"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "dot-product",
+  "term": "מכפלה סקלרית",
+  "aliases": [
+   "u·v"
+  ],
+  "simple": "פעולה שמכפילה שני וקטורים ומחזירה מספר. בעזרתה מחשבים זוויות ובודקים ניצבות.",
+  "formal": "$\\vec{u}\\cdot\\vec{v} = x_1x_2 + y_1y_2 + z_1z_2 = |\\vec{u}|\\,|\\vec{v}|\\cos\\theta$.",
+  "diagram": "c-dot-product",
+  "related": [
+   "angle-between-vectors",
+   "perpendicular-vectors"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "angle-between-vectors",
+  "term": "הזווית בין וקטורים",
+  "simple": "הזווית בין שני החצים כשהם יוצאים מאותה נקודה.",
+  "formal": "$\\cos\\theta = \\frac{\\vec{u}\\cdot\\vec{v}}{|\\vec{u}|\\,|\\vec{v}|}$, $0^\\circ \\le \\theta \\le 180^\\circ$.",
+  "diagram": "c-dot-product",
+  "related": [
+   "dot-product",
+   "cosine"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "perpendicular-vectors",
+  "term": "וקטורים מאונכים",
+  "simple": "וקטורים שהמכפלה הסקלרית שלהם אפס.",
+  "formal": "$\\vec{u} \\perp \\vec{v} \\iff \\vec{u}\\cdot\\vec{v} = 0$ (לוקטורים שונים מאפס).",
+  "diagram": "c-perp-vectors",
+  "related": [
+   "dot-product",
+   "perpendicular-lines"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "unit-vector",
+  "term": "וקטור יחידה",
+  "simple": "וקטור שאורכו 1.",
+  "formal": "$\\hat{u} = \\frac{\\vec{u}}{|\\vec{u}|}$ הוא וקטור יחידה בכיוון $\\vec{u}$.",
+  "diagram": "c-unit-vector",
+  "related": [
+   "vector-magnitude",
+   "vector"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "position-vector",
+  "term": "וקטור מקום",
+  "simple": "וקטור מראשית הצירים אל נקודה. הרכיבים שלו הם שיעורי הנקודה.",
+  "formal": "לנקודה $A(x, y, z)$, וקטור המקום הוא $\\overrightarrow{OA} = (x, y, z)$.",
+  "diagram": "c-vector-components",
+  "related": [
+   "vector-components",
+   "parametric-line"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "parametric-line",
+  "term": "הצגה פרמטרית של ישר",
+  "simple": "תיאור ישר בעזרת נקודה עליו וכיוון: \"מתחילים בנקודה וזזים $t$ פעמים בכיוון\".",
+  "formal": "$\\ell: \\vec{x} = \\vec{A} + t\\vec{u}$, $t \\in \\mathbb{R}$, כאשר $\\vec{u}$ וקטור הכיוון.",
+  "diagram": "c-param-line",
+  "related": [
+   "position-vector",
+   "plane-equation"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "plane-equation",
+  "term": "משוואת מישור ווקטור נורמל",
+  "simple": "משוואה של כל הנקודות במישור. הוקטור $(A, B, C)$ מאונך למישור.",
+  "formal": "$Ax + By + Cz + D = 0$, ו-$\\vec{n} = (A, B, C)$ הוא וקטור נורמל למישור.",
+  "diagram": "c-plane-normal",
+  "related": [
+   "parametric-line",
+   "dot-product",
+   "plane"
+  ],
+  "topic": "vectors",
+  "grades": [
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "space-coordinates",
+  "term": "מערכת צירים במרחב",
+  "simple": "שלושה צירים מאונכים זה לזה: $x$, $y$ ו-$z$. כל נקודה היא שלשה $(x, y, z)$.",
+  "formal": "מערכת קרטזית תלת-ממדית. המרחק בין נקודות: $\\sqrt{\\Delta x^2 + \\Delta y^2 + \\Delta z^2}$.",
+  "diagram": "c-3d-axes",
+  "related": [
+   "coordinate-system",
+   "vector-components"
+  ],
+  "topic": "vectors",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "imaginary-unit",
+  "term": "היחידה המדומה",
+  "aliases": [
+   "i"
+  ],
+  "simple": "מספר שהריבוע שלו $-1$.",
+  "formal": "$i^2 = -1$. חזקות של $i$ חוזרות כל 4: $i, -1, -i, 1$.",
+  "diagram": "c-complex-plane",
+  "related": [
+   "complex-number"
+  ],
+  "topic": "complex",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "complex-number",
+  "term": "מספר מרוכב",
+  "aliases": [
+   "ℂ"
+  ],
+  "simple": "מספר מהצורה $a + bi$: חלק ממשי ועוד חלק מדומה.",
+  "formal": "$z = a + bi$, כאשר $a, b \\in \\mathbb{R}$. $a = \\text{Re}(z)$ הוא החלק הממשי ו-$b = \\text{Im}(z)$ הוא החלק המדומה. שני מרוכבים שווים אם שני החלקים שווים.",
+  "diagram": "c-complex-plane",
+  "related": [
+   "imaginary-unit",
+   "conjugate",
+   "gauss-plane",
+   "real-number"
+  ],
+  "topic": "complex",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "gauss-plane",
+  "term": "מישור גאוס",
+  "simple": "מישור שבו כל מספר מרוכב $a + bi$ הוא הנקודה $(a, b)$.",
+  "formal": "הציר האופקי ממשי והציר האנכי מדומה. ל-$z = a + bi$ מתאימה הנקודה $(a, b)$, או הוקטור אליה.",
+  "diagram": "c-complex-plane",
+  "related": [
+   "complex-number",
+   "polar-form"
+  ],
+  "topic": "complex",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "conjugate",
+  "term": "מספר צמוד",
+  "aliases": [
+   "z̄"
+  ],
+  "simple": "אותו מספר מרוכב, רק עם סימן הפוך לחלק המדומה. זה שיקוף ביחס לציר הממשי.",
+  "formal": "$\\bar{z} = a - bi$. מתקיים $z\\bar{z} = a^2 + b^2 = |z|^2$. בעזרתו מחלקים מרוכבים.",
+  "diagram": "c-conjugate",
+  "related": [
+   "complex-number",
+   "modulus"
+  ],
+  "topic": "complex",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "modulus",
+  "term": "ערך מוחלט של מספר מרוכב",
+  "aliases": [
+   "|z|"
+  ],
+  "simple": "המרחק של המספר המרוכב מהראשית.",
+  "formal": "$|z| = \\sqrt{a^2 + b^2}$ עבור $z = a + bi$.",
+  "diagram": "c-complex-polar",
+  "related": [
+   "argument",
+   "polar-form",
+   "absolute-value"
+  ],
+  "topic": "complex",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "argument",
+  "term": "ארגומנט (זווית) של מספר מרוכב",
+  "aliases": [
+   "θ",
+   "arg"
+  ],
+  "simple": "הזווית בין הוקטור של המספר לכיוון החיובי של הציר הממשי.",
+  "formal": "$\\theta$ המקיים $\\cos\\theta = \\frac{a}{|z|}$ ו-$\\sin\\theta = \\frac{b}{|z|}$ (עד כדי $360^\\circ k$).",
+  "diagram": "c-complex-polar",
+  "related": [
+   "modulus",
+   "polar-form"
+  ],
+  "topic": "complex",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "polar-form",
+  "term": "הצגה קוטבית (טריגונומטרית)",
+  "aliases": [
+   "cis"
+  ],
+  "simple": "כתיבת מספר מרוכב בעזרת המרחק והזווית שלו.",
+  "formal": "$z = r(\\cos\\theta + i\\sin\\theta) = r\\,\\text{cis}\\,\\theta$, כאשר $r = |z|$. בכפל כופלים את המרחקים ומחברים את הזוויות.",
+  "diagram": "c-complex-polar",
+  "related": [
+   "modulus",
+   "argument",
+   "de-moivre"
+  ],
+  "topic": "complex",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "de-moivre",
+  "term": "משפט דה-מואבר",
+  "simple": "כדי להעלות מספר מרוכב בחזקה, מעלים את המרחק בחזקה ומכפילים את הזווית.",
+  "formal": "$(r\\,\\text{cis}\\,\\theta)^n = r^n\\,\\text{cis}(n\\theta)$.",
+  "diagram": "c-demoivre",
+  "related": [
+   "polar-form",
+   "roots-of-unity"
+  ],
+  "topic": "complex",
+  "grades": [
+   12
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "roots-of-unity",
+  "term": "שורשים של מספר מרוכב",
+  "simple": "למשוואה $z^n = w$ יש $n$ פתרונות. הם קודקודים של מצולע משוכלל סביב הראשית.",
+  "formal": "$z_k = \\sqrt[n]{r}\\,\\text{cis}\\frac{\\theta + 360^\\circ k}{n}$, $k = 0, 1, \\dots, n - 1$.",
+  "diagram": "c-roots-unity",
+  "related": [
+   "de-moivre",
+   "regular-polygon"
+  ],
+  "topic": "complex",
+  "grades": [
+   12
+  ],
+  "units": [
+   5
+  ]
+ }
+]

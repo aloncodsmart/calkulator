@@ -1,0 +1,2899 @@
+[
+ {
+  "id": "thales",
+  "name": "משפט תאלס",
+  "statement": "ישרים מקבילים החותכים את שוקי הזווית מקצים על שוקי הזווית קטעים פרופורציוניים.",
+  "formal": "AC \\parallel BD \\Rightarrow \\frac{OA}{AB} = \\frac{OC}{CD}",
+  "citation": "משפט תאלס",
+  "conditions": [
+   "הישרים החותכים מקבילים (נתון או מוכח).",
+   "משווים קטעים מתאימים על שתי השוקיים."
+  ],
+  "useWhen": "יש זווית (או משולש) ושני ישרים מקבילים שחותכים את שוקיה, ורוצים יחסים בין קטעים על השוקיים.",
+  "diagram": "thales",
+  "example": {
+   "problem": "שוקי זווית $O$ נחתכות על ידי $AC \\parallel BD$. נתון $OA = 4$, $AB = 6$, $OC = 5$. מצאו את $CD$.",
+   "steps": [
+    {
+     "claim": "$\\frac{OA}{AB} = \\frac{OC}{CD}$",
+     "reason": "משפט תאלס",
+     "ref": "thales"
+    },
+    {
+     "claim": "$\\frac{4}{6} = \\frac{5}{CD} \\Rightarrow CD = 7.5$",
+     "reason": "הצבה ופתרון"
+    }
+   ],
+   "answer": "$CD = 7.5$"
+  },
+  "mistakes": [
+   "לערבב יחס של קטעים על השוקיים עם יחס של הקטעים המקבילים עצמם. ליחס $AC : BD$ צריך את משפט תאלס המורחב או דמיון.",
+   "לקחת קטעים לא מתאימים, למשל $OA$ מול $CD$."
+  ],
+  "converse": {
+   "id": "thales-converse"
+  },
+  "status": "official",
+  "topic": "similarity",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "תאלס",
+   "פרופורציה",
+   "קטעים פרופורציוניים",
+   "ישרים מקבילים",
+   "שוקי זווית"
+  ],
+  "givens": [
+   "parallel-lines",
+   "ratio"
+  ],
+  "goals": [
+   "find-length",
+   "find-ratio"
+  ],
+  "related": [
+   "proportion",
+   "parallel-lines"
+  ]
+ },
+ {
+  "id": "thales-extended",
+  "name": "משפט תאלס המורחב",
+  "statement": "ישר המקביל לאחת מצלעות המשולש וחותך את שתי הצלעות האחרות (או את המשכיהן) יוצר משולש שצלעותיו פרופורציוניות לצלעות המשולש הנתון.",
+  "formal": "DE \\parallel BC \\Rightarrow \\frac{AD}{AB} = \\frac{AE}{AC} = \\frac{DE}{BC}",
+  "citation": "משפט תאלס המורחב",
+  "conditions": [
+   "הישר מקביל לצלע של המשולש.",
+   "ביחסים משתמשים בצלעות שלמות ($AD : AB$), ולא בחלקים ($AD : DB$), כשרוצים גם את $DE : BC$."
+  ],
+  "useWhen": "יש ישר מקביל לצלע במשולש, וצריך את אורך הקטע המקביל.",
+  "diagram": "thales-triangle",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $DE \\parallel BC$ ($D$ על $AB$, $E$ על $AC$). $AD = 3$, $DB = 6$, $BC = 12$. מצאו את $DE$.",
+   "steps": [
+    {
+     "claim": "$\\frac{AD}{AB} = \\frac{DE}{BC}$",
+     "reason": "משפט תאלס המורחב",
+     "ref": "thales-extended"
+    },
+    {
+     "claim": "$\\frac{3}{9} = \\frac{DE}{12} \\Rightarrow DE = 4$",
+     "reason": "הצבה ($AB = 3 + 6 = 9$)"
+    }
+   ],
+   "answer": "$DE = 4$"
+  },
+  "mistakes": [
+   "להשתמש ב-$\\frac{AD}{DB}$ במקום $\\frac{AD}{AB}$ כשמחשבים את $DE$."
+  ],
+  "status": "official",
+  "topic": "similarity",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "תאלס המורחב",
+   "ישר מקביל לצלע",
+   "יחס",
+   "פרופורציה"
+  ],
+  "givens": [
+   "parallel-lines",
+   "triangle",
+   "ratio"
+  ],
+  "goals": [
+   "find-length",
+   "find-ratio"
+  ],
+  "related": [
+   "proportion",
+   "similar-triangles"
+  ]
+ },
+ {
+  "id": "thales-converse",
+  "name": "המשפט ההפוך למשפט תאלס",
+  "statement": "ישר החותך שתי צלעות של משולש ומקצה עליהן קטעים פרופורציוניים מקביל לצלע השלישית.",
+  "formal": "\\frac{AD}{DB} = \\frac{AE}{EC} \\Rightarrow DE \\parallel BC",
+  "citation": "המשפט ההפוך למשפט תאלס",
+  "conditions": [
+   "הוכח שהיחסים שווים, עם קטעים מתאימים."
+  ],
+  "useWhen": "צריך להוכיח מקבילות, ויודעים יחסים בין קטעים על הצלעות.",
+  "diagram": "thales-triangle",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $AD = 2$, $DB = 4$, $AE = 3$, $EC = 6$. הוכיחו ש-$DE \\parallel BC$.",
+   "steps": [
+    {
+     "claim": "$\\frac{AD}{DB} = \\frac{2}{4} = \\frac12 = \\frac{3}{6} = \\frac{AE}{EC}$",
+     "reason": "חישוב"
+    },
+    {
+     "claim": "$DE \\parallel BC$",
+     "reason": "המשפט ההפוך למשפט תאלס",
+     "ref": "thales-converse"
+    }
+   ],
+   "answer": "$DE \\parallel BC$"
+  },
+  "mistakes": [
+   "לבדוק יחס של קטעים לא מתאימים."
+  ],
+  "converse": {
+   "id": "thales"
+  },
+  "status": "official",
+  "topic": "similarity",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "תאלס הפוך",
+   "להוכיח מקבילות",
+   "יחס קטעים"
+  ],
+  "givens": [
+   "ratio",
+   "triangle"
+  ],
+  "goals": [
+   "prove-parallel"
+  ],
+  "related": [
+   "proportion"
+  ]
+ },
+ {
+  "id": "similarity-aa",
+  "name": "משפט דמיון ז.ז",
+  "statement": "אם שתי זוויות במשולש אחד שוות בהתאמה לשתי זוויות במשולש אחר, אז המשולשים דומים.",
+  "formal": "\\angle A = \\angle D,\\ \\angle B = \\angle E \\Rightarrow \\triangle ABC \\sim \\triangle DEF",
+  "citation": "משפט דמיון ז.ז",
+  "conditions": [
+   "הוכחו שני זוגות של זוויות שוות."
+  ],
+  "useWhen": "יש שני משולשים עם זווית משותפת או קודקודית, ועוד זוג זוויות שוות (מתאימות או מתחלפות, היקפיות, ישרות).",
+  "diagram": "similar-aa",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $DE \\parallel BC$. הוכיחו ש-$\\triangle ADE \\sim \\triangle ABC$.",
+   "steps": [
+    {
+     "claim": "$\\angle A$ משותפת",
+     "reason": "זווית משותפת"
+    },
+    {
+     "claim": "$\\angle ADE = \\angle ABC$",
+     "reason": "זוויות מתאימות בין ישרים מקבילים שוות",
+     "ref": "corresponding-angles"
+    },
+    {
+     "claim": "$\\triangle ADE \\sim \\triangle ABC$",
+     "reason": "משפט דמיון ז.ז",
+     "ref": "similarity-aa"
+    }
+   ],
+   "answer": "המשולשים דומים."
+  },
+  "mistakes": [
+   "לכתוב את המשולשים בסדר קודקודים לא מתאים. סדר הקודקודים קובע אילו צלעות מתאימות.",
+   "לחשוב שצריך שלוש זוויות. מספיקות שתיים."
+  ],
+  "status": "official",
+  "topic": "similarity",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "דמיון",
+   "ז.ז",
+   "זז",
+   "משולשים דומים",
+   "שתי זוויות שוות"
+  ],
+  "givens": [
+   "two-triangles",
+   "equal-angles",
+   "parallel-lines"
+  ],
+  "goals": [
+   "prove-similar",
+   "find-ratio",
+   "find-length"
+  ],
+  "related": [
+   "similar-triangles",
+   "similarity-ratio"
+  ]
+ },
+ {
+  "id": "similarity-sas",
+  "name": "משפט דמיון צ.ז.צ",
+  "statement": "אם שתי צלעות במשולש אחד פרופורציוניות לשתי צלעות במשולש אחר, והזוויות הכלואות ביניהן שוות, אז המשולשים דומים.",
+  "formal": "\\frac{DE}{AB} = \\frac{DF}{AC},\\ \\angle A = \\angle D \\Rightarrow \\triangle ABC \\sim \\triangle DEF",
+  "citation": "משפט דמיון צ.ז.צ",
+  "conditions": [
+   "היחס בין זוג הצלעות הראשון שווה ליחס בין הזוג השני.",
+   "הזווית השווה כלואה בין הצלעות האלה."
+  ],
+  "useWhen": "יש זווית משותפת וקטעים ידועים על השוקיים שלה.",
+  "diagram": "similar-sas",
+  "example": {
+   "problem": "ב-$\\triangle ABC$: $AB = 12$, $AC = 9$. על $AB$ ו-$AC$ נקודות $D$, $E$ כך ש-$AD = 4$, $AE = 3$. הוכיחו ש-$\\triangle ADE \\sim \\triangle ABC$.",
+   "steps": [
+    {
+     "claim": "$\\frac{AD}{AB} = \\frac{4}{12} = \\frac13 = \\frac{3}{9} = \\frac{AE}{AC}$",
+     "reason": "חישוב"
+    },
+    {
+     "claim": "$\\angle A$ משותפת",
+     "reason": "זווית משותפת"
+    },
+    {
+     "claim": "$\\triangle ADE \\sim \\triangle ABC$",
+     "reason": "משפט דמיון צ.ז.צ",
+     "ref": "similarity-sas"
+    }
+   ],
+   "answer": "המשולשים דומים."
+  },
+  "mistakes": [
+   "להשתמש בזווית שאינה כלואה בין הצלעות."
+  ],
+  "status": "official",
+  "topic": "similarity",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "דמיון",
+   "צ.ז.צ",
+   "פרופורציה",
+   "זווית כלואה"
+  ],
+  "givens": [
+   "two-triangles",
+   "ratio",
+   "equal-angles"
+  ],
+  "goals": [
+   "prove-similar"
+  ],
+  "related": [
+   "similar-triangles",
+   "proportion"
+  ]
+ },
+ {
+  "id": "similarity-sss",
+  "name": "משפט דמיון צ.צ.צ",
+  "statement": "אם שלוש הצלעות של משולש אחד פרופורציוניות לשלוש הצלעות של משולש אחר, אז המשולשים דומים.",
+  "formal": "\\frac{DE}{AB} = \\frac{EF}{BC} = \\frac{DF}{AC} \\Rightarrow \\triangle ABC \\sim \\triangle DEF",
+  "citation": "משפט דמיון צ.צ.צ",
+  "conditions": [
+   "שלושת היחסים בין צלעות מתאימות שווים."
+  ],
+  "useWhen": "ידועים כל אורכי הצלעות של שני המשולשים.",
+  "diagram": "similar-sss",
+  "example": {
+   "problem": "צלעות משולש אחד: 3, 4, 6. צלעות משולש אחר: 4.5, 6, 9. האם הם דומים?",
+   "steps": [
+    {
+     "claim": "$\\frac{4.5}{3} = \\frac{6}{4} = \\frac{9}{6} = 1.5$",
+     "reason": "חישוב (מסדרים מהקטנה לגדולה)"
+    },
+    {
+     "claim": "המשולשים דומים ביחס $1.5$",
+     "reason": "משפט דמיון צ.צ.צ",
+     "ref": "similarity-sss"
+    }
+   ],
+   "answer": "כן, יחס הדמיון $1.5$."
+  },
+  "mistakes": [
+   "להתאים צלעות בסדר שונה. כדאי לסדר את הצלעות בשני המשולשים מהקטנה לגדולה."
+  ],
+  "status": "official",
+  "topic": "similarity",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "דמיון",
+   "צ.צ.צ",
+   "שלוש צלעות פרופורציוניות"
+  ],
+  "givens": [
+   "two-triangles",
+   "side-lengths",
+   "ratio"
+  ],
+  "goals": [
+   "prove-similar"
+  ],
+  "related": [
+   "similar-triangles",
+   "similarity-ratio"
+  ]
+ },
+ {
+  "id": "similar-elements-ratio",
+  "name": "יחס בין קטעים מתאימים במשולשים דומים",
+  "statement": "במשולשים דומים, היחס בין גבהים מתאימים, בין תיכונים מתאימים, בין חוצי זוויות מתאימים ובין ההיקפים שווה ליחס הדמיון.",
+  "formal": "\\frac{h_2}{h_1} = \\frac{m_2}{m_1} = \\frac{P_2}{P_1} = k",
+  "citation": "במשולשים דומים היחס בין גבהים (תיכונים, חוצי זוויות, היקפים) מתאימים שווה ליחס הדמיון",
+  "conditions": [
+   "הוכח שהמשולשים דומים.",
+   "הקטעים מתאימים: יוצאים מקודקודים מתאימים."
+  ],
+  "useWhen": "יש שני משולשים דומים, ורוצים גובה, תיכון או היקף של אחד מהם.",
+  "diagram": "similar-elements",
+  "example": {
+   "problem": "$\\triangle ABC \\sim \\triangle DEF$ ביחס $k = 2$. היקף $\\triangle ABC$ הוא 15. מה היקף $\\triangle DEF$?",
+   "steps": [
+    {
+     "claim": "$P_{DEF} = 2 \\cdot 15 = 30$",
+     "reason": "במשולשים דומים היחס בין גבהים (תיכונים, חוצי זוויות, היקפים) מתאימים שווה ליחס הדמיון",
+     "ref": "similar-elements-ratio"
+    }
+   ],
+   "answer": "$30$"
+  },
+  "mistakes": [
+   "להעלות בריבוע. בריבוע מעלים רק ביחס שטחים."
+  ],
+  "status": "official",
+  "topic": "similarity",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "יחס דמיון",
+   "היקפים",
+   "גבהים",
+   "תיכונים",
+   "משולשים דומים"
+  ],
+  "givens": [
+   "two-triangles",
+   "ratio"
+  ],
+  "goals": [
+   "find-length",
+   "find-ratio"
+  ],
+  "related": [
+   "similarity-ratio",
+   "similar-triangles",
+   "altitude",
+   "median"
+  ]
+ },
+ {
+  "id": "similar-area-ratio",
+  "name": "יחס השטחים של משולשים דומים",
+  "statement": "היחס בין שטחי משולשים דומים שווה לריבוע יחס הדמיון.",
+  "formal": "\\frac{S_2}{S_1} = k^2",
+  "citation": "היחס בין שטחי משולשים דומים שווה לריבוע יחס הדמיון",
+  "conditions": [
+   "הוכח שהמשולשים דומים, ונמצא יחס הדמיון."
+  ],
+  "useWhen": "יש משולשים דומים, ונשאלת שאלה על שטחים.",
+  "diagram": "similar-elements",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $DE \\parallel BC$ ו-$AD : AB = 1 : 3$. שטח $\\triangle ADE$ הוא 5. מצאו את שטח $\\triangle ABC$.",
+   "steps": [
+    {
+     "claim": "$\\triangle ADE \\sim \\triangle ABC$, $k = 3$",
+     "reason": "משפט דמיון ז.ז",
+     "ref": "similarity-aa"
+    },
+    {
+     "claim": "$\\frac{S_{ABC}}{S_{ADE}} = 3^2 = 9$",
+     "reason": "היחס בין שטחי משולשים דומים שווה לריבוע יחס הדמיון",
+     "ref": "similar-area-ratio"
+    },
+    {
+     "claim": "$S_{ABC} = 45$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$45$"
+  },
+  "mistakes": [
+   "לשכוח להעלות בריבוע.",
+   "לבלבל בין שטח הטרפז שנוצר לבין שטח המשולש הגדול."
+  ],
+  "status": "official",
+  "topic": "similarity",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "יחס שטחים",
+   "ריבוע יחס הדמיון",
+   "שטח",
+   "משולשים דומים"
+  ],
+  "givens": [
+   "two-triangles",
+   "ratio",
+   "area"
+  ],
+  "goals": [
+   "find-area",
+   "find-ratio"
+  ],
+  "related": [
+   "similarity-ratio",
+   "area"
+  ]
+ },
+ {
+  "id": "angle-bisector-theorem",
+  "name": "משפט חוצה הזווית",
+  "statement": "חוצה זווית פנימית במשולש מחלק את הצלע שמול הזווית לשני קטעים שהיחס ביניהם שווה ליחס בין הצלעות הכולאות את הזווית.",
+  "formal": "\\angle BAD = \\angle DAC \\Rightarrow \\frac{BD}{DC} = \\frac{AB}{AC}",
+  "citation": "חוצה זווית במשולש מחלק את הצלע שמול הזווית ביחס הצלעות הכולאות אותה",
+  "conditions": [
+   "הקטע הוא חוצה זווית פנימית של המשולש.",
+   "כל קטע על הצלע מותאם לצלע הסמוכה לו: $BD$ ל-$AB$, ו-$DC$ ל-$AC$."
+  ],
+  "useWhen": "יש חוצה זווית במשולש וידועים אורכים, ורוצים חלוקה של הצלע שמול הזווית.",
+  "diagram": "angle-bisector-theorem",
+  "example": {
+   "problem": "ב-$\\triangle ABC$: $AB = 6$, $AC = 9$, $BC = 10$. $AD$ חוצה את $\\angle A$. מצאו את $BD$.",
+   "steps": [
+    {
+     "claim": "$\\frac{BD}{DC} = \\frac{6}{9} = \\frac23$",
+     "reason": "חוצה זווית במשולש מחלק את הצלע שמול הזווית ביחס הצלעות הכולאות אותה",
+     "ref": "angle-bisector-theorem"
+    },
+    {
+     "claim": "$BD = \\frac{2}{5} \\cdot 10 = 4$",
+     "reason": "חלוקה ביחס $2:3$"
+    }
+   ],
+   "answer": "$BD = 4$"
+  },
+  "mistakes": [
+   "להפוך את ההתאמה, כלומר לשייך את $BD$ ל-$AC$.",
+   "לחשוב שחוצה הזווית חוצה גם את הצלע. זה נכון רק אם $AB = AC$."
+  ],
+  "status": "official",
+  "topic": "similarity",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חוצה זווית",
+   "יחס",
+   "משפט חוצה הזווית",
+   "חלוקת צלע"
+  ],
+  "givens": [
+   "angle-bisector",
+   "triangle",
+   "side-lengths"
+  ],
+  "goals": [
+   "find-length",
+   "find-ratio"
+  ],
+  "related": [
+   "angle-bisector",
+   "proportion"
+  ],
+  "note": "המשפט מופיע בתוכנית של 4 ו-5 יח\"ל. אם אינכם בטוחים שהוא ברשימת השאלון שלכם, בדקו מול המורה."
+ },
+ {
+  "id": "central-angles-arcs-chords",
+  "name": "זוויות מרכזיות שוות",
+  "statement": "במעגל (או במעגלים שווים), זוויות מרכזיות שוות נשענות על קשתות שוות ועל מיתרים שווים.",
+  "formal": "\\angle AOB = \\angle COD \\Rightarrow \\overset{\\frown}{AB} = \\overset{\\frown}{CD},\\ AB = CD",
+  "citation": "במעגל, זוויות מרכזיות שוות נשענות על קשתות שוות ועל מיתרים שווים",
+  "conditions": [
+   "הזוויות מרכזיות: הקודקוד במרכז המעגל.",
+   "מדובר באותו מעגל או במעגלים שווים."
+  ],
+  "useWhen": "מעבר בין זוויות מרכזיות, קשתות ומיתרים.",
+  "diagram": "equal-chords",
+  "example": {
+   "problem": "במעגל שמרכזו $O$, $\\angle AOB = \\angle COD = 70^\\circ$, ו-$AB = 5$. מצאו את $CD$.",
+   "steps": [
+    {
+     "claim": "$CD = AB = 5$",
+     "reason": "במעגל, זוויות מרכזיות שוות נשענות על קשתות שוות ועל מיתרים שווים",
+     "ref": "central-angles-arcs-chords"
+    }
+   ],
+   "answer": "$CD = 5$"
+  },
+  "mistakes": [
+   "להשתמש במשפט בשני מעגלים בגדלים שונים."
+  ],
+  "converse": {
+   "id": "equal-chords-arcs"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "זווית מרכזית",
+   "קשתות שוות",
+   "מיתרים שווים"
+  ],
+  "givens": [
+   "circle",
+   "central-angle"
+  ],
+  "goals": [
+   "prove-equal-segments"
+  ],
+  "related": [
+   "central-angle",
+   "arc",
+   "chord"
+  ]
+ },
+ {
+  "id": "equal-chords-arcs",
+  "name": "מיתרים שווים",
+  "statement": "במעגל (או במעגלים שווים), מיתרים שווים נשענים על קשתות שוות ועל זוויות מרכזיות שוות.",
+  "formal": "AB = CD \\Rightarrow \\angle AOB = \\angle COD",
+  "citation": "במעגל, מיתרים שווים נשענים על קשתות שוות ועל זוויות מרכזיות שוות",
+  "conditions": [
+   "הוכח שהמיתרים שווים, באותו מעגל או במעגלים שווים."
+  ],
+  "useWhen": "יש מיתרים שווים, ורוצים זוויות או קשתות שוות.",
+  "diagram": "equal-chords",
+  "example": {
+   "problem": "במעגל שמרכזו $O$, $AB = CD$ ו-$\\angle AOB = 64^\\circ$. מצאו את $\\angle COD$.",
+   "steps": [
+    {
+     "claim": "$\\angle COD = \\angle AOB = 64^\\circ$",
+     "reason": "במעגל, מיתרים שווים נשענים על קשתות שוות ועל זוויות מרכזיות שוות",
+     "ref": "equal-chords-arcs"
+    }
+   ],
+   "answer": "$64^\\circ$"
+  },
+  "mistakes": [
+   "לשכוח שגם זוויות היקפיות על מיתרים שווים שוות (רק אם הן באותו צד ביחס לקשתות המתאימות)."
+  ],
+  "converse": {
+   "id": "central-angles-arcs-chords"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מיתרים שווים",
+   "קשתות שוות",
+   "זוויות מרכזיות"
+  ],
+  "givens": [
+   "circle",
+   "chord",
+   "equal-sides"
+  ],
+  "goals": [
+   "prove-equal-angles"
+  ],
+  "related": [
+   "chord",
+   "arc",
+   "central-angle"
+  ]
+ },
+ {
+  "id": "chord-distance",
+  "name": "מיתרים שווים ומרחקם מהמרכז",
+  "statement": "במעגל, מיתרים שווים נמצאים במרחקים שווים מהמרכז.",
+  "formal": "AB = CD \\Rightarrow OE = OF",
+  "citation": "במעגל, מיתרים שווים נמצאים במרחקים שווים מהמרכז",
+  "conditions": [
+   "המיתרים באותו מעגל ושווים.",
+   "המרחק נמדד לאורך אנך מהמרכז למיתר."
+  ],
+  "useWhen": "יש מיתרים שווים ואנכים אליהם מהמרכז.",
+  "diagram": "chord-distance",
+  "example": {
+   "problem": "במעגל, $AB = CD$, והמרחק של $AB$ מהמרכז הוא 3. מה המרחק של $CD$ מהמרכז?",
+   "steps": [
+    {
+     "claim": "$OF = OE = 3$",
+     "reason": "במעגל, מיתרים שווים נמצאים במרחקים שווים מהמרכז",
+     "ref": "chord-distance"
+    }
+   ],
+   "answer": "3"
+  },
+  "mistakes": [
+   "למדוד מרחק בקטע שאינו מאונך למיתר."
+  ],
+  "converse": {
+   "id": "chord-distance-converse"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מיתרים שווים",
+   "מרחק מהמרכז",
+   "אנך למיתר"
+  ],
+  "givens": [
+   "circle",
+   "chord",
+   "equal-sides",
+   "distance"
+  ],
+  "goals": [
+   "prove-equal-segments"
+  ],
+  "related": [
+   "chord",
+   "distance-point-line"
+  ]
+ },
+ {
+  "id": "chord-distance-converse",
+  "name": "מיתרים במרחקים שווים מהמרכז",
+  "statement": "במעגל, מיתרים הנמצאים במרחקים שווים מהמרכז שווים זה לזה.",
+  "formal": "OE = OF \\Rightarrow AB = CD",
+  "citation": "במעגל, מיתרים הנמצאים במרחקים שווים מהמרכז שווים",
+  "conditions": [
+   "הוכח שהמרחקים (האנכים) מהמרכז שווים."
+  ],
+  "useWhen": "המרכז נמצא על חוצה זווית שבין שני מיתרים, או שיש אנכים שווים.",
+  "diagram": "chord-distance",
+  "example": {
+   "problem": "המרחקים של המיתרים $AB$ ו-$CD$ ממרכז המעגל שווים, ו-$AB = 8$. מצאו את $CD$.",
+   "steps": [
+    {
+     "claim": "$CD = AB = 8$",
+     "reason": "במעגל, מיתרים הנמצאים במרחקים שווים מהמרכז שווים",
+     "ref": "chord-distance-converse"
+    }
+   ],
+   "answer": "8"
+  },
+  "mistakes": [
+   "לשכוח לציין שהמיתרים באותו מעגל."
+  ],
+  "converse": {
+   "id": "chord-distance"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מרחק מהמרכז",
+   "מיתרים שווים"
+  ],
+  "givens": [
+   "circle",
+   "chord",
+   "distance"
+  ],
+  "goals": [
+   "prove-equal-segments"
+  ],
+  "related": [
+   "chord",
+   "distance-point-line"
+  ]
+ },
+ {
+  "id": "longer-chord-closer",
+  "name": "מיתר גדול יותר קרוב יותר למרכז",
+  "statement": "במעגל, מבין שני מיתרים, המיתר הגדול יותר קרוב יותר למרכז. וגם ההפך: מבין שני מיתרים, המיתר הקרוב יותר למרכז גדול יותר.",
+  "formal": "AB > CD \\iff OE < OF",
+  "citation": "במעגל, מיתר גדול יותר קרוב יותר למרכז (ולהפך)",
+  "conditions": [
+   "המיתרים באותו מעגל.",
+   "המרחקים הם אנכים מהמרכז למיתרים."
+  ],
+  "useWhen": "שאלות השוואה בין מיתרים או בין מרחקים מהמרכז.",
+  "diagram": "longer-chord",
+  "example": {
+   "problem": "במעגל, המרחק של $AB$ מהמרכז הוא 2 והמרחק של $CD$ הוא 5. איזה מיתר ארוך יותר?",
+   "steps": [
+    {
+     "claim": "$AB > CD$",
+     "reason": "במעגל, מיתר גדול יותר קרוב יותר למרכז (ולהפך)",
+     "ref": "longer-chord-closer"
+    }
+   ],
+   "answer": "$AB$"
+  },
+  "mistakes": [
+   "להשוות מיתרים במעגלים שונים."
+  ],
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   5
+  ],
+  "keywords": [
+   "מיתר גדול",
+   "קרוב למרכז",
+   "השוואת מיתרים"
+  ],
+  "givens": [
+   "circle",
+   "chord",
+   "distance"
+  ],
+  "goals": [
+   "compare"
+  ],
+  "related": [
+   "chord",
+   "diameter"
+  ],
+  "note": "איננו בטוחים שהמשפט מופיע ברשימה של כל השאלונים. אפשר להוכיח אותו בפיתגורס: $\\left(\\tfrac{AB}{2}\\right)^2 = R^2 - OE^2$."
+ },
+ {
+  "id": "perpendicular-from-center",
+  "name": "אנך מהמרכז למיתר",
+  "statement": "האנך ממרכז המעגל למיתר חוצה את המיתר ואת הקשת המתאימה לו.",
+  "formal": "OM \\perp AB \\Rightarrow AM = MB",
+  "citation": "האנך ממרכז המעגל למיתר חוצה את המיתר",
+  "conditions": [
+   "הקטע יוצא ממרכז המעגל.",
+   "הוכח (או נתון) שהוא מאונך למיתר."
+  ],
+  "useWhen": "יש מרכז מעגל ומיתר, וחסר אורך. מורידים אנך ומקבלים משולש ישר זווית עם חצי מיתר.",
+  "diagram": "perpendicular-chord",
+  "example": {
+   "problem": "במעגל שרדיוסו 10, המרחק של המיתר $AB$ מהמרכז הוא 6. מצאו את $AB$.",
+   "steps": [
+    {
+     "claim": "$AM = MB$",
+     "reason": "האנך ממרכז המעגל למיתר חוצה את המיתר",
+     "ref": "perpendicular-from-center"
+    },
+    {
+     "claim": "$AM^2 = 10^2 - 6^2 = 64 \\Rightarrow AM = 8$",
+     "reason": "משפט פיתגורס",
+     "ref": "pythagoras"
+    },
+    {
+     "claim": "$AB = 16$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$AB = 16$"
+  },
+  "mistakes": [
+   "להשתמש במשפט עבור אנך שלא יוצא מהמרכז."
+  ],
+  "converse": {
+   "id": "center-to-midpoint"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "אנך מהמרכז",
+   "חוצה מיתר",
+   "מיתר",
+   "אמצע מיתר"
+  ],
+  "givens": [
+   "circle",
+   "chord",
+   "altitude",
+   "radius"
+  ],
+  "goals": [
+   "prove-midpoint",
+   "find-length"
+  ],
+  "related": [
+   "chord",
+   "radius",
+   "perpendicular-lines"
+  ]
+ },
+ {
+  "id": "center-to-midpoint",
+  "name": "קטע מהמרכז לאמצע מיתר",
+  "statement": "הקטע המחבר את מרכז המעגל עם אמצע מיתר (שאינו קוטר) מאונך למיתר.",
+  "formal": "AM = MB \\Rightarrow OM \\perp AB",
+  "citation": "הקטע המחבר את מרכז המעגל עם אמצע מיתר מאונך למיתר",
+  "conditions": [
+   "הנקודה היא אמצע המיתר.",
+   "המיתר אינו קוטר."
+  ],
+  "useWhen": "יש אמצע מיתר ומרכז, וצריך זווית ישרה.",
+  "diagram": "perpendicular-chord",
+  "example": {
+   "problem": "$M$ אמצע המיתר $AB$ במעגל שמרכזו $O$. מצאו את $\\angle OMA$.",
+   "steps": [
+    {
+     "claim": "$OM \\perp AB$",
+     "reason": "הקטע המחבר את מרכז המעגל עם אמצע מיתר מאונך למיתר",
+     "ref": "center-to-midpoint"
+    },
+    {
+     "claim": "$\\angle OMA = 90^\\circ$",
+     "reason": "מסקנה"
+    }
+   ],
+   "answer": "$90^\\circ$"
+  },
+  "mistakes": [
+   "להשתמש בו עבור קוטר. כאן אמצע המיתר הוא המרכז עצמו."
+  ],
+  "converse": {
+   "id": "perpendicular-from-center"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "אמצע מיתר",
+   "מאונך למיתר",
+   "מרכז"
+  ],
+  "givens": [
+   "circle",
+   "chord",
+   "midpoint"
+  ],
+  "goals": [
+   "prove-perpendicular"
+  ],
+  "related": [
+   "chord",
+   "midpoint"
+  ]
+ },
+ {
+  "id": "perp-bisector-chord",
+  "name": "האנך האמצעי של מיתר",
+  "statement": "האנך האמצעי של מיתר עובר דרך מרכז המעגל.",
+  "formal": "O \\in \\text{אנך אמצעי של } AB",
+  "citation": "האנך האמצעי של מיתר עובר דרך מרכז המעגל",
+  "conditions": [
+   "הישר מאונך למיתר ועובר באמצעו."
+  ],
+  "useWhen": "צריך למצוא את מרכז המעגל, או להוכיח שישר עובר דרכו.",
+  "diagram": "perpendicular-chord",
+  "example": {
+   "problem": "איך מוצאים את מרכז המעגל שעובר דרך שלוש נקודות $A, B, C$?",
+   "steps": [
+    {
+     "claim": "המרכז על האנך האמצעי של $AB$ ועל האנך האמצעי של $BC$",
+     "reason": "האנך האמצעי של מיתר עובר דרך מרכז המעגל",
+     "ref": "perp-bisector-chord"
+    },
+    {
+     "claim": "המרכז הוא נקודת החיתוך של שני האנכים האמצעיים",
+     "reason": "מסקנה"
+    }
+   ],
+   "answer": "חיתוך של שני אנכים אמצעיים."
+  },
+  "mistakes": [
+   "להסתפק בישר מאונך שאינו עובר באמצע המיתר."
+  ],
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "אנך אמצעי",
+   "מרכז המעגל",
+   "מיתר"
+  ],
+  "givens": [
+   "circle",
+   "chord",
+   "perpendicular-bisector"
+  ],
+  "goals": [
+   "prove-collinear"
+  ],
+  "related": [
+   "perpendicular-bisector",
+   "chord",
+   "circumcenter"
+  ]
+ },
+ {
+  "id": "inscribed-central",
+  "name": "זווית היקפית וזווית מרכזית",
+  "statement": "זווית היקפית שווה למחצית הזווית המרכזית הנשענת על אותה קשת.",
+  "formal": "\\angle ACB = \\tfrac{1}{2}\\angle AOB",
+  "citation": "זווית היקפית שווה למחצית הזווית המרכזית הנשענת על אותה קשת",
+  "conditions": [
+   "הזווית ההיקפית והזווית המרכזית נשענות על אותה קשת."
+  ],
+  "useWhen": "יש מרכז מעגל ונקודות על המעגל, ורוצים לעבור בין זווית במרכז לזווית על ההיקף.",
+  "diagram": "circle-central-inscribed",
+  "example": {
+   "problem": "במעגל שמרכזו $O$, $\\angle AOB = 140^\\circ$. מצאו את $\\angle ACB$ ($C$ על הקשת הגדולה).",
+   "steps": [
+    {
+     "claim": "$\\angle ACB = \\tfrac12 \\cdot 140^\\circ = 70^\\circ$",
+     "reason": "זווית היקפית שווה למחצית הזווית המרכזית הנשענת על אותה קשת",
+     "ref": "inscribed-central"
+    }
+   ],
+   "answer": "$70^\\circ$"
+  },
+  "mistakes": [
+   "לקחת את הזווית המרכזית שנשענת על הקשת השנייה. אם $C$ על הקשת הקטנה, הזווית ההיקפית היא $\\tfrac12(360^\\circ - 140^\\circ)$."
+  ],
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "זווית היקפית",
+   "זווית מרכזית",
+   "מחצית",
+   "קשת"
+  ],
+  "givens": [
+   "circle",
+   "inscribed-angle",
+   "central-angle"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "inscribed-angle",
+   "central-angle",
+   "arc"
+  ]
+ },
+ {
+  "id": "inscribed-same-arc",
+  "name": "זוויות היקפיות על אותה קשת",
+  "statement": "במעגל, זוויות היקפיות הנשענות על אותה קשת (או על קשתות שוות) שוות זו לזו.",
+  "formal": "\\angle ACB = \\angle ADB",
+  "citation": "במעגל, זוויות היקפיות הנשענות על אותה קשת שוות",
+  "conditions": [
+   "הזוויות היקפיות, ונשענות על אותה קשת (הקודקודים באותו צד של המיתר)."
+  ],
+  "useWhen": "יש ארבע נקודות על מעגל, ורוצים זוויות שוות לדמיון או למשולש שווה שוקיים.",
+  "diagram": "inscribed-same-arc",
+  "example": {
+   "problem": "הנקודות $A, B, C, D$ על מעגל, ו-$C, D$ באותו צד של $AB$. נתון $\\angle ACB = 35^\\circ$. מצאו את $\\angle ADB$.",
+   "steps": [
+    {
+     "claim": "$\\angle ADB = \\angle ACB = 35^\\circ$",
+     "reason": "במעגל, זוויות היקפיות הנשענות על אותה קשת שוות",
+     "ref": "inscribed-same-arc"
+    }
+   ],
+   "answer": "$35^\\circ$"
+  },
+  "mistakes": [
+   "להשוות זוויות שנשענות על קשתות משלימות (קודקודים משני צדי המיתר). הן משלימות ל-180°."
+  ],
+  "converse": {
+   "id": "inscribed-equal-arcs"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "זוויות היקפיות",
+   "אותה קשת",
+   "שוות"
+  ],
+  "givens": [
+   "circle",
+   "inscribed-angle"
+  ],
+  "goals": [
+   "prove-equal-angles",
+   "find-angle",
+   "prove-similar"
+  ],
+  "related": [
+   "inscribed-angle",
+   "arc"
+  ]
+ },
+ {
+  "id": "inscribed-equal-arcs",
+  "name": "זוויות היקפיות שוות",
+  "statement": "במעגל, זוויות היקפיות שוות נשענות על קשתות שוות, ולכן גם על מיתרים שווים.",
+  "formal": "\\angle ACB = \\angle DFE \\Rightarrow \\overset{\\frown}{AB} = \\overset{\\frown}{DE},\\ AB = DE",
+  "citation": "במעגל, זוויות היקפיות שוות נשענות על קשתות שוות ועל מיתרים שווים",
+  "conditions": [
+   "הזוויות היקפיות באותו מעגל, והוכח שהן שוות."
+  ],
+  "useWhen": "יש זוויות היקפיות שוות (למשל חוצה זווית היקפית), ורוצים מיתרים שווים.",
+  "diagram": "inscribed-same-arc",
+  "example": {
+   "problem": "במשולש $ABC$ החסום במעגל, חוצה הזווית $A$ חותך את המעגל ב-$P$. הוכיחו ש-$PB = PC$.",
+   "steps": [
+    {
+     "claim": "$\\angle BAP = \\angle PAC$",
+     "reason": "נתון: $AP$ חוצה זווית"
+    },
+    {
+     "claim": "$PB = PC$",
+     "reason": "במעגל, זוויות היקפיות שוות נשענות על קשתות שוות ועל מיתרים שווים",
+     "ref": "inscribed-equal-arcs"
+    }
+   ],
+   "answer": "$PB = PC$"
+  },
+  "mistakes": [
+   "להחיל על זוויות שאינן היקפיות."
+  ],
+  "converse": {
+   "id": "inscribed-same-arc"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "זוויות היקפיות שוות",
+   "מיתרים שווים",
+   "קשתות שוות"
+  ],
+  "givens": [
+   "circle",
+   "inscribed-angle",
+   "equal-angles",
+   "angle-bisector"
+  ],
+  "goals": [
+   "prove-equal-segments"
+  ],
+  "related": [
+   "inscribed-angle",
+   "chord",
+   "arc"
+  ]
+ },
+ {
+  "id": "inscribed-diameter",
+  "name": "זווית היקפית הנשענת על קוטר",
+  "statement": "זווית היקפית הנשענת על קוטר היא זווית ישרה.",
+  "formal": "AB \\text{ קוטר} \\Rightarrow \\angle ACB = 90^\\circ",
+  "citation": "זווית היקפית הנשענת על קוטר היא ישרה",
+  "conditions": [
+   "הקטע שעליו הזווית נשענת הוא קוטר (עובר במרכז).",
+   "קודקוד הזווית על המעגל."
+  ],
+  "useWhen": "יש קוטר ונקודה על המעגל. מקבלים משולש ישר זווית (פיתגורס, טריגונומטריה).",
+  "diagram": "inscribed-diameter",
+  "example": {
+   "problem": "$AB$ קוטר במעגל שרדיוסו 5, ו-$C$ נקודה על המעגל עם $AC = 6$. מצאו את $BC$.",
+   "steps": [
+    {
+     "claim": "$\\angle ACB = 90^\\circ$",
+     "reason": "זווית היקפית הנשענת על קוטר היא ישרה",
+     "ref": "inscribed-diameter"
+    },
+    {
+     "claim": "$BC^2 = 10^2 - 6^2 = 64 \\Rightarrow BC = 8$",
+     "reason": "משפט פיתגורס",
+     "ref": "pythagoras"
+    }
+   ],
+   "answer": "$BC = 8$"
+  },
+  "mistakes": [
+   "להשתמש במשפט כשהמיתר לא הוכח כקוטר."
+  ],
+  "converse": {
+   "id": "right-inscribed-diameter"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "קוטר",
+   "זווית ישרה",
+   "זווית היקפית",
+   "90"
+  ],
+  "givens": [
+   "circle",
+   "diameter",
+   "inscribed-angle"
+  ],
+  "goals": [
+   "prove-right-angle",
+   "find-length"
+  ],
+  "related": [
+   "diameter",
+   "inscribed-angle",
+   "right-triangle"
+  ]
+ },
+ {
+  "id": "right-inscribed-diameter",
+  "name": "זווית היקפית ישרה נשענת על קוטר",
+  "statement": "זווית היקפית ישרה נשענת על קוטר. לכן, במשולש ישר זווית, מרכז המעגל החוסם הוא אמצע היתר.",
+  "formal": "\\angle ACB = 90^\\circ \\Rightarrow AB \\text{ קוטר}",
+  "citation": "זווית היקפית ישרה נשענת על קוטר",
+  "conditions": [
+   "הזווית היקפית והוכח שהיא ישרה."
+  ],
+  "useWhen": "יש משולש ישר זווית חסום במעגל. היתר הוא קוטר, והרדיוס הוא חצי היתר.",
+  "diagram": "inscribed-diameter",
+  "example": {
+   "problem": "משולש ישר זווית שניצביו 6 ו-8 חסום במעגל. מצאו את רדיוס המעגל.",
+   "steps": [
+    {
+     "claim": "היתר הוא קוטר",
+     "reason": "זווית היקפית ישרה נשענת על קוטר",
+     "ref": "right-inscribed-diameter"
+    },
+    {
+     "claim": "יתר $= \\sqrt{6^2+8^2} = 10$",
+     "reason": "משפט פיתגורס",
+     "ref": "pythagoras"
+    },
+    {
+     "claim": "$R = 5$",
+     "reason": "רדיוס הוא חצי קוטר"
+    }
+   ],
+   "answer": "$R = 5$"
+  },
+  "mistakes": [
+   "לחשוב שכל זווית בת $90^\\circ$ במעגל היא היקפית. צריך שהקודקוד יהיה על המעגל."
+  ],
+  "converse": {
+   "id": "inscribed-diameter"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "זווית ישרה",
+   "קוטר",
+   "מעגל חוסם משולש ישר זווית"
+  ],
+  "givens": [
+   "circle",
+   "right-angle",
+   "right-triangle",
+   "circumscribed-circle"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "diameter",
+   "circumscribed-circle",
+   "hypotenuse"
+  ]
+ },
+ {
+  "id": "angle-inside-circle",
+  "name": "זווית שקודקודה בתוך המעגל",
+  "statement": "זווית שקודקודה בתוך המעגל שווה למחצית סכום הקשתות הכלואות בין שוקיה ובין המשכי שוקיה.",
+  "formal": "\\angle AEB = \\tfrac{1}{2}\\left(\\overset{\\frown}{AB} + \\overset{\\frown}{CD}\\right)",
+  "citation": "זווית שקודקודה בתוך המעגל שווה למחצית סכום הקשתות הכלואות בין שוקיה והמשכיהן",
+  "conditions": [
+   "קודקוד הזווית בתוך המעגל (שני מיתרים נחתכים).",
+   "הקשתות נמדדות במעלות."
+  ],
+  "useWhen": "שני מיתרים נחתכים בתוך המעגל, וידועות הקשתות.",
+  "diagram": "angle-inside",
+  "example": {
+   "problem": "המיתרים $AC$ ו-$BD$ נחתכים ב-$E$. $\\overset{\\frown}{AB} = 100^\\circ$, $\\overset{\\frown}{CD} = 60^\\circ$. מצאו את $\\angle AEB$.",
+   "steps": [
+    {
+     "claim": "$\\angle AEB = \\tfrac12(100^\\circ + 60^\\circ) = 80^\\circ$",
+     "reason": "זווית שקודקודה בתוך המעגל שווה למחצית סכום הקשתות הכלואות בין שוקיה והמשכיהן",
+     "ref": "angle-inside-circle"
+    }
+   ],
+   "answer": "$80^\\circ$"
+  },
+  "mistakes": [
+   "לקחת את הקשתות הלא נכונות. הקשתות הן אלה שמול הזווית ומול הזווית הקודקודית לה."
+  ],
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   5
+  ],
+  "keywords": [
+   "זווית פנימית במעגל",
+   "מיתרים נחתכים",
+   "סכום קשתות"
+  ],
+  "givens": [
+   "circle",
+   "chord",
+   "arc"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "arc",
+   "chord"
+  ],
+  "note": "המשפט נמצא בתוכנית, אבל ייתכן שלא בכל השאלונים. אפשר תמיד להוכיח אותו בעזרת זווית חיצונית למשולש וזוויות היקפיות."
+ },
+ {
+  "id": "angle-outside-circle",
+  "name": "זווית שקודקודה מחוץ למעגל",
+  "statement": "זווית שקודקודה מחוץ למעגל, ששוקיה חותכות את המעגל (או משיקות לו), שווה למחצית ההפרש בין הקשתות הכלואות בין שוקיה.",
+  "formal": "\\angle APC = \\tfrac{1}{2}\\left(\\overset{\\frown}{AC} - \\overset{\\frown}{BD}\\right)",
+  "citation": "זווית שקודקודה מחוץ למעגל שווה למחצית הפרש הקשתות הכלואות בין שוקיה",
+  "conditions": [
+   "הקודקוד מחוץ למעגל.",
+   "מחסירים את הקשת הקרובה מהקשת הרחוקה."
+  ],
+  "useWhen": "שני חותכים (או משיקים) יוצאים מנקודה חיצונית, וידועות הקשתות.",
+  "diagram": "angle-outside",
+  "example": {
+   "problem": "מנקודה $P$ יוצאים שני חותכים. הקשת הרחוקה $200^\\circ$ והקרובה $60^\\circ$. מצאו את $\\angle P$.",
+   "steps": [
+    {
+     "claim": "$\\angle P = \\tfrac12(200^\\circ - 60^\\circ) = 70^\\circ$",
+     "reason": "זווית שקודקודה מחוץ למעגל שווה למחצית הפרש הקשתות הכלואות בין שוקיה",
+     "ref": "angle-outside-circle"
+    }
+   ],
+   "answer": "$70^\\circ$"
+  },
+  "mistakes": [
+   "לחבר במקום לחסר."
+  ],
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   5
+  ],
+  "keywords": [
+   "זווית חיצונית למעגל",
+   "הפרש קשתות",
+   "חותכים",
+   "משיקים"
+  ],
+  "givens": [
+   "circle",
+   "secant",
+   "tangent",
+   "arc"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "arc",
+   "secant-line",
+   "tangent-line"
+  ],
+  "note": "כמו המשפט על זווית שקודקודה בתוך המעגל: אם אינכם בטוחים שהוא ברשימה של השאלון, הוכיחו בעזרת זווית חיצונית למשולש."
+ },
+ {
+  "id": "cyclic-quad-opposite",
+  "name": "מרובע חסום במעגל",
+  "statement": "במרובע החסום במעגל, סכום כל שתי זוויות נגדיות הוא $180^\\circ$.",
+  "formal": "\\angle A + \\angle C = \\angle B + \\angle D = 180^\\circ",
+  "citation": "במרובע החסום במעגל סכום זוויות נגדיות הוא 180°",
+  "conditions": [
+   "ארבעת קודקודי המרובע על המעגל."
+  ],
+  "useWhen": "יש מרובע שכל קודקודיו על מעגל, ורוצים זווית.",
+  "diagram": "cyclic-quad",
+  "example": {
+   "problem": "$ABCD$ חסום במעגל, ו-$\\angle A = 85^\\circ$. מצאו את $\\angle C$.",
+   "steps": [
+    {
+     "claim": "$\\angle C = 180^\\circ - 85^\\circ = 95^\\circ$",
+     "reason": "במרובע החסום במעגל סכום זוויות נגדיות הוא 180°",
+     "ref": "cyclic-quad-opposite"
+    }
+   ],
+   "answer": "$95^\\circ$"
+  },
+  "mistakes": [
+   "לחבר זוויות סמוכות במקום נגדיות."
+  ],
+  "converse": {
+   "id": "cyclic-quad-converse"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מרובע חסום",
+   "זוויות נגדיות",
+   "180",
+   "בר חסימה"
+  ],
+  "givens": [
+   "circle",
+   "cyclic-quad"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "cyclic-quadrilateral",
+   "circumscribed-circle"
+  ]
+ },
+ {
+  "id": "cyclic-quad-converse",
+  "name": "זיהוי מרובע בר-חסימה",
+  "statement": "אם במרובע סכום שתי זוויות נגדיות הוא $180^\\circ$, אז אפשר לחסום אותו במעגל.",
+  "formal": "\\angle A + \\angle C = 180^\\circ \\Rightarrow ABCD \\text{ בר-חסימה}",
+  "citation": "מרובע שבו סכום זוויות נגדיות הוא 180° הוא בר-חסימה במעגל",
+  "conditions": [
+   "הוכח שסכום זוג אחד של זוויות נגדיות הוא $180^\\circ$."
+  ],
+  "useWhen": "צריך להוכיח שארבע נקודות על מעגל אחד, למשל כשיש שתי זוויות ישרות נגדיות.",
+  "diagram": "cyclic-quad",
+  "example": {
+   "problem": "במרובע $ABCD$: $\\angle B = \\angle D = 90^\\circ$. הוכיחו שאפשר לחסום אותו במעגל.",
+   "steps": [
+    {
+     "claim": "$\\angle B + \\angle D = 180^\\circ$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$ABCD$ בר-חסימה במעגל",
+     "reason": "מרובע שבו סכום זוויות נגדיות הוא 180° הוא בר-חסימה במעגל",
+     "ref": "cyclic-quad-converse"
+    }
+   ],
+   "answer": "המרובע בר-חסימה."
+  },
+  "mistakes": [
+   "להשתמש בזוויות סמוכות."
+  ],
+  "converse": {
+   "id": "cyclic-quad-opposite"
+  },
+  "status": "official",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "בר חסימה",
+   "להוכיח מרובע חסום",
+   "זוויות נגדיות"
+  ],
+  "givens": [
+   "quadrilateral",
+   "angle-measure",
+   "right-angle"
+  ],
+  "goals": [
+   "prove-cyclic"
+  ],
+  "related": [
+   "cyclic-quadrilateral"
+  ]
+ },
+ {
+  "id": "cyclic-parallelogram",
+  "name": "מקבילית החסומה במעגל",
+  "statement": "מקבילית החסומה במעגל היא מלבן.",
+  "formal": "ABCD \\text{ מקבילית חסומה} \\Rightarrow \\angle A = 90^\\circ",
+  "citation": "מקבילית החסומה במעגל היא מלבן",
+  "conditions": [
+   "המרובע מקבילית, וקודקודיו על מעגל."
+  ],
+  "useWhen": "מקבילית חסומה במעגל.",
+  "diagram": "cyclic-rectangle",
+  "example": {
+   "problem": "הוכיחו שמקבילית $ABCD$ החסומה במעגל היא מלבן.",
+   "steps": [
+    {
+     "claim": "$\\angle A = \\angle C$",
+     "reason": "במקבילית כל שתי זוויות נגדיות שוות",
+     "ref": "parallelogram-opposite-angles"
+    },
+    {
+     "claim": "$\\angle A + \\angle C = 180^\\circ$",
+     "reason": "במרובע החסום במעגל סכום זוויות נגדיות הוא 180°",
+     "ref": "cyclic-quad-opposite"
+    },
+    {
+     "claim": "$\\angle A = 90^\\circ$, ולכן $ABCD$ מלבן",
+     "reason": "מקבילית שיש בה זווית ישרה היא מלבן",
+     "ref": "rectangle-test-right"
+    }
+   ],
+   "answer": "מלבן."
+  },
+  "mistakes": [
+   "לצטט בלי הוכחה כשלא בטוחים שהמשפט ברשימה. ההוכחה כאן קצרה, וכדאי לכתוב אותה."
+  ],
+  "status": "needs-proof",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מקבילית חסומה",
+   "מלבן",
+   "חסום במעגל"
+  ],
+  "givens": [
+   "parallelogram",
+   "circle",
+   "cyclic-quad"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "cyclic-quadrilateral",
+   "rectangle"
+  ],
+  "note": "ייתכן שהטענה מופיעה ברשימה הרשמית, אבל איננו בטוחים. ההוכחה בדוגמה לוקחת שלוש שורות, ולכן מומלץ לכתוב אותה."
+ },
+ {
+  "id": "cyclic-trapezoid",
+  "name": "טרפז החסום במעגל",
+  "statement": "טרפז החסום במעגל הוא טרפז שווה שוקיים.",
+  "formal": "AB \\parallel DC,\\ ABCD \\text{ חסום} \\Rightarrow AD = BC",
+  "citation": "טרפז החסום במעגל הוא שווה שוקיים",
+  "conditions": [
+   "המרובע טרפז, וקודקודיו על מעגל."
+  ],
+  "useWhen": "טרפז חסום במעגל.",
+  "diagram": "cyclic-trapezoid",
+  "example": {
+   "problem": "הוכיחו שטרפז $ABCD$ ($AB \\parallel DC$) החסום במעגל הוא שווה שוקיים.",
+   "steps": [
+    {
+     "claim": "$\\angle A + \\angle D = 180^\\circ$",
+     "reason": "סכום זוויות חד-צדדיות בין ישרים מקבילים הוא 180°",
+     "ref": "co-interior-angles"
+    },
+    {
+     "claim": "$\\angle B + \\angle D = 180^\\circ$",
+     "reason": "במרובע החסום במעגל סכום זוויות נגדיות הוא 180°",
+     "ref": "cyclic-quad-opposite"
+    },
+    {
+     "claim": "$\\angle A = \\angle B$, ולכן $AD = BC$",
+     "reason": "טרפז שבו זוויות הבסיס שוות הוא טרפז שווה שוקיים",
+     "ref": "isosceles-trapezoid-test-angles"
+    }
+   ],
+   "answer": "הטרפז שווה שוקיים."
+  },
+  "mistakes": [
+   "לצטט בלי הוכחה."
+  ],
+  "status": "needs-proof",
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "טרפז חסום",
+   "שווה שוקיים",
+   "חסום במעגל"
+  ],
+  "givens": [
+   "trapezoid",
+   "circle",
+   "cyclic-quad"
+  ],
+  "goals": [
+   "prove-quad-type"
+  ],
+  "related": [
+   "cyclic-quadrilateral",
+   "isosceles-trapezoid"
+  ],
+  "note": "ייתכן שהטענה ברשימה הרשמית, אבל איננו בטוחים. ההוכחה בדוגמה קצרה ובטוחה."
+ },
+ {
+  "id": "intersecting-chords",
+  "name": "מיתרים נחתכים",
+  "statement": "אם שני מיתרים נחתכים בתוך מעגל, מכפלת הקטעים של מיתר אחד שווה למכפלת הקטעים של המיתר השני.",
+  "formal": "AE \\cdot EB = CE \\cdot ED",
+  "citation": "מכפלת קטעי מיתר אחד שווה למכפלת קטעי המיתר השני",
+  "conditions": [
+   "שני המיתרים נחתכים בנקודה בתוך המעגל.",
+   "כל מכפלה היא של שני הקטעים של אותו מיתר."
+  ],
+  "useWhen": "שני מיתרים נחתכים, ומכירים שלושה מארבעת הקטעים.",
+  "diagram": "intersecting-chords",
+  "example": {
+   "problem": "המיתרים $AB$ ו-$CD$ נחתכים ב-$E$. $AE = 4$, $EB = 6$, $CE = 3$. מצאו את $ED$.",
+   "steps": [
+    {
+     "claim": "$4 \\cdot 6 = 3 \\cdot ED$",
+     "reason": "מכפלת קטעי מיתר אחד שווה למכפלת קטעי המיתר השני",
+     "ref": "intersecting-chords"
+    },
+    {
+     "claim": "$ED = 8$",
+     "reason": "פתרון"
+    }
+   ],
+   "answer": "$ED = 8$"
+  },
+  "mistakes": [
+   "לכפול קטע של מיתר אחד בקטע של המיתר השני."
+  ],
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מיתרים נחתכים",
+   "מכפלת קטעים",
+   "חיתוך מיתרים"
+  ],
+  "givens": [
+   "circle",
+   "chord"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "chord"
+  ]
+ },
+ {
+  "id": "two-secants",
+  "name": "שני חותכים מנקודה",
+  "statement": "אם מנקודה מחוץ למעגל יוצאים שני חותכים, מכפלת החותך האחד בחלקו החיצוני שווה למכפלת החותך השני בחלקו החיצוני.",
+  "formal": "PA \\cdot PB = PC \\cdot PD",
+  "citation": "מכפלת חותך בחלקו החיצוני שווה למכפלת החותך השני בחלקו החיצוני",
+  "conditions": [
+   "שני החותכים יוצאים מאותה נקודה מחוץ למעגל.",
+   "בכל מכפלה כופלים את כל החותך ($PA$) בחלקו החיצוני ($PB$)."
+  ],
+  "useWhen": "שני חותכים מנקודה חיצונית, וחסר אורך.",
+  "diagram": "two-secants",
+  "example": {
+   "problem": "מ-$P$ יוצאים שני חותכים: $PB = 4$, $BA = 5$ ו-$PD = 3$. מצאו את $PC$.",
+   "steps": [
+    {
+     "claim": "$PA = 9$",
+     "reason": "$4 + 5$"
+    },
+    {
+     "claim": "$9 \\cdot 4 = PC \\cdot 3 \\Rightarrow PC = 12$",
+     "reason": "מכפלת חותך בחלקו החיצוני שווה למכפלת החותך השני בחלקו החיצוני",
+     "ref": "two-secants"
+    }
+   ],
+   "answer": "$PC = 12$"
+  },
+  "mistakes": [
+   "לכפול את החלק החיצוני בחלק הפנימי ($PB \\cdot BA$) במקום בחותך כולו."
+  ],
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "שני חותכים",
+   "חלק חיצוני",
+   "חותך"
+  ],
+  "givens": [
+   "circle",
+   "secant"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "secant-line"
+  ]
+ },
+ {
+  "id": "tangent-secant",
+  "name": "משיק וחותך מנקודה",
+  "statement": "אם מנקודה מחוץ למעגל יוצאים משיק וחותך, ריבוע המשיק שווה למכפלת החותך בחלקו החיצוני.",
+  "formal": "PT^2 = PA \\cdot PB",
+  "citation": "ריבוע המשיק שווה למכפלת החותך בחלקו החיצוני",
+  "conditions": [
+   "$PT$ קטע משיק ($T$ נקודת ההשקה).",
+   "$PA$ חותך שלם, ו-$PB$ חלקו החיצוני."
+  ],
+  "useWhen": "יש משיק וחותך מאותה נקודה.",
+  "diagram": "tangent-secant",
+  "example": {
+   "problem": "$PT$ משיק, $PB = 4$, $BA = 5$. מצאו את $PT$.",
+   "steps": [
+    {
+     "claim": "$PT^2 = 9 \\cdot 4 = 36$",
+     "reason": "ריבוע המשיק שווה למכפלת החותך בחלקו החיצוני",
+     "ref": "tangent-secant"
+    },
+    {
+     "claim": "$PT = 6$",
+     "reason": "אורך חיובי"
+    }
+   ],
+   "answer": "$PT = 6$"
+  },
+  "mistakes": [
+   "לשכוח להעלות את המשיק בריבוע."
+  ],
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "משיק וחותך",
+   "ריבוע המשיק",
+   "חלק חיצוני"
+  ],
+  "givens": [
+   "circle",
+   "tangent",
+   "secant"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "tangent-line",
+   "secant-line"
+  ]
+ },
+ {
+  "id": "tangent-radius",
+  "name": "משיק ורדיוס",
+  "statement": "משיק למעגל מאונך לרדיוס בנקודת ההשקה.",
+  "formal": "OT \\perp \\ell",
+  "citation": "משיק למעגל מאונך לרדיוס בנקודת ההשקה",
+  "conditions": [
+   "הישר משיק למעגל.",
+   "הרדיוס מגיע לנקודת ההשקה."
+  ],
+  "useWhen": "יש משיק. מחברים את המרכז לנקודת ההשקה ומקבלים זווית ישרה (ולכן פיתגורס).",
+  "diagram": "tangent-radius",
+  "example": {
+   "problem": "$PT$ משיק למעגל שמרכזו $O$ ורדיוסו 5, ו-$PO = 13$. מצאו את $PT$.",
+   "steps": [
+    {
+     "claim": "$\\angle OTP = 90^\\circ$",
+     "reason": "משיק למעגל מאונך לרדיוס בנקודת ההשקה",
+     "ref": "tangent-radius"
+    },
+    {
+     "claim": "$PT^2 = 13^2 - 5^2 = 144 \\Rightarrow PT = 12$",
+     "reason": "משפט פיתגורס",
+     "ref": "pythagoras"
+    }
+   ],
+   "answer": "$PT = 12$"
+  },
+  "mistakes": [
+   "לחבר את המרכז לנקודה אחרת על המשיק, לא לנקודת ההשקה."
+  ],
+  "converse": {
+   "id": "tangent-radius-converse"
+  },
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "משיק",
+   "רדיוס",
+   "נקודת השקה",
+   "מאונך"
+  ],
+  "givens": [
+   "circle",
+   "tangent",
+   "radius"
+  ],
+  "goals": [
+   "prove-perpendicular",
+   "find-length",
+   "find-angle"
+  ],
+  "related": [
+   "tangent-line",
+   "radius",
+   "point-of-tangency"
+  ]
+ },
+ {
+  "id": "tangent-radius-converse",
+  "name": "זיהוי משיק",
+  "statement": "ישר המאונך לרדיוס בקצהו שעל המעגל הוא משיק למעגל.",
+  "formal": "\\ell \\perp OT,\\ T \\in \\text{מעגל} \\Rightarrow \\ell \\text{ משיק}",
+  "citation": "ישר המאונך לרדיוס בקצהו הוא משיק למעגל",
+  "conditions": [
+   "הישר עובר דרך הנקודה שבקצה הרדיוס, על המעגל.",
+   "הוכח שהוא מאונך לרדיוס."
+  ],
+  "useWhen": "צריך להוכיח שישר משיק למעגל.",
+  "diagram": "tangent-radius",
+  "example": {
+   "problem": "$T$ על מעגל שמרכזו $O$, והישר $\\ell$ עובר ב-$T$ ומאונך ל-$OT$. מה אפשר לומר על $\\ell$?",
+   "steps": [
+    {
+     "claim": "$\\ell$ משיק למעגל ב-$T$",
+     "reason": "ישר המאונך לרדיוס בקצהו הוא משיק למעגל",
+     "ref": "tangent-radius-converse"
+    }
+   ],
+   "answer": "$\\ell$ משיק."
+  },
+  "mistakes": [
+   "להוכיח ניצבות לקטע שאינו רדיוס."
+  ],
+  "converse": {
+   "id": "tangent-radius"
+  },
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "להוכיח משיק",
+   "מאונך לרדיוס"
+  ],
+  "givens": [
+   "circle",
+   "radius",
+   "right-angle"
+  ],
+  "goals": [
+   "prove-tangent"
+  ],
+  "related": [
+   "tangent-line",
+   "radius"
+  ]
+ },
+ {
+  "id": "two-tangents-equal",
+  "name": "שני משיקים מנקודה",
+  "statement": "שני קטעי המשיקים היוצאים מאותה נקודה מחוץ למעגל שווים זה לזה.",
+  "formal": "PA = PB",
+  "citation": "שני משיקים למעגל היוצאים מאותה נקודה שווים זה לזה",
+  "conditions": [
+   "שני הקטעים משיקים, מאותה נקודה חיצונית ועד נקודות ההשקה."
+  ],
+  "useWhen": "יש שני משיקים מנקודה, או מעגל חסום במצולע (קטעי משיקים שווים מכל קודקוד).",
+  "diagram": "two-tangents",
+  "example": {
+   "problem": "$PA$ ו-$PB$ משיקים למעגל, ו-$\\angle APB = 50^\\circ$. מצאו את $\\angle PAB$.",
+   "steps": [
+    {
+     "claim": "$PA = PB$",
+     "reason": "שני משיקים למעגל היוצאים מאותה נקודה שווים זה לזה",
+     "ref": "two-tangents-equal"
+    },
+    {
+     "claim": "$\\angle PAB = \\angle PBA = \\frac{180^\\circ - 50^\\circ}{2} = 65^\\circ$",
+     "reason": "במשולש שווה שוקיים זוויות הבסיס שוות",
+     "ref": "isosceles-base-angles"
+    }
+   ],
+   "answer": "$65^\\circ$"
+  },
+  "mistakes": [
+   "למדוד את קטע המשיק עד נקודה שאינה נקודת ההשקה."
+  ],
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "שני משיקים",
+   "משיקים שווים",
+   "נקודה חיצונית"
+  ],
+  "givens": [
+   "circle",
+   "two-tangents",
+   "tangent",
+   "inscribed-circle"
+  ],
+  "goals": [
+   "prove-equal-segments",
+   "find-length"
+  ],
+  "related": [
+   "tangent-line",
+   "point-of-tangency"
+  ]
+ },
+ {
+  "id": "tangents-center-bisects",
+  "name": "הקטע מהמרכז לנקודת המשיקים",
+  "statement": "הקטע המחבר את מרכז המעגל עם נקודה שממנה יוצאים שני משיקים למעגל חוצה את הזווית שבין המשיקים, ואת הזווית שבין הרדיוסים לנקודות ההשקה.",
+  "formal": "\\angle APO = \\angle OPB,\\ \\angle AOP = \\angle POB",
+  "citation": "הקטע המחבר את מרכז המעגל עם נקודת המפגש של שני משיקים חוצה את הזווית שבין המשיקים",
+  "conditions": [
+   "שני משיקים מאותה נקודה.",
+   "הקטע מחבר את הנקודה עם מרכז המעגל."
+  ],
+  "useWhen": "יש שני משיקים מנקודה ומרכז מעגל, ורוצים זוויות.",
+  "diagram": "two-tangents",
+  "example": {
+   "problem": "$PA, PB$ משיקים, $O$ המרכז, ו-$\\angle APB = 60^\\circ$. מצאו את $\\angle AOP$.",
+   "steps": [
+    {
+     "claim": "$\\angle APO = 30^\\circ$",
+     "reason": "הקטע המחבר את מרכז המעגל עם נקודת המפגש של שני משיקים חוצה את הזווית שבין המשיקים",
+     "ref": "tangents-center-bisects"
+    },
+    {
+     "claim": "$\\angle OAP = 90^\\circ$",
+     "reason": "משיק למעגל מאונך לרדיוס בנקודת ההשקה",
+     "ref": "tangent-radius"
+    },
+    {
+     "claim": "$\\angle AOP = 60^\\circ$",
+     "reason": "סכום הזוויות במשולש הוא 180°",
+     "ref": "triangle-angle-sum"
+    }
+   ],
+   "answer": "$60^\\circ$"
+  },
+  "mistakes": [
+   "לחשוב ש-$PO$ חוצה את הקטע $AB$ בלי לנמק. זה נכון (אנך אמצעי), אבל זה משפט אחר."
+  ],
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "משיקים",
+   "חוצה זווית",
+   "מרכז",
+   "נקודה חיצונית"
+  ],
+  "givens": [
+   "circle",
+   "two-tangents"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "tangent-line",
+   "angle-bisector"
+  ]
+ },
+ {
+  "id": "tangent-chord-angle",
+  "name": "זווית בין משיק למיתר",
+  "statement": "הזווית שבין משיק למיתר היוצא מנקודת ההשקה שווה לזווית ההיקפית הנשענת על המיתר מצדו השני.",
+  "formal": "\\angle(\\ell, TA) = \\angle TCA",
+  "citation": "הזווית בין משיק למיתר שווה לזווית ההיקפית הנשענת על המיתר מצדו השני",
+  "conditions": [
+   "הישר משיק בנקודה $T$, והמיתר יוצא מ-$T$.",
+   "הזווית ההיקפית נשענת על אותה קשת, הנמצאת בתוך הזווית שבין המשיק למיתר."
+  ],
+  "useWhen": "יש משיק ומיתר מנקודת ההשקה, ורוצים לקשר לזווית במשולש החסום.",
+  "diagram": "tangent-chord",
+  "example": {
+   "problem": "$\\ell$ משיק למעגל ב-$T$, והזווית בין $\\ell$ למיתר $TA$ היא $55^\\circ$. מצאו את $\\angle TCA$ ($C$ על הקשת השנייה).",
+   "steps": [
+    {
+     "claim": "$\\angle TCA = 55^\\circ$",
+     "reason": "הזווית בין משיק למיתר שווה לזווית ההיקפית הנשענת על המיתר מצדו השני",
+     "ref": "tangent-chord-angle"
+    }
+   ],
+   "answer": "$55^\\circ$"
+  },
+  "mistakes": [
+   "לקחת את הזווית מהצד הלא נכון של המיתר."
+  ],
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "משיק ומיתר",
+   "זווית בין משיק למיתר",
+   "זווית היקפית"
+  ],
+  "givens": [
+   "circle",
+   "tangent",
+   "chord",
+   "inscribed-angle"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles",
+   "prove-similar"
+  ],
+  "related": [
+   "tangent-line",
+   "chord",
+   "inscribed-angle"
+  ]
+ },
+ {
+  "id": "tangential-quad",
+  "name": "מרובע החוסם מעגל",
+  "statement": "במרובע החוסם מעגל, סכומי שני הזוגות של צלעות נגדיות שווים.",
+  "formal": "AB + CD = AD + BC",
+  "citation": "במרובע החוסם מעגל סכומי זוגות הצלעות הנגדיות שווים",
+  "conditions": [
+   "כל ארבע צלעות המרובע משיקות למעגל."
+  ],
+  "useWhen": "מעגל חסום במרובע (למשל טרפז שחוסם מעגל), וחסרה צלע.",
+  "diagram": "tangential-quad",
+  "example": {
+   "problem": "טרפז שווה שוקיים חוסם מעגל. בסיסיו 4 ו-16. מצאו את השוק.",
+   "steps": [
+    {
+     "claim": "$4 + 16 = 2 \\cdot \\text{שוק}$",
+     "reason": "במרובע החוסם מעגל סכומי זוגות הצלעות הנגדיות שווים",
+     "ref": "tangential-quad"
+    },
+    {
+     "claim": "שוק $= 10$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$10$"
+  },
+  "mistakes": [
+   "לחבר צלעות סמוכות."
+  ],
+  "converse": {
+   "id": "tangential-quad-converse"
+  },
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מרובע חוסם",
+   "מעגל חסום",
+   "סכום צלעות נגדיות"
+  ],
+  "givens": [
+   "tangential-quad",
+   "inscribed-circle",
+   "tangent"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "tangential-quadrilateral",
+   "inscribed-circle"
+  ]
+ },
+ {
+  "id": "tangential-quad-converse",
+  "name": "זיהוי מרובע שאפשר לחסום בו מעגל",
+  "statement": "מרובע קמור שבו סכומי שני הזוגות של צלעות נגדיות שווים, אפשר לחסום בו מעגל.",
+  "formal": "AB + CD = AD + BC \\Rightarrow \\text{אפשר לחסום מעגל}",
+  "citation": "מרובע קמור שבו סכומי זוגות הצלעות הנגדיות שווים – אפשר לחסום בו מעגל",
+  "conditions": [
+   "המרובע קמור.",
+   "הוכח ששני הסכומים שווים."
+  ],
+  "useWhen": "צריך להוכיח שיש מעגל המשיק לכל צלעות המרובע.",
+  "diagram": "tangential-quad",
+  "example": {
+   "problem": "האם אפשר לחסום מעגל בדלתון שצלעותיו 5, 5, 8, 8?",
+   "steps": [
+    {
+     "claim": "$5 + 8 = 5 + 8$",
+     "reason": "בדלתון כל זוג צלעות נגדיות כולל צלע מכל סוג"
+    },
+    {
+     "claim": "אפשר לחסום בו מעגל",
+     "reason": "מרובע קמור שבו סכומי זוגות הצלעות הנגדיות שווים – אפשר לחסום בו מעגל",
+     "ref": "tangential-quad-converse"
+    }
+   ],
+   "answer": "כן."
+  },
+  "mistakes": [
+   "לשכוח את תנאי הקמירות."
+  ],
+  "converse": {
+   "id": "tangential-quad"
+  },
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   5
+  ],
+  "keywords": [
+   "חסימת מעגל",
+   "מרובע חוסם",
+   "סכום צלעות נגדיות"
+  ],
+  "givens": [
+   "quadrilateral",
+   "side-lengths"
+  ],
+  "goals": [
+   "prove-cyclic"
+  ],
+  "related": [
+   "tangential-quadrilateral"
+  ],
+  "note": "ייתכן שהמשפט לא מופיע בכל השאלונים. בדקו מול המורה."
+ },
+ {
+  "id": "tangent-circles-centers",
+  "name": "מעגלים משיקים",
+  "statement": "אם שני מעגלים משיקים זה לזה, קו המרכזים עובר דרך נקודת ההשקה.",
+  "formal": "T \\in O_1O_2",
+  "citation": "אם שני מעגלים משיקים, קו המרכזים עובר דרך נקודת ההשקה",
+  "conditions": [
+   "המעגלים משיקים, מבחוץ או מבפנים."
+  ],
+  "useWhen": "יש שני מעגלים משיקים, וצריך מרחק בין המרכזים ($R + r$ בהשקה חיצונית, $R - r$ בהשקה פנימית).",
+  "diagram": "tangent-circles",
+  "example": {
+   "problem": "שני מעגלים שרדיוסיהם 3 ו-5 משיקים מבחוץ. מה המרחק בין מרכזיהם?",
+   "steps": [
+    {
+     "claim": "$O_1, T, O_2$ על ישר אחד",
+     "reason": "אם שני מעגלים משיקים, קו המרכזים עובר דרך נקודת ההשקה",
+     "ref": "tangent-circles-centers"
+    },
+    {
+     "claim": "$O_1O_2 = 3 + 5 = 8$",
+     "reason": "$O_1T + TO_2$ (רדיוסים)"
+    }
+   ],
+   "answer": "8"
+  },
+  "mistakes": [
+   "בהשקה פנימית, לחבר את הרדיוסים במקום להחסיר."
+  ],
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   5
+  ],
+  "keywords": [
+   "מעגלים משיקים",
+   "קו המרכזים",
+   "נקודת השקה"
+  ],
+  "givens": [
+   "two-circles",
+   "tangent"
+  ],
+  "goals": [
+   "find-length",
+   "prove-collinear"
+  ],
+  "related": [
+   "tangent-circles",
+   "line-of-centers"
+  ],
+  "note": "ייתכן שהמשפט לא נמצא ברשימה של כל השאלונים. בדקו מול המורה."
+ },
+ {
+  "id": "intersecting-circles-chord",
+  "name": "מעגלים נחתכים והמיתר המשותף",
+  "statement": "אם שני מעגלים נחתכים, קו המרכזים הוא האנך האמצעי של המיתר המשותף.",
+  "formal": "O_1O_2 \\perp AB,\\ AM = MB",
+  "citation": "קו המרכזים של שני מעגלים נחתכים הוא האנך האמצעי של המיתר המשותף",
+  "conditions": [
+   "שני המעגלים נחתכים בשתי נקודות."
+  ],
+  "useWhen": "שני מעגלים נחתכים, וצריך זווית ישרה או אמצע של המיתר המשותף.",
+  "diagram": "intersecting-circles",
+  "example": {
+   "problem": "שני מעגלים נחתכים ב-$A$ וב-$B$, ו-$AB = 10$. קו המרכזים חותך את $AB$ ב-$M$. מצאו את $AM$.",
+   "steps": [
+    {
+     "claim": "$AM = MB$",
+     "reason": "קו המרכזים של שני מעגלים נחתכים הוא האנך האמצעי של המיתר המשותף",
+     "ref": "intersecting-circles-chord"
+    },
+    {
+     "claim": "$AM = 5$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "5"
+  },
+  "mistakes": [
+   "לחשוב שהמיתר המשותף חוצה את קו המרכזים. בדרך כלל זה לא נכון."
+  ],
+  "status": "official",
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   5
+  ],
+  "keywords": [
+   "מעגלים נחתכים",
+   "מיתר משותף",
+   "קו המרכזים",
+   "אנך אמצעי"
+  ],
+  "givens": [
+   "two-circles",
+   "chord"
+  ],
+  "goals": [
+   "prove-perpendicular",
+   "prove-midpoint"
+  ],
+  "related": [
+   "common-chord",
+   "line-of-centers",
+   "perpendicular-bisector"
+  ],
+  "note": "נובע מכך ששני המרכזים נמצאים במרחקים שווים מ-$A$ ומ-$B$ (אנך אמצעי). אם אינכם בטוחים שהמשפט ברשימה, זו גם ההוכחה."
+ },
+ {
+  "id": "sine-law",
+  "name": "משפט הסינוסים",
+  "statement": "בכל משולש, היחס בין צלע לסינוס הזווית שמולה קבוע ושווה לקוטר המעגל החוסם את המשולש.",
+  "formal": "\\frac{a}{\\sin\\alpha} = \\frac{b}{\\sin\\beta} = \\frac{c}{\\sin\\gamma} = 2R",
+  "citation": "משפט הסינוסים",
+  "conditions": [
+   "כל צלע מותאמת לזווית שמולה.",
+   "כשמחשבים זווית מתוך סינוס, ייתכנו שני פתרונות ($\\alpha$ ו-$180^\\circ - \\alpha$). צריך לבדוק את שניהם."
+  ],
+  "useWhen": "ידועות זווית והצלע שמולה (זוג), ועוד נתון אחד, או שהשאלה היא על רדיוס המעגל החוסם.",
+  "diagram": "sine-law",
+  "example": {
+   "problem": "במשולש $\\alpha = 30^\\circ$ ו-$a = 6$. מצאו את רדיוס המעגל החוסם.",
+   "steps": [
+    {
+     "claim": "$2R = \\frac{6}{\\sin 30^\\circ} = \\frac{6}{0.5} = 12$",
+     "reason": "משפט הסינוסים",
+     "ref": "sine-law"
+    },
+    {
+     "claim": "$R = 6$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$R = 6$"
+  },
+  "mistakes": [
+   "להתאים צלע לזווית שאינה מולה.",
+   "לשכוח את הפתרון השני כשמוצאים זווית לפי סינוס.",
+   "להפעיל מחשבון במצב רדיאנים כשהזוויות במעלות."
+  ],
+  "status": "formula-sheet",
+  "topic": "trigonometry",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "משפט הסינוסים",
+   "סינוס",
+   "רדיוס מעגל חוסם",
+   "2R"
+  ],
+  "givens": [
+   "triangle",
+   "angle-measure",
+   "side-lengths",
+   "circumscribed-circle"
+  ],
+  "goals": [
+   "find-length",
+   "find-angle"
+  ],
+  "related": [
+   "sine",
+   "circumscribed-circle"
+  ]
+ },
+ {
+  "id": "cosine-law",
+  "name": "משפט הקוסינוסים",
+  "statement": "בכל משולש, ריבוע צלע שווה לסכום ריבועי שתי הצלעות האחרות, פחות פעמיים מכפלתן כפול הקוסינוס של הזווית שביניהן.",
+  "formal": "c^2 = a^2 + b^2 - 2ab\\cos\\gamma",
+  "citation": "משפט הקוסינוסים",
+  "conditions": [
+   "הזווית $\\gamma$ היא הזווית הכלואה בין $a$ ל-$b$, מול הצלע $c$."
+  ],
+  "useWhen": "ידועות שתי צלעות והזווית שביניהן (מחפשים את הצלע השלישית), או שלוש צלעות (מחפשים זווית).",
+  "diagram": "cosine-law",
+  "example": {
+   "problem": "במשולש $a = 5$, $b = 8$ ו-$\\gamma = 60^\\circ$. מצאו את $c$.",
+   "steps": [
+    {
+     "claim": "$c^2 = 25 + 64 - 2\\cdot5\\cdot8\\cdot\\cos60^\\circ = 89 - 40 = 49$",
+     "reason": "משפט הקוסינוסים",
+     "ref": "cosine-law"
+    },
+    {
+     "claim": "$c = 7$",
+     "reason": "אורך חיובי"
+    }
+   ],
+   "answer": "$c = 7$"
+  },
+  "mistakes": [
+   "להשתמש בזווית שאינה כלואה בין שתי הצלעות.",
+   "לשכוח שהקוסינוס של זווית קהה שלילי."
+  ],
+  "status": "formula-sheet",
+  "topic": "trigonometry",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "משפט הקוסינוסים",
+   "קוסינוס",
+   "צלע שלישית"
+  ],
+  "givens": [
+   "triangle",
+   "side-lengths",
+   "angle-measure"
+  ],
+  "goals": [
+   "find-length",
+   "find-angle"
+  ],
+  "related": [
+   "cosine",
+   "triangle"
+  ]
+ },
+ {
+  "id": "triangle-area-sine",
+  "name": "שטח משולש לפי שתי צלעות וזווית",
+  "statement": "שטח משולש שווה למחצית המכפלה של שתי צלעות בסינוס הזווית שביניהן.",
+  "formal": "S = \\tfrac{1}{2}ab\\sin\\gamma",
+  "citation": "שטח משולש שווה למחצית מכפלת שתי צלעות בסינוס הזווית שביניהן",
+  "conditions": [
+   "הזווית כלואה בין שתי הצלעות."
+  ],
+  "useWhen": "ידועות שתי צלעות והזווית שביניהן, ורוצים שטח.",
+  "diagram": "area-sine",
+  "example": {
+   "problem": "במשולש $a = 6$, $b = 10$ ו-$\\gamma = 30^\\circ$. מצאו את שטחו.",
+   "steps": [
+    {
+     "claim": "$S = \\tfrac12 \\cdot 6 \\cdot 10 \\cdot \\sin30^\\circ = 15$",
+     "reason": "שטח משולש שווה למחצית מכפלת שתי צלעות בסינוס הזווית שביניהן",
+     "ref": "triangle-area-sine"
+    }
+   ],
+   "answer": "$S = 15$"
+  },
+  "mistakes": [
+   "להשתמש בזווית שאינה בין שתי הצלעות."
+  ],
+  "status": "formula-sheet",
+  "topic": "trigonometry",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "שטח משולש",
+   "סינוס",
+   "חצי ab סינוס"
+  ],
+  "givens": [
+   "triangle",
+   "side-lengths",
+   "angle-measure",
+   "area"
+  ],
+  "goals": [
+   "find-area"
+  ],
+  "related": [
+   "area",
+   "sine"
+  ]
+ },
+ {
+  "id": "heron",
+  "name": "נוסחת הרון",
+  "statement": "שטח משולש שצלעותיו $a, b, c$ הוא $S = \\sqrt{p(p-a)(p-b)(p-c)}$, כאשר $p = \\frac{a+b+c}{2}$ הוא מחצית ההיקף.",
+  "formal": "S = \\sqrt{p(p-a)(p-b)(p-c)}",
+  "citation": "נוסחת הרון",
+  "conditions": [
+   "ידועות שלוש הצלעות."
+  ],
+  "useWhen": "שימושית לבדיקת תשובה כשידועות שלוש צלעות.",
+  "diagram": "heron",
+  "example": {
+   "problem": "מצאו את שטח המשולש שצלעותיו 13, 14, 15.",
+   "steps": [
+    {
+     "claim": "$p = 21$",
+     "reason": "מחצית ההיקף"
+    },
+    {
+     "claim": "$S = \\sqrt{21\\cdot8\\cdot7\\cdot6} = \\sqrt{7056} = 84$",
+     "reason": "נוסחת הרון (בבגרות: צריך לחשב בדרך מוכרת, למשל משפט הקוסינוסים ואז $\\tfrac12 ab\\sin\\gamma$)"
+    }
+   ],
+   "answer": "84"
+  },
+  "mistakes": [
+   "להשתמש בנוסחה בבגרות בלי הוכחה."
+  ],
+  "status": "needs-proof",
+  "topic": "trigonometry",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "הרון",
+   "שטח משולש",
+   "שלוש צלעות"
+  ],
+  "givens": [
+   "triangle",
+   "side-lengths",
+   "area"
+  ],
+  "goals": [
+   "find-area"
+  ],
+  "related": [
+   "area",
+   "semi-perimeter"
+  ],
+  "note": "לפי ידיעתנו הנוסחה אינה בדף הנוסחאות ואינה ברשימת המשפטים. בבחינה חשבו בדרך שבתוכנית: מוצאים זווית במשפט הקוסינוסים, ואז $S = \\tfrac12 ab\\sin\\gamma$."
+ },
+ {
+  "id": "ptolemy",
+  "name": "משפט תלמי",
+  "statement": "במרובע החסום במעגל, מכפלת האלכסונים שווה לסכום המכפלות של זוגות הצלעות הנגדיות.",
+  "formal": "AC \\cdot BD = AB \\cdot CD + AD \\cdot BC",
+  "citation": "משפט תלמי",
+  "conditions": [
+   "המרובע חסום במעגל."
+  ],
+  "useWhen": "בדיקת תשובות במרובע חסום. בבגרות משתמשים בדמיון או במשפט הקוסינוסים.",
+  "diagram": "ptolemy",
+  "example": {
+   "problem": "במלבן שצלעותיו 3 ו-4 (מלבן חסום במעגל), בדקו את משפט תלמי.",
+   "steps": [
+    {
+     "claim": "האלכסונים: $5$ ו-$5$",
+     "reason": "משפט פיתגורס",
+     "ref": "pythagoras"
+    },
+    {
+     "claim": "$5 \\cdot 5 = 3\\cdot3 + 4\\cdot4 = 25$",
+     "reason": "בדיקה"
+    }
+   ],
+   "answer": "השוויון מתקיים."
+  },
+  "mistakes": [
+   "לצטט את המשפט בבגרות."
+  ],
+  "status": "needs-proof",
+  "topic": "circle",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   5
+  ],
+  "keywords": [
+   "תלמי",
+   "מרובע חסום",
+   "אלכסונים"
+  ],
+  "givens": [
+   "cyclic-quad",
+   "diagonals",
+   "side-lengths"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "cyclic-quadrilateral"
+  ],
+  "note": "המשפט אינו בתוכנית הלימודים. אם משתמשים בו חייבים להוכיח, ולכן כמעט תמיד עדיף לפתור בדרך אחרת."
+ },
+ {
+  "id": "median-length",
+  "name": "אורך התיכון (נוסחת אפולוניוס)",
+  "statement": "במשולש שצלעותיו $a, b, c$, אורך התיכון $m_a$ לצלע $a$ מקיים $4m_a^2 = 2b^2 + 2c^2 - a^2$.",
+  "formal": "m_a^2 = \\frac{2b^2 + 2c^2 - a^2}{4}",
+  "citation": "נוסחת אורך התיכון",
+  "conditions": [
+   "ידועות שלוש הצלעות."
+  ],
+  "useWhen": "בדיקת תשובות. בבגרות מחשבים בעזרת משפט הקוסינוסים פעמיים.",
+  "diagram": "median-length",
+  "example": {
+   "problem": "במשולש $b = 5$, $c = 7$, $a = 8$. מצאו את התיכון לצלע $a$.",
+   "steps": [
+    {
+     "claim": "$\\cos B = \\frac{a^2 + c^2 - b^2}{2ac} = \\frac{64 + 49 - 25}{112} = \\frac{11}{14}$",
+     "reason": "משפט הקוסינוסים במשולש $ABC$",
+     "ref": "cosine-law"
+    },
+    {
+     "claim": "$m_a^2 = 4^2 + 7^2 - 2\\cdot4\\cdot7\\cdot\\frac{11}{14} = 21$",
+     "reason": "משפט הקוסינוסים במשולש $ABM$",
+     "ref": "cosine-law"
+    },
+    {
+     "claim": "$m_a = \\sqrt{21}$",
+     "reason": "בהתאמה לנוסחה: $\\frac{2\\cdot25 + 2\\cdot49 - 64}{4} = 21$"
+    }
+   ],
+   "answer": "$\\sqrt{21}$"
+  },
+  "mistakes": [
+   "לצטט את הנוסחה בלי לפתח אותה."
+  ],
+  "status": "needs-proof",
+  "topic": "trigonometry",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "אורך תיכון",
+   "אפולוניוס",
+   "תיכון"
+  ],
+  "givens": [
+   "median",
+   "side-lengths",
+   "triangle"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "median"
+  ],
+  "note": "לפי ידיעתנו הנוסחה אינה ברשימה ובדף הנוסחאות. בבחינה פתחו אותה בעזרת משפט הקוסינוסים, כמו בדוגמה."
+ },
+ {
+  "id": "parallelogram-law",
+  "name": "סכום ריבועי האלכסונים במקבילית",
+  "statement": "במקבילית, סכום ריבועי האלכסונים שווה לסכום ריבועי ארבע הצלעות.",
+  "formal": "AC^2 + BD^2 = 2\\left(a^2 + b^2\\right)",
+  "citation": "סכום ריבועי האלכסונים במקבילית שווה לסכום ריבועי הצלעות",
+  "conditions": [
+   "המרובע מקבילית."
+  ],
+  "useWhen": "בדיקת תשובות. בבגרות מוכיחים בעזרת משפט הקוסינוסים בשני משולשים ($\\cos(180^\\circ - \\alpha) = -\\cos\\alpha$).",
+  "diagram": "parallelogram-law",
+  "example": {
+   "problem": "במלבן שצלעותיו 6 ו-8, בדקו את הטענה.",
+   "steps": [
+    {
+     "claim": "$AC = BD = 10$",
+     "reason": "משפט פיתגורס",
+     "ref": "pythagoras"
+    },
+    {
+     "claim": "$100 + 100 = 2(36 + 64) = 200$",
+     "reason": "בדיקה"
+    }
+   ],
+   "answer": "מתקיים."
+  },
+  "mistakes": [
+   "לצטט בלי הוכחה."
+  ],
+  "status": "needs-proof",
+  "topic": "quadrilaterals",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "אלכסוני מקבילית",
+   "ריבועי אלכסונים"
+  ],
+  "givens": [
+   "parallelogram",
+   "diagonals",
+   "side-lengths"
+  ],
+  "goals": [
+   "find-length"
+  ],
+  "related": [
+   "parallelogram",
+   "diagonal"
+  ],
+  "note": "לפי ידיעתנו הטענה אינה ברשימה. ההוכחה: משפט הקוסינוסים במשולשים $ABD$ ו-$ABC$."
+ },
+ {
+  "id": "median-equal-areas",
+  "name": "תיכון מחלק את המשולש לשני משולשים שווי שטח",
+  "statement": "התיכון במשולש מחלק אותו לשני משולשים שווי שטח.",
+  "formal": "BM = MC \\Rightarrow S_{ABM} = S_{AMC}",
+  "citation": "תיכון מחלק משולש לשני משולשים שווי שטח",
+  "conditions": [
+   "הקטע הוא תיכון."
+  ],
+  "useWhen": "שאלות שטחים עם תיכונים או נקודות אמצע.",
+  "diagram": "median-area",
+  "example": {
+   "problem": "$AM$ תיכון ב-$\\triangle ABC$, ושטח $\\triangle ABC$ הוא 30. מצאו את שטח $\\triangle ABM$.",
+   "steps": [
+    {
+     "claim": "ל-$\\triangle ABM$ ול-$\\triangle AMC$ גובה משותף $AH$",
+     "reason": "הגובה מ-$A$ לישר $BC$"
+    },
+    {
+     "claim": "$S_{ABM} = \\frac{BM \\cdot AH}{2} = \\frac{MC \\cdot AH}{2} = S_{AMC}$",
+     "reason": "נוסחת שטח משולש ו-$BM = MC$"
+    },
+    {
+     "claim": "$S_{ABM} = 15$",
+     "reason": "חצי מהשטח"
+    }
+   ],
+   "answer": "15"
+  },
+  "mistakes": [
+   "לצטט בלי לכתוב את ההוכחה הקצרה (גובה משותף ובסיסים שווים)."
+  ],
+  "status": "needs-proof",
+  "topic": "area-volume",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "תיכון",
+   "שווי שטח",
+   "חלוקת שטח",
+   "שטחים"
+  ],
+  "givens": [
+   "median",
+   "midpoint",
+   "area"
+  ],
+  "goals": [
+   "find-area"
+  ],
+  "related": [
+   "median",
+   "area"
+  ],
+  "note": "הטענה נכונה ומוכרת. ייתכן שהבוחנים יקבלו אותה, אבל ליתר ביטחון כתבו את ההוכחה בת השורה האחת."
+ },
+ {
+  "id": "inradius-area",
+  "name": "שטח משולש ורדיוס המעגל החסום",
+  "statement": "שטח משולש שווה למכפלת מחצית ההיקף ברדיוס המעגל החסום בו.",
+  "formal": "S = p \\cdot r,\\quad p = \\frac{a + b + c}{2}",
+  "citation": "שטח משולש שווה למכפלת מחצית ההיקף ברדיוס המעגל החסום",
+  "conditions": [
+   "$r$ הוא רדיוס המעגל החסום במשולש."
+  ],
+  "useWhen": "יש מעגל חסום במשולש, ורוצים את הרדיוס או את השטח.",
+  "diagram": "inradius-area",
+  "example": {
+   "problem": "משולש ישר זווית שצלעותיו 6, 8, 10. מצאו את רדיוס המעגל החסום.",
+   "steps": [
+    {
+     "claim": "$S = \\frac{6 \\cdot 8}{2} = 24$",
+     "reason": "שטח משולש ישר זווית"
+    },
+    {
+     "claim": "$S = S_{IAB} + S_{IBC} + S_{ICA} = \\frac{r(6 + 8 + 10)}{2} = 12r$",
+     "reason": "חלוקה לשלושה משולשים שגובהם $r$; משיק למעגל מאונך לרדיוס בנקודת ההשקה",
+     "ref": "tangent-radius"
+    },
+    {
+     "claim": "$r = 2$",
+     "reason": "$12r = 24$"
+    }
+   ],
+   "answer": "$r = 2$"
+  },
+  "mistakes": [
+   "לצטט את הנוסחה בלי לחלק לשלושה משולשים."
+  ],
+  "status": "needs-proof",
+  "topic": "area-volume",
+  "grades": [
+   10,
+   11
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מעגל חסום",
+   "רדיוס",
+   "שטח",
+   "מחצית היקף"
+  ],
+  "givens": [
+   "inscribed-circle",
+   "triangle",
+   "area"
+  ],
+  "goals": [
+   "find-area",
+   "find-length"
+  ],
+  "related": [
+   "inscribed-circle",
+   "incenter",
+   "semi-perimeter"
+  ],
+  "note": "הנוסחה נכונה, אבל לפי ידיעתנו אינה ברשימה. ההוכחה היא החלוקה לשלושה משולשים שבדוגמה."
+ }
+]

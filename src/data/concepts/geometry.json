@@ -1,0 +1,2414 @@
+[
+ {
+  "id": "point",
+  "term": "נקודה",
+  "simple": "מקום מדויק במישור או במרחב, בלי אורך, בלי רוחב ובלי עובי. מסמנים אותה באות גדולה.",
+  "formal": "מושג יסודי (לא מוגדר) בגאומטריה. נקודה קובעת מיקום.",
+  "diagram": "c-point",
+  "example": "הנקודות $A$, $B$, $C$.",
+  "related": [
+   "line",
+   "segment",
+   "plane"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "line",
+  "term": "ישר",
+  "simple": "קו ישר שנמשך בלי סוף לשני הכיוונים.",
+  "formal": "מושג יסודי. דרך שתי נקודות שונות עובר ישר אחד ויחיד.",
+  "diagram": "c-line",
+  "example": "הישר $AB$.",
+  "related": [
+   "segment",
+   "ray",
+   "point"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "segment",
+  "term": "קטע",
+  "simple": "חלק של ישר שיש לו שני קצוות.",
+  "formal": "קטע $AB$ הוא אוסף הנקודות $A$, $B$ וכל הנקודות שבין $A$ ל-$B$ על הישר $AB$.",
+  "diagram": "c-segment",
+  "example": "לקטע $AB$ יש אורך, למשל $AB = 5$.",
+  "related": [
+   "line",
+   "ray",
+   "midpoint"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "ray",
+  "term": "קרן",
+  "simple": "חלק של ישר שמתחיל בנקודה ונמשך בלי סוף לכיוון אחד.",
+  "formal": "הקרן $AB$ היא אוסף הנקודות על הישר $AB$ הנמצאות מאותו צד של $A$ כמו $B$, כולל $A$.",
+  "diagram": "c-ray",
+  "related": [
+   "line",
+   "segment",
+   "angle"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "plane",
+  "term": "מישור",
+  "simple": "משטח שטוח שנמשך בלי סוף לכל הכיוונים, כמו דף שאין לו קצה.",
+  "formal": "מושג יסודי. דרך שלוש נקודות שאינן על ישר אחד עובר מישור אחד ויחיד.",
+  "diagram": "c-plane",
+  "related": [
+   "point",
+   "line",
+   "angle-line-plane"
+  ],
+  "topic": "angles",
+  "grades": [
+   7,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "angle",
+  "term": "זווית",
+  "aliases": [
+   "∢"
+  ],
+  "simple": "שתי קרניים שיוצאות מאותה נקודה. הנקודה היא קודקוד הזווית, והקרניים הן שוקי הזווית.",
+  "formal": "זווית היא צירוף של שתי קרניים בעלות ראשית משותפת. גודלה נמדד במעלות ($^\\circ$) או ברדיאנים.",
+  "diagram": "c-angle",
+  "example": "$\\angle ABC$: הקודקוד הוא $B$, האות האמצעית.",
+  "related": [
+   "vertex",
+   "acute-angle",
+   "right-angle",
+   "obtuse-angle",
+   "degree"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "vertex",
+  "term": "קודקוד",
+  "simple": "הנקודה המשותפת לשתי השוקיים של זווית, או נקודה שבה נפגשות שתי צלעות של מצולע.",
+  "formal": "קודקוד זווית הוא הראשית המשותפת של שוקיה. קודקוד מצולע הוא נקודת המפגש של שתי צלעות סמוכות.",
+  "diagram": "c-angle",
+  "related": [
+   "angle",
+   "polygon",
+   "triangle"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "acute-angle",
+  "term": "זווית חדה",
+  "simple": "זווית קטנה מזווית ישרה.",
+  "formal": "זווית $\\alpha$ שמקיימת $0^\\circ < \\alpha < 90^\\circ$.",
+  "diagram": "c-acute",
+  "related": [
+   "angle",
+   "right-angle",
+   "obtuse-angle"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "right-angle",
+  "term": "זווית ישרה",
+  "simple": "זווית של $90^\\circ$, כמו פינה של דף. מסמנים אותה בריבוע קטן.",
+  "formal": "זווית שגודלה $90^\\circ$. שוקי זווית ישרה מאונכות זו לזו.",
+  "diagram": "c-right",
+  "related": [
+   "perpendicular-lines",
+   "right-triangle",
+   "angle"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "obtuse-angle",
+  "term": "זווית קהה",
+  "simple": "זווית גדולה מזווית ישרה וקטנה מזווית שטוחה.",
+  "formal": "זווית $\\alpha$ שמקיימת $90^\\circ < \\alpha < 180^\\circ$.",
+  "diagram": "c-obtuse",
+  "related": [
+   "angle",
+   "acute-angle",
+   "straight-angle"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "straight-angle",
+  "term": "זווית שטוחה",
+  "simple": "זווית ששתי שוקיה יוצרות ישר אחד. גודלה $180^\\circ$.",
+  "formal": "זווית ששוקיה הן קרניים נגדיות. גודלה $180^\\circ$.",
+  "diagram": "c-straight",
+  "related": [
+   "adjacent-angles",
+   "angle"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "adjacent-angles",
+  "term": "זוויות צמודות",
+  "simple": "שתי זוויות שיש להן קודקוד ושוק משותפים, והשוקיים האחרות יוצרות ישר. יחד הן $180^\\circ$.",
+  "formal": "שתי זוויות בעלות קודקוד משותף ושוק משותפת, שהשוקיים שאינן משותפות הן קרניים נגדיות. סכומן $180^\\circ$.",
+  "diagram": "adjacent",
+  "related": [
+   "supplementary-angles",
+   "straight-angle",
+   "vertical-angles"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "vertical-angles",
+  "term": "זוויות קודקודיות",
+  "simple": "שתי זוויות שנוצרות משני ישרים נחתכים, ונמצאות זו מול זו. הן שוות.",
+  "formal": "שתי זוויות שכל שוק של האחת היא המשך (קרן נגדית) של שוק של השנייה.",
+  "diagram": "vertical",
+  "related": [
+   "adjacent-angles",
+   "intersecting-lines"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "supplementary-angles",
+  "term": "זוויות משלימות ל-180°",
+  "simple": "שתי זוויות שסכומן $180^\\circ$, גם אם אינן צמודות.",
+  "formal": "זוויות $\\alpha, \\beta$ המקיימות $\\alpha + \\beta = 180^\\circ$.",
+  "diagram": "adjacent",
+  "example": "$70^\\circ$ ו-$110^\\circ$ משלימות ל-$180^\\circ$.",
+  "related": [
+   "adjacent-angles",
+   "complementary-angles",
+   "co-interior-angles"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "complementary-angles",
+  "term": "זוויות משלימות ל-90°",
+  "simple": "שתי זוויות שסכומן $90^\\circ$, למשל שתי הזוויות החדות במשולש ישר זווית.",
+  "formal": "זוויות $\\alpha, \\beta$ המקיימות $\\alpha + \\beta = 90^\\circ$.",
+  "diagram": "c-complementary",
+  "example": "$30^\\circ$ ו-$60^\\circ$.",
+  "related": [
+   "supplementary-angles",
+   "right-angle",
+   "right-triangle"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "parallel-lines",
+  "term": "ישרים מקבילים",
+  "aliases": [
+   "מקבילים",
+   "∥"
+  ],
+  "simple": "שני ישרים במישור שלא נפגשים לעולם, כמו מסילות רכבת.",
+  "formal": "שני ישרים באותו מישור שאין להם נקודה משותפת. מסמנים $a \\parallel b$.",
+  "diagram": "c-parallel",
+  "related": [
+   "transversal",
+   "corresponding-angles",
+   "alternate-angles",
+   "co-interior-angles"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "perpendicular-lines",
+  "term": "ישרים מאונכים (אנך)",
+  "aliases": [
+   "אנך",
+   "מאונך",
+   "⊥"
+  ],
+  "simple": "שני ישרים שנחתכים בזווית ישרה.",
+  "formal": "ישרים הנחתכים ויוצרים זווית של $90^\\circ$. מסמנים $a \\perp b$. אנך מנקודה לישר הוא קטע מהנקודה לישר שמאונך לו.",
+  "diagram": "c-perpendicular",
+  "related": [
+   "right-angle",
+   "altitude",
+   "distance-point-line",
+   "perpendicular-bisector"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "intersecting-lines",
+  "term": "ישרים נחתכים",
+  "simple": "שני ישרים שיש להם נקודה משותפת אחת.",
+  "formal": "שני ישרים שונים שיש להם בדיוק נקודה משותפת אחת, נקודת החיתוך.",
+  "diagram": "vertical",
+  "related": [
+   "vertical-angles",
+   "adjacent-angles",
+   "parallel-lines"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "transversal",
+  "term": "חותך (ישר חותך)",
+  "simple": "ישר שחותך שני ישרים אחרים. נוצרות שמונה זוויות.",
+  "formal": "ישר החותך שני ישרים בשתי נקודות שונות. ביחס אליו מגדירים זוויות מתאימות, מתחלפות וחד-צדדיות.",
+  "diagram": "corresponding",
+  "related": [
+   "corresponding-angles",
+   "alternate-angles",
+   "co-interior-angles",
+   "parallel-lines"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "corresponding-angles",
+  "term": "זוויות מתאימות",
+  "simple": "שתי זוויות שנמצאות \"באותו מקום\" ליד כל אחד משני הישרים: באותו צד של החותך ובאותו צד של כל ישר (צורת F).",
+  "formal": "שתי זוויות, אחת בכל נקודת חיתוך, הנמצאות באותו צד של החותך, ושתיהן מעל (או שתיהן מתחת) לישר המתאים להן.",
+  "diagram": "corresponding",
+  "related": [
+   "transversal",
+   "parallel-lines",
+   "alternate-angles"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "alternate-angles",
+  "term": "זוויות מתחלפות",
+  "simple": "שתי זוויות בין שני הישרים, משני צדי החותך (צורת Z).",
+  "formal": "שתי זוויות פנימיות (בין שני הישרים) הנמצאות בצדדים שונים של החותך, אחת בכל נקודת חיתוך.",
+  "diagram": "alternate",
+  "related": [
+   "transversal",
+   "parallel-lines",
+   "corresponding-angles"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "co-interior-angles",
+  "term": "זוויות חד-צדדיות",
+  "simple": "שתי זוויות בין שני הישרים, באותו צד של החותך (צורת C או U).",
+  "formal": "שתי זוויות פנימיות הנמצאות באותו צד של החותך, אחת בכל נקודת חיתוך. בין מקבילים סכומן $180^\\circ$.",
+  "diagram": "co-interior",
+  "related": [
+   "transversal",
+   "parallel-lines",
+   "supplementary-angles"
+  ],
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "angle-bisector",
+  "term": "חוצה זווית",
+  "simple": "קרן (או קטע) שיוצאת מקודקוד הזווית ומחלקת אותה לשתי זוויות שוות.",
+  "formal": "הקרן $VP$ היא חוצה $\\angle AVB$ אם $\\angle AVP = \\angle PVB = \\tfrac12\\angle AVB$. חוצה זווית הוא המקום הגאומטרי של הנקודות שנמצאות בתוך הזווית במרחקים שווים משוקיה.",
+  "diagram": "c-angle-bisector",
+  "related": [
+   "angle",
+   "incenter",
+   "locus",
+   "median"
+  ],
+  "topic": "angles",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "midpoint",
+  "term": "אמצע קטע",
+  "simple": "הנקודה שמחלקת את הקטע לשני חלקים שווים.",
+  "formal": "הנקודה $M$ על הקטע $AB$ שעבורה $AM = MB = \\tfrac12 AB$.",
+  "diagram": "c-midpoint",
+  "related": [
+   "segment",
+   "median",
+   "midsegment",
+   "perpendicular-bisector",
+   "midpoint-formula"
+  ],
+  "topic": "triangles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "perpendicular-bisector",
+  "term": "אנך אמצעי",
+  "simple": "ישר שעובר באמצע קטע ומאונך לו.",
+  "formal": "הישר המאונך לקטע $AB$ ועובר באמצעו. זה המקום הגאומטרי של כל הנקודות שנמצאות במרחקים שווים מ-$A$ ומ-$B$.",
+  "diagram": "perp-bisector",
+  "related": [
+   "midpoint",
+   "perpendicular-lines",
+   "circumcenter",
+   "locus"
+  ],
+  "topic": "loci",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "distance-point-line",
+  "term": "מרחק נקודה מישר",
+  "simple": "אורך האנך מהנקודה לישר. זה הקטע הקצר ביותר מהנקודה לישר.",
+  "formal": "המרחק מנקודה $P$ לישר $\\ell$ הוא אורך הקטע $PF$, כאשר $F$ הוא עקב האנך מ-$P$ ל-$\\ell$.",
+  "diagram": "c-distance-point-line",
+  "related": [
+   "perpendicular-lines",
+   "altitude",
+   "angle-bisector"
+  ],
+  "topic": "loci",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "locus",
+  "term": "מקום גאומטרי",
+  "simple": "אוסף כל הנקודות שמקיימות תכונה מסוימת, ורק הן.",
+  "formal": "קבוצת כל הנקודות המקיימות תנאי נתון: כל נקודה המקיימת את התנאי שייכת לקבוצה, וכל נקודה בקבוצה מקיימת אותו.",
+  "diagram": "c-locus",
+  "example": "המקום הגאומטרי של הנקודות במרחק $r$ מנקודה $O$ הוא מעגל. המקום הגאומטרי של הנקודות במרחקים שווים מקצות קטע הוא האנך האמצעי שלו.",
+  "related": [
+   "perpendicular-bisector",
+   "angle-bisector",
+   "circle",
+   "parabola-locus"
+  ],
+  "topic": "loci",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "projection",
+  "term": "היטל",
+  "simple": "ה\"צל\" של קטע על ישר, כשמורידים אנכים מקצות הקטע אל הישר.",
+  "formal": "ההיטל של נקודה $A$ על ישר $\\ell$ הוא עקב האנך מ-$A$ ל-$\\ell$. ההיטל של קטע הוא הקטע שבין ההיטלים של קצותיו.",
+  "diagram": "c-projection",
+  "example": "במשולש ישר זווית, ההיטל של ניצב על היתר הוא הקטע שבין קצה הניצב לעקב הגובה ליתר.",
+  "related": [
+   "altitude",
+   "geometric-mean",
+   "angle-line-plane"
+  ],
+  "topic": "right-triangle",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "triangle",
+  "term": "משולש",
+  "aliases": [
+   "△"
+  ],
+  "simple": "מצולע עם שלוש צלעות ושלושה קודקודים.",
+  "formal": "צורה הנוצרת משלושה קטעים המחברים שלוש נקודות שאינן על ישר אחד. סכום זוויותיו $180^\\circ$.",
+  "diagram": "c-triangle",
+  "related": [
+   "acute-triangle",
+   "right-triangle",
+   "isosceles-triangle",
+   "polygon"
+  ],
+  "topic": "triangles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "acute-triangle",
+  "term": "משולש חד-זווית",
+  "simple": "משולש שכל זוויותיו חדות.",
+  "formal": "משולש שבו כל אחת משלוש הזוויות קטנה מ-$90^\\circ$.",
+  "diagram": "c-triangle-types",
+  "related": [
+   "triangle",
+   "right-triangle",
+   "obtuse-triangle"
+  ],
+  "topic": "triangles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "right-triangle",
+  "term": "משולש ישר זווית",
+  "simple": "משולש שאחת מזוויותיו ישרה.",
+  "formal": "משולש שבו אחת הזוויות היא $90^\\circ$. הצלע שמול הזווית הישרה נקראת יתר, והאחרות ניצבים.",
+  "diagram": "c-right-triangle",
+  "related": [
+   "hypotenuse",
+   "leg",
+   "right-angle",
+   "sine"
+  ],
+  "topic": "right-triangle",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "obtuse-triangle",
+  "term": "משולש קהה-זווית",
+  "simple": "משולש שאחת מזוויותיו קהה.",
+  "formal": "משולש שבו אחת הזוויות גדולה מ-$90^\\circ$. בכל משולש יש לכל היותר זווית קהה אחת.",
+  "diagram": "c-triangle-types",
+  "related": [
+   "triangle",
+   "acute-triangle",
+   "altitude"
+  ],
+  "topic": "triangles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "isosceles-triangle",
+  "term": "משולש שווה שוקיים",
+  "simple": "משולש עם שתי צלעות שוות. הצלעות השוות הן השוקיים, והשלישית היא הבסיס.",
+  "formal": "משולש שבו שתי צלעות שוות זו לזו. הזווית שבין השוקיים היא זווית הראש, והזוויות שליד הבסיס הן זוויות הבסיס.",
+  "diagram": "c-isosceles",
+  "related": [
+   "base-angles",
+   "apex-angle",
+   "equilateral-triangle",
+   "triangle"
+  ],
+  "topic": "isosceles",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "equilateral-triangle",
+  "term": "משולש שווה צלעות",
+  "simple": "משולש שכל שלוש צלעותיו שוות. כל זווית בו היא $60^\\circ$.",
+  "formal": "משולש שבו $AB = BC = CA$. הוא מקרה פרטי של משולש שווה שוקיים.",
+  "diagram": "equilateral",
+  "related": [
+   "isosceles-triangle",
+   "regular-polygon"
+  ],
+  "topic": "isosceles",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "scalene-triangle",
+  "term": "משולש שונה צלעות",
+  "simple": "משולש שכל צלעותיו באורכים שונים.",
+  "formal": "משולש שאין בו שתי צלעות שוות, ולכן גם אין בו שתי זוויות שוות.",
+  "diagram": "c-scalene",
+  "related": [
+   "triangle",
+   "isosceles-triangle"
+  ],
+  "topic": "triangles",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "leg",
+  "term": "ניצב",
+  "simple": "כל אחת משתי הצלעות שיוצרות את הזווית הישרה במשולש ישר זווית.",
+  "formal": "במשולש ישר זווית, הצלעות הכולאות את הזווית הישרה נקראות ניצבים.",
+  "diagram": "c-right-triangle",
+  "related": [
+   "hypotenuse",
+   "right-triangle"
+  ],
+  "topic": "right-triangle",
+  "grades": [
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "hypotenuse",
+  "term": "יתר",
+  "simple": "הצלע הארוכה ביותר במשולש ישר זווית. היא נמצאת מול הזווית הישרה.",
+  "formal": "במשולש ישר זווית, הצלע שמול הזווית הישרה. לפי משפט פיתגורס $c^2 = a^2 + b^2$.",
+  "diagram": "c-right-triangle",
+  "related": [
+   "leg",
+   "right-triangle",
+   "median"
+  ],
+  "topic": "right-triangle",
+  "grades": [
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "base-angles",
+  "term": "זוויות הבסיס",
+  "simple": "במשולש שווה שוקיים: שתי הזוויות שליד הבסיס. הן שוות זו לזו.",
+  "formal": "במשולש שווה שוקיים $ABC$ ($AB = AC$), הזוויות $\\angle B$ ו-$\\angle C$.",
+  "diagram": "c-isosceles",
+  "related": [
+   "isosceles-triangle",
+   "apex-angle",
+   "isosceles-trapezoid"
+  ],
+  "topic": "isosceles",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "apex-angle",
+  "term": "זווית הראש",
+  "simple": "במשולש שווה שוקיים: הזווית שבין שתי השוקיים.",
+  "formal": "במשולש שווה שוקיים $ABC$ ($AB = AC$), הזווית $\\angle A$ שמול הבסיס.",
+  "diagram": "c-isosceles",
+  "related": [
+   "isosceles-triangle",
+   "base-angles"
+  ],
+  "topic": "isosceles",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "median",
+  "term": "תיכון",
+  "simple": "קטע שמחבר קודקוד של משולש עם אמצע הצלע שמולו.",
+  "formal": "במשולש $ABC$, התיכון לצלע $BC$ הוא הקטע $AM$, כאשר $M$ אמצע $BC$. לכל משולש שלושה תיכונים, הנפגשים בנקודה אחת.",
+  "diagram": "c-median",
+  "related": [
+   "midpoint",
+   "centroid",
+   "altitude",
+   "angle-bisector"
+  ],
+  "topic": "triangles",
+  "grades": [
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "altitude",
+  "term": "גובה",
+  "simple": "אנך מקודקוד של משולש אל הצלע שמולו, או אל המשך הצלע.",
+  "formal": "במשולש $ABC$, הגובה לצלע $BC$ הוא הקטע $AH$ כאשר $H$ על הישר $BC$ ו-$AH \\perp BC$.",
+  "diagram": "c-altitude",
+  "related": [
+   "perpendicular-lines",
+   "orthocenter",
+   "median",
+   "area"
+  ],
+  "topic": "triangles",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "foot-of-altitude",
+  "term": "עקב הגובה (עקב האנך)",
+  "simple": "הנקודה שבה הגובה (או האנך) פוגש את הצלע, או את המשך הצלע.",
+  "formal": "אם $AH \\perp BC$ ו-$H$ על הישר $BC$, אז $H$ הוא עקב האנך מ-$A$ לישר $BC$. במשולש קהה זווית עקב הגובה לצלע שליד הזווית הקהה נמצא על המשך הצלע.",
+  "diagram": "c-altitude-outside",
+  "related": [
+   "altitude",
+   "projection",
+   "distance-point-line",
+   "obtuse-triangle"
+  ],
+  "topic": "triangles",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "midsegment",
+  "term": "קטע אמצעים במשולש",
+  "simple": "קטע שמחבר את האמצעים של שתי צלעות במשולש.",
+  "formal": "במשולש $ABC$, אם $D$ אמצע $AB$ ו-$E$ אמצע $AC$, אז $DE$ הוא קטע אמצעים. הוא מקביל ל-$BC$ ושווה למחציתה.",
+  "diagram": "midsegment",
+  "related": [
+   "midpoint",
+   "trapezoid-midsegment",
+   "triangle"
+  ],
+  "topic": "triangles",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "exterior-angle",
+  "term": "זווית חיצונית",
+  "simple": "זווית שנוצרת בין צלע של מצולע לבין המשך של הצלע הסמוכה.",
+  "formal": "זווית הצמודה לזווית פנימית של מצולע. במשולש, הזווית החיצונית שווה לסכום שתי הזוויות הפנימיות שאינן צמודות לה.",
+  "diagram": "exterior-angle",
+  "related": [
+   "adjacent-angles",
+   "triangle",
+   "polygon"
+  ],
+  "topic": "triangles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "congruent-triangles",
+  "term": "משולשים חופפים",
+  "aliases": [
+   "חפיפה",
+   "≅"
+  ],
+  "simple": "משולשים זהים בגודלם ובצורתם. אפשר להניח אחד על השני כך שיתלכדו.",
+  "formal": "משולשים שבהם כל הצלעות המתאימות וכל הזוויות המתאימות שוות. מסמנים $\\triangle ABC \\cong \\triangle DEF$, וסדר האותיות מציין את ההתאמה.",
+  "diagram": "congruence-sss",
+  "related": [
+   "corresponding-parts",
+   "similar-triangles",
+   "triangle"
+  ],
+  "topic": "congruence",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "corresponding-parts",
+  "term": "רכיבים מתאימים",
+  "simple": "בשני משולשים חופפים או דומים: צלעות וזוויות שנמצאות \"באותו מקום\".",
+  "formal": "בהתאמה $\\triangle ABC \\leftrightarrow \\triangle DEF$: הקודקוד $A$ מתאים ל-$D$, הצלע $AB$ ל-$DE$ וכן הלאה. במשולשים חופפים רכיבים מתאימים שווים.",
+  "diagram": "congruence-sas",
+  "related": [
+   "congruent-triangles",
+   "similar-triangles"
+  ],
+  "topic": "congruence",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "similar-triangles",
+  "term": "משולשים דומים",
+  "aliases": [
+   "דמיון",
+   "∼"
+  ],
+  "simple": "משולשים עם אותה צורה, אבל לא בהכרח באותו גודל. אחד הוא \"הגדלה\" של השני.",
+  "formal": "משולשים שזוויותיהם המתאימות שוות וצלעותיהם המתאימות פרופורציוניות. מסמנים $\\triangle ABC \\sim \\triangle DEF$.",
+  "diagram": "similar-aa",
+  "related": [
+   "similarity-ratio",
+   "proportional-segments",
+   "congruent-triangles"
+  ],
+  "topic": "similarity",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "similarity-ratio",
+  "term": "יחס דמיון",
+  "simple": "המספר שבו צריך לכפול כל צלע במשולש אחד כדי לקבל את הצלע המתאימה במשולש הדומה.",
+  "formal": "במשולשים דומים, $k = \\frac{DE}{AB} = \\frac{EF}{BC} = \\frac{DF}{AC}$. יחס השטחים הוא $k^2$.",
+  "diagram": "similar-sss",
+  "related": [
+   "similar-triangles",
+   "ratio"
+  ],
+  "topic": "similarity",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "proportional-segments",
+  "term": "קטעים פרופורציוניים",
+  "simple": "זוגות של קטעים שהיחס ביניהם שווה.",
+  "formal": "הקטעים $a, b, c, d$ פרופורציוניים אם $\\frac{a}{b} = \\frac{c}{d}$.",
+  "diagram": "thales",
+  "related": [
+   "proportion",
+   "similar-triangles"
+  ],
+  "topic": "similarity",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "centroid",
+  "term": "מרכז כובד (מפגש התיכונים)",
+  "simple": "הנקודה שבה נפגשים שלושת התיכונים של המשולש. אם מניחים משולש מקרטון על חוד, זו נקודת שיווי המשקל.",
+  "formal": "נקודת החיתוך של שלושת התיכונים. היא מחלקת כל תיכון ביחס $2:1$ מהקודקוד.",
+  "diagram": "medians",
+  "related": [
+   "median",
+   "incenter",
+   "circumcenter"
+  ],
+  "topic": "loci",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "circumcenter",
+  "term": "מרכז המעגל החוסם",
+  "simple": "הנקודה שבה נפגשים האנכים האמצעיים של צלעות המשולש. היא במרחקים שווים משלושת הקודקודים.",
+  "formal": "נקודת החיתוך של שלושת האנכים האמצעיים. מרחקה מכל קודקוד הוא הרדיוס $R$ של המעגל החוסם.",
+  "diagram": "circumcenter",
+  "related": [
+   "perpendicular-bisector",
+   "circumscribed-circle",
+   "centroid"
+  ],
+  "topic": "loci",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "incenter",
+  "term": "מרכז המעגל החסום",
+  "simple": "הנקודה שבה נפגשים חוצי הזוויות של המשולש. היא במרחקים שווים מכל הצלעות.",
+  "formal": "נקודת החיתוך של שלושת חוצי הזוויות. מרחקה מכל צלע הוא הרדיוס $r$ של המעגל החסום.",
+  "diagram": "incenter",
+  "related": [
+   "angle-bisector",
+   "inscribed-circle",
+   "centroid"
+  ],
+  "topic": "loci",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "orthocenter",
+  "term": "מפגש הגבהים",
+  "simple": "הנקודה שבה נפגשים שלושת הגבהים של משולש, או המשכיהם.",
+  "formal": "נקודת החיתוך של שלושת הישרים שעליהם מונחים הגבהים. במשולש ישר זווית זה קודקוד הזווית הישרה.",
+  "diagram": "orthocenter",
+  "related": [
+   "altitude",
+   "centroid"
+  ],
+  "topic": "loci",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "circumscribed-circle",
+  "term": "מעגל חוסם (משולש חסום במעגל)",
+  "simple": "מעגל שעובר דרך כל הקודקודים של מצולע. אומרים שהמצולע חסום במעגל.",
+  "formal": "מעגל שכל קודקודי המצולע נמצאים עליו. לכל משולש יש מעגל חוסם יחיד, ומרכזו במפגש האנכים האמצעיים.",
+  "diagram": "circumcenter",
+  "related": [
+   "circumcenter",
+   "cyclic-quadrilateral",
+   "inscribed-circle"
+  ],
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "inscribed-circle",
+  "term": "מעגל חסום (מצולע חוסם מעגל)",
+  "simple": "מעגל שנמצא בתוך מצולע ומשיק לכל צלעותיו.",
+  "formal": "מעגל המשיק לכל צלעות המצולע. לכל משולש יש מעגל חסום יחיד, ומרכזו במפגש חוצי הזוויות.",
+  "diagram": "incenter",
+  "related": [
+   "incenter",
+   "tangential-quadrilateral",
+   "circumscribed-circle"
+  ],
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "polygon",
+  "term": "מצולע",
+  "simple": "צורה סגורה שבנויה מקטעים ישרים (צלעות).",
+  "formal": "קו שבור סגור שאינו חותך את עצמו, וכן החלק של המישור שהוא תוחם. מצולע בעל $n$ צלעות נקרא $n$-גון.",
+  "diagram": "polygon-sum",
+  "related": [
+   "convex-polygon",
+   "regular-polygon",
+   "diagonal",
+   "triangle",
+   "quadrilateral"
+  ],
+  "topic": "triangles",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "convex-polygon",
+  "term": "מצולע קמור",
+  "simple": "מצולע שאין לו \"שקע\" פנימה. כל זוויותיו קטנות מ-$180^\\circ$.",
+  "formal": "מצולע שבו כל הקטע המחבר שתי נקודות במצולע נמצא כולו בתוכו. באופן שקול, כל זווית פנימית קטנה מ-$180^\\circ$.",
+  "diagram": "c-convex",
+  "related": [
+   "polygon",
+   "regular-polygon"
+  ],
+  "topic": "triangles",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "regular-polygon",
+  "term": "מצולע משוכלל",
+  "simple": "מצולע שכל צלעותיו שוות וכל זוויותיו שוות.",
+  "formal": "מצולע קמור שבו כל הצלעות שוות וכל הזוויות שוות. כל זווית פנימית שווה ל-$\\frac{180^\\circ(n-2)}{n}$.",
+  "diagram": "c-regular-hexagon",
+  "example": "משולש שווה צלעות, ריבוע, משושה משוכלל.",
+  "related": [
+   "polygon",
+   "convex-polygon",
+   "equilateral-triangle",
+   "square"
+  ],
+  "topic": "triangles",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "diagonal",
+  "term": "אלכסון",
+  "simple": "קטע שמחבר שני קודקודים של מצולע שאינם סמוכים.",
+  "formal": "קטע המחבר שני קודקודים לא סמוכים של מצולע. במצולע בעל $n$ צלעות יש $\\frac{n(n-3)}{2}$ אלכסונים.",
+  "diagram": "c-diagonal",
+  "related": [
+   "polygon",
+   "quadrilateral",
+   "parallelogram",
+   "space-diagonal"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "quadrilateral",
+  "term": "מרובע",
+  "simple": "מצולע עם ארבע צלעות. סכום זוויותיו $360^\\circ$.",
+  "formal": "מצולע בעל ארבע צלעות וארבעה קודקודים. סכום זוויותיו הפנימיות $360^\\circ$.",
+  "diagram": "c-quadrilateral",
+  "related": [
+   "parallelogram",
+   "trapezoid",
+   "kite",
+   "polygon"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "parallelogram",
+  "term": "מקבילית",
+  "simple": "מרובע ששתי הזוגות של צלעותיו הנגדיות מקבילות.",
+  "formal": "מרובע שבו $AB \\parallel DC$ וגם $AD \\parallel BC$. במקבילית הצלעות הנגדיות שוות, הזוויות הנגדיות שוות, והאלכסונים חוצים זה את זה.",
+  "diagram": "parallelogram",
+  "related": [
+   "rectangle",
+   "rhombus",
+   "square",
+   "quadrilateral"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "rectangle",
+  "term": "מלבן",
+  "simple": "מרובע שכל זוויותיו ישרות.",
+  "formal": "מקבילית שיש בה זווית ישרה, ולכן כל זוויותיה ישרות. האלכסונים במלבן שווים.",
+  "diagram": "rectangle",
+  "related": [
+   "parallelogram",
+   "square",
+   "rhombus"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "rhombus",
+  "term": "מעוין",
+  "simple": "מרובע שכל צלעותיו שוות.",
+  "formal": "מקבילית ששתי צלעות סמוכות בה שוות, ולכן כל צלעותיה שוות. האלכסונים במעוין מאונכים וחוצים את זוויותיו.",
+  "diagram": "rhombus",
+  "related": [
+   "parallelogram",
+   "square",
+   "kite"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "square",
+  "term": "ריבוע",
+  "simple": "מרובע שכל צלעותיו שוות וכל זוויותיו ישרות.",
+  "formal": "מלבן שהוא גם מעוין. יש לו כל התכונות של מקבילית, מלבן ומעוין.",
+  "diagram": "square",
+  "related": [
+   "rectangle",
+   "rhombus",
+   "regular-polygon"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "trapezoid",
+  "term": "טרפז",
+  "simple": "מרובע שיש בו זוג אחד בלבד של צלעות מקבילות. הצלעות המקבילות הן הבסיסים, והשתיים האחרות הן השוקיים.",
+  "formal": "מרובע שבו זוג צלעות נגדיות אחד מקביל ($AB \\parallel DC$) והזוג השני אינו מקביל. המרחק בין הבסיסים הוא הגובה.",
+  "diagram": "c-trapezoid",
+  "related": [
+   "isosceles-trapezoid",
+   "right-trapezoid",
+   "trapezoid-midsegment"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "isosceles-trapezoid",
+  "term": "טרפז שווה שוקיים",
+  "simple": "טרפז ששתי שוקיו שוות.",
+  "formal": "טרפז שבו $AD = BC$. בטרפז שווה שוקיים זוויות הבסיס שוות והאלכסונים שווים.",
+  "diagram": "isosceles-trapezoid",
+  "related": [
+   "trapezoid",
+   "base-angles"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "right-trapezoid",
+  "term": "טרפז ישר זווית",
+  "simple": "טרפז שאחת משוקיו מאונכת לבסיסים.",
+  "formal": "טרפז שבו אחת השוקיים מאונכת לבסיסים. לכן יש בו שתי זוויות ישרות, והשוק הזו היא גם גובה.",
+  "diagram": "c-right-trapezoid",
+  "related": [
+   "trapezoid",
+   "altitude"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "trapezoid-midsegment",
+  "term": "קטע אמצעים בטרפז",
+  "simple": "קטע שמחבר את האמצעים של שתי השוקיים בטרפז.",
+  "formal": "הקטע המחבר את אמצעי השוקיים. הוא מקביל לבסיסים ושווה ל-$\\frac{a+b}{2}$.",
+  "diagram": "trapezoid-midsegment",
+  "related": [
+   "trapezoid",
+   "midsegment"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "kite",
+  "term": "דלתון",
+  "simple": "מרובע עם שני זוגות של צלעות סמוכות שוות, בצורת עפיפון.",
+  "formal": "מרובע $ABCD$ שבו $AB = AD$ ו-$CB = CD$. האלכסון הראשי $AC$ הוא אנך אמצעי לאלכסון המשני $BD$.",
+  "diagram": "kite",
+  "related": [
+   "rhombus",
+   "perpendicular-bisector",
+   "quadrilateral"
+  ],
+  "topic": "quadrilaterals",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "circle",
+  "term": "מעגל",
+  "simple": "כל הנקודות שנמצאות באותו מרחק ממרכז אחד.",
+  "formal": "המקום הגאומטרי של כל הנקודות במישור הנמצאות במרחק $r$ מנקודה קבועה $O$ (המרכז).",
+  "diagram": "c-circle",
+  "related": [
+   "circle-center",
+   "radius",
+   "diameter",
+   "disk",
+   "circle-equation"
+  ],
+  "topic": "circle",
+  "grades": [
+   7,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "circle-center",
+  "term": "מרכז המעגל",
+  "simple": "הנקודה שכל נקודות המעגל רחוקות ממנה באותו מרחק.",
+  "formal": "הנקודה $O$ שממנה כל נקודות המעגל נמצאות במרחק $r$.",
+  "diagram": "c-circle",
+  "related": [
+   "circle",
+   "radius"
+  ],
+  "topic": "circle",
+  "grades": [
+   7,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "disk",
+  "term": "עיגול",
+  "simple": "המעגל יחד עם כל השטח שבתוכו.",
+  "formal": "קבוצת הנקודות שמרחקן מהמרכז קטן או שווה לרדיוס. שטח העיגול $\\pi r^2$.",
+  "diagram": "c-disk",
+  "related": [
+   "circle",
+   "area",
+   "sector"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "radius",
+  "term": "רדיוס",
+  "simple": "קטע מהמרכז אל נקודה על המעגל. כל הרדיוסים באותו מעגל שווים.",
+  "formal": "קטע המחבר את מרכז המעגל עם נקודה על המעגל. אורכו $r$.",
+  "diagram": "c-circle",
+  "related": [
+   "diameter",
+   "circle",
+   "chord"
+  ],
+  "topic": "circle",
+  "grades": [
+   7,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "diameter",
+  "term": "קוטר",
+  "simple": "מיתר שעובר דרך המרכז. הוא פי 2 מהרדיוס.",
+  "formal": "מיתר העובר דרך מרכז המעגל. $d = 2r$. זה המיתר הארוך ביותר במעגל.",
+  "diagram": "c-circle-parts",
+  "related": [
+   "radius",
+   "chord",
+   "circle"
+  ],
+  "topic": "circle",
+  "grades": [
+   7,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "chord",
+  "term": "מיתר",
+  "simple": "קטע שמחבר שתי נקודות על המעגל.",
+  "formal": "קטע ששני קצותיו על המעגל. המיתר הארוך ביותר הוא הקוטר.",
+  "diagram": "c-circle-parts",
+  "related": [
+   "diameter",
+   "arc",
+   "secant-line"
+  ],
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "arc",
+  "term": "קשת",
+  "aliases": [
+   "⌒"
+  ],
+  "simple": "חלק מהמעגל שבין שתי נקודות עליו.",
+  "formal": "חלק של המעגל המוגבל על ידי שתי נקודות עליו. גודל הקשת במעלות שווה לזווית המרכזית הנשענת עליה.",
+  "diagram": "c-circle-parts",
+  "related": [
+   "chord",
+   "central-angle",
+   "inscribed-angle",
+   "arc-length"
+  ],
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "central-angle",
+  "term": "זווית מרכזית",
+  "simple": "זווית שהקודקוד שלה במרכז המעגל.",
+  "formal": "זווית שקודקודה במרכז המעגל ושוקיה רדיוסים. גודלה שווה לגודל הקשת שעליה היא נשענת.",
+  "diagram": "circle-central-inscribed",
+  "related": [
+   "inscribed-angle",
+   "arc",
+   "radius"
+  ],
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "inscribed-angle",
+  "term": "זווית היקפית",
+  "simple": "זווית שהקודקוד שלה על המעגל, ושתי השוקיים שלה מיתרים.",
+  "formal": "זווית שקודקודה על המעגל ושוקיה חותכות את המעגל. היא שווה למחצית הזווית המרכזית הנשענת על אותה קשת.",
+  "diagram": "circle-central-inscribed",
+  "related": [
+   "central-angle",
+   "arc",
+   "cyclic-quadrilateral"
+  ],
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "tangent-line",
+  "term": "משיק",
+  "simple": "ישר שנוגע במעגל בנקודה אחת בלבד.",
+  "formal": "ישר שיש לו עם המעגל נקודה משותפת אחת בדיוק (נקודת ההשקה). המשיק מאונך לרדיוס בנקודת ההשקה.",
+  "diagram": "tangent-radius",
+  "related": [
+   "point-of-tangency",
+   "secant-line",
+   "radius",
+   "tangent-to-graph"
+  ],
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "point-of-tangency",
+  "term": "נקודת השקה",
+  "simple": "הנקודה שבה המשיק נוגע במעגל.",
+  "formal": "הנקודה המשותפת היחידה של משיק ומעגל, או של שני מעגלים משיקים.",
+  "diagram": "tangent-radius",
+  "related": [
+   "tangent-line",
+   "tangent-circles"
+  ],
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "secant-line",
+  "term": "חותך (של מעגל)",
+  "simple": "ישר שחותך את המעגל בשתי נקודות.",
+  "formal": "ישר שיש לו שתי נקודות משותפות עם המעגל. הקטע שבתוך המעגל הוא מיתר.",
+  "diagram": "c-secant",
+  "related": [
+   "chord",
+   "tangent-line"
+  ],
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "cyclic-quadrilateral",
+  "term": "מרובע חסום במעגל (בר-חסימה)",
+  "simple": "מרובע שכל ארבעת הקודקודים שלו נמצאים על מעגל אחד.",
+  "formal": "מרובע שקיים מעגל העובר דרך כל קודקודיו. מרובע הוא בר-חסימה אם ורק אם סכום זוג זוויות נגדיות בו $180^\\circ$.",
+  "diagram": "cyclic-quad",
+  "related": [
+   "circumscribed-circle",
+   "inscribed-angle",
+   "tangential-quadrilateral"
+  ],
+  "topic": "circle",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "tangential-quadrilateral",
+  "term": "מרובע חוסם מעגל",
+  "simple": "מרובע שיש בתוכו מעגל שנוגע בכל ארבע הצלעות.",
+  "formal": "מרובע שכל צלעותיו משיקות למעגל אחד. במרובע כזה $AB + CD = AD + BC$.",
+  "diagram": "tangential-quad",
+  "related": [
+   "inscribed-circle",
+   "tangent-line",
+   "cyclic-quadrilateral"
+  ],
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "tangent-circles",
+  "term": "מעגלים משיקים",
+  "simple": "שני מעגלים שנוגעים זה בזה בנקודה אחת, מבחוץ או מבפנים.",
+  "formal": "שני מעגלים שיש להם נקודה משותפת אחת בדיוק. בהשקה חיצונית $O_1O_2 = R + r$, ובהשקה פנימית $O_1O_2 = R - r$.",
+  "diagram": "tangent-circles",
+  "related": [
+   "line-of-centers",
+   "point-of-tangency"
+  ],
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "line-of-centers",
+  "term": "קו המרכזים",
+  "simple": "הקטע (או הישר) שמחבר את המרכזים של שני מעגלים.",
+  "formal": "הישר $O_1O_2$ העובר דרך מרכזי שני מעגלים.",
+  "diagram": "tangent-circles",
+  "related": [
+   "tangent-circles",
+   "common-chord"
+  ],
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "common-chord",
+  "term": "מיתר משותף",
+  "simple": "הקטע שמחבר את שתי נקודות החיתוך של שני מעגלים.",
+  "formal": "אם שני מעגלים נחתכים ב-$A$ וב-$B$, הקטע $AB$ הוא מיתר בשניהם. קו המרכזים הוא האנך האמצעי שלו.",
+  "diagram": "intersecting-circles",
+  "related": [
+   "chord",
+   "line-of-centers"
+  ],
+  "topic": "tangents",
+  "grades": [
+   10
+  ],
+  "units": [
+   5
+  ]
+ },
+ {
+  "id": "sector",
+  "term": "גזרה",
+  "simple": "\"פרוסת פיצה\" של עיגול: החלק שבין שני רדיוסים לקשת.",
+  "formal": "החלק של העיגול המוגבל על ידי שני רדיוסים והקשת שביניהם. שטחה $\\frac{\\alpha}{360^\\circ}\\pi r^2$.",
+  "diagram": "c-sector",
+  "related": [
+   "arc-length",
+   "disk",
+   "central-angle"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   8,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "arc-length",
+  "term": "אורך קשת",
+  "simple": "האורך של חלק המעגל, החלק היחסי מההיקף.",
+  "formal": "אורך קשת שהזווית המרכזית שלה $\\alpha$ הוא $\\ell = \\frac{\\alpha}{360^\\circ}\\cdot 2\\pi r$. ברדיאנים: $\\ell = r\\theta$.",
+  "diagram": "c-sector",
+  "related": [
+   "arc",
+   "sector",
+   "radian",
+   "pi"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   8,
+   10
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "pi",
+  "term": "פאי (π)",
+  "aliases": [
+   "π"
+  ],
+  "simple": "היחס בין היקף המעגל לקוטר שלו. בערך $3.14$.",
+  "formal": "$\\pi = \\frac{P}{d}$ לכל מעגל. זה מספר אי-רציונלי: $\\pi \\approx 3.14159$.",
+  "diagram": "c-pi",
+  "related": [
+   "circle",
+   "irrational-number",
+   "arc-length"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "perimeter",
+  "term": "היקף",
+  "simple": "סכום האורכים של כל הצלעות של צורה, ה\"גדר\" מסביבה.",
+  "formal": "סכום אורכי הצלעות של מצולע. היקף מעגל הוא $2\\pi r$.",
+  "diagram": "c-perimeter",
+  "related": [
+   "area",
+   "semi-perimeter"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "area",
+  "term": "שטח",
+  "simple": "כמה מקום תופסת צורה במישור, כלומר כמה ריבועי יחידה נכנסים בה.",
+  "formal": "גודל החלק של המישור שהצורה תוחמת, ביחידות ריבועיות. לדוגמה, שטח משולש הוא $\\frac{a \\cdot h_a}{2}$.",
+  "diagram": "c-area",
+  "related": [
+   "perimeter",
+   "altitude",
+   "volume",
+   "definite-integral"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "semi-perimeter",
+  "term": "מחצית ההיקף",
+  "simple": "חצי מסכום הצלעות של משולש.",
+  "formal": "$p = \\frac{a + b + c}{2}$. משמש בנוסחאות כמו $S = p \\cdot r$.",
+  "diagram": "heron",
+  "related": [
+   "perimeter",
+   "inscribed-circle"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "geometric-mean",
+  "term": "ממוצע הנדסי",
+  "simple": "המספר שהריבוע שלו שווה למכפלה של שני מספרים.",
+  "formal": "הממוצע ההנדסי של $a, b > 0$ הוא $\\sqrt{ab}$. במשולש ישר זווית הגובה ליתר הוא ממוצע הנדסי של ההיטלים.",
+  "diagram": "altitude-hypotenuse",
+  "example": "הממוצע ההנדסי של 4 ו-9 הוא $\\sqrt{36} = 6$.",
+  "related": [
+   "projection",
+   "geometric-sequence",
+   "arithmetic-mean"
+  ],
+  "topic": "right-triangle",
+  "grades": [
+   9,
+   10
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "definition",
+  "term": "הגדרה",
+  "simple": "משפט שמסביר בדיוק מה המשמעות של מושג. אותה לא מוכיחים.",
+  "formal": "קביעת משמעותו של מושג בעזרת מושגים שכבר הוגדרו. הגדרה טובה היא מינימלית: היא לא כוללת תכונות שנובעות מהגדרה אחרת.",
+  "diagram": "c-proof-table",
+  "example": "\"מקבילית היא מרובע שבו כל שתי צלעות נגדיות מקבילות\" היא הגדרה.",
+  "related": [
+   "theorem",
+   "proof"
+  ],
+  "topic": "congruence",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "theorem",
+  "term": "משפט",
+  "simple": "טענה מתמטית שהוכחה. בבגרות מותר לצטט בלי הוכחה רק משפטים מהרשימה של משרד החינוך.",
+  "formal": "טענה שהוכחה מתוך אקסיומות, הגדרות ומשפטים קודמים. משפט בנוי מ\"אם\" (הנתון) ו\"אז\" (המסקנה).",
+  "diagram": "c-proof-table",
+  "related": [
+   "converse-theorem",
+   "proof",
+   "definition"
+  ],
+  "topic": "congruence",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "converse-theorem",
+  "term": "משפט הפוך",
+  "simple": "משפט שבו מחליפים בין הנתון למסקנה. לא כל משפט הפוך נכון!",
+  "formal": "למשפט \"אם $P$ אז $Q$\", המשפט ההפוך הוא \"אם $Q$ אז $P$\". הוא דורש הוכחה נפרדת.",
+  "diagram": "c-proof-table",
+  "example": "\"זוויות קודקודיות שוות\" נכון, אבל \"זוויות שוות הן קודקודיות\" אינו נכון.",
+  "related": [
+   "theorem",
+   "proof"
+  ],
+  "topic": "congruence",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "proof",
+  "term": "הוכחה",
+  "simple": "שרשרת של טענות שכל אחת מנומקת (נתון, הגדרה או משפט), ומובילה מהנתונים אל מה שצריך להוכיח.",
+  "formal": "סדרת טענות שכל אחת מהן נתון, הגדרה, אקסיומה, משפט מוכח או מסקנה לוגית מטענות קודמות. בבגרות כותבים בטבלה \"טענה | נימוק\".",
+  "diagram": "c-proof-table",
+  "related": [
+   "theorem",
+   "definition",
+   "converse-theorem"
+  ],
+  "topic": "congruence",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "box",
+  "term": "תיבה",
+  "simple": "גוף עם שש פאות מלבניות, כמו קופסת נעליים.",
+  "formal": "מנסרה ישרה שבסיסה מלבן. נפחה $V = a \\cdot b \\cdot c$, ואלכסונה $d = \\sqrt{a^2 + b^2 + c^2}$.",
+  "diagram": "c-box",
+  "related": [
+   "cube",
+   "prism",
+   "space-diagonal",
+   "volume"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "cube",
+  "term": "קובייה",
+  "simple": "תיבה שכל המקצועות שלה שווים. כל שש הפאות ריבועים.",
+  "formal": "תיבה שכל מקצועותיה שווים ל-$a$. $V = a^3$, ושטח הפנים $6a^2$.",
+  "diagram": "c-cube",
+  "related": [
+   "box",
+   "face",
+   "edge"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "face",
+  "term": "פאה",
+  "simple": "כל אחד מה\"קירות\" השטוחים של גוף, כמו פאה של קובייה.",
+  "formal": "מצולע המהווה חלק משפת פאון (גוף שכל פאותיו מצולעים).",
+  "diagram": "c-cube",
+  "related": [
+   "edge",
+   "cube",
+   "prism"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "edge",
+  "term": "מקצוע",
+  "simple": "קו שבו נפגשות שתי פאות של גוף.",
+  "formal": "קטע המשותף לשתי פאות סמוכות של פאון.",
+  "diagram": "c-cube",
+  "related": [
+   "face",
+   "vertex",
+   "box"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "prism",
+  "term": "מנסרה",
+  "simple": "גוף עם שני בסיסים זהים ומקבילים, שהפאות הצדדיות שלו מקביליות.",
+  "formal": "פאון בעל שני בסיסים חופפים במישורים מקבילים, שפאותיו הצדדיות מקביליות. $V = S_{\\text{בסיס}} \\cdot h$.",
+  "diagram": "c-prism",
+  "related": [
+   "box",
+   "pyramid",
+   "volume"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   8,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "pyramid",
+  "term": "פירמידה",
+  "simple": "גוף עם בסיס שהוא מצולע, וכל הפאות הצדדיות הן משולשים שנפגשים בקודקוד אחד.",
+  "formal": "פאון שבסיסו מצולע ופאותיו הצדדיות משולשים בעלי קודקוד משותף (ראש הפירמידה). $V = \\frac{S_{\\text{בסיס}}\\cdot h}{3}$.",
+  "diagram": "c-pyramid",
+  "related": [
+   "prism",
+   "cone",
+   "volume"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   8,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "cylinder",
+  "term": "גליל",
+  "simple": "גוף כמו פחית: שני עיגולים זהים ומקבילים ומעטפת עגולה.",
+  "formal": "גוף הנוצר מסיבוב מלבן סביב אחת מצלעותיו. $V = \\pi r^2 h$, ושטח המעטפת $2\\pi r h$.",
+  "diagram": "c-cylinder",
+  "related": [
+   "cone",
+   "lateral-area",
+   "volume"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   8,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "cone",
+  "term": "חרוט",
+  "simple": "גוף כמו גביע גלידה: בסיס עגול וקודקוד אחד למעלה.",
+  "formal": "גוף הנוצר מסיבוב משולש ישר זווית סביב אחד הניצבים. $V = \\frac{\\pi r^2 h}{3}$, ושטח המעטפת $\\pi r \\ell$.",
+  "diagram": "c-cone",
+  "related": [
+   "cylinder",
+   "pyramid",
+   "slant-height"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   8,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "slant-height",
+  "term": "קו יוצר (בחרוט)",
+  "simple": "הקטע מקודקוד החרוט אל נקודה על שפת הבסיס.",
+  "formal": "בחרוט ישר, הקו היוצר $\\ell$ מקיים $\\ell^2 = r^2 + h^2$.",
+  "diagram": "c-cone",
+  "related": [
+   "cone",
+   "lateral-area"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "sphere",
+  "term": "כדור",
+  "simple": "כל הנקודות במרחב שנמצאות באותו מרחק ממרכז, כמו כדור כדורגל.",
+  "formal": "המקום הגאומטרי של הנקודות במרחב שמרחקן מנקודה $O$ שווה ל-$r$. $V = \\frac43\\pi r^3$, ושטח הפנים $4\\pi r^2$.",
+  "diagram": "c-sphere",
+  "related": [
+   "circle",
+   "volume"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   9,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "space-diagonal",
+  "term": "אלכסון במרחב",
+  "simple": "קטע שמחבר שני קודקודים של גוף שלא נמצאים על אותה פאה.",
+  "formal": "בתיבה שמקצועותיה $a, b, c$, אורך האלכסון הוא $\\sqrt{a^2 + b^2 + c^2}$.",
+  "diagram": "c-box",
+  "related": [
+   "box",
+   "diagonal",
+   "pythagorean-identity"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "volume",
+  "term": "נפח",
+  "simple": "כמה מקום תופס גוף במרחב, כלומר כמה קוביות יחידה נכנסות בו.",
+  "formal": "גודל החלק של המרחב שהגוף תוחם, ביחידות מעוקבות (סמ\"ק, מ\"ק).",
+  "diagram": "c-box",
+  "related": [
+   "area",
+   "box",
+   "volume-of-revolution"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "surface-area",
+  "term": "שטח פנים",
+  "simple": "סכום השטחים של כל הפאות של גוף, כמה נייר עטיפה צריך.",
+  "formal": "סכום שטחי כל הפאות (או המשטחים) המקיפים את הגוף.",
+  "diagram": "c-cube",
+  "related": [
+   "lateral-area",
+   "area",
+   "face"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   7,
+   8
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "lateral-area",
+  "term": "שטח מעטפת",
+  "simple": "השטח של ה\"צדדים\" של גוף, בלי הבסיסים.",
+  "formal": "שטח הפנים פחות שטחי הבסיסים. בגליל $2\\pi r h$, ובחרוט $\\pi r \\ell$.",
+  "diagram": "c-cylinder",
+  "related": [
+   "surface-area",
+   "cylinder",
+   "cone"
+  ],
+  "topic": "area-volume",
+  "grades": [
+   8,
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "angle-line-plane",
+  "term": "זווית בין ישר למישור",
+  "simple": "הזווית בין הישר לבין ה\"צל\" שלו על המישור.",
+  "formal": "הזווית בין ישר לבין ההיטל שלו על המישור. היא נמצאת במשולש ישר זווית: ישר, אנך למישור, היטל.",
+  "diagram": "c-line-plane-angle",
+  "related": [
+   "projection",
+   "plane",
+   "dihedral-angle"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11
+  ],
+  "units": [
+   3,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "dihedral-angle",
+  "term": "זווית בין מישורים",
+  "simple": "הזווית בין שני מישורים נחתכים, נמדדת בעזרת שני ישרים מאונכים לקו החיתוך.",
+  "formal": "הזווית בין שני ישרים, אחד בכל מישור, הניצבים לישר החיתוך באותה נקודה.",
+  "diagram": "c-dihedral",
+  "related": [
+   "angle-line-plane",
+   "plane"
+  ],
+  "topic": "trigonometry",
+  "grades": [
+   11,
+   12
+  ],
+  "units": [
+   4,
+   5
+  ]
+ }
+]

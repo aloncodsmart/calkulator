@@ -1,0 +1,1779 @@
+[
+ {
+  "id": "adjacent-angles",
+  "name": "זוויות צמודות",
+  "statement": "סכום זוויות צמודות הוא $180^\\circ$.",
+  "formal": "\\alpha + \\beta = 180^\\circ",
+  "citation": "סכום זוויות צמודות הוא 180°",
+  "conditions": [
+   "לשתי הזוויות יש קודקוד משותף ושוק משותפת.",
+   "השוקיים שאינן משותפות נמצאות על ישר אחד, כלומר כל אחת היא המשך של השנייה."
+  ],
+  "useWhen": "יש ישר, ומנקודה עליו יוצאת קרן. מכירים זווית אחת ורוצים את הזווית שלידה.",
+  "diagram": "adjacent",
+  "example": {
+   "problem": "הנקודות $A, O, B$ נמצאות על ישר אחד, ו-$\\angle BOC = 62^\\circ$. מצאו את $\\angle AOC$.",
+   "steps": [
+    {
+     "claim": "$\\angle AOC + \\angle BOC = 180^\\circ$",
+     "reason": "סכום זוויות צמודות הוא 180°",
+     "ref": "adjacent-angles"
+    },
+    {
+     "claim": "$\\angle AOC = 180^\\circ - 62^\\circ = 118^\\circ$",
+     "reason": "הצבה וחישוב"
+    }
+   ],
+   "answer": "$\\angle AOC = 118^\\circ$"
+  },
+  "mistakes": [
+   "לקרוא לשתי זוויות \"צמודות\" רק כי הן נוגעות זו בזו. צריך גם שהשוקיים שאינן משותפות יהיו על ישר אחד.",
+   "לבלבל בין זוויות צמודות (סכומן 180°) לבין זוויות קודקודיות (הן שוות)."
+  ],
+  "converse": {
+   "statement": "אם לשתי זוויות יש קודקוד ושוק משותפים, וסכומן $180^\\circ$, אז השוקיים האחרות נמצאות על ישר אחד."
+  },
+  "status": "official",
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "צמודות",
+   "זווית צמודה",
+   "180",
+   "זווית שטוחה",
+   "ישר"
+  ],
+  "givens": [
+   "straight-angle",
+   "intersecting-lines"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "adjacent-angles",
+   "supplementary-angles",
+   "angle",
+   "straight-angle"
+  ]
+ },
+ {
+  "id": "vertical-angles",
+  "name": "זוויות קודקודיות",
+  "statement": "זוויות קודקודיות שוות זו לזו.",
+  "formal": "\\angle AOC = \\angle DOB",
+  "citation": "זוויות קודקודיות שוות",
+  "conditions": [
+   "שני ישרים נחתכים בנקודה אחת.",
+   "שוקי זווית אחת הן המשכי השוקיים של הזווית השנייה."
+  ],
+  "useWhen": "שני ישרים (או קטעים) נחתכים, ורוצים להעביר זווית מצד אחד של נקודת החיתוך לצד שמולו.",
+  "diagram": "vertical",
+  "example": {
+   "problem": "הישרים $AB$ ו-$CD$ נחתכים בנקודה $O$. נתון $\\angle AOC = 130^\\circ$. מצאו את $\\angle DOB$ ואת $\\angle AOD$.",
+   "steps": [
+    {
+     "claim": "$\\angle DOB = \\angle AOC = 130^\\circ$",
+     "reason": "זוויות קודקודיות שוות",
+     "ref": "vertical-angles"
+    },
+    {
+     "claim": "$\\angle AOD = 180^\\circ - 130^\\circ = 50^\\circ$",
+     "reason": "סכום זוויות צמודות הוא 180°",
+     "ref": "adjacent-angles"
+    }
+   ],
+   "answer": "$\\angle DOB = 130^\\circ,\\ \\angle AOD = 50^\\circ$"
+  },
+  "mistakes": [
+   "לחשוב שכל שתי זוויות שמול נקודת החיתוך הן קודקודיות. רק זוויות ששוקיהן הן המשכים זו של זו הן קודקודיות.",
+   "להשתמש במשפט כשהקטעים לא באמת נחתכים, למשל כשהם רק נפגשים בקצה."
+  ],
+  "status": "official",
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "קודקודיות",
+   "זוויות קודקודיות",
+   "נחתכים",
+   "חיתוך ישרים"
+  ],
+  "givens": [
+   "intersecting-lines"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "vertical-angles",
+   "angle",
+   "adjacent-angles"
+  ]
+ },
+ {
+  "id": "corresponding-angles",
+  "name": "זוויות מתאימות בין ישרים מקבילים",
+  "statement": "זוויות מתאימות בין ישרים מקבילים שוות זו לזו.",
+  "formal": "a \\parallel b \\Rightarrow \\alpha_1 = \\alpha_2",
+  "citation": "זוויות מתאימות בין ישרים מקבילים שוות",
+  "conditions": [
+   "שני הישרים מקבילים. צריך שזה יהיה נתון או מוכח.",
+   "הזוויות נוצרות עם אותו ישר חותך, ונמצאות באותו צד שלו ובאותו צד של כל אחד מהמקבילים."
+  ],
+  "useWhen": "יש שני ישרים מקבילים וישר שחותך את שניהם, ורוצים להעביר זווית מישר אחד לשני.",
+  "diagram": "corresponding",
+  "example": {
+   "problem": "$a \\parallel b$, והישר $t$ חותך אותם ב-$A$ וב-$B$. הזווית שבין $a$ ל-$t$ בנקודה $A$ (מימין ומעל) היא $55^\\circ$. מצאו את הזווית המתאימה לה בנקודה $B$.",
+   "steps": [
+    {
+     "claim": "$a \\parallel b$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$\\alpha_B = \\alpha_A = 55^\\circ$",
+     "reason": "זוויות מתאימות בין ישרים מקבילים שוות",
+     "ref": "corresponding-angles"
+    }
+   ],
+   "answer": "$55^\\circ$"
+  },
+  "mistakes": [
+   "להשתמש במשפט בלי שהוכח שהישרים מקבילים.",
+   "לבלבל בין זוויות מתאימות למתחלפות. בשתיהן הזוויות שוות, אבל כדאי לכתוב את השם הנכון בנימוק."
+  ],
+  "converse": {
+   "id": "corresponding-converse"
+  },
+  "status": "official",
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מתאימות",
+   "מקבילים",
+   "חותך",
+   "ישרים מקבילים",
+   "זוויות מתאימות"
+  ],
+  "givens": [
+   "parallel-lines",
+   "transversal"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "corresponding-angles",
+   "parallel-lines",
+   "transversal"
+  ]
+ },
+ {
+  "id": "corresponding-converse",
+  "name": "הוכחת מקבילות בעזרת זוויות מתאימות",
+  "statement": "אם שני ישרים יוצרים עם ישר שלישי זוויות מתאימות שוות, אז הישרים מקבילים.",
+  "formal": "\\alpha_1 = \\alpha_2 \\Rightarrow a \\parallel b",
+  "citation": "אם זוויות מתאימות שוות – הישרים מקבילים",
+  "conditions": [
+   "הוכח (או נתון) ששתי הזוויות המתאימות שוות.",
+   "הזוויות נוצרות עם אותו ישר חותך."
+  ],
+  "useWhen": "צריך להוכיח ששני ישרים מקבילים, ויש ישר שחותך את שניהם.",
+  "diagram": "corresponding",
+  "example": {
+   "problem": "הישר $t$ חותך את הישרים $a$ ו-$b$, ושתי זוויות מתאימות שוות $70^\\circ$. הוכיחו ש-$a \\parallel b$.",
+   "steps": [
+    {
+     "claim": "$\\alpha_A = \\alpha_B = 70^\\circ$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$a \\parallel b$",
+     "reason": "אם זוויות מתאימות שוות – הישרים מקבילים",
+     "ref": "corresponding-converse"
+    }
+   ],
+   "answer": "הישרים מקבילים."
+  },
+  "mistakes": [
+   "להשתמש במשפט הישר (\"זוויות מתאימות בין מקבילים שוות\") כשרוצים להוכיח מקבילות. זה הפוך."
+  ],
+  "converse": {
+   "id": "corresponding-angles"
+  },
+  "status": "official",
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "הוכחת מקבילות",
+   "מקבילים",
+   "מתאימות",
+   "להוכיח מקביל"
+  ],
+  "givens": [
+   "transversal",
+   "equal-angles"
+  ],
+  "goals": [
+   "prove-parallel"
+  ],
+  "related": [
+   "corresponding-angles",
+   "parallel-lines"
+  ]
+ },
+ {
+  "id": "alternate-angles",
+  "name": "זוויות מתחלפות בין ישרים מקבילים",
+  "statement": "זוויות מתחלפות בין ישרים מקבילים שוות זו לזו.",
+  "formal": "a \\parallel b \\Rightarrow \\alpha_1 = \\alpha_2",
+  "citation": "זוויות מתחלפות בין ישרים מקבילים שוות",
+  "conditions": [
+   "שני הישרים מקבילים (נתון או מוכח).",
+   "הזוויות נמצאות בצדדים שונים של הישר החותך, ושתיהן בין שני המקבילים."
+  ],
+  "useWhen": "יש שני מקבילים וחותך (צורת Z), או מקבילית או טרפז, ורוצים זוויות שוות.",
+  "diagram": "alternate",
+  "example": {
+   "problem": "ב-$ABCD$ נתון $AB \\parallel DC$, ו-$\\angle BAC = 40^\\circ$. מצאו את $\\angle DCA$.",
+   "steps": [
+    {
+     "claim": "$AB \\parallel DC$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$\\angle DCA = \\angle BAC = 40^\\circ$",
+     "reason": "זוויות מתחלפות בין ישרים מקבילים שוות",
+     "ref": "alternate-angles"
+    }
+   ],
+   "answer": "$\\angle DCA = 40^\\circ$"
+  },
+  "mistakes": [
+   "לזהות זוג זוויות כ\"מתחלפות\" כשאחת מהן נמצאת מחוץ לתחום שבין המקבילים.",
+   "להשתמש במשפט בלי שהמקבילות נתונה או הוכחה."
+  ],
+  "converse": {
+   "id": "alternate-converse"
+  },
+  "status": "official",
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מתחלפות",
+   "מקבילים",
+   "צורת Z",
+   "זוויות מתחלפות"
+  ],
+  "givens": [
+   "parallel-lines",
+   "transversal",
+   "trapezoid",
+   "parallelogram"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "alternate-angles",
+   "parallel-lines",
+   "transversal"
+  ]
+ },
+ {
+  "id": "alternate-converse",
+  "name": "הוכחת מקבילות בעזרת זוויות מתחלפות",
+  "statement": "אם שני ישרים יוצרים עם ישר שלישי זוויות מתחלפות שוות, אז הישרים מקבילים.",
+  "formal": "\\alpha_1 = \\alpha_2 \\Rightarrow a \\parallel b",
+  "citation": "אם זוויות מתחלפות שוות – הישרים מקבילים",
+  "conditions": [
+   "הוכח ששתי הזוויות המתחלפות שוות.",
+   "הזוויות נוצרות עם אותו ישר חותך."
+  ],
+  "useWhen": "צריך להוכיח מקבילות, ויש זוויות שוות בצורת Z (למשל בעזרת משולשים חופפים).",
+  "diagram": "alternate",
+  "example": {
+   "problem": "במרובע $ABCD$ האלכסון $AC$ יוצר $\\angle BAC = \\angle DCA$. הוכיחו ש-$AB \\parallel DC$.",
+   "steps": [
+    {
+     "claim": "$\\angle BAC = \\angle DCA$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$AB \\parallel DC$",
+     "reason": "אם זוויות מתחלפות שוות – הישרים מקבילים",
+     "ref": "alternate-converse"
+    }
+   ],
+   "answer": "$AB \\parallel DC$"
+  },
+  "mistakes": [
+   "לשכוח לציין איזה ישר הוא החותך. ב-$\\angle BAC$ וב-$\\angle DCA$ החותך הוא $AC$."
+  ],
+  "converse": {
+   "id": "alternate-angles"
+  },
+  "status": "official",
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "הוכחת מקבילות",
+   "מתחלפות",
+   "מקבילים"
+  ],
+  "givens": [
+   "transversal",
+   "equal-angles"
+  ],
+  "goals": [
+   "prove-parallel"
+  ],
+  "related": [
+   "alternate-angles",
+   "parallel-lines"
+  ]
+ },
+ {
+  "id": "co-interior-angles",
+  "name": "זוויות חד-צדדיות בין ישרים מקבילים",
+  "statement": "סכום זוויות חד-צדדיות בין ישרים מקבילים הוא $180^\\circ$.",
+  "formal": "a \\parallel b \\Rightarrow \\alpha + \\beta = 180^\\circ",
+  "citation": "סכום זוויות חד-צדדיות בין ישרים מקבילים הוא 180°",
+  "conditions": [
+   "שני הישרים מקבילים.",
+   "שתי הזוויות באותו צד של הישר החותך, ושתיהן בין המקבילים."
+  ],
+  "useWhen": "בטרפז או במקבילית, כשרוצים לחשב זווית סמוכה לצלע (למשל זווית בסיס וזווית שוק).",
+  "diagram": "co-interior",
+  "example": {
+   "problem": "בטרפז $ABCD$ ($AB \\parallel DC$) נתון $\\angle A = 72^\\circ$. מצאו את $\\angle D$.",
+   "steps": [
+    {
+     "claim": "$AB \\parallel DC$",
+     "reason": "נתון (הגדרת טרפז)"
+    },
+    {
+     "claim": "$\\angle A + \\angle D = 180^\\circ$",
+     "reason": "סכום זוויות חד-צדדיות בין ישרים מקבילים הוא 180°",
+     "ref": "co-interior-angles"
+    },
+    {
+     "claim": "$\\angle D = 108^\\circ$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$\\angle D = 108^\\circ$"
+  },
+  "mistakes": [
+   "לכתוב שהזוויות החד-צדדיות שוות. הן לא שוות, סכומן 180°.",
+   "בטרפז, לחבר זוויות שאינן על אותה שוק."
+  ],
+  "converse": {
+   "id": "co-interior-converse"
+  },
+  "status": "official",
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חד-צדדיות",
+   "חד צדדיות",
+   "180",
+   "מקבילים",
+   "טרפז"
+  ],
+  "givens": [
+   "parallel-lines",
+   "transversal",
+   "trapezoid",
+   "parallelogram"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "co-interior-angles",
+   "parallel-lines",
+   "supplementary-angles"
+  ]
+ },
+ {
+  "id": "co-interior-converse",
+  "name": "הוכחת מקבילות בעזרת זוויות חד-צדדיות",
+  "statement": "אם שני ישרים יוצרים עם ישר שלישי זוויות חד-צדדיות שסכומן $180^\\circ$, אז הישרים מקבילים.",
+  "formal": "\\alpha + \\beta = 180^\\circ \\Rightarrow a \\parallel b",
+  "citation": "אם סכום זוויות חד-צדדיות הוא 180° – הישרים מקבילים",
+  "conditions": [
+   "הוכח שסכום הזוויות החד-צדדיות הוא $180^\\circ$."
+  ],
+  "useWhen": "צריך להוכיח מקבילות, וידוע שסכום שתי זוויות באותו צד של החותך הוא 180°.",
+  "diagram": "co-interior",
+  "example": {
+   "problem": "במרובע $ABCD$ נתון $\\angle A = 110^\\circ$ ו-$\\angle B = 70^\\circ$. הוכיחו ש-$AD \\parallel BC$.",
+   "steps": [
+    {
+     "claim": "$\\angle A + \\angle B = 180^\\circ$",
+     "reason": "נתון וחישוב"
+    },
+    {
+     "claim": "$AD \\parallel BC$",
+     "reason": "אם סכום זוויות חד-צדדיות הוא 180° – הישרים מקבילים (החותך הוא $AB$)",
+     "ref": "co-interior-converse"
+    }
+   ],
+   "answer": "$AD \\parallel BC$"
+  },
+  "mistakes": [
+   "להסיק מקבילות של הצלעות הלא-נכונות. כאן החותך הוא $AB$, ולכן המקבילים הם $AD$ ו-$BC$."
+  ],
+  "converse": {
+   "id": "co-interior-angles"
+  },
+  "status": "official",
+  "topic": "angles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "הוכחת מקבילות",
+   "חד-צדדיות",
+   "180"
+  ],
+  "givens": [
+   "transversal",
+   "angle-measure"
+  ],
+  "goals": [
+   "prove-parallel"
+  ],
+  "related": [
+   "co-interior-angles",
+   "parallel-lines"
+  ]
+ },
+ {
+  "id": "triangle-angle-sum",
+  "name": "סכום הזוויות במשולש",
+  "statement": "סכום הזוויות הפנימיות במשולש הוא $180^\\circ$.",
+  "formal": "\\alpha + \\beta + \\gamma = 180^\\circ",
+  "citation": "סכום הזוויות במשולש הוא 180°",
+  "conditions": [
+   "מדובר בשלוש הזוויות הפנימיות של אותו משולש."
+  ],
+  "useWhen": "מכירים שתי זוויות במשולש, או קשר ביניהן, ורוצים את השלישית.",
+  "diagram": "triangle-sum",
+  "example": {
+   "problem": "במשולש $ABC$ נתון $\\angle A = 50^\\circ$, ו-$\\angle B$ גדולה מ-$\\angle C$ ב-$20^\\circ$. מצאו את זוויות המשולש.",
+   "steps": [
+    {
+     "claim": "$\\angle C = x,\\ \\angle B = x + 20^\\circ$",
+     "reason": "סימון"
+    },
+    {
+     "claim": "$50^\\circ + (x + 20^\\circ) + x = 180^\\circ$",
+     "reason": "סכום הזוויות במשולש הוא 180°",
+     "ref": "triangle-angle-sum"
+    },
+    {
+     "claim": "$x = 55^\\circ$",
+     "reason": "פתרון המשוואה"
+    }
+   ],
+   "answer": "$\\angle B = 75^\\circ,\\ \\angle C = 55^\\circ$"
+  },
+  "mistakes": [
+   "לחבר זוויות של משולשים שונים.",
+   "לשכוח זווית שמסומנת בשרטוט בשני חלקים."
+  ],
+  "status": "official",
+  "topic": "triangles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "סכום זוויות",
+   "180",
+   "משולש",
+   "זווית שלישית"
+  ],
+  "givens": [
+   "triangle",
+   "angle-measure"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "triangle",
+   "angle"
+  ]
+ },
+ {
+  "id": "exterior-angle",
+  "name": "זווית חיצונית למשולש",
+  "statement": "זווית חיצונית למשולש שווה לסכום שתי הזוויות הפנימיות שאינן צמודות לה.",
+  "formal": "\\delta = \\alpha + \\beta",
+  "citation": "זווית חיצונית למשולש שווה לסכום שתי הזוויות הפנימיות שאינן צמודות לה",
+  "conditions": [
+   "הזווית נוצרת בין צלע של המשולש לבין המשך הצלע הסמוכה לה."
+  ],
+  "useWhen": "יש המשך של צלע במשולש, ורוצים לקשר בין הזווית שבחוץ לזוויות שבפנים.",
+  "diagram": "exterior-angle",
+  "example": {
+   "problem": "במשולש $ABC$ מאריכים את $BC$ מעבר ל-$C$ עד $D$. נתון $\\angle A = 48^\\circ$ ו-$\\angle B = 67^\\circ$. מצאו את $\\angle ACD$.",
+   "steps": [
+    {
+     "claim": "$\\angle ACD = \\angle A + \\angle B$",
+     "reason": "זווית חיצונית למשולש שווה לסכום שתי הזוויות הפנימיות שאינן צמודות לה",
+     "ref": "exterior-angle"
+    },
+    {
+     "claim": "$\\angle ACD = 48^\\circ + 67^\\circ = 115^\\circ$",
+     "reason": "הצבה"
+    }
+   ],
+   "answer": "$\\angle ACD = 115^\\circ$"
+  },
+  "mistakes": [
+   "לכלול בחישוב את הזווית הפנימית שצמודה לזווית החיצונית.",
+   "לחשוב שזווית חיצונית שווה לזווית פנימית אחת."
+  ],
+  "status": "official",
+  "topic": "triangles",
+  "grades": [
+   7
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "זווית חיצונית",
+   "המשך צלע",
+   "חיצונית"
+  ],
+  "givens": [
+   "triangle",
+   "exterior-angle"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "exterior-angle",
+   "triangle",
+   "adjacent-angles"
+  ]
+ },
+ {
+  "id": "polygon-angle-sum",
+  "name": "סכום הזוויות במצולע",
+  "statement": "סכום הזוויות הפנימיות במצולע קמור בעל $n$ צלעות הוא $180^\\circ \\cdot (n-2)$.",
+  "formal": "S = 180^\\circ (n - 2)",
+  "citation": "סכום הזוויות הפנימיות במצולע קמור בעל n צלעות הוא 180°(n−2)",
+  "conditions": [
+   "המצולע קמור.",
+   "$n$ הוא מספר הצלעות (וגם מספר הקודקודים)."
+  ],
+  "useWhen": "צריך את סכום הזוויות או זווית של מצולע (מרובע, מחומש, משושה...), או את זווית המצולע המשוכלל.",
+  "diagram": "polygon-sum",
+  "example": {
+   "problem": "מצאו את גודל זווית אחת במשושה משוכלל.",
+   "steps": [
+    {
+     "claim": "$S = 180^\\circ \\cdot (6 - 2) = 720^\\circ$",
+     "reason": "סכום הזוויות הפנימיות במצולע קמור בעל n צלעות הוא 180°(n−2)",
+     "ref": "polygon-angle-sum"
+    },
+    {
+     "claim": "$720^\\circ : 6 = 120^\\circ$",
+     "reason": "במצולע משוכלל כל הזוויות שוות"
+    }
+   ],
+   "answer": "$120^\\circ$"
+  },
+  "mistakes": [
+   "להציב את מספר הקודקודים פחות 2 בטעות פעמיים.",
+   "לשכוח שבמרובע הסכום הוא $360^\\circ$ (המקרה $n = 4$)."
+  ],
+  "status": "official",
+  "topic": "triangles",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "מצולע",
+   "סכום זוויות",
+   "מחומש",
+   "משושה",
+   "מרובע",
+   "360",
+   "משוכלל"
+  ],
+  "givens": [
+   "polygon",
+   "quadrilateral"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "polygon",
+   "convex-polygon",
+   "regular-polygon"
+  ],
+  "note": "למרובע: סכום הזוויות הוא $360^\\circ$."
+ },
+ {
+  "id": "polygon-exterior-sum",
+  "name": "סכום הזוויות החיצוניות במצולע",
+  "statement": "במצולע קמור, סכום הזוויות החיצוניות (זווית אחת ליד כל קודקוד) הוא $360^\\circ$.",
+  "formal": "\\delta_1 + \\delta_2 + \\dots + \\delta_n = 360^\\circ",
+  "citation": "סכום הזוויות החיצוניות במצולע קמור הוא 360°",
+  "conditions": [
+   "המצולע קמור.",
+   "לוקחים זווית חיצונית אחת בלבד ליד כל קודקוד."
+  ],
+  "useWhen": "שאלות על מצולע משוכלל: מספר צלעות לפי זווית חיצונית, או להפך.",
+  "diagram": "polygon-exterior",
+  "example": {
+   "problem": "הזווית החיצונית של מצולע משוכלל היא $40^\\circ$. כמה צלעות יש לו?",
+   "steps": [
+    {
+     "claim": "כל זווית פנימית: $180^\\circ - 40^\\circ = 140^\\circ$",
+     "reason": "סכום זוויות צמודות הוא 180°",
+     "ref": "adjacent-angles"
+    },
+    {
+     "claim": "$180^\\circ(n-2) = 140^\\circ n$",
+     "reason": "סכום הזוויות הפנימיות במצולע קמור בעל n צלעות הוא 180°(n−2)",
+     "ref": "polygon-angle-sum"
+    },
+    {
+     "claim": "$n = 9$",
+     "reason": "פתרון המשוואה"
+    }
+   ],
+   "answer": "9 צלעות"
+  },
+  "mistakes": [
+   "לקחת שתי זוויות חיצוניות ליד אותו קודקוד.",
+   "לצטט את המשפט בבגרות בלי נימוק. הדרך הבטוחה היא לחשב דרך סכום הזוויות הפנימיות, כמו בדוגמה."
+  ],
+  "status": "needs-proof",
+  "topic": "triangles",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "זוויות חיצוניות",
+   "360",
+   "מצולע משוכלל"
+  ],
+  "givens": [
+   "polygon",
+   "exterior-angle"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "polygon",
+   "exterior-angle",
+   "regular-polygon"
+  ],
+  "note": "הטענה נכונה ונובעת בשורה אחת מסכום הזוויות הפנימיות: $n \\cdot 180^\\circ - 180^\\circ(n-2) = 360^\\circ$. איננו בטוחים שהיא מופיעה ברשימת המשפטים הרשמית, ולכן בבחינה כדאי לכתוב את החישוב."
+ },
+ {
+  "id": "congruence-sas",
+  "name": "משפט חפיפה צ.ז.צ",
+  "statement": "אם שתי צלעות והזווית שביניהן במשולש אחד שוות בהתאמה לשתי צלעות ולזווית שביניהן במשולש אחר, אז המשולשים חופפים.",
+  "formal": "AB = DE,\\ \\angle A = \\angle D,\\ AC = DF \\Rightarrow \\triangle ABC \\cong \\triangle DEF",
+  "citation": "משפט חפיפה צ.ז.צ",
+  "conditions": [
+   "שתי זוגות צלעות שוות.",
+   "הזווית השווה היא הזווית הכלואה בין שתי הצלעות האלה, בכל אחד מהמשולשים."
+  ],
+  "useWhen": "רוצים להוכיח שוויון קטעים או זוויות, ויש שני משולשים עם שתי צלעות שוות וזווית משותפת, קודקודית או מוכחת ביניהן.",
+  "diagram": "congruence-sas",
+  "example": {
+   "problem": "הקטעים $AB$ ו-$CD$ חוצים זה את זה בנקודה $O$. הוכיחו ש-$AC = BD$.",
+   "steps": [
+    {
+     "claim": "$AO = OB,\\ CO = OD$",
+     "reason": "נתון (הקטעים חוצים זה את זה)"
+    },
+    {
+     "claim": "$\\angle AOC = \\angle BOD$",
+     "reason": "זוויות קודקודיות שוות",
+     "ref": "vertical-angles"
+    },
+    {
+     "claim": "$\\triangle AOC \\cong \\triangle BOD$",
+     "reason": "משפט חפיפה צ.ז.צ",
+     "ref": "congruence-sas"
+    },
+    {
+     "claim": "$AC = BD$",
+     "reason": "צלעות מתאימות במשולשים חופפים שוות"
+    }
+   ],
+   "answer": "$AC = BD$"
+  },
+  "mistakes": [
+   "להשתמש בזווית שאינה בין שתי הצלעות. זה לא צ.ז.צ, ובדרך כלל אין חפיפה.",
+   "לכתוב את שמות המשולשים בסדר קודקודים שאינו מתאים (צריך $A \\leftrightarrow B$, $O \\leftrightarrow O$, $C \\leftrightarrow D$)."
+  ],
+  "status": "official",
+  "topic": "congruence",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חפיפה",
+   "צ.ז.צ",
+   "צזצ",
+   "משולשים חופפים",
+   "צלע זווית צלע"
+  ],
+  "givens": [
+   "two-triangles",
+   "equal-sides",
+   "equal-angles",
+   "common-side"
+  ],
+  "goals": [
+   "prove-congruent",
+   "prove-equal-segments",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "congruent-triangles",
+   "triangle"
+  ]
+ },
+ {
+  "id": "congruence-asa",
+  "name": "משפט חפיפה ז.צ.ז",
+  "statement": "אם צלע ושתי הזוויות שלידה במשולש אחד שוות בהתאמה לצלע ולשתי הזוויות שלידה במשולש אחר, אז המשולשים חופפים.",
+  "formal": "\\angle A = \\angle D,\\ AB = DE,\\ \\angle B = \\angle E \\Rightarrow \\triangle ABC \\cong \\triangle DEF",
+  "citation": "משפט חפיפה ז.צ.ז",
+  "conditions": [
+   "זוג צלעות שוות.",
+   "שתי הזוויות השוות נמצאות בשני הקצוות של הצלע הזו."
+  ],
+  "useWhen": "יש צלע משותפת או צלע שווה, ושתי זוויות שוות בקצותיה (למשל בעזרת חוצה זווית ומקבילים).",
+  "diagram": "congruence-asa",
+  "example": {
+   "problem": "$AD$ חוצה את $\\angle A$, ו-$AD \\perp BC$ (D על $BC$). הוכיחו ש-$\\triangle ABD \\cong \\triangle ACD$.",
+   "steps": [
+    {
+     "claim": "$\\angle BAD = \\angle CAD$",
+     "reason": "נתון: $AD$ חוצה זווית"
+    },
+    {
+     "claim": "$AD = AD$",
+     "reason": "צלע משותפת"
+    },
+    {
+     "claim": "$\\angle ADB = \\angle ADC = 90^\\circ$",
+     "reason": "נתון: $AD \\perp BC$"
+    },
+    {
+     "claim": "$\\triangle ABD \\cong \\triangle ACD$",
+     "reason": "משפט חפיפה ז.צ.ז",
+     "ref": "congruence-asa"
+    }
+   ],
+   "answer": "המשולשים חופפים."
+  },
+  "mistakes": [
+   "לקחת זווית שאינה צמודה לצלע השווה. אם יש שתי זוויות שוות, אפשר קודם להשלים את הזווית השלישית בעזרת סכום הזוויות במשולש.",
+   "לא לציין שהצלע משותפת."
+  ],
+  "status": "official",
+  "topic": "congruence",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חפיפה",
+   "ז.צ.ז",
+   "זצז",
+   "זווית צלע זווית",
+   "משולשים חופפים"
+  ],
+  "givens": [
+   "two-triangles",
+   "equal-angles",
+   "common-side",
+   "angle-bisector"
+  ],
+  "goals": [
+   "prove-congruent",
+   "prove-equal-segments"
+  ],
+  "related": [
+   "congruent-triangles",
+   "triangle"
+  ]
+ },
+ {
+  "id": "congruence-sss",
+  "name": "משפט חפיפה צ.צ.צ",
+  "statement": "אם שלוש הצלעות של משולש אחד שוות בהתאמה לשלוש הצלעות של משולש אחר, אז המשולשים חופפים.",
+  "formal": "AB = DE,\\ BC = EF,\\ AC = DF \\Rightarrow \\triangle ABC \\cong \\triangle DEF",
+  "citation": "משפט חפיפה צ.צ.צ",
+  "conditions": [
+   "שלושה זוגות של צלעות שוות, בהתאמה."
+  ],
+  "useWhen": "יש רק נתונים על צלעות (למשל בדלתון, במעוין או בשני משולשים עם צלע משותפת), ורוצים להוכיח שוויון זוויות.",
+  "diagram": "congruence-sss",
+  "example": {
+   "problem": "במרובע $ABCD$ נתון $AB = AD$ ו-$CB = CD$. הוכיחו ש-$\\angle B = \\angle D$.",
+   "steps": [
+    {
+     "claim": "$AB = AD,\\ CB = CD$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$AC = AC$",
+     "reason": "צלע משותפת"
+    },
+    {
+     "claim": "$\\triangle ABC \\cong \\triangle ADC$",
+     "reason": "משפט חפיפה צ.צ.צ",
+     "ref": "congruence-sss"
+    },
+    {
+     "claim": "$\\angle B = \\angle D$",
+     "reason": "זוויות מתאימות במשולשים חופפים שוות"
+    }
+   ],
+   "answer": "$\\angle B = \\angle D$"
+  },
+  "mistakes": [
+   "להתאים צלעות לא נכון. מול זווית שווה צריכה להיות צלע מתאימה."
+  ],
+  "status": "official",
+  "topic": "congruence",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חפיפה",
+   "צ.צ.צ",
+   "צצצ",
+   "שלוש צלעות"
+  ],
+  "givens": [
+   "two-triangles",
+   "equal-sides",
+   "common-side",
+   "kite"
+  ],
+  "goals": [
+   "prove-congruent",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "congruent-triangles",
+   "triangle"
+  ]
+ },
+ {
+  "id": "congruence-ssa",
+  "name": "משפט חפיפה צ.צ.ז",
+  "statement": "אם שתי צלעות במשולש אחד, והזווית שמול הגדולה מביניהן, שוות בהתאמה לשתי צלעות ולזווית שמול הצלע הגדולה מביניהן במשולש אחר, אז המשולשים חופפים.",
+  "formal": "AC = DF,\\ BC = EF,\\ BC > AC,\\ \\angle A = \\angle D \\Rightarrow \\triangle ABC \\cong \\triangle DEF",
+  "citation": "משפט חפיפה צ.צ.ז",
+  "conditions": [
+   "שני זוגות צלעות שוות.",
+   "הזווית השווה נמצאת מול הצלע הגדולה מבין שתי הצלעות. חייבים לבדוק ולכתוב את זה."
+  ],
+  "useWhen": "במשולשים ישרי זווית: היתר וניצב שווים (הזווית הישרה נמצאת מול היתר, שהוא הצלע הגדולה).",
+  "diagram": "congruence-ssa",
+  "example": {
+   "problem": "במשולשים ישרי הזווית $ABC$ ו-$DEF$ ($\\angle C = \\angle F = 90^\\circ$) נתון $AB = DE$ ו-$AC = DF$. הוכיחו שהמשולשים חופפים.",
+   "steps": [
+    {
+     "claim": "$AB = DE,\\ AC = DF$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$\\angle C = \\angle F = 90^\\circ$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$AB > AC$",
+     "reason": "במשולש, מול זווית גדולה יותר מונחת צלע גדולה יותר (הזווית הישרה היא הגדולה במשולש)",
+     "ref": "larger-angle-larger-side"
+    },
+    {
+     "claim": "$\\triangle ABC \\cong \\triangle DEF$",
+     "reason": "משפט חפיפה צ.צ.ז",
+     "ref": "congruence-ssa"
+    }
+   ],
+   "answer": "המשולשים חופפים."
+  },
+  "mistakes": [
+   "להשתמש במשפט כשהזווית נמצאת מול הצלע הקטנה. במצב כזה ייתכנו שני משולשים שונים שאינם חופפים.",
+   "לא לכתוב במפורש שהזווית מול הצלע הגדולה."
+  ],
+  "status": "official",
+  "topic": "congruence",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חפיפה",
+   "צ.צ.ז",
+   "צצז",
+   "יתר וניצב",
+   "זווית מול הצלע הגדולה"
+  ],
+  "givens": [
+   "two-triangles",
+   "equal-sides",
+   "right-triangle"
+  ],
+  "goals": [
+   "prove-congruent"
+  ],
+  "related": [
+   "congruent-triangles",
+   "right-triangle",
+   "hypotenuse"
+  ]
+ },
+ {
+  "id": "isosceles-base-angles",
+  "name": "זוויות הבסיס במשולש שווה שוקיים",
+  "statement": "במשולש שווה שוקיים זוויות הבסיס שוות זו לזו.",
+  "formal": "AB = AC \\Rightarrow \\angle B = \\angle C",
+  "citation": "במשולש שווה שוקיים זוויות הבסיס שוות",
+  "conditions": [
+   "הוכח (או נתון) ששתי צלעות במשולש שוות.",
+   "זוויות הבסיס הן הזוויות שמול השוקיים השוות."
+  ],
+  "useWhen": "יש שתי צלעות שוות במשולש (גם שני רדיוסים במעגל!), ורוצים זוויות.",
+  "diagram": "isosceles",
+  "example": {
+   "problem": "במשולש $ABC$ נתון $AB = AC$ ו-$\\angle A = 40^\\circ$. מצאו את $\\angle B$.",
+   "steps": [
+    {
+     "claim": "$\\angle B = \\angle C$",
+     "reason": "במשולש שווה שוקיים זוויות הבסיס שוות",
+     "ref": "isosceles-base-angles"
+    },
+    {
+     "claim": "$40^\\circ + 2\\angle B = 180^\\circ$",
+     "reason": "סכום הזוויות במשולש הוא 180°",
+     "ref": "triangle-angle-sum"
+    },
+    {
+     "claim": "$\\angle B = 70^\\circ$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$\\angle B = 70^\\circ$"
+  },
+  "mistakes": [
+   "לסמן כזוויות בסיס זוויות שאינן מול השוקיים השוות.",
+   "לשכוח ששני רדיוסים של אותו מעגל יוצרים משולש שווה שוקיים."
+  ],
+  "converse": {
+   "id": "isosceles-converse"
+  },
+  "status": "official",
+  "topic": "isosceles",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "שווה שוקיים",
+   "זוויות בסיס",
+   "שוקיים",
+   "רדיוסים"
+  ],
+  "givens": [
+   "isosceles",
+   "equal-sides",
+   "radius"
+  ],
+  "goals": [
+   "find-angle",
+   "prove-equal-angles"
+  ],
+  "related": [
+   "isosceles-triangle",
+   "base-angles"
+  ]
+ },
+ {
+  "id": "isosceles-converse",
+  "name": "משולש עם שתי זוויות שוות",
+  "statement": "אם במשולש יש שתי זוויות שוות, אז הצלעות שמולן שוות, והמשולש שווה שוקיים.",
+  "formal": "\\angle B = \\angle C \\Rightarrow AB = AC",
+  "citation": "במשולש, מול זוויות שוות מונחות צלעות שוות",
+  "conditions": [
+   "הוכח ששתי זוויות באותו משולש שוות."
+  ],
+  "useWhen": "רוצים להוכיח שני קטעים שווים, והם צלעות של משולש שבו מצאתם שתי זוויות שוות.",
+  "diagram": "isosceles",
+  "example": {
+   "problem": "במשולש $ABC$, $\\angle B = 65^\\circ$ ו-$\\angle A = 50^\\circ$. הוכיחו ש-$AB = AC$.",
+   "steps": [
+    {
+     "claim": "$\\angle C = 180^\\circ - 50^\\circ - 65^\\circ = 65^\\circ$",
+     "reason": "סכום הזוויות במשולש הוא 180°",
+     "ref": "triangle-angle-sum"
+    },
+    {
+     "claim": "$\\angle B = \\angle C$",
+     "reason": "מצאנו"
+    },
+    {
+     "claim": "$AB = AC$",
+     "reason": "במשולש, מול זוויות שוות מונחות צלעות שוות",
+     "ref": "isosceles-converse"
+    }
+   ],
+   "answer": "$AB = AC$"
+  },
+  "mistakes": [
+   "להתאים צלע לזווית לא נכונה. הצלע $AB$ נמצאת מול $\\angle C$, ולא מול $\\angle B$."
+  ],
+  "converse": {
+   "id": "isosceles-base-angles"
+  },
+  "status": "official",
+  "topic": "isosceles",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "שווה שוקיים",
+   "זוויות שוות",
+   "צלעות שוות",
+   "להוכיח שווה שוקיים"
+  ],
+  "givens": [
+   "equal-angles",
+   "triangle"
+  ],
+  "goals": [
+   "prove-isosceles",
+   "prove-equal-segments"
+  ],
+  "related": [
+   "isosceles-triangle",
+   "base-angles"
+  ]
+ },
+ {
+  "id": "isosceles-coincide",
+  "name": "חוצה זווית הראש, התיכון והגובה במשולש שווה שוקיים",
+  "statement": "במשולש שווה שוקיים, חוצה זווית הראש, התיכון לבסיס והגובה לבסיס מתלכדים.",
+  "citation": "במשולש שווה שוקיים חוצה זווית הראש, התיכון לבסיס והגובה לבסיס מתלכדים",
+  "conditions": [
+   "המשולש שווה שוקיים.",
+   "מדברים על הקטע שיוצא מקודקוד הראש (בין השוקיים) אל הבסיס."
+  ],
+  "useWhen": "במשולש שווה שוקיים יש אחד מהשלושה (תיכון, גובה או חוצה זווית מהראש), וצריך את התכונות של האחרים.",
+  "diagram": "isosceles-coincide",
+  "example": {
+   "problem": "במשולש $ABC$, $AB = AC$, ו-$AD$ הוא תיכון לבסיס. הוכיחו ש-$AD \\perp BC$.",
+   "steps": [
+    {
+     "claim": "$AB = AC$",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$AD$ תיכון לבסיס",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$AD$ גובה לבסיס, כלומר $AD \\perp BC$",
+     "reason": "במשולש שווה שוקיים חוצה זווית הראש, התיכון לבסיס והגובה לבסיס מתלכדים",
+     "ref": "isosceles-coincide"
+    }
+   ],
+   "answer": "$AD \\perp BC$"
+  },
+  "mistakes": [
+   "להשתמש במשפט עבור קטע שיוצא מקודקוד הבסיס. שם הקטעים לא מתלכדים.",
+   "להשתמש בו במשולש שלא הוכח שהוא שווה שוקיים."
+  ],
+  "status": "official",
+  "topic": "isosceles",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "תיכון",
+   "גובה",
+   "חוצה זווית",
+   "שווה שוקיים",
+   "מתלכדים",
+   "זווית ראש"
+  ],
+  "givens": [
+   "isosceles",
+   "median",
+   "altitude",
+   "angle-bisector"
+  ],
+  "goals": [
+   "prove-perpendicular",
+   "prove-equal-segments",
+   "prove-equal-angles",
+   "prove-midpoint"
+  ],
+  "related": [
+   "isosceles-triangle",
+   "median",
+   "altitude",
+   "angle-bisector",
+   "apex-angle"
+  ]
+ },
+ {
+  "id": "iso-bisector-median",
+  "name": "חוצה זווית שהוא גם תיכון",
+  "statement": "משולש שבו חוצה זווית הוא גם תיכון הוא משולש שווה שוקיים.",
+  "formal": "\\angle BAD = \\angle CAD,\\ BD = DC \\Rightarrow AB = AC",
+  "citation": "משולש שבו חוצה זווית הוא גם תיכון הוא משולש שווה שוקיים",
+  "conditions": [
+   "אותו קטע הוא גם חוצה הזווית וגם התיכון לצלע שמולה."
+  ],
+  "useWhen": "צריך להוכיח שמשולש שווה שוקיים, ויש בו קטע שהוא גם חוצה זווית וגם תיכון.",
+  "diagram": "iso-test-bis-med",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $AD$ חוצה את $\\angle A$ ו-$D$ אמצע $BC$. הוכיחו ש-$AB = AC$.",
+   "steps": [
+    {
+     "claim": "$AD$ חוצה זווית וגם תיכון",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$AB = AC$",
+     "reason": "משולש שבו חוצה זווית הוא גם תיכון הוא משולש שווה שוקיים",
+     "ref": "iso-bisector-median"
+    }
+   ],
+   "answer": "$AB = AC$"
+  },
+  "mistakes": [
+   "לנסות להוכיח את זה בחפיפה צ.צ.ז מול זווית לא נכונה. פשוט מצטטים את המשפט."
+  ],
+  "converse": {
+   "id": "isosceles-coincide"
+  },
+  "status": "official",
+  "topic": "isosceles",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חוצה זווית",
+   "תיכון",
+   "שווה שוקיים",
+   "להוכיח שווה שוקיים"
+  ],
+  "givens": [
+   "angle-bisector",
+   "median",
+   "midpoint"
+  ],
+  "goals": [
+   "prove-isosceles"
+  ],
+  "related": [
+   "isosceles-triangle",
+   "angle-bisector",
+   "median"
+  ]
+ },
+ {
+  "id": "iso-bisector-altitude",
+  "name": "חוצה זווית שהוא גם גובה",
+  "statement": "משולש שבו חוצה זווית הוא גם גובה הוא משולש שווה שוקיים.",
+  "formal": "\\angle BAD = \\angle CAD,\\ AD \\perp BC \\Rightarrow AB = AC",
+  "citation": "משולש שבו חוצה זווית הוא גם גובה הוא משולש שווה שוקיים",
+  "conditions": [
+   "אותו קטע הוא גם חוצה הזווית וגם הגובה לצלע שמולה."
+  ],
+  "useWhen": "יש חוצה זווית שמאונך לצלע שמול הזווית.",
+  "diagram": "iso-test-bis-alt",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $AD$ חוצה את $\\angle A$ ו-$AD \\perp BC$. מה אפשר להסיק על $AB$ ו-$AC$?",
+   "steps": [
+    {
+     "claim": "$AD$ חוצה זווית וגם גובה",
+     "reason": "נתון"
+    },
+    {
+     "claim": "$AB = AC$",
+     "reason": "משולש שבו חוצה זווית הוא גם גובה הוא משולש שווה שוקיים",
+     "ref": "iso-bisector-altitude"
+    }
+   ],
+   "answer": "$AB = AC$"
+  },
+  "mistakes": [
+   "לבלבל עם חוצה זווית סתם. בלי הניצבות אי אפשר להסיק שוויון שוקיים."
+  ],
+  "converse": {
+   "id": "isosceles-coincide"
+  },
+  "status": "official",
+  "topic": "isosceles",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "חוצה זווית",
+   "גובה",
+   "אנך",
+   "שווה שוקיים"
+  ],
+  "givens": [
+   "angle-bisector",
+   "altitude",
+   "right-angle"
+  ],
+  "goals": [
+   "prove-isosceles"
+  ],
+  "related": [
+   "isosceles-triangle",
+   "angle-bisector",
+   "altitude"
+  ]
+ },
+ {
+  "id": "iso-median-altitude",
+  "name": "תיכון שהוא גם גובה",
+  "statement": "משולש שבו התיכון הוא גם גובה הוא משולש שווה שוקיים.",
+  "formal": "BD = DC,\\ AD \\perp BC \\Rightarrow AB = AC",
+  "citation": "משולש שבו התיכון הוא גם גובה הוא משולש שווה שוקיים",
+  "conditions": [
+   "אותו קטע הוא גם התיכון וגם הגובה לאותה צלע."
+  ],
+  "useWhen": "יש קטע מקודקוד לאמצע הצלע שמולו, והוא מאונך לה. זה גם אנך אמצעי!",
+  "diagram": "iso-test-med-alt",
+  "example": {
+   "problem": "הנקודה $A$ נמצאת על האנך האמצעי של $BC$, ו-$D$ אמצע $BC$. הוכיחו ש-$\\triangle ABC$ שווה שוקיים.",
+   "steps": [
+    {
+     "claim": "$BD = DC,\\ AD \\perp BC$",
+     "reason": "נתון: $AD$ על האנך האמצעי"
+    },
+    {
+     "claim": "$AB = AC$",
+     "reason": "משולש שבו התיכון הוא גם גובה הוא משולש שווה שוקיים",
+     "ref": "iso-median-altitude"
+    }
+   ],
+   "answer": "המשולש שווה שוקיים."
+  },
+  "mistakes": [
+   "לשכוח להראות שהקטע יוצא לאמצע הצלע ולא סתם מאונך לה."
+  ],
+  "converse": {
+   "id": "isosceles-coincide"
+  },
+  "status": "official",
+  "topic": "isosceles",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "תיכון",
+   "גובה",
+   "שווה שוקיים",
+   "אנך אמצעי"
+  ],
+  "givens": [
+   "median",
+   "altitude",
+   "midpoint",
+   "perpendicular-bisector"
+  ],
+  "goals": [
+   "prove-isosceles",
+   "prove-equal-segments"
+  ],
+  "related": [
+   "isosceles-triangle",
+   "median",
+   "altitude",
+   "perpendicular-bisector"
+  ]
+ },
+ {
+  "id": "equilateral-angles",
+  "name": "זוויות המשולש שווה הצלעות",
+  "statement": "במשולש שווה צלעות כל הזוויות שוות, וכל אחת מהן היא $60^\\circ$.",
+  "formal": "AB = BC = CA \\Rightarrow \\angle A = \\angle B = \\angle C = 60^\\circ",
+  "citation": "במשולש שווה צלעות כל זווית שווה ל-60°",
+  "conditions": [
+   "הוכח ששלוש הצלעות שוות."
+  ],
+  "useWhen": "יש משולש ששלוש צלעותיו שוות, למשל שני רדיוסים ומיתר שאורכו כרדיוס.",
+  "diagram": "equilateral",
+  "example": {
+   "problem": "במעגל שמרכזו $O$, המיתר $AB$ שווה לרדיוס. מצאו את $\\angle AOB$.",
+   "steps": [
+    {
+     "claim": "$OA = OB = AB$",
+     "reason": "רדיוסים במעגל שווים, ונתון ש-$AB$ שווה לרדיוס"
+    },
+    {
+     "claim": "$\\angle AOB = 60^\\circ$",
+     "reason": "במשולש שווה צלעות כל זווית שווה ל-60°",
+     "ref": "equilateral-angles"
+    }
+   ],
+   "answer": "$60^\\circ$"
+  },
+  "mistakes": [
+   "להסיק \"שווה צלעות\" משתי צלעות שוות בלבד. זה רק שווה שוקיים."
+  ],
+  "converse": {
+   "statement": "משולש שכל זוויותיו שוות הוא שווה צלעות (נובע ממשפט \"מול זוויות שוות צלעות שוות\")."
+  },
+  "status": "official",
+  "topic": "isosceles",
+  "grades": [
+   8
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "שווה צלעות",
+   "60",
+   "משולש שווה צלעות"
+  ],
+  "givens": [
+   "equilateral",
+   "equal-sides"
+  ],
+  "goals": [
+   "find-angle"
+  ],
+  "related": [
+   "equilateral-triangle",
+   "isosceles-triangle"
+  ]
+ },
+ {
+  "id": "larger-side-larger-angle",
+  "name": "מול צלע גדולה – זווית גדולה",
+  "statement": "במשולש, מול הצלע הגדולה יותר נמצאת הזווית הגדולה יותר.",
+  "formal": "BC > AB \\Rightarrow \\angle A > \\angle C",
+  "citation": "במשולש, מול צלע גדולה יותר מונחת זווית גדולה יותר",
+  "conditions": [
+   "שתי הצלעות והזוויות שייכות לאותו משולש."
+  ],
+  "useWhen": "צריך להשוות זוויות במשולש לפי אורכי הצלעות, או למצוא את הזווית הגדולה ביותר.",
+  "diagram": "larger-side",
+  "example": {
+   "problem": "במשולש $ABC$: $AB = 5$, $BC = 7$, $AC = 6$. איזו זווית היא הגדולה ביותר?",
+   "steps": [
+    {
+     "claim": "$BC$ היא הצלע הגדולה ביותר",
+     "reason": "נתון: $7 > 6 > 5$"
+    },
+    {
+     "claim": "$\\angle A$ היא הזווית הגדולה ביותר",
+     "reason": "במשולש, מול צלע גדולה יותר מונחת זווית גדולה יותר",
+     "ref": "larger-side-larger-angle"
+    }
+   ],
+   "answer": "$\\angle A$"
+  },
+  "mistakes": [
+   "לחשוב שהיחס בין הזוויות שווה ליחס בין הצלעות. המשפט קובע רק סדר, לא יחס."
+  ],
+  "converse": {
+   "id": "larger-angle-larger-side"
+  },
+  "status": "official",
+  "topic": "triangles",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "צלע גדולה",
+   "זווית גדולה",
+   "אי-שוויון",
+   "השוואת זוויות"
+  ],
+  "givens": [
+   "triangle",
+   "side-lengths"
+  ],
+  "goals": [
+   "compare"
+  ],
+  "related": [
+   "triangle"
+  ]
+ },
+ {
+  "id": "larger-angle-larger-side",
+  "name": "מול זווית גדולה – צלע גדולה",
+  "statement": "במשולש, מול הזווית הגדולה יותר נמצאת הצלע הגדולה יותר.",
+  "formal": "\\angle A > \\angle C \\Rightarrow BC > AB",
+  "citation": "במשולש, מול זווית גדולה יותר מונחת צלע גדולה יותר",
+  "conditions": [
+   "הזוויות והצלעות שייכות לאותו משולש."
+  ],
+  "useWhen": "צריך להשוות צלעות. למשל, במשולש ישר זווית או קהה זווית הצלע שמול הזווית הישרה או הקהה היא הגדולה ביותר.",
+  "diagram": "larger-side",
+  "example": {
+   "problem": "הוכיחו שבמשולש ישר זווית היתר גדול מכל ניצב.",
+   "steps": [
+    {
+     "claim": "הזווית הישרה היא הזווית הגדולה במשולש",
+     "reason": "סכום הזוויות במשולש הוא 180°, ולכן שתי האחרות חדות",
+     "ref": "triangle-angle-sum"
+    },
+    {
+     "claim": "היתר גדול מכל ניצב",
+     "reason": "במשולש, מול זווית גדולה יותר מונחת צלע גדולה יותר",
+     "ref": "larger-angle-larger-side"
+    }
+   ],
+   "answer": "היתר הוא הצלע הגדולה ביותר."
+  },
+  "mistakes": [
+   "להשוות צלע וזווית ממשולשים שונים."
+  ],
+  "converse": {
+   "id": "larger-side-larger-angle"
+  },
+  "status": "official",
+  "topic": "triangles",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "זווית גדולה",
+   "צלע גדולה",
+   "השוואת צלעות",
+   "יתר"
+  ],
+  "givens": [
+   "triangle",
+   "angle-measure"
+  ],
+  "goals": [
+   "compare"
+  ],
+  "related": [
+   "triangle",
+   "hypotenuse"
+  ]
+ },
+ {
+  "id": "triangle-inequality",
+  "name": "אי-שוויון המשולש",
+  "statement": "במשולש, סכום האורכים של כל שתי צלעות גדול מאורך הצלע השלישית.",
+  "formal": "a + b > c,\\quad a + c > b,\\quad b + c > a",
+  "citation": "אי-שוויון המשולש",
+  "conditions": [
+   "שלושת הקטעים הם צלעות של משולש אחד (שלוש נקודות שאינן על ישר אחד)."
+  ],
+  "useWhen": "בודקים אם אפשר לבנות משולש משלושה קטעים, או מחפשים תחום אפשרי לצלע שלישית.",
+  "diagram": "triangle-inequality",
+  "example": {
+   "problem": "שתי צלעות במשולש הן 4 ו-9. מה התחום האפשרי לצלע השלישית $x$?",
+   "steps": [
+    {
+     "claim": "$x < 4 + 9 = 13$",
+     "reason": "אי-שוויון המשולש",
+     "ref": "triangle-inequality"
+    },
+    {
+     "claim": "$9 < 4 + x \\Rightarrow x > 5$",
+     "reason": "אי-שוויון המשולש",
+     "ref": "triangle-inequality"
+    }
+   ],
+   "answer": "$5 < x < 13$"
+  },
+  "mistakes": [
+   "לבדוק רק אי-שוויון אחד. מספיק לבדוק שהצלע הגדולה קטנה מסכום שתי האחרות."
+  ],
+  "status": "official",
+  "topic": "triangles",
+  "grades": [
+   8,
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "אי שוויון המשולש",
+   "סכום שתי צלעות",
+   "בניית משולש",
+   "תחום לצלע"
+  ],
+  "givens": [
+   "triangle",
+   "side-lengths"
+  ],
+  "goals": [
+   "compare",
+   "find-length"
+  ],
+  "related": [
+   "triangle"
+  ]
+ },
+ {
+  "id": "midsegment-triangle",
+  "name": "קטע אמצעים במשולש",
+  "statement": "קטע אמצעים במשולש מקביל לצלע השלישית ושווה למחציתה.",
+  "formal": "AD = DB,\\ AE = EC \\Rightarrow DE \\parallel BC,\\ DE = \\tfrac{1}{2}BC",
+  "citation": "קטע אמצעים במשולש מקביל לצלע השלישית ושווה למחציתה",
+  "conditions": [
+   "הקטע מחבר את האמצעים של שתי צלעות של המשולש (שתי הנקודות הוכחו כאמצעים)."
+  ],
+  "useWhen": "יש שתי נקודות אמצע של צלעות במשולש, ורוצים מקבילות או אורך.",
+  "diagram": "midsegment",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $D$ ו-$E$ אמצעי $AB$ ו-$AC$, ו-$BC = 14$. מצאו את $DE$.",
+   "steps": [
+    {
+     "claim": "$DE$ קטע אמצעים ב-$\\triangle ABC$",
+     "reason": "נתון: $D, E$ אמצעי הצלעות"
+    },
+    {
+     "claim": "$DE = \\tfrac{1}{2} \\cdot 14 = 7$",
+     "reason": "קטע אמצעים במשולש מקביל לצלע השלישית ושווה למחציתה",
+     "ref": "midsegment-triangle"
+    }
+   ],
+   "answer": "$DE = 7$"
+  },
+  "mistakes": [
+   "להפעיל את המשפט כשרק אחת הנקודות היא אמצע.",
+   "לשכוח שמהמשפט נובעת גם מקבילות, ולא רק אורך."
+  ],
+  "converse": {
+   "id": "midline-converse-triangle"
+  },
+  "status": "official",
+  "topic": "triangles",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "קטע אמצעים",
+   "אמצע",
+   "מחצית",
+   "מקביל לצלע"
+  ],
+  "givens": [
+   "two-midpoints",
+   "midpoint",
+   "triangle"
+  ],
+  "goals": [
+   "prove-parallel",
+   "find-length"
+  ],
+  "related": [
+   "midsegment",
+   "midpoint",
+   "triangle"
+  ]
+ },
+ {
+  "id": "midline-converse-triangle",
+  "name": "ישר מאמצע צלע ומקביל לצלע אחרת",
+  "statement": "ישר היוצא מאמצע צלע אחת במשולש ומקביל לצלע שנייה, חוצה את הצלע השלישית.",
+  "formal": "AD = DB,\\ DE \\parallel BC \\Rightarrow AE = EC",
+  "citation": "ישר היוצא מאמצע צלע במשולש ומקביל לצלע שנייה חוצה את הצלע השלישית",
+  "conditions": [
+   "הישר עובר דרך אמצע של צלע אחת.",
+   "הישר מקביל לצלע שנייה של המשולש."
+  ],
+  "useWhen": "יש אמצע של צלע וישר מקביל, ורוצים להוכיח שנקודה היא אמצע (ואחר כך להשתמש בקטע אמצעים).",
+  "diagram": "midline-converse",
+  "example": {
+   "problem": "ב-$\\triangle ABC$, $D$ אמצע $AB$, ודרכו עובר ישר המקביל ל-$BC$ וחותך את $AC$ ב-$E$. נתון $AC = 10$. מצאו את $AE$.",
+   "steps": [
+    {
+     "claim": "$AE = EC$",
+     "reason": "ישר היוצא מאמצע צלע במשולש ומקביל לצלע שנייה חוצה את הצלע השלישית",
+     "ref": "midline-converse-triangle"
+    },
+    {
+     "claim": "$AE = 5$",
+     "reason": "חישוב"
+    }
+   ],
+   "answer": "$AE = 5$"
+  },
+  "mistakes": [
+   "להסיק מיד ש-$DE = \\tfrac12 BC$. קודם מוכיחים ש-$E$ אמצע, ורק אז $DE$ הוא קטע אמצעים."
+  ],
+  "converse": {
+   "id": "midsegment-triangle"
+  },
+  "status": "official",
+  "topic": "triangles",
+  "grades": [
+   9
+  ],
+  "units": [
+   4,
+   5
+  ],
+  "keywords": [
+   "קטע אמצעים",
+   "ישר מקביל",
+   "אמצע צלע",
+   "להוכיח אמצע"
+  ],
+  "givens": [
+   "midpoint",
+   "parallel-lines",
+   "triangle"
+  ],
+  "goals": [
+   "prove-midpoint",
+   "find-length"
+  ],
+  "related": [
+   "midsegment",
+   "midpoint"
+  ]
+ }
+]
