@@ -165,6 +165,7 @@ export function surdValue(s: Surd): number {
 /** √(f) as a surd 0 + q√r, for f ≥ 0. */
 export function sqrtFraction(f: Fraction): Surd {
   if (f.isNeg()) throw new Error('sqrt of negative');
+  if (f.isZero()) return { p: Fraction.ZERO, q: Fraction.ZERO, r: 1 };
   // √(n/d) = √(n·d)/d
   const { k, m } = splitSquare(f.n * f.d);
   if (m === 1) return { p: new Fraction(k, f.d), q: Fraction.ZERO, r: 1 };

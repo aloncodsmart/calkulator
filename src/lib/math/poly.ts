@@ -612,3 +612,51 @@ export function toPowerSum(n: Node, v = 'x'): PowerSum | null {
     }
   }
 }
+
+/** Monic polynomial (leading coefficient 1). */
+export function monic(p: Poly): Poly {
+  if (p.isZero()) return p;
+  return p.scale(Fraction.ONE.div(p.lead()));
+}
+
+/** Greatest common divisor of two polynomials (monic), by the Euclidean algorithm. */
+export function polyGcd(a: Poly, b: Poly): Poly {
+  let x = a;
+  let y = b;
+  while (!y.isZero()) {
+    const { r } = x.divmod(y);
+    x = y;
+    y = r;
+  }
+  return x.isZero() ? Poly.const(1) : monic(x);
+}
+
+/** Factored LaTeX of a polynomial with rational roots, e.g. 2(x - 1)(x + 3); null when not fully factorable. */
+export function factoredTex(p: Poly, v = 'x'): string | null {
+  if (p.deg < 2) return null;
+  // the factor x (root 0) reads best first: x(x + 6)
+  const roots = rationalRoots(p).sort((a, b) => (a.isZero() ? -1 : b.isZero() ? 1 : a.cmp(b)));
+  let q = p;
+  const factors: string[] = [];
+  for (const r of roots) {
+    let mult = 0;
+    for (;;) {
+      if (q.deg < 1) break;
+      const { q: qq, rem } = q.divRoot(r);
+      if (!rem.isZero()) break;
+      q = qq;
+      mult++;
+    }
+    if (!mult) continue;
+    const f = r.isZero() ? v : `\\left(${new Poly([r.neg(), 1]).toTex(v)}\\right)`;
+    factors.push(mult > 1 ? `${f}^{${mult}}` : f);
+  }
+  if (q.deg >= 1) {
+    if (!factors.length) return null;
+    factors.push(`\\left(${q.toTex(v)}\\right)`);
+    q = Poly.const(1);
+  }
+  const c = q.c[0];
+  const lead = c.eq(1) ? '' : c.eq(-1) ? '-' : c.toTex();
+  return `${lead}${factors.join('')}`;
+}
