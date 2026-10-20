@@ -42,7 +42,7 @@ export function Onboarding() {
   };
 
   return (
-    <div className="min-h-dvh bg-gradient-to-b from-brand-50 via-paper to-paper dark:from-brand-500/10 dark:via-night dark:to-night">
+    <div className="safe-top safe-x min-h-dvh bg-gradient-to-b from-brand-50 via-paper to-paper dark:from-brand-500/10 dark:via-night dark:to-night">
       <div className="mx-auto max-w-xl px-5 pb-10 pt-10">
         <div className="mb-6 flex items-center gap-3">
           <span className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-600 to-sky-500 text-white shadow-lg shadow-brand-600/30">

@@ -99,6 +99,19 @@ body {
 .safe-bottom {
   padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
 }
+/* Installed on an iPhone the status bar is drawn over the page (black-translucent), so the top bar pads below it. */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+.safe-x {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+/* Page gutter that also clears the notch in landscape. */
+.gutter-x {
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
 
 /* Flashcard flip */
 .flip {

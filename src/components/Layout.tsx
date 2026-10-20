@@ -3,6 +3,7 @@ import { BookOpen, Dumbbell, Library, Moon, Search, Settings, Sparkles, Sun, Sun
 import { navigate } from '../router';
 import { updateSettings, useStore, type Theme } from '../store';
 import { cx } from './ui';
+import { InstallHint } from './InstallHint';
 
 const TABS = [
   { id: 'solver', label: 'פותר', icon: Sparkles, match: ['solver'] },
@@ -20,7 +21,7 @@ export function Layout({ section, children }: { section: string; children: React
   const ThemeIcon = theme === 'dark' ? Moon : theme === 'light' ? Sun : SunMoon;
   return (
     <div className="min-h-dvh">
-      <header className="sticky top-0 z-30 border-b border-black/5 bg-paper/85 backdrop-blur-md dark:border-night-line dark:bg-night/85">
+      <header className="safe-top safe-x sticky top-0 z-30 border-b border-black/5 bg-paper/85 backdrop-blur-md dark:border-night-line dark:bg-night/85">
         <div className="mx-auto flex h-14 max-w-3xl items-center gap-2 px-4">
           <button type="button" onClick={() => navigate('/solver')} className="flex items-center gap-2" aria-label="מתמטיקה חכמה – דף הבית">
             <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-sky-500 text-white shadow-sm">
@@ -46,7 +47,10 @@ export function Layout({ section, children }: { section: string; children: React
           </div>
         </div>
       </header>
-      <main className="mx-auto max-w-3xl px-4 pb-28 pt-4">{children}</main>
+      <main className="gutter-x mx-auto max-w-3xl pb-28 pt-4">
+        <InstallHint />
+        {children}
+      </main>
       <nav className="safe-bottom fixed inset-x-0 bottom-0 z-30 border-t border-black/5 bg-white/90 backdrop-blur-md dark:border-night-line dark:bg-night-card/90" aria-label="ניווט ראשי">
         <div className="mx-auto grid max-w-3xl grid-cols-5 px-2 pt-1.5">
           {TABS.map((t) => {

@@ -1,11 +1,12 @@
 import { useRef, useState } from 'react';
-import { Download, Eye, EyeOff, KeyRound, Monitor, Moon, Palette, ShieldCheck, Sun, Upload, UserRound } from 'lucide-react';
+import { CheckCircle2, Download, Eye, EyeOff, KeyRound, Monitor, Moon, Palette, ShieldCheck, Smartphone, Sun, Upload, UserRound } from 'lucide-react';
 import { concepts, formulaSections, theorems } from '../data';
 import { MODELS } from '../lib/ai';
 import { navigate } from '../router';
 import { exportState, importState, resetProgress, updateSettings, useStore, type Theme } from '../store';
 import { Button, Callout, Card, PageHeader, Section, Segmented, cx } from '../components/ui';
 import { ContentDisclaimer, GRADE_LABEL } from './Theorems';
+import { IosInstallSteps, useInstallStatus } from '../components/InstallHint';
 
 const LEVEL: Record<string, string> = { basic: 'בסיסית', standard: 'רגילה', advanced: 'מוגברת' };
 
@@ -15,6 +16,7 @@ export function SettingsScreen() {
   const [showKey, setShowKey] = useState(false);
   const [msg, setMsg] = useState('');
   const file = useRef<HTMLInputElement>(null);
+  const install = useInstallStatus();
 
   const download = () => {
     const blob = new Blob([exportState()], { type: 'application/json' });
@@ -58,6 +60,29 @@ export function SettingsScreen() {
             <span className="block text-sm text-slate-600 dark:text-slate-400">ברירת המחדל: רק משפטים, מושגים ותרגילים שמתאימים לכיתה ולרמה שבחרתם.</span>
           </span>
         </label>
+      </Section>
+
+      <Section title="אפליקציה בטלפון" icon={<Smartphone className="h-5 w-5 text-sky-600" />}>
+        <Card className="space-y-3 p-4 text-[15px]">
+          {install.standalone ? (
+            <div className="flex items-center gap-2 font-semibold text-emerald-700 dark:text-emerald-300">
+              <CheckCircle2 className="h-5 w-5" /> האפליקציה מותקנת במכשיר.
+            </div>
+          ) : install.ios ? (
+            <IosInstallSteps />
+          ) : install.canPrompt ? (
+            <Button size="sm" icon={<Download className="h-4 w-4" />} onClick={install.prompt}>
+              התקנה במכשיר
+            </Button>
+          ) : (
+            <p className="text-slate-600 dark:text-slate-300">בטלפון: פותחים את האתר בדפדפן ובוחרים ״הוספה למסך הבית״ (באייפון – מכפתור השיתוף ב-Safari).</p>
+          )}
+          <p className="text-sm text-slate-600 dark:text-slate-400">
+            {install.offlineReady
+              ? 'כל האפליקציה שמורה במכשיר ועובדת גם בלי אינטרנט. רק הפתרון עם Claude (צילום, הוכחות) צריך חיבור.'
+              : 'אחרי הפתיחה הראשונה האפליקציה נשמרת במכשיר ועובדת גם בלי אינטרנט.'}
+          </p>
+        </Card>
       </Section>
 
       <Section title="מראה" icon={<Palette className="h-5 w-5 text-pink-500" />}>
