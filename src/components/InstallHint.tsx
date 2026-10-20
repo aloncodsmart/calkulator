@@ -61,10 +61,25 @@ export function IosInstallSteps() {
       <li className="flex items-center gap-2">
         <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-600 text-xs font-bold text-white">3</span>
         <span>
-          לוחצים <b>״הוסף״</b> – והאפליקציה מופיעה עם אייקון, ועובדת גם בלי אינטרנט.
+          לוחצים <b>״הוסף״</b> – והאפליקציה מופיעה במסך הבית עם אייקון.
+        </span>
+      </li>
+      <li className="flex items-center gap-2">
+        <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-600 text-xs font-bold text-white">4</span>
+        <span>
+          פותחים אותה מהאייקון <b>פעם אחת כשיש אינטרנט</b> – מאותו רגע היא עובדת גם בלי אינטרנט.
         </span>
       </li>
     </ol>
+  );
+}
+
+/** On iPhone the home-screen app has its own storage, separate from Safari. */
+export function IosSeparateStorageNote() {
+  return (
+    <p className="text-sm text-slate-600 dark:text-slate-400">
+      שימו לב: האפליקציה במסך הבית נפרדת מ-Safari ומתחילה ריקה. כדי להעביר את ההתקדמות: הגדרות ← ״ייצוא התקדמות״ כאן, ואז ״ייבוא מקובץ״ באפליקציה. את מפתח ה-API מדביקים בה מחדש.
+    </p>
   );
 }
 
@@ -97,7 +112,10 @@ export function InstallHint() {
         התקינו את מתמטיקה חכמה כאפליקציה
       </div>
       {status.ios ? (
-        <IosInstallSteps />
+        <div className="space-y-2">
+          <IosInstallSteps />
+          <IosSeparateStorageNote />
+        </div>
       ) : (
         <Button size="sm" icon={<Download className="h-4 w-4" />} onClick={status.prompt}>
           התקנה במכשיר

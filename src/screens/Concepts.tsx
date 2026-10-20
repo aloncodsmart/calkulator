@@ -93,7 +93,7 @@ export function ConceptsScreen() {
         </div>
       ) : (
         groups.map(([l, items]) => (
-          <div key={l || 'res'} id={`letter-${l}`} className="scroll-mt-16">
+          <div key={l || 'res'} id={`letter-${l}`} className="scroll-mt-header">
             <Section title={l || `${items.length} תוצאות`}>
               <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {items.map((c) => (

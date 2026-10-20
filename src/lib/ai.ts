@@ -192,7 +192,11 @@ async function call<T>({ apiKey, model, schema, content, effort, signal }: CallO
   try {
     SDK = (await import('@anthropic-ai/sdk')).default;
   } catch {
-    throw new AiError('לא הצלחנו לטעון את רכיב ה-AI. בדקו את החיבור לאינטרנט.');
+    throw new AiError(
+      navigator.onLine
+        ? 'האפליקציה התעדכנה לגרסה חדשה. סגרו אותה ופתחו מחדש, ואז נסו שוב.'
+        : 'לא הצלחנו לטעון את רכיב ה-AI. בדקו את החיבור לאינטרנט.',
+    );
   }
   const client = new SDK({ apiKey, dangerouslyAllowBrowser: true });
   try {

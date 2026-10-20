@@ -46,7 +46,7 @@ export function FormulasScreen() {
         ))}
       </nav>
       {sections.map((s) => (
-        <div key={s.id} id={`f-${s.id}`} className="scroll-mt-16">
+        <div key={s.id} id={`f-${s.id}`} className="scroll-mt-header">
           <Section title={s.title} icon={<span aria-hidden>{s.icon}</span>}>
             <Card className="divide-y divide-black/5 dark:divide-night-line">
               {s.items.map((f) => (

@@ -30,7 +30,8 @@ function offlineServiceWorker(): Plugin {
         .sort();
       const hash = createHash('sha256');
       for (const f of files) hash.update(f).update(readFileSync(join(outDir, f)));
-      const version = hash.digest('hex').slice(0, 12);
+      // build time first, so a version can tell which saved copies are older than itself
+      const version = `${Date.now()}-${hash.digest('hex').slice(0, 12)}`;
       const assets = ['./', ...files.map((f) => `./${f}`)];
       writeFileSync(join(outDir, 'sw.js'), SW_TEMPLATE.replace('__VERSION__', version).replace('__ASSETS__', JSON.stringify(assets)));
     },
@@ -50,13 +51,19 @@ self.addEventListener('install', (event) => {
   );
 });
 
+const builtAt = (name) => Number(name.split('-')[2]) || 0;
+
+// Deletes only copies of versions built before this one. A newer version may be installing
+// at the same moment, and its files must not be touched.
+const dropOldVersions = () =>
+  caches
+    .keys()
+    .then((keys) => Promise.all(keys.filter((k) => k.startsWith('smart-math-') && builtAt(k) < builtAt(CACHE)).map((k) => caches.delete(k))));
+
 self.addEventListener('activate', (event) => {
-  event.waitUntil(
-    caches
-      .keys()
-      .then((keys) => Promise.all(keys.filter((k) => k.startsWith('smart-math-') && k !== CACHE).map((k) => caches.delete(k))))
-      .then(() => self.clients.claim()),
-  );
+  // The previous version's files stay for now: a page that is still running it may lazy-load
+  // its own chunks (the Claude SDK, fonts), which are already gone from the server.
+  event.waitUntil(self.clients.claim());
 });
 
 self.addEventListener('fetch', (event) => {
@@ -66,21 +73,33 @@ self.addEventListener('fetch', (event) => {
   // Only the app's own files; calls to the Claude API go straight to the network.
   if (url.origin !== self.location.origin) return;
   if (req.mode === 'navigate') {
-    event.respondWith(caches.match('./index.html').then((hit) => hit || fetch(req)));
+    event.respondWith(
+      caches
+        .open(CACHE)
+        .then((cache) => cache.match('./index.html'))
+        .then((hit) => hit || fetch(req)),
+    );
+    // A new page load replaces the old page, so older versions are no longer needed.
+    event.waitUntil(dropOldVersions());
     return;
   }
   event.respondWith(
-    caches.match(req, { ignoreSearch: true }).then(
-      (hit) =>
-        hit ||
-        fetch(req).then((res) => {
-          if (res.ok && res.type === 'basic') {
-            const copy = res.clone();
-            caches.open(CACHE).then((cache) => cache.put(req, copy));
-          }
-          return res;
-        }),
-    ),
+    caches
+      .open(CACHE)
+      .then((cache) => cache.match(req, { ignoreSearch: true }))
+      // a page still running the previous version finds its own files in that version's copy
+      .then((hit) => hit || caches.match(req, { ignoreSearch: true }))
+      .then(
+        (hit) =>
+          hit ||
+          fetch(req).then((res) => {
+            if (res.ok && res.type === 'basic') {
+              const copy = res.clone();
+              caches.open(CACHE).then((cache) => cache.put(req, copy));
+            }
+            return res;
+          }),
+      ),
   );
 });
 `;

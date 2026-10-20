@@ -107,6 +107,10 @@ body {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
 }
+/* Anchor targets land below the sticky header (which grows by the status bar in the installed app). */
+.scroll-mt-header {
+  scroll-margin-top: calc(4rem + env(safe-area-inset-top));
+}
 /* Page gutter that also clears the notch in landscape. */
 .gutter-x {
   padding-left: max(1rem, env(safe-area-inset-left));

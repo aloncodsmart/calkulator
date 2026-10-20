@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import { ArrowLeft, Check } from 'lucide-react';
+import { useRef, useState } from 'react';
+import { ArrowLeft, Check, Upload } from 'lucide-react';
 import type { Grade, MiddleLevel, Profile, Units } from '../types';
-import { setProfile, useStore } from '../store';
+import { importState, setProfile, useStore } from '../store';
 import { navigate } from '../router';
 import { Button, cx } from '../components/ui';
+import { isStandalone } from '../components/InstallHint';
 
 const GRADES: { g: Grade; label: string }[] = [
   { g: 7, label: 'ז׳' },
@@ -33,6 +34,14 @@ export function Onboarding() {
   const [level, setLevel] = useState<MiddleLevel | null>(existing?.middleLevel ?? null);
   const high = grade !== null && grade >= 10;
   const ready = grade !== null && (high ? units !== null : level !== null);
+
+  const file = useRef<HTMLInputElement>(null);
+  const [importError, setImportError] = useState('');
+  const restore = async (f?: File) => {
+    if (!f) return;
+    if (importState(await f.text())) navigate('/solver');
+    else setImportError('הקובץ לא תקין. בחרו את קובץ הגיבוי שייצאתם בהגדרות.');
+  };
 
   const finish = () => {
     if (!ready || grade === null) return;
@@ -91,6 +100,15 @@ export function Onboarding() {
           יאללה, מתחילים
         </Button>
         <p className="mt-3 text-center text-xs text-slate-500">אפשר לשנות את הבחירה בכל רגע בהגדרות. ההתקדמות נשמרת רק במכשיר שלך.</p>
+        {!existing && isStandalone() && (
+          <div className="mt-6 text-center">
+            <input ref={file} type="file" accept="application/json,.json" className="hidden" onChange={(e) => restore(e.target.files?.[0])} />
+            <Button variant="ghost" size="sm" icon={<Upload className="h-4 w-4" />} onClick={() => file.current?.click()}>
+              יש לכם התקדמות מ-Safari? ייבוא מקובץ גיבוי
+            </Button>
+            {importError && <p className="mt-1 text-sm text-rose-600">{importError}</p>}
+          </div>
+        )}
       </div>
     </div>
   );

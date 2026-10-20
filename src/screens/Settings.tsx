@@ -6,7 +6,7 @@ import { navigate } from '../router';
 import { exportState, importState, resetProgress, updateSettings, useStore, type Theme } from '../store';
 import { Button, Callout, Card, PageHeader, Section, Segmented, cx } from '../components/ui';
 import { ContentDisclaimer, GRADE_LABEL } from './Theorems';
-import { IosInstallSteps, useInstallStatus } from '../components/InstallHint';
+import { IosInstallSteps, IosSeparateStorageNote, useInstallStatus } from '../components/InstallHint';
 
 const LEVEL: Record<string, string> = { basic: 'בסיסית', standard: 'רגילה', advanced: 'מוגברת' };
 
@@ -69,7 +69,10 @@ export function SettingsScreen() {
               <CheckCircle2 className="h-5 w-5" /> האפליקציה מותקנת במכשיר.
             </div>
           ) : install.ios ? (
-            <IosInstallSteps />
+            <>
+              <IosInstallSteps />
+              <IosSeparateStorageNote />
+            </>
           ) : install.canPrompt ? (
             <Button size="sm" icon={<Download className="h-4 w-4" />} onClick={install.prompt}>
               התקנה במכשיר
@@ -78,9 +81,11 @@ export function SettingsScreen() {
             <p className="text-slate-600 dark:text-slate-300">בטלפון: פותחים את האתר בדפדפן ובוחרים ״הוספה למסך הבית״ (באייפון – מכפתור השיתוף ב-Safari).</p>
           )}
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            {install.offlineReady
-              ? 'כל האפליקציה שמורה במכשיר ועובדת גם בלי אינטרנט. רק הפתרון עם Claude (צילום, הוכחות) צריך חיבור.'
-              : 'אחרי הפתיחה הראשונה האפליקציה נשמרת במכשיר ועובדת גם בלי אינטרנט.'}
+            {install.ios && !install.standalone
+              ? 'האפליקציה שבמסך הבית נשמרת במכשיר בנפרד, בפתיחה הראשונה שלה כשיש אינטרנט, ומאז עובדת גם בלי אינטרנט.'
+              : install.offlineReady
+                ? 'כל האפליקציה שמורה במכשיר ועובדת גם בלי אינטרנט. רק הפתרון עם Claude (צילום, הוכחות) צריך חיבור.'
+                : 'אחרי הפתיחה הראשונה האפליקציה נשמרת במכשיר ועובדת גם בלי אינטרנט.'}
           </p>
         </Card>
       </Section>
