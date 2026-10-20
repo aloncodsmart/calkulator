@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Rubik Variable', 'Rubik', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  --color-brand-50: #f5f3ff;
+  --color-brand-100: #ede9fe;
+  --color-brand-200: #ddd6fe;
+  --color-brand-300: #c4b5fd;
+  --color-brand-400: #a78bfa;
+  --color-brand-500: #8b5cf6;
+  --color-brand-600: #7c3aed;
+  --color-brand-700: #6d28d9;
+  --color-brand-800: #5b21b6;
+  --color-brand-900: #4c1d95;
+  --color-ink: #1e1b2e;
+  --color-paper: #f7f6fd;
+  --color-night: #0e0f1a;
+  --color-night-card: #171827;
+  --color-night-line: #26283d;
+}
+
+:root {
+  --dg-main: #1f2937;
+  --dg-accent: #7c3aed;
+  --dg-accent2: #0284c7;
+  --dg-good: #059669;
+  --dg-warn: #e11d48;
+  --dg-muted: #94a3b8;
+  --dg-grid: #eceaf5;
+  --dg-axis: #475569;
+  --dg-bg: #ffffff;
+  color-scheme: light;
+}
+
+.dark {
+  --dg-main: #e5e7eb;
+  --dg-accent: #a78bfa;
+  --dg-accent2: #38bdf8;
+  --dg-good: #34d399;
+  --dg-warn: #fb7185;
+  --dg-muted: #6b7280;
+  --dg-grid: #23253a;
+  --dg-axis: #9ca3af;
+  --dg-bg: #171827;
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-tap-highlight-color: transparent;
+}
+.dark body,
+html.dark {
+  background: var(--color-night);
+  color: #ecebf5;
+}
+
+body {
+  font-family: var(--font-sans);
+  min-height: 100dvh;
+  overscroll-behavior-y: none;
+}
+
+/* Math is always left-to-right, isolated from the surrounding Hebrew text. */
+.math-inline {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.math-display {
+  direction: ltr;
+  unicode-bidi: isolate;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+  scrollbar-width: thin;
+}
+.math-display .katex-display {
+  margin: 0.25rem 0;
+}
+.katex {
+  font-size: 1.08em;
+}
+.dark .katex {
+  color: #f3f2fb;
+}
+.katex .text,
+.katex .mord.text {
+  font-family: var(--font-sans);
+}
+
+/* Bottom safe-area for phones with home indicators */
+.safe-bottom {
+  padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
+}
+
+/* Flashcard flip */
+.flip {
+  perspective: 1200px;
+}
+.flip-inner {
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transform-style: preserve-3d;
+  position: relative;
+}
+.flip-inner.flipped {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.pop-in {
+  animation: pop-in 0.25s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner,
+  .pop-in {
+    transition: none;
+    animation: none;
+  }
+}

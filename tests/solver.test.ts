@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import katex from 'katex';
 import { solveProblem, type SolveMode } from '../src/lib/solver';
+import { EXAMPLES } from '../src/lib/solver/examples';
 import type { Solution } from '../src/types';
 
 function texErrors(sol: Solution): string[] {
@@ -153,5 +154,13 @@ describe('expressions and auto mode', () => {
     expect(r.ok).toBe(false);
     const m = solveProblem('x + y = 3');
     expect(m.ok).toBe(false);
+  });
+});
+
+describe('solver screen examples', () => {
+  it('every one-tap example solves and renders', () => {
+    for (const [mode, list] of Object.entries(EXAMPLES) as [SolveMode, string[]][]) {
+      for (const ex of list) solve(ex, mode, mode === 'tangent' ? { x0: '1' } : {});
+    }
   });
 });
