@@ -1,8 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { AlertTriangle, Bot, Camera, CheckCircle2, CircleHelp, ImagePlus, KeyRound, Sparkles, X, XCircle } from 'lucide-react';
+import { AlertTriangle, Bot, Camera, CheckCircle2, CircleHelp, ImagePlus, Sparkles, X, XCircle } from 'lucide-react';
 import type { AiCheck, AiImage, AiSolution } from '../lib/ai';
 import { AiError, fileToImage } from '../lib/ai';
-import { navigate } from '../router';
 import { useStore } from '../store';
 import { HintLadder, ProofTable, StepsView } from './learning';
 import { Rich } from './Tex';
@@ -46,19 +45,6 @@ export function useAiSettings() {
   const apiKey = useStore((s) => s.settings.apiKey);
   const model = useStore((s) => s.settings.model);
   return { apiKey, model, enabled: apiKey.trim().length > 0 };
-}
-
-export function ApiKeyNotice({ what }: { what: string }) {
-  return (
-    <Callout tone="brand" icon={<KeyRound className="h-4 w-4" />} title="צריך מפתח Claude API">
-      כדי {what} האפליקציה משתמשת ב-Claude. הוסיפו מפתח API בהגדרות – הוא נשמר רק במכשיר שלכם ונשלח רק לשרתי Anthropic.
-      <div className="mt-2">
-        <Button size="sm" variant="soft" onClick={() => navigate('/settings')}>
-          להגדרות
-        </Button>
-      </div>
-    </Callout>
-  );
 }
 
 /** Pick a photo from the camera or gallery; shows a preview. */

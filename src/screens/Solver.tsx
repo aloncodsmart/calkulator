@@ -13,8 +13,9 @@ import { navigate } from '../router';
 import { isRelevant, recordSolverUse, useStore } from '../store';
 import { Diagram } from '../components/Diagram';
 import { HintLadder, MathKeyboard, ProofTable, StepsView } from '../components/learning';
-import { AiBadge, AiCheckView, AiSolutionView, ApiKeyNotice, ImagePicker, useAiSettings, useTask } from '../components/aiViews';
+import { AiBadge, AiCheckView, AiSolutionView, ImagePicker, useAiSettings, useTask } from '../components/aiViews';
 import { Rich, Tex } from '../components/Tex';
+import { SendToClaude } from '../components/SendToClaude';
 import { Button, Callout, Card, Chip, Section, Segmented, StatusBadge, TopicBadge, cx } from '../components/ui';
 
 type Tab = 'solve' | 'finder' | 'check' | 'tools';
@@ -275,7 +276,7 @@ function AiSolvePanel({ seed }: { seed: string }) {
     <Section title="שאלה מילולית, גאומטריה או צילום" icon={<Bot className="h-5 w-5 text-brand-600" />}>
       <Card className="p-4">
         {!ai.enabled ? (
-          <ApiKeyNotice what="לפתור שאלות מילוליות, הוכחות בגאומטריה ושאלות מצולמות" />
+          <SendToClaude mode="solve" text={seed} withText />
         ) : (
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
@@ -462,7 +463,14 @@ function AiFinderPanel({ text }: { text: string }) {
   const profile = useStore((s) => s.profile);
   const [image, setImage] = useState<AiImage | null>(null);
   const task = useTask<AiRecommendation>();
-  if (!ai.enabled) return null;
+  if (!ai.enabled)
+    return (
+      <Section title="שאלו את Claude איזה משפט מתאים" icon={<Bot className="h-5 w-5 text-brand-600" />}>
+        <Card className="p-4">
+          <SendToClaude mode="theorem" text={text} />
+        </Card>
+      </Section>
+    );
   return (
     <Section title="שאלו את Claude איזה משפט מתאים" icon={<Bot className="h-5 w-5 text-brand-600" />}>
       <Card className="space-y-3 p-4">
@@ -629,7 +637,7 @@ function AiCheckPanel({ problem, work }: { problem: string; work: string }) {
     <Section title="בדיקה של הוכחה, שאלה מילולית או צילום" icon={<Bot className="h-5 w-5 text-brand-600" />}>
       <Card className="space-y-3 p-4">
         {!ai.enabled ? (
-          <ApiKeyNotice what="לבדוק הוכחות בגאומטריה ופתרונות בכתב יד" />
+          <SendToClaude mode="check" problem={problem} work={work} />
         ) : (
           <>
             <p className="text-sm text-slate-600 dark:text-slate-400">צלמו את הפתרון שלכם (או כתבו אותו למעלה). Claude יסמן את הטעות הראשונה ויסביר – בלי לפתור במקומכם.</p>
