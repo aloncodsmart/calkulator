@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { CheckCircle2, Download, Eye, EyeOff, KeyRound, Monitor, Moon, Palette, ShieldCheck, Smartphone, Sun, Upload, UserRound } from 'lucide-react';
 import { concepts, formulaSections, theorems } from '../data';
 import { MODELS } from '../lib/ai';
+import { saveTextFile } from '../lib/native';
 import { navigate } from '../router';
 import { exportState, importState, resetProgress, updateSettings, useStore, type Theme } from '../store';
 import { Button, Callout, Card, PageHeader, Section, Segmented, cx } from '../components/ui';
@@ -18,14 +19,8 @@ export function SettingsScreen() {
   const file = useRef<HTMLInputElement>(null);
   const install = useInstallStatus();
 
-  const download = () => {
-    const blob = new Blob([exportState()], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `smart-math-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(a.href);
-  };
+  const download = () =>
+    saveTextFile(`smart-math-${new Date().toISOString().slice(0, 10)}.json`, exportState()).catch(() => setMsg('הייצוא לא הצליח.'));
   const upload = async (f?: File) => {
     if (!f) return;
     const ok = importState(await f.text());

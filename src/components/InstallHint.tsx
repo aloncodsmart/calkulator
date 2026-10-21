@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Download, Share, SquarePlus, X } from 'lucide-react';
 import { Button } from './ui';
+import { isNativeApp } from '../lib/native';
 
 const DISMISS_KEY = 'smart-math:install-hint-dismissed';
 
@@ -15,13 +16,14 @@ function isIos(): boolean {
 }
 
 export function isStandalone(): boolean {
-  return (navigator as Navigator & { standalone?: boolean }).standalone === true || window.matchMedia('(display-mode: standalone)').matches;
+  return isNativeApp() || (navigator as Navigator & { standalone?: boolean }).standalone === true || window.matchMedia('(display-mode: standalone)').matches;
 }
 
 /** Install state of the app on this device. */
 export function useInstallStatus() {
   const [deferred, setDeferred] = useState<InstallPromptEvent | null>(null);
-  const [offlineReady, setOfflineReady] = useState(false);
+  // the Android app carries all its files inside the APK
+  const [offlineReady, setOfflineReady] = useState(isNativeApp);
   useEffect(() => {
     const onPrompt = (e: Event) => {
       e.preventDefault();

@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import { SystemBars, SystemBarsStyle } from '@capacitor/core';
+import { isNativeApp } from './lib/native';
 import { useRoute } from './router';
 import { useStore } from './store';
 import { Layout } from './components/Layout';
@@ -24,6 +26,8 @@ function useThemeClass() {
       const dark = theme === 'dark' || (theme === 'system' && mq.matches);
       document.documentElement.classList.toggle('dark', dark);
       document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0e0f1a' : '#6d28d9');
+      // in the Android app the clock/battery icons sit on top of the page: light icons on the dark theme
+      if (isNativeApp()) SystemBars.setStyle({ style: dark ? SystemBarsStyle.Dark : SystemBarsStyle.Light }).catch(() => {});
     };
     apply();
     mq.addEventListener('change', apply);

@@ -4,9 +4,11 @@ import '@fontsource-variable/rubik';
 import 'katex/dist/katex.min.css';
 import './index.css';
 import { App } from './App';
+import { isNativeApp } from './lib/native';
 
 // Store the app on the device so it opens without internet (see offlineServiceWorker in vite.config.ts).
-if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+// The Android app ships its files inside the APK, so it needs no service worker (one would only delay updates).
+if (import.meta.env.PROD && 'serviceWorker' in navigator && !isNativeApp()) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
       .register('./sw.js', { updateViaCache: 'none' })

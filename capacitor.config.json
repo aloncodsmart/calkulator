@@ -1,0 +1,14 @@
+{
+  "appId": "io.github.aloncodsmart.smartmath",
+  "appName": "מתמטיקה חכמה",
+  "webDir": "dist",
+  "android": {
+    "backgroundColor": "#f7f6fd"
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css",
+      "initialViewportFitValueHint": "cover"
+    }
+  }
+}
