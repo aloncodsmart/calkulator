@@ -26,6 +26,16 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator && !isNativeApp()) {
   });
 }
 
+// Android back button: go back through the app's screens; on the first screen, send the app to the background.
+if (isNativeApp()) {
+  import('@capacitor/app').then(({ App }) =>
+    App.addListener('backButton', ({ canGoBack }) => {
+      if (canGoBack) window.history.back();
+      else App.minimizeApp();
+    }),
+  );
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />

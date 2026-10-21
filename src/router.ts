@@ -20,9 +20,10 @@ export function useRoute(): { path: string; parts: string[]; query: URLSearchPar
   return { path: p, parts: p.split('/').filter(Boolean).map(decodeURIComponent), query: new URLSearchParams(q) };
 }
 
-export function navigate(path: string) {
+export function navigate(path: string, opts: { replace?: boolean } = {}) {
   if (current() === path) return;
-  window.location.hash = path;
+  if (opts.replace) window.location.replace(`#${path}`);
+  else window.location.hash = path;
 }
 
 export function back(fallback: string) {

@@ -227,6 +227,8 @@ async function call<T>({ apiKey, model, schema, content, effort, signal }: CallO
     if (e instanceof SDK.RateLimitError) throw new AiError('יותר מדי בקשות ברגע זה. חכו רגע ונסו שוב.');
     if (e instanceof SDK.BadRequestError) throw new AiError(`הבקשה נדחתה: ${e.message}`);
     if (e instanceof SDK.APIConnectionError) throw new AiError('אין חיבור לשרת. בדקו את החיבור לאינטרנט.');
+    // errors that are not HTTP responses arrive once the answer is already streaming
+    if (e instanceof SDK.AnthropicError && !(e instanceof SDK.APIError)) throw new AiError('החיבור לשרת נקטע באמצע התשובה. בדקו את החיבור לאינטרנט ונסו שוב.');
     if (e instanceof SDK.APIError) throw new AiError(`שגיאת שרת (${e.status ?? ''}). נסו שוב מאוחר יותר.`);
     if ((e as Error).name === 'AbortError') throw new AiError('הבקשה בוטלה.');
     throw new AiError((e as Error).message || 'שגיאה לא צפויה.');
